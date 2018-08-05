@@ -1,0 +1,27 @@
+\hypertarget{BuilderPredmet_8cpp_source}{}\section{Builder\+Predmet.\+cpp}
+\label{BuilderPredmet_8cpp_source}\index{cpp/\+Builder\+Predmet.\+cpp@{cpp/\+Builder\+Predmet.\+cpp}}
+
+\begin{DoxyCode}
+00001 
+00004 \textcolor{preprocessor}{#include "../hlavicky/BuilderPredmet.h"}
+00005 
+\hypertarget{BuilderPredmet_8cpp_source.tex_l00009}{}\hyperlink{classIceAge_1_1BuilderPredmet_a4fcdb35cc3edcec69386f4a68ff95d28}{00009} \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1BuilderPredmet_a4fcdb35cc3edcec69386f4a68ff95d28}{IceAge::BuilderPredmet::createPredmet}(std::string novyNazev, \textcolor{keywordtype}{
+      short} novaHodnota) \{
+00010     this->\hyperlink{classIceAge_1_1BuilderPredmet_ab51158b23493b9c1bb891f8be4a69b5d}{m\_pripravovany}=\textcolor{keyword}{new} \hyperlink{classIceAge_1_1Zbran}{IceAge::Zbran}(novyNazev,novaHodnota);
+00011 \}
+00012 
+\hypertarget{BuilderPredmet_8cpp_source.tex_l00016}{}\hyperlink{classIceAge_1_1BuilderPredmet_ab84508589d73e202dd4002d6b23ad22e}{00016} \hyperlink{classIceAge_1_1Predmet}{IceAge::Predmet}* \hyperlink{classIceAge_1_1BuilderPredmet_ab84508589d73e202dd4002d6b23ad22e}{IceAge::BuilderPredmet::getPredmet}() \{
+00017     \hyperlink{classIceAge_1_1Predmet}{IceAge::Predmet}*third=this->\hyperlink{classIceAge_1_1BuilderPredmet_ab51158b23493b9c1bb891f8be4a69b5d}{m\_pripravovany};
+00018     this->\hyperlink{classIceAge_1_1BuilderPredmet_ab51158b23493b9c1bb891f8be4a69b5d}{m\_pripravovany}=\textcolor{keyword}{nullptr};
+00019     \textcolor{keywordflow}{return} third;
+00020 \}
+00021 
+\hypertarget{BuilderPredmet_8cpp_source.tex_l00025}{}\hyperlink{classIceAge_1_1BuilderPredmet_ab13db2f68a2c79a59e093fcb8d517f04}{00025} \hyperlink{classIceAge_1_1BuilderPredmet_ab13db2f68a2c79a59e093fcb8d517f04}{IceAge::BuilderPredmet::BuilderPredmet}() \{
+00026     this->\hyperlink{classIceAge_1_1BuilderPredmet_ab51158b23493b9c1bb891f8be4a69b5d}{m\_pripravovany}=\textcolor{keyword}{nullptr};
+00027 \}
+00028 
+\hypertarget{BuilderPredmet_8cpp_source.tex_l00032}{}\hyperlink{classIceAge_1_1BuilderPredmet_a4fdc3033e390d15dc12c540b2b6c6456}{00032} \hyperlink{classIceAge_1_1BuilderPredmet_a4fdc3033e390d15dc12c540b2b6c6456}{IceAge::BuilderPredmet::~BuilderPredmet}()\{
+00033     \textcolor{keywordflow}{if}(this->\hyperlink{classIceAge_1_1BuilderPredmet_ab51158b23493b9c1bb891f8be4a69b5d}{m\_pripravovany} != \textcolor{keyword}{nullptr}) \textcolor{keyword}{delete} this->
+      \hyperlink{classIceAge_1_1BuilderPredmet_ab51158b23493b9c1bb891f8be4a69b5d}{m\_pripravovany};
+00034 \}
+\end{DoxyCode}

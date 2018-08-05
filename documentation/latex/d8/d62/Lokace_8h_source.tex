@@ -1,0 +1,88 @@
+\hypertarget{Lokace_8h_source}{}\section{Lokace.\+h}
+\label{Lokace_8h_source}\index{hlavicky/\+Lokace.\+h@{hlavicky/\+Lokace.\+h}}
+
+\begin{DoxyCode}
+00001 
+00004 \textcolor{preprocessor}{#ifndef LOKACE\_H}
+00005 \textcolor{preprocessor}{#define LOKACE\_H}
+00006 
+00007 \textcolor{keyword}{namespace }\hyperlink{namespaceIceAge}{IceAge}\{
+00008     \textcolor{keyword}{class }Command;
+00009 \}
+00010 \textcolor{preprocessor}{#include "\hyperlink{Command_8h}{Command.h}"}
+00011 \textcolor{preprocessor}{#include "\hyperlink{Reka_8h}{Reka.h}"}
+00012 \textcolor{preprocessor}{#include "\hyperlink{Popis_8h}{Popis.h}"}
+00013 \textcolor{preprocessor}{#include "\hyperlink{Nazev_8h}{Nazev.h}"}
+00014 \textcolor{preprocessor}{#include "\hyperlink{Memory_8h}{Memory.h}"}
+00015 \textcolor{preprocessor}{#include <vector>}
+00016 \textcolor{preprocessor}{#include "\hyperlink{Zivot_8h}{Zivot.h}"}
+00017 \textcolor{preprocessor}{#include "\hyperlink{Veverka_8h}{Veverka.h}"}
+00018 \textcolor{preprocessor}{#include "\hyperlink{Beast_8h}{Beast.h}"}
+00019 \textcolor{preprocessor}{#include "\hyperlink{Humanoid_8h}{Humanoid.h}"}
+00020 
+00021 \textcolor{preprocessor}{#include "\hyperlink{Ledovec_8h}{Ledovec.h}"}
+00022 \textcolor{preprocessor}{#include "\hyperlink{ZapadniPlanina_8h}{ZapadniPlanina.h}"}
+00023 \textcolor{preprocessor}{#include "\hyperlink{ZapadniBrehReky_8h}{ZapadniBrehReky.h}"}
+00024 \textcolor{preprocessor}{#include "\hyperlink{JizniLes_8h}{JizniLes.h}"}
+00025 \textcolor{preprocessor}{#include "\hyperlink{SeverniLes_8h}{SeverniLes.h}"}
+00026 \textcolor{preprocessor}{#include "\hyperlink{VychodniPlanina_8h}{VychodniPlanina.h}"}
+00027 \textcolor{preprocessor}{#include "\hyperlink{VychodniBrehReky_8h}{VychodniBrehReky.h}"}
+00028 \textcolor{preprocessor}{#include "\hyperlink{Jezero_8h}{Jezero.h}"}
+00029 
+\hypertarget{Lokace_8h_source.tex_l00030}{}\hyperlink{Lokace_8h_aa01cd748a46ef05160d9b753deb3b8e3}{00030} \textcolor{keyword}{const} \textcolor{keywordtype}{short} \hyperlink{Lokace_8h_aa01cd748a46ef05160d9b753deb3b8e3}{LECIVOST\_REKY}=5;
+00031 
+00032 \textcolor{keyword}{namespace }\hyperlink{namespaceIceAge}{IceAge} \{
+00033 
+\hypertarget{Lokace_8h_source.tex_l00034}{}\hyperlink{classIceAge_1_1Lokace}{00034}     \textcolor{keyword}{class }\hyperlink{classIceAge_1_1Lokace}{Lokace} : \textcolor{keyword}{public} \hyperlink{classIceAge_1_1Nazev}{IceAge::Nazev}, \textcolor{keyword}{public} \hyperlink{classIceAge_1_1Popis}{IceAge::Popis}, \textcolor{keyword}{public} 
+      \hyperlink{classIceAge_1_1Memory}{IceAge::Memory} \{
+00035 
+00036     \textcolor{keyword}{private}:
+\hypertarget{Lokace_8h_source.tex_l00037}{}\hyperlink{classIceAge_1_1Lokace_a5dcb719c38dae7d7600a868bc40a0380}{00037}         std::vector<IceAge::Beast*> \hyperlink{classIceAge_1_1Lokace_a5dcb719c38dae7d7600a868bc40a0380}{m\_vektorBeast};
+\hypertarget{Lokace_8h_source.tex_l00038}{}\hyperlink{classIceAge_1_1Lokace_a777a6a3ae16e84b9843b9b18912014d2}{00038}         std::vector<IceAge::Humanoid*> \hyperlink{classIceAge_1_1Lokace_a777a6a3ae16e84b9843b9b18912014d2}{m\_vektorHumanoid};
+\hypertarget{Lokace_8h_source.tex_l00039}{}\hyperlink{classIceAge_1_1Lokace_a7b773f479641e323d55d1c935f238af4}{00039}         \hyperlink{classIceAge_1_1Reka}{IceAge::Reka}* \hyperlink{classIceAge_1_1Lokace_a7b773f479641e323d55d1c935f238af4}{m\_odkazReka};
+\hypertarget{Lokace_8h_source.tex_l00040}{}\hyperlink{classIceAge_1_1Lokace_aa436a7cc7b4878f7c099f17b8874c852}{00040}         std::vector<IceAge::Lokace*> \hyperlink{classIceAge_1_1Lokace_aa436a7cc7b4878f7c099f17b8874c852}{m\_vektorLokaci};
+\hypertarget{Lokace_8h_source.tex_l00041}{}\hyperlink{classIceAge_1_1Lokace_a834dbd24600fee5d9962aa40564a8587}{00041}         \hyperlink{classIceAge_1_1Command}{IceAge::Command}* \hyperlink{classIceAge_1_1Lokace_a834dbd24600fee5d9962aa40564a8587}{m\_prikaz};
+00042 
+00043     \textcolor{keyword}{public}:
+00044         \hyperlink{classIceAge_1_1Lokace_ac8c6fe0d55e08b16e7f220b4aa969bf9}{Lokace}(std::string novyNazev, std::string novyPopis);
+00045         \hyperlink{classIceAge_1_1Lokace_ad4160c5054d271837582fe4030c40989}{~Lokace}();
+00046 
+00047         \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1Lokace_ae77a73c9d4ca11a4ccbd056e80e68318}{pridejBeast}(\hyperlink{classIceAge_1_1Beast}{IceAge::Beast}* novyBeast);
+00048         \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1Lokace_ab8da7a4fa629d827d0b633c67d65da4e}{pridejHumanoid}(\hyperlink{classIceAge_1_1Humanoid}{IceAge::Humanoid}* novyHumanoid);
+00049 
+00050         \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1Lokace_a7de7eb0ffccd14cc461788a987545ba8}{smazBeast}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} index);
+00051         \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1Lokace_ab81171b69a39d471ad316afac9035309}{smazHumanoid}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} index);
+00052 
+00053         \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1Lokace_a5b8cba97ec44efafc0b105a3b487284c}{pridejReku}();
+00054 
+00055         \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1Lokace_aa7917baa3393a5d5ed806a5f23143fa7}{smazReku}();
+00056 
+00057         \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1Lokace_a0d506324f571f77f0daf14de00c548b6}{pridejLokaci}(\hyperlink{classIceAge_1_1Lokace}{IceAge::Lokace}* novaLokace);
+00058 
+00059         \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1Lokace_ad854c0c977792922f8ede422229658f9}{smazLokaci}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} index);
+00060 
+00061         \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1Lokace_a1f5564ad6a602f649e9b86e0e6c77815}{odeberLokaci}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} index);
+00062 
+00063         \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1Lokace_af4a779823955954dd2c68331a57193c9}{vypisLokace}();
+00064 
+00065         std::string \hyperlink{classIceAge_1_1Lokace_aa7add7f42af4af1a13ca246f8d5081c6}{getNazevLokace}();
+00066         std::string \hyperlink{classIceAge_1_1Lokace_adf9674c5770d15fb41bd54207169e464}{getPopisLokace}();
+00067         \hyperlink{classIceAge_1_1Lokace}{Lokace}* \hyperlink{classIceAge_1_1Lokace_aff2c363fd3d4b7727aff3a5c80980710}{getLokace}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} index);
+00068         \hyperlink{classIceAge_1_1Beast}{IceAge::Beast}* \hyperlink{classIceAge_1_1Lokace_a8aa0d127082ec0f09968909bb51341fd}{getBeast}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} index);
+00069         \hyperlink{classIceAge_1_1Humanoid}{IceAge::Humanoid}* \hyperlink{classIceAge_1_1Lokace_a5287730cae8f7c0e885dce5e1eee082e}{getHumanoid}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} index);
+00070 
+00071         \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \hyperlink{classIceAge_1_1Lokace_ad2c476dac4ae7832795995ed90fcc591}{getVelikostVektoruLokaci}();
+00072 
+00073         std::vector<IceAge::Beast*> \hyperlink{classIceAge_1_1Lokace_a7787ab3225a04df0c56c75d8ad0c41a1}{getVektorBeast}();
+00074         std::vector<IceAge::Humanoid*> \hyperlink{classIceAge_1_1Lokace_a829e2883345fb567d354a420b482fcf3}{getVektorHumanoid}();
+00075         \hyperlink{classIceAge_1_1Reka}{IceAge::Reka}* \hyperlink{classIceAge_1_1Lokace_a4171b0e935cabad5af993935c5cbfd55}{getReka}();
+00076 
+00077         \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1Lokace_a27bac7797acadfebe3aaf61a69fdda2d}{setPrikaz}();
+00078 
+00079         \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1Lokace_a901ef2b29b32b8698115e8a2fe65df02}{prozkoumatLokaci}(\hyperlink{classIceAge_1_1Veverka}{IceAge::Veverka}* scrat);
+00080 
+00081         \textcolor{comment}{//unsigned int volba();}
+00082     \};
+00083 \}
+00084 \textcolor{preprocessor}{#endif}
+\end{DoxyCode}

@@ -1,0 +1,32 @@
+\hypertarget{Command_8h_source}{}\section{Command.\+h}
+\label{Command_8h_source}\index{hlavicky/\+Command.\+h@{hlavicky/\+Command.\+h}}
+
+\begin{DoxyCode}
+00001 
+00004 \textcolor{preprocessor}{#ifndef COMMAND\_H}
+00005 \textcolor{preprocessor}{#define COMMAND\_H}
+00006 
+00007 
+00008 \textcolor{preprocessor}{#include <iostream>}
+00009 \textcolor{preprocessor}{#include "\hyperlink{Nazev_8h}{Nazev.h}"}
+00010 \textcolor{preprocessor}{#include "\hyperlink{Veverka_8h}{Veverka.h}"}
+00011 \textcolor{preprocessor}{#include "\hyperlink{Reka_8h}{Reka.h}"}
+00012 \textcolor{preprocessor}{#include "\hyperlink{Beast_8h}{Beast.h}"}
+00013 \textcolor{preprocessor}{#include "\hyperlink{Humanoid_8h}{Humanoid.h}"}
+00014 \textcolor{preprocessor}{#include "\hyperlink{VolneFunkce_8h}{VolneFunkce.h}"}
+00015 
+00016 \textcolor{keyword}{namespace }\hyperlink{namespaceIceAge}{IceAge} \{
+\hypertarget{Command_8h_source.tex_l00020}{}\hyperlink{classIceAge_1_1Command}{00020}     \textcolor{keyword}{class }\hyperlink{classIceAge_1_1Command}{Command} : \textcolor{keyword}{public} \hyperlink{classIceAge_1_1Nazev}{IceAge::Nazev} \{
+00021 
+00022     \textcolor{keyword}{public}:
+00023         \hyperlink{classIceAge_1_1Command_a451edb7cb24df79568a193929293041d}{Command}(std::string novyNazev);
+00025         \textcolor{keyword}{virtual} \hyperlink{classIceAge_1_1Command_a604f37ab9196a5a59a5b6e61aa1efc35}{~Command}();
+00027         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1Command_a0466e88c0c9e2a44618c12f6c88b76fe}{prozkoumat}(\hyperlink{classIceAge_1_1Veverka}{IceAge::Veverka}* scrat, 
+      std::vector<IceAge::Beast*> vektorBeast,
+00028                             std::vector<IceAge::Humanoid*> vektorHumanoid, 
+      \hyperlink{classIceAge_1_1Reka}{IceAge::Reka}* reka) = 0;
+00029     \};
+00030 \}
+00031 
+00032 \textcolor{preprocessor}{#endif}
+\end{DoxyCode}

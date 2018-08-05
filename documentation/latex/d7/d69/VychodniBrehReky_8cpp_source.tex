@@ -1,0 +1,86 @@
+\hypertarget{VychodniBrehReky_8cpp_source}{}\section{Vychodni\+Breh\+Reky.\+cpp}
+\label{VychodniBrehReky_8cpp_source}\index{cpp/\+Vychodni\+Breh\+Reky.\+cpp@{cpp/\+Vychodni\+Breh\+Reky.\+cpp}}
+
+\begin{DoxyCode}
+00001 
+00004 \textcolor{preprocessor}{#include "../hlavicky/VychodniBrehReky.h"}
+00005 
+\hypertarget{VychodniBrehReky_8cpp_source.tex_l00009}{}\hyperlink{classIceAge_1_1VychodniBrehReky_a9d5257fc3109d8ee985e16c412bbe40d}{00009} \hyperlink{classIceAge_1_1VychodniBrehReky_a9d5257fc3109d8ee985e16c412bbe40d}{IceAge::VychodniBrehReky::VychodniBrehReky}(std::string novyNazev)
+      :\hyperlink{classIceAge_1_1Command}{Command}(novyNazev) \{
+00010 \}
+00011 
+\hypertarget{VychodniBrehReky_8cpp_source.tex_l00015}{}\hyperlink{classIceAge_1_1VychodniBrehReky_a3b71658a8879f9961ad778006db54ea9}{00015} \hyperlink{classIceAge_1_1VychodniBrehReky_a3b71658a8879f9961ad778006db54ea9}{IceAge::VychodniBrehReky::~VychodniBrehReky}() \{
+00016 \}
+00017 
+\hypertarget{VychodniBrehReky_8cpp_source.tex_l00021}{}\hyperlink{classIceAge_1_1VychodniBrehReky_a9be648ec1c37e14c3532813685fe1ee1}{00021} \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1VychodniBrehReky_a9be648ec1c37e14c3532813685fe1ee1}{IceAge::VychodniBrehReky::prozkoumat}(
+      \hyperlink{classIceAge_1_1Veverka}{IceAge::Veverka}* scrat, std::vector<IceAge::Beast*> vektorBeast, 
+      std::vector<IceAge::Humanoid*> vektorHumanoid, \hyperlink{classIceAge_1_1Reka}{IceAge::Reka}* reka) \{
+00022     std::cout << std::endl;
+00023     std::cout << \textcolor{stringliteral}{"Pomalu si prisel k rece. Jsi na druhe strane reky, u ktere si ztratil Supomuta."} << 
+      std::endl;
+00024 
+00025     \textcolor{keywordtype}{bool} cyklus2=\textcolor{keyword}{true};
+00026     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} index=0;
+00027     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} volbaCislo=0;
+00028     \textcolor{keywordtype}{char} volba=\textcolor{charliteral}{'a'};
+00030     \textcolor{keywordflow}{while}(cyklus2)
+00031         \{
+00032             std::cout << std::endl;
+00033             std::cout << \textcolor{stringliteral}{"["} << index << \textcolor{stringliteral}{"] Odejit"} <<std::endl; index++;
+00034             std::cout << \textcolor{stringliteral}{"["} << index << \textcolor{stringliteral}{"] Napit se "} <<std::endl; index++;
+00035             std::cout << \textcolor{stringliteral}{"["} << index << \textcolor{stringliteral}{"] Pokusit se preplavat na druhou stranu"} <<std::endl; index++;
+00036             std::cout << \textcolor{stringliteral}{"["} << index << \textcolor{stringliteral}{"] Zautocit na nekoho"} <<std::endl; index++;
+00037             std::cout << \textcolor{stringliteral}{"["} << index << \textcolor{stringliteral}{"] Hledat orisek cichem"} <<std::endl; index=0;
+00038             std::cout << \textcolor{stringliteral}{"Vyber akci:"};
+00039             std::cin >> volba;std::cin.ignore();
+00040             \textcolor{keywordflow}{switch}(volba)
+00041             \{
+00042                 \textcolor{keywordflow}{case} \textcolor{charliteral}{'0'}:
+00043                     \textcolor{keywordflow}{return};
+00044                     \textcolor{keywordflow}{break};
+00045                 \textcolor{keywordflow}{case} \textcolor{charliteral}{'1'}:
+00046                     scrat->\hyperlink{classIceAge_1_1Zivot_a980dc5a5af6d14c23ecca025e3ec7485}{changeZivotAktualni}(reka->
+      \hyperlink{classIceAge_1_1Reka_acc4d9a4ef69da03eed8762e16a33b49f}{getHodnotaZivota}());
+00047                     std::cout << \textcolor{stringliteral}{"Aktualne mas "} << scrat->\hyperlink{classIceAge_1_1Zivot_ae4e3a167722a80ccace3985f183ddd8d}{getZivotAktualni}() << \textcolor{stringliteral}{"/"} << 
+      scrat->\hyperlink{classIceAge_1_1Zivot_a75a65879dd6ddc0bc3e402ac6f613813}{getZivotMaximalni}() << std::endl;
+00048                     \textcolor{keywordflow}{continue};
+00049                     \textcolor{keywordflow}{break};
+00050                 \textcolor{keywordflow}{case} \textcolor{charliteral}{'2'}:
+00051                     std::cout << \textcolor{stringliteral}{"Proud je moc silny, utopil ses. Nedokazal si ziskat zpatky orisek!"} << 
+      std::endl;
+00052                     \hyperlink{classIceAge_1_1MemoryArbiter_ae3460492678cf992629f4a70de3ef1ca}{IceAge::MemoryArbiter::cycleDelete}();
+00053                     exit(0);
+00054                     \textcolor{keywordflow}{break};
+00055                 \textcolor{keywordflow}{case} \textcolor{charliteral}{'3'}:
+00056                     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} i=0; i<vektorBeast.size(); index++,i++)
+00057                         std::cout << \textcolor{stringliteral}{"["} << index << \textcolor{stringliteral}{"] "} << vektorBeast.at(i)->getNazev() << \textcolor{stringliteral}{" - "}<< 
+      vektorBeast.at(i)->getPopis() << std::endl;
+00058 
+00059 
+00060                     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} j=0; j<vektorHumanoid.size(); index++, j++)
+00061                         std::cout << \textcolor{stringliteral}{"["} << index << \textcolor{stringliteral}{"] "} << vektorHumanoid.at(j)->getNazev() << \textcolor{stringliteral}{" - "}<< 
+      vektorHumanoid.at(j)->getPopis() << std::endl;
+00062 
+00063                     std::cout << \textcolor{stringliteral}{"Vyber si cil: "};
+00064 
+00065                     \textcolor{keywordflow}{while}(\textcolor{keyword}{true})\{
+00067                         std::cin >> volbaCislo;std::cin.ignore();
+00068 
+00069                         \textcolor{keywordflow}{if}(volbaCislo < index)\{
+00070                             \textcolor{keywordflow}{if}(volbaCislo<vektorBeast.size()) \hyperlink{namespaceIceAge_a2c6b97286bcd54e3ecf2fdc335460e90}{boj}(scrat,vektorBeast.at(volbaCislo));
+00071                             \textcolor{keywordflow}{else} \hyperlink{namespaceIceAge_a2c6b97286bcd54e3ecf2fdc335460e90}{boj}(scrat, vektorHumanoid.at(volbaCislo-vektorBeast.size()));
+00072                             \textcolor{keywordflow}{break};
+00073                         \}
+00074                     \}
+00075                     index=0;
+00076                     \textcolor{keywordflow}{break};
+00077                 \textcolor{keywordflow}{case} \textcolor{charliteral}{'4'}:
+00078                     std::cout << std::endl;
+00079                     std::cout << \textcolor{stringliteral}{"Zapojil si svuj cich, orisek je smerem k jezeru!"} << std::endl;
+00080                     \textcolor{keywordflow}{break};
+00081                 \textcolor{keywordflow}{default}:
+00082                     \textcolor{keywordflow}{break};
+00083             \}
+00084         \}
+00085 \}
+\end{DoxyCode}

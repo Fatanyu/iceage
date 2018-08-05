@@ -1,0 +1,43 @@
+\hypertarget{Humanoid_8cpp_source}{}\section{Humanoid.\+cpp}
+\label{Humanoid_8cpp_source}\index{cpp/\+Humanoid.\+cpp@{cpp/\+Humanoid.\+cpp}}
+
+\begin{DoxyCode}
+00001 
+00004 \textcolor{preprocessor}{#include "../hlavicky/Humanoid.h"}
+00005 
+\hypertarget{Humanoid_8cpp_source.tex_l00009}{}\hyperlink{classIceAge_1_1Humanoid_aa569118f9afa5ec9ddac4a9ec813d4ba}{00009} \hyperlink{classIceAge_1_1Humanoid_aa569118f9afa5ec9ddac4a9ec813d4ba}{IceAge::Humanoid::Humanoid}(\textcolor{keywordtype}{short} novyZivot, std::string novyNazev, std::string 
+      novyPopis, \textcolor{keywordtype}{short} novaSila, \textcolor{keywordtype}{short} novaOdolnost, \hyperlink{classIceAge_1_1Predmet}{IceAge::Predmet}* zbran1,
+00010         \hyperlink{classIceAge_1_1Predmet}{IceAge::Predmet}* zbran2, \hyperlink{classIceAge_1_1Predmet}{IceAge::Predmet}* zbran3):
+      \hyperlink{namespaceIceAge}{IceAge}::\hyperlink{classIceAge_1_1Inventar}{Inventar}::\hyperlink{classIceAge_1_1Inventar}{Inventar}(\hyperlink{Inventar_8h_a7f7b2fb89fb505a51ef23f49620a3d0f}{MAX\_INVENTAR}), 
+      \hyperlink{namespaceIceAge}{IceAge}::\hyperlink{classIceAge_1_1ObleceneVybaveniHumanoid}{ObleceneVybaveniHumanoid}(zbran1,zbran2,zbran3),
+00011                                                      \hyperlink{namespaceIceAge}{IceAge}::\hyperlink{classIceAge_1_1Zivot}{Zivot}::
+      \hyperlink{classIceAge_1_1Zivot}{Zivot}(novyZivot,novyZivot), \hyperlink{namespaceIceAge}{IceAge}::\hyperlink{classIceAge_1_1Nazev}{Nazev}::\hyperlink{classIceAge_1_1Nazev}{Nazev}(novyNazev),
+00012                                                      \hyperlink{namespaceIceAge}{IceAge}::\hyperlink{classIceAge_1_1Popis}{Popis}::
+      \hyperlink{classIceAge_1_1Popis}{Popis}(novyPopis), \hyperlink{namespaceIceAge}{IceAge}::\hyperlink{classIceAge_1_1Staty}{Staty}::\hyperlink{classIceAge_1_1Staty}{Staty}(novaSila,novaOdolnost) \{
+00013 \}
+00014 
+\hypertarget{Humanoid_8cpp_source.tex_l00018}{}\hyperlink{classIceAge_1_1Humanoid_aa8f63dfba3ef74a0666e9fb9c9e96df4}{00018} \textcolor{keywordtype}{short} \hyperlink{classIceAge_1_1Humanoid_aa8f63dfba3ef74a0666e9fb9c9e96df4}{IceAge::Humanoid::utok}() \{
+00019     \textcolor{keywordtype}{short} utokCelkem=0;
+00020 
+00021     \textcolor{keywordflow}{if}(this->\hyperlink{classIceAge_1_1ObleceneVybaveniHumanoid_aab35aa50c2707e31f7f86509d75aed32}{m\_levaRuka} != \textcolor{keyword}{nullptr})    \textcolor{keywordflow}{if}(this->\hyperlink{classIceAge_1_1ObleceneVybaveniHumanoid_aab35aa50c2707e31f7f86509d75aed32}{m\_levaRuka}->
+      \hyperlink{classIceAge_1_1Predmet_a90491592ba559e5b276b672633795e29}{getTyp}() == \textcolor{charliteral}{'w'}) utokCelkem+=this->\hyperlink{classIceAge_1_1ObleceneVybaveniHumanoid_aab35aa50c2707e31f7f86509d75aed32}{m\_levaRuka}->\hyperlink{classIceAge_1_1Predmet_a43f6c212f4c86e970c3b44eee829a1e1}{getAtribut}();
+00022     \textcolor{keywordflow}{if}(this->\hyperlink{classIceAge_1_1ObleceneVybaveniHumanoid_aff9f64fece90fb80a02896126120c933}{m\_pravaRuka} != \textcolor{keyword}{nullptr})    \textcolor{keywordflow}{if}(this->\hyperlink{classIceAge_1_1ObleceneVybaveniHumanoid_aff9f64fece90fb80a02896126120c933}{m\_pravaRuka}->
+      \hyperlink{classIceAge_1_1Predmet_a90491592ba559e5b276b672633795e29}{getTyp}() == \textcolor{charliteral}{'w'}) utokCelkem+=this->\hyperlink{classIceAge_1_1ObleceneVybaveniHumanoid_aff9f64fece90fb80a02896126120c933}{m\_pravaRuka}->\hyperlink{classIceAge_1_1Predmet_a43f6c212f4c86e970c3b44eee829a1e1}{getAtribut}();
+00023 
+00024     \textcolor{keywordflow}{return} this->\hyperlink{classIceAge_1_1Staty_a2c8b38d3cfa305f5b5fab199894dd922}{getSila}() + utokCelkem;
+00025 \}
+00026 
+\hypertarget{Humanoid_8cpp_source.tex_l00030}{}\hyperlink{classIceAge_1_1Humanoid_a76adfafa3855813fc09facab326ec87d}{00030} \textcolor{keywordtype}{short} \hyperlink{classIceAge_1_1Humanoid_a76adfafa3855813fc09facab326ec87d}{IceAge::Humanoid::obrana}() \{
+00031 \textcolor{comment}{//    short obranaCelkem=0;}
+00032 \textcolor{comment}{/*}
+00033 \textcolor{comment}{    if(this->m\_levaRuka != nullptr)    if(this->m\_levaRuka->getTyp() == 'c')
+       obranaCelkem+=this->m\_levaRuka->getAtribut();}
+00034 \textcolor{comment}{    if(this->m\_pravaRuka != nullptr)    if(this->m\_pravaRuka->getTyp() == 'c')
+       obranaCelkem+=this->m\_pravaRuka->getAtribut();}
+00035 \textcolor{comment}{*/}
+00036     \textcolor{keywordflow}{return} this->\hyperlink{classIceAge_1_1Staty_a142a0ec049584c8ea716b96d2b742b08}{getOdolnost}()\textcolor{comment}{/* + obranaCelkem*/};
+00037 \}
+00038 
+\hypertarget{Humanoid_8cpp_source.tex_l00042}{}\hyperlink{classIceAge_1_1Humanoid_a1d77af44d2b10d85f162ae959b05816d}{00042} \hyperlink{classIceAge_1_1Humanoid_a1d77af44d2b10d85f162ae959b05816d}{IceAge::Humanoid::~Humanoid}()\{
+00043 \}
+\end{DoxyCode}

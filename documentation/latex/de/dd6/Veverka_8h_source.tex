@@ -1,0 +1,37 @@
+\hypertarget{Veverka_8h_source}{}\section{Veverka.\+h}
+\label{Veverka_8h_source}\index{hlavicky/\+Veverka.\+h@{hlavicky/\+Veverka.\+h}}
+
+\begin{DoxyCode}
+00001 
+00004 \textcolor{preprocessor}{#ifndef VEVERKA\_H}
+00005 \textcolor{preprocessor}{#define VEVERKA\_H}
+00006 
+00007 \textcolor{preprocessor}{#include "\hyperlink{ObleceneVybaveniVeverky_8h}{ObleceneVybaveniVeverky.h}"}
+00008 \textcolor{preprocessor}{#include "\hyperlink{Staty_8h}{Staty.h}"}
+00009 \textcolor{preprocessor}{#include "\hyperlink{Memory_8h}{Memory.h}"}
+00010 \textcolor{preprocessor}{#include "\hyperlink{Zivot_8h}{Zivot.h}"}
+00011 \textcolor{preprocessor}{#include <cstdio>}
+00012 
+\hypertarget{Veverka_8h_source.tex_l00013}{}\hyperlink{Veverka_8h_a155cb6634ee33182e81d097c8795d031}{00013} \textcolor{keyword}{const} \textcolor{keywordtype}{short} \hyperlink{Veverka_8h_a155cb6634ee33182e81d097c8795d031}{SCRAT\_HP}=20; 
+\hypertarget{Veverka_8h_source.tex_l00014}{}\hyperlink{Veverka_8h_a7e89f9c1f8405d36a24e427614e25e74}{00014} \textcolor{keyword}{const} \textcolor{keywordtype}{short} \hyperlink{Veverka_8h_a7e89f9c1f8405d36a24e427614e25e74}{SCRAT\_SILA}=5; 
+\hypertarget{Veverka_8h_source.tex_l00015}{}\hyperlink{Veverka_8h_a752d429f0ea780b8e512e8b5e5776c1b}{00015} \textcolor{keyword}{const} \textcolor{keywordtype}{short} \hyperlink{Veverka_8h_a752d429f0ea780b8e512e8b5e5776c1b}{SCRAT\_ODOLNOST}=5; 
+00017 \textcolor{keyword}{namespace }\hyperlink{namespaceIceAge}{IceAge} \{
+\hypertarget{Veverka_8h_source.tex_l00021}{}\hyperlink{classIceAge_1_1Veverka}{00021}     \textcolor{keyword}{class }\hyperlink{classIceAge_1_1Veverka}{Veverka} : \textcolor{keyword}{public} \hyperlink{classIceAge_1_1ObleceneVybaveniVeverky}{IceAge::ObleceneVybaveniVeverky}, \textcolor{keyword}{public} 
+      \hyperlink{classIceAge_1_1Staty}{IceAge::Staty}, \textcolor{keyword}{public} \hyperlink{classIceAge_1_1Memory}{IceAge::Memory}, \textcolor{keyword}{public} 
+      \hyperlink{classIceAge_1_1Zivot}{IceAge::Zivot} \{
+00022 
+00023     \textcolor{keyword}{private}:
+\hypertarget{Veverka_8h_source.tex_l00024}{}\hyperlink{classIceAge_1_1Veverka_acfa9aa07c2cfa881fbcc6feeb717c287}{00024}         \textcolor{keyword}{static} \hyperlink{classIceAge_1_1Veverka}{IceAge::Veverka}* \hyperlink{classIceAge_1_1Veverka_acfa9aa07c2cfa881fbcc6feeb717c287}{s\_vlastniInstance}; 
+00026         \hyperlink{classIceAge_1_1Veverka_a527c1eeb2f4a165f65ade3852719ef68}{Veverka}(\textcolor{keywordtype}{short} novyZivot, \textcolor{keywordtype}{short} novaSila, \textcolor{keywordtype}{short} novaOdolnost); 
+00028     \textcolor{keyword}{public}:
+00029         \textcolor{keyword}{static} \hyperlink{classIceAge_1_1Veverka}{IceAge::Veverka}* \hyperlink{classIceAge_1_1Veverka_a12909a7053332344e9b8c71845bb8e1f}{getInstance}(); 
+00030         \textcolor{keywordtype}{short} \hyperlink{classIceAge_1_1Veverka_af5b4c4f1efe81d428564352c3257eff4}{utok}();
+00031         \textcolor{keywordtype}{short} \hyperlink{classIceAge_1_1Veverka_a0de0d0e1bdd72451abe0b6b7eaa74bee}{obrana}();
+00032         \hyperlink{classIceAge_1_1Veverka_ad58ee98ef7bafb1adf634ba2936f9a6b}{~Veverka}();
+00033         \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1Veverka_a3b917725872714ac866bc2028bf7d7d9}{enrageZapnout}();
+00034         \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1Veverka_a1899ce1f8542829ec12e9087df188be8}{enrageVypnout}();
+00035     \};
+00036 \}
+00037 
+00038 \textcolor{preprocessor}{#endif}
+\end{DoxyCode}

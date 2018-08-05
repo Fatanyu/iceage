@@ -1,0 +1,116 @@
+\hypertarget{classIceAge_1_1BuilderPredmet}{}\section{Dokumentace třídy Ice\+Age\+:\+:Builder\+Predmet}
+\label{classIceAge_1_1BuilderPredmet}\index{Ice\+Age\+::\+Builder\+Predmet@{Ice\+Age\+::\+Builder\+Predmet}}
+
+
+{\ttfamily \#include $<$Builder\+Predmet.\+h$>$}
+
+\subsection*{Veřejné metody}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classIceAge_1_1BuilderPredmet_a4fcdb35cc3edcec69386f4a68ff95d28}{create\+Predmet} (std\+::string novy\+Nazev, short nova\+Hodnota)
+\begin{DoxyCompactList}\small\item\em Metoda, ktera vytvori predmet. \end{DoxyCompactList}\item 
+\hyperlink{classIceAge_1_1Predmet}{Ice\+Age\+::\+Predmet} $\ast$ \hyperlink{classIceAge_1_1BuilderPredmet_ab84508589d73e202dd4002d6b23ad22e}{get\+Predmet} ()
+\begin{DoxyCompactList}\small\item\em Metoda vracejici odkaz na vytvareny predmet. \end{DoxyCompactList}\item 
+\hyperlink{classIceAge_1_1BuilderPredmet_ab13db2f68a2c79a59e093fcb8d517f04}{Builder\+Predmet} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor. \end{DoxyCompactList}\item 
+\hyperlink{classIceAge_1_1BuilderPredmet_a4fdc3033e390d15dc12c540b2b6c6456}{$\sim$\+Builder\+Predmet} ()
+\begin{DoxyCompactList}\small\item\em Destruktor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Privátní atributy}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classIceAge_1_1Predmet}{Ice\+Age\+::\+Predmet} $\ast$ \hyperlink{classIceAge_1_1BuilderPredmet_ab51158b23493b9c1bb891f8be4a69b5d}{m\+\_\+pripravovany}
+\begin{DoxyCompactList}\small\item\em Atribut do ktereho se uklada odkaz vytvareneho predmetu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailní popis}
+Trida, ktera bude stavet predmety. Podle navrhoveho vzoru Builder. 
+
+Definice je uvedena na řádku \hyperlink{BuilderPredmet_8h_source_l00014}{14} v souboru \hyperlink{BuilderPredmet_8h_source}{Builder\+Predmet.\+h}.
+
+
+
+\subsection{Dokumentace konstruktoru a destruktoru}
+\index{Ice\+Age\+::\+Builder\+Predmet@{Ice\+Age\+::\+Builder\+Predmet}!Builder\+Predmet@{Builder\+Predmet}}
+\index{Builder\+Predmet@{Builder\+Predmet}!Ice\+Age\+::\+Builder\+Predmet@{Ice\+Age\+::\+Builder\+Predmet}}
+\subsubsection[{\texorpdfstring{Builder\+Predmet()}{BuilderPredmet()}}]{\setlength{\rightskip}{0pt plus 5cm}Ice\+Age\+::\+Builder\+Predmet\+::\+Builder\+Predmet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classIceAge_1_1BuilderPredmet_ab13db2f68a2c79a59e093fcb8d517f04}{}\label{classIceAge_1_1BuilderPredmet_ab13db2f68a2c79a59e093fcb8d517f04}
+
+
+Konstruktor. 
+
+Konstruktor ve kterem se jen do atributu pripravovany ulozi nullptr; 
+
+Definice je uvedena na řádku \hyperlink{BuilderPredmet_8cpp_source_l00025}{25} v souboru \hyperlink{BuilderPredmet_8cpp_source}{Builder\+Predmet.\+cpp}.
+
+\index{Ice\+Age\+::\+Builder\+Predmet@{Ice\+Age\+::\+Builder\+Predmet}!````~Builder\+Predmet@{$\sim$\+Builder\+Predmet}}
+\index{````~Builder\+Predmet@{$\sim$\+Builder\+Predmet}!Ice\+Age\+::\+Builder\+Predmet@{Ice\+Age\+::\+Builder\+Predmet}}
+\subsubsection[{\texorpdfstring{$\sim$\+Builder\+Predmet()}{~BuilderPredmet()}}]{\setlength{\rightskip}{0pt plus 5cm}Ice\+Age\+::\+Builder\+Predmet\+::$\sim$\+Builder\+Predmet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classIceAge_1_1BuilderPredmet_a4fdc3033e390d15dc12c540b2b6c6456}{}\label{classIceAge_1_1BuilderPredmet_a4fdc3033e390d15dc12c540b2b6c6456}
+
+
+Destruktor. 
+
+Destruktor ve kterem se pripadne maze vytvareny predmet. 
+
+Definice je uvedena na řádku \hyperlink{BuilderPredmet_8cpp_source_l00032}{32} v souboru \hyperlink{BuilderPredmet_8cpp_source}{Builder\+Predmet.\+cpp}.
+
+
+
+\subsection{Dokumentace k metodám}
+\index{Ice\+Age\+::\+Builder\+Predmet@{Ice\+Age\+::\+Builder\+Predmet}!create\+Predmet@{create\+Predmet}}
+\index{create\+Predmet@{create\+Predmet}!Ice\+Age\+::\+Builder\+Predmet@{Ice\+Age\+::\+Builder\+Predmet}}
+\subsubsection[{\texorpdfstring{create\+Predmet(std\+::string novy\+Nazev, short nova\+Hodnota)}{createPredmet(std::string novyNazev, short novaHodnota)}}]{\setlength{\rightskip}{0pt plus 5cm}void Ice\+Age\+::\+Builder\+Predmet\+::create\+Predmet (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{novy\+Nazev, }
+\item[{short}]{nova\+Hodnota}
+\end{DoxyParamCaption}
+)}\hypertarget{classIceAge_1_1BuilderPredmet_a4fcdb35cc3edcec69386f4a68ff95d28}{}\label{classIceAge_1_1BuilderPredmet_a4fcdb35cc3edcec69386f4a68ff95d28}
+
+
+Metoda, ktera vytvori predmet. 
+
+Metoda, ktera vytvori predmet podle zadanych parametru. 
+
+Definice je uvedena na řádku \hyperlink{BuilderPredmet_8cpp_source_l00009}{9} v souboru \hyperlink{BuilderPredmet_8cpp_source}{Builder\+Predmet.\+cpp}.
+
+\index{Ice\+Age\+::\+Builder\+Predmet@{Ice\+Age\+::\+Builder\+Predmet}!get\+Predmet@{get\+Predmet}}
+\index{get\+Predmet@{get\+Predmet}!Ice\+Age\+::\+Builder\+Predmet@{Ice\+Age\+::\+Builder\+Predmet}}
+\subsubsection[{\texorpdfstring{get\+Predmet()}{getPredmet()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ice\+Age\+::\+Predmet} $\ast$ Ice\+Age\+::\+Builder\+Predmet\+::get\+Predmet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classIceAge_1_1BuilderPredmet_ab84508589d73e202dd4002d6b23ad22e}{}\label{classIceAge_1_1BuilderPredmet_ab84508589d73e202dd4002d6b23ad22e}
+
+
+Metoda vracejici odkaz na vytvareny predmet. 
+
+Metoda ktera vraci odkaz na predmet, ktery je vytvaren. Nasledne do atributu pripravovany ulozi nullptr. 
+
+Definice je uvedena na řádku \hyperlink{BuilderPredmet_8cpp_source_l00016}{16} v souboru \hyperlink{BuilderPredmet_8cpp_source}{Builder\+Predmet.\+cpp}.
+
+
+
+\subsection{Dokumentace k datovým členům}
+\index{Ice\+Age\+::\+Builder\+Predmet@{Ice\+Age\+::\+Builder\+Predmet}!m\+\_\+pripravovany@{m\+\_\+pripravovany}}
+\index{m\+\_\+pripravovany@{m\+\_\+pripravovany}!Ice\+Age\+::\+Builder\+Predmet@{Ice\+Age\+::\+Builder\+Predmet}}
+\subsubsection[{\texorpdfstring{m\+\_\+pripravovany}{m_pripravovany}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ice\+Age\+::\+Predmet}$\ast$ Ice\+Age\+::\+Builder\+Predmet\+::m\+\_\+pripravovany\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classIceAge_1_1BuilderPredmet_ab51158b23493b9c1bb891f8be4a69b5d}{}\label{classIceAge_1_1BuilderPredmet_ab51158b23493b9c1bb891f8be4a69b5d}
+
+
+Atribut do ktereho se uklada odkaz vytvareneho predmetu. 
+
+
+
+Definice je uvedena na řádku \hyperlink{BuilderPredmet_8h_source_l00017}{17} v souboru \hyperlink{BuilderPredmet_8h_source}{Builder\+Predmet.\+h}.
+
+
+
+Dokumentace pro tuto třídu byla generována z následujících souborů\+:\begin{DoxyCompactItemize}
+\item 
+hlavicky/\hyperlink{BuilderPredmet_8h}{Builder\+Predmet.\+h}\item 
+cpp/\hyperlink{BuilderPredmet_8cpp}{Builder\+Predmet.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,243 @@
+\hypertarget{classIceAge_1_1Zivot}{}\section{Dokumentace třídy Ice\+Age\+:\+:Zivot}
+\label{classIceAge_1_1Zivot}\index{Ice\+Age\+::\+Zivot@{Ice\+Age\+::\+Zivot}}
+
+
+{\ttfamily \#include $<$Zivot.\+h$>$}
+
+Diagram dědičnosti pro třídu Ice\+Age\+:\+:Zivot\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{d5/de8/classIceAge_1_1Zivot}
+\end{center}
+\end{figure}
+\subsection*{Veřejné metody}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classIceAge_1_1Zivot_a980dc5a5af6d14c23ecca025e3ec7485}{change\+Zivot\+Aktualni} (short hodnota\+Zmeny)
+\begin{DoxyCompactList}\small\item\em Metoda menici hodnotu aktualniho\+Zivota. \end{DoxyCompactList}\item 
+short \hyperlink{classIceAge_1_1Zivot_ae4e3a167722a80ccace3985f183ddd8d}{get\+Zivot\+Aktualni} ()
+\begin{DoxyCompactList}\small\item\em Metoda vracejici hodnotu aktualniho\+Zivota. \end{DoxyCompactList}\item 
+short \hyperlink{classIceAge_1_1Zivot_a75a65879dd6ddc0bc3e402ac6f613813}{get\+Zivot\+Maximalni} ()
+\begin{DoxyCompactList}\small\item\em Metoda vracejici hodnotu maximalniho\+Zivota. \end{DoxyCompactList}\item 
+\hyperlink{classIceAge_1_1Zivot_a97d6d435c5f046fdf0cf295fad6db7c6}{Zivot} (short novy\+Zivot, short novy\+Maximalni\+Zivot)
+\begin{DoxyCompactList}\small\item\em Konstruktor. \end{DoxyCompactList}\item 
+virtual \hyperlink{classIceAge_1_1Zivot_a998f76a4813dfecc610acbabdb037bae}{$\sim$\+Zivot} ()
+\begin{DoxyCompactList}\small\item\em Virtualni Destruktor. \end{DoxyCompactList}\item 
+virtual short \hyperlink{classIceAge_1_1Zivot_a8cb36d6191c9e77a97d90833b6f0824d}{utok} ()=0
+\begin{DoxyCompactList}\small\item\em Virtualni metoda vracejici hodnotu celkoveho Utoku. \end{DoxyCompactList}\item 
+virtual short \hyperlink{classIceAge_1_1Zivot_a7d712f401ea189ed382f5cf05869a37a}{obrana} ()=0
+\begin{DoxyCompactList}\small\item\em Virtualni metoda vracejici hodnotu celkove Obrany. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Chráněné metody}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classIceAge_1_1Zivot_ac09b749a9007fb4a02ea9d7f5000627c}{set\+Zivot\+Aktualni} (short novy\+Zivot\+Aktualni)
+\begin{DoxyCompactList}\small\item\em Metoda nastavujici zivot\+Aktualni. \end{DoxyCompactList}\item 
+void \hyperlink{classIceAge_1_1Zivot_a39f5216f0b6a6dcae8a41543ca41c3bb}{set\+Zivot\+Maximalni} (short novy\+Zivot\+Maximalni)
+\begin{DoxyCompactList}\small\item\em Metoda nastavujici zivot\+Maximalni. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Chráněné atributy}
+\begin{DoxyCompactItemize}
+\item 
+short \hyperlink{classIceAge_1_1Zivot_a50f8dfc33d5affeb16709ee8e5b1e445}{m\+\_\+zivot\+Aktualni}
+\begin{DoxyCompactList}\small\item\em Aktualni hodnota zivota. \end{DoxyCompactList}\item 
+short \hyperlink{classIceAge_1_1Zivot_a256134d066a2b08095fc5a5fe50ac557}{m\+\_\+zivot\+Maximalni}
+\begin{DoxyCompactList}\small\item\em Maximalni hodnota zivota. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailní popis}
+Abstratkni trida, ktera implementuje rozhrani vsech dedenych trid, tykajicich se zivota. 
+
+Definice je uvedena na řádku \hyperlink{Zivot_8h_source_l00014}{14} v souboru \hyperlink{Zivot_8h_source}{Zivot.\+h}.
+
+
+
+\subsection{Dokumentace konstruktoru a destruktoru}
+\index{Ice\+Age\+::\+Zivot@{Ice\+Age\+::\+Zivot}!Zivot@{Zivot}}
+\index{Zivot@{Zivot}!Ice\+Age\+::\+Zivot@{Ice\+Age\+::\+Zivot}}
+\subsubsection[{\texorpdfstring{Zivot(short novy\+Zivot, short novy\+Maximalni\+Zivot)}{Zivot(short novyZivot, short novyMaximalniZivot)}}]{\setlength{\rightskip}{0pt plus 5cm}Ice\+Age\+::\+Zivot\+::\+Zivot (
+\begin{DoxyParamCaption}
+\item[{short}]{novy\+Zivot, }
+\item[{short}]{novy\+Maximalni\+Zivot}
+\end{DoxyParamCaption}
+)}\hypertarget{classIceAge_1_1Zivot_a97d6d435c5f046fdf0cf295fad6db7c6}{}\label{classIceAge_1_1Zivot_a97d6d435c5f046fdf0cf295fad6db7c6}
+
+
+Konstruktor. 
+
+Konstruktor, ve kterem se nastavuje zivot. Nejdrive musi byt metoda set\+Zivot\+Mazimalni(). V opacnem pripade se do aktualni\+Zivot nastavi nahodna hodnota. 
+
+Definice je uvedena na řádku \hyperlink{Zivot_8cpp_source_l00062}{62} v souboru \hyperlink{Zivot_8cpp_source}{Zivot.\+cpp}.
+
+\index{Ice\+Age\+::\+Zivot@{Ice\+Age\+::\+Zivot}!````~Zivot@{$\sim$\+Zivot}}
+\index{````~Zivot@{$\sim$\+Zivot}!Ice\+Age\+::\+Zivot@{Ice\+Age\+::\+Zivot}}
+\subsubsection[{\texorpdfstring{$\sim$\+Zivot()}{~Zivot()}}]{\setlength{\rightskip}{0pt plus 5cm}Ice\+Age\+::\+Zivot\+::$\sim$\+Zivot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classIceAge_1_1Zivot_a998f76a4813dfecc610acbabdb037bae}{}\label{classIceAge_1_1Zivot_a998f76a4813dfecc610acbabdb037bae}
+
+
+Virtualni Destruktor. 
+
+Destruktor 
+
+Definice je uvedena na řádku \hyperlink{Zivot_8cpp_source_l00071}{71} v souboru \hyperlink{Zivot_8cpp_source}{Zivot.\+cpp}.
+
+
+
+\subsection{Dokumentace k metodám}
+\index{Ice\+Age\+::\+Zivot@{Ice\+Age\+::\+Zivot}!change\+Zivot\+Aktualni@{change\+Zivot\+Aktualni}}
+\index{change\+Zivot\+Aktualni@{change\+Zivot\+Aktualni}!Ice\+Age\+::\+Zivot@{Ice\+Age\+::\+Zivot}}
+\subsubsection[{\texorpdfstring{change\+Zivot\+Aktualni(short hodnota\+Zmeny)}{changeZivotAktualni(short hodnotaZmeny)}}]{\setlength{\rightskip}{0pt plus 5cm}void Ice\+Age\+::\+Zivot\+::change\+Zivot\+Aktualni (
+\begin{DoxyParamCaption}
+\item[{short}]{hodnota\+Zmeny}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classIceAge_1_1Zivot_a980dc5a5af6d14c23ecca025e3ec7485}{}\label{classIceAge_1_1Zivot_a980dc5a5af6d14c23ecca025e3ec7485}
+
+
+Metoda menici hodnotu aktualniho\+Zivota. 
+
+Metoda menici zivot\+Aktualni. V pripade, ze zdravi bude mensi nebo rovno nule, hra se ukonci a uvolni se pamet. Toto opatreni se tyka stylu Doby ledove, Scrat nezabiji a sam nesmi byt zabit. Zde se provadi kontrola, zda jeste zije.
+
+Implementuje \hyperlink{classIceAge_1_1IZivot_a01f6798ca546ceece0d707bc85076d9c}{Ice\+Age\+::\+I\+Zivot}.
+
+
+
+Definice je uvedena na řádku \hyperlink{Zivot_8cpp_source_l00010}{10} v souboru \hyperlink{Zivot_8cpp_source}{Zivot.\+cpp}.
+
+\index{Ice\+Age\+::\+Zivot@{Ice\+Age\+::\+Zivot}!get\+Zivot\+Aktualni@{get\+Zivot\+Aktualni}}
+\index{get\+Zivot\+Aktualni@{get\+Zivot\+Aktualni}!Ice\+Age\+::\+Zivot@{Ice\+Age\+::\+Zivot}}
+\subsubsection[{\texorpdfstring{get\+Zivot\+Aktualni()}{getZivotAktualni()}}]{\setlength{\rightskip}{0pt plus 5cm}short Ice\+Age\+::\+Zivot\+::get\+Zivot\+Aktualni (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classIceAge_1_1Zivot_ae4e3a167722a80ccace3985f183ddd8d}{}\label{classIceAge_1_1Zivot_ae4e3a167722a80ccace3985f183ddd8d}
+
+
+Metoda vracejici hodnotu aktualniho\+Zivota. 
+
+Metoda vracejici hodnotu aktualniho\+Zivota. 
+
+Implementuje \hyperlink{classIceAge_1_1IZivot_aac99c9db4859e3f17f0334fa6db93933}{Ice\+Age\+::\+I\+Zivot}.
+
+
+
+Definice je uvedena na řádku \hyperlink{Zivot_8cpp_source_l00027}{27} v souboru \hyperlink{Zivot_8cpp_source}{Zivot.\+cpp}.
+
+\index{Ice\+Age\+::\+Zivot@{Ice\+Age\+::\+Zivot}!get\+Zivot\+Maximalni@{get\+Zivot\+Maximalni}}
+\index{get\+Zivot\+Maximalni@{get\+Zivot\+Maximalni}!Ice\+Age\+::\+Zivot@{Ice\+Age\+::\+Zivot}}
+\subsubsection[{\texorpdfstring{get\+Zivot\+Maximalni()}{getZivotMaximalni()}}]{\setlength{\rightskip}{0pt plus 5cm}short Ice\+Age\+::\+Zivot\+::get\+Zivot\+Maximalni (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classIceAge_1_1Zivot_a75a65879dd6ddc0bc3e402ac6f613813}{}\label{classIceAge_1_1Zivot_a75a65879dd6ddc0bc3e402ac6f613813}
+
+
+Metoda vracejici hodnotu maximalniho\+Zivota. 
+
+Metoda vracejici hodnotu maximalniho\+Zivota. 
+
+Implementuje \hyperlink{classIceAge_1_1IZivot_ab5b8c647c30c5f325ddd6066220e1fc9}{Ice\+Age\+::\+I\+Zivot}.
+
+
+
+Definice je uvedena na řádku \hyperlink{Zivot_8cpp_source_l00034}{34} v souboru \hyperlink{Zivot_8cpp_source}{Zivot.\+cpp}.
+
+\index{Ice\+Age\+::\+Zivot@{Ice\+Age\+::\+Zivot}!obrana@{obrana}}
+\index{obrana@{obrana}!Ice\+Age\+::\+Zivot@{Ice\+Age\+::\+Zivot}}
+\subsubsection[{\texorpdfstring{obrana()=0}{obrana()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual short Ice\+Age\+::\+Zivot\+::obrana (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classIceAge_1_1Zivot_a7d712f401ea189ed382f5cf05869a37a}{}\label{classIceAge_1_1Zivot_a7d712f401ea189ed382f5cf05869a37a}
+
+
+Virtualni metoda vracejici hodnotu celkove Obrany. 
+
+
+
+Implementováno v \hyperlink{classIceAge_1_1Veverka_a0de0d0e1bdd72451abe0b6b7eaa74bee}{Ice\+Age\+::\+Veverka}, \hyperlink{classIceAge_1_1Humanoid_a76adfafa3855813fc09facab326ec87d}{Ice\+Age\+::\+Humanoid} a \hyperlink{classIceAge_1_1Beast_a5968dfee492be5e23cf241306d3dea75}{Ice\+Age\+::\+Beast}.
+
+\index{Ice\+Age\+::\+Zivot@{Ice\+Age\+::\+Zivot}!set\+Zivot\+Aktualni@{set\+Zivot\+Aktualni}}
+\index{set\+Zivot\+Aktualni@{set\+Zivot\+Aktualni}!Ice\+Age\+::\+Zivot@{Ice\+Age\+::\+Zivot}}
+\subsubsection[{\texorpdfstring{set\+Zivot\+Aktualni(short novy\+Zivot\+Aktualni)}{setZivotAktualni(short novyZivotAktualni)}}]{\setlength{\rightskip}{0pt plus 5cm}void Ice\+Age\+::\+Zivot\+::set\+Zivot\+Aktualni (
+\begin{DoxyParamCaption}
+\item[{short}]{novy\+Zivot\+Aktualni}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classIceAge_1_1Zivot_ac09b749a9007fb4a02ea9d7f5000627c}{}\label{classIceAge_1_1Zivot_ac09b749a9007fb4a02ea9d7f5000627c}
+
+
+Metoda nastavujici zivot\+Aktualni. 
+
+Metoda nastavujici zivot\+Aktualni. Tato hodnotu musi byt kladna. V opacnem pripade je zivot nastaven na 1; Pokud nova hodnota presahne velikost maximalniho zivota, je nastavena maximalni povolena hodnota. 
+
+Implementuje \hyperlink{classIceAge_1_1IZivot_ab5dd4fbf3c05f15fe732e644ce0a15be}{Ice\+Age\+::\+I\+Zivot}.
+
+
+
+Definice je uvedena na řádku \hyperlink{Zivot_8cpp_source_l00042}{42} v souboru \hyperlink{Zivot_8cpp_source}{Zivot.\+cpp}.
+
+\index{Ice\+Age\+::\+Zivot@{Ice\+Age\+::\+Zivot}!set\+Zivot\+Maximalni@{set\+Zivot\+Maximalni}}
+\index{set\+Zivot\+Maximalni@{set\+Zivot\+Maximalni}!Ice\+Age\+::\+Zivot@{Ice\+Age\+::\+Zivot}}
+\subsubsection[{\texorpdfstring{set\+Zivot\+Maximalni(short novy\+Zivot\+Maximalni)}{setZivotMaximalni(short novyZivotMaximalni)}}]{\setlength{\rightskip}{0pt plus 5cm}void Ice\+Age\+::\+Zivot\+::set\+Zivot\+Maximalni (
+\begin{DoxyParamCaption}
+\item[{short}]{novy\+Zivot\+Maximalni}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classIceAge_1_1Zivot_a39f5216f0b6a6dcae8a41543ca41c3bb}{}\label{classIceAge_1_1Zivot_a39f5216f0b6a6dcae8a41543ca41c3bb}
+
+
+Metoda nastavujici zivot\+Maximalni. 
+
+Metoda nastavujici zivot\+Maximalni. Pokud je nova hodnota mensi jak 0, je nastaven na 5. 
+
+Implementuje \hyperlink{classIceAge_1_1IZivot_aab09686c086958de400579d031d4ed8e}{Ice\+Age\+::\+I\+Zivot}.
+
+
+
+Definice je uvedena na řádku \hyperlink{Zivot_8cpp_source_l00054}{54} v souboru \hyperlink{Zivot_8cpp_source}{Zivot.\+cpp}.
+
+\index{Ice\+Age\+::\+Zivot@{Ice\+Age\+::\+Zivot}!utok@{utok}}
+\index{utok@{utok}!Ice\+Age\+::\+Zivot@{Ice\+Age\+::\+Zivot}}
+\subsubsection[{\texorpdfstring{utok()=0}{utok()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual short Ice\+Age\+::\+Zivot\+::utok (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classIceAge_1_1Zivot_a8cb36d6191c9e77a97d90833b6f0824d}{}\label{classIceAge_1_1Zivot_a8cb36d6191c9e77a97d90833b6f0824d}
+
+
+Virtualni metoda vracejici hodnotu celkoveho Utoku. 
+
+
+
+Implementováno v \hyperlink{classIceAge_1_1Veverka_af5b4c4f1efe81d428564352c3257eff4}{Ice\+Age\+::\+Veverka}, \hyperlink{classIceAge_1_1Humanoid_aa8f63dfba3ef74a0666e9fb9c9e96df4}{Ice\+Age\+::\+Humanoid} a \hyperlink{classIceAge_1_1Beast_aa51303b6d8ff02435b44f566f49c7443}{Ice\+Age\+::\+Beast}.
+
+
+
+\subsection{Dokumentace k datovým členům}
+\index{Ice\+Age\+::\+Zivot@{Ice\+Age\+::\+Zivot}!m\+\_\+zivot\+Aktualni@{m\+\_\+zivot\+Aktualni}}
+\index{m\+\_\+zivot\+Aktualni@{m\+\_\+zivot\+Aktualni}!Ice\+Age\+::\+Zivot@{Ice\+Age\+::\+Zivot}}
+\subsubsection[{\texorpdfstring{m\+\_\+zivot\+Aktualni}{m_zivotAktualni}}]{\setlength{\rightskip}{0pt plus 5cm}short Ice\+Age\+::\+Zivot\+::m\+\_\+zivot\+Aktualni\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classIceAge_1_1Zivot_a50f8dfc33d5affeb16709ee8e5b1e445}{}\label{classIceAge_1_1Zivot_a50f8dfc33d5affeb16709ee8e5b1e445}
+
+
+Aktualni hodnota zivota. 
+
+
+
+Definice je uvedena na řádku \hyperlink{Zivot_8h_source_l00017}{17} v souboru \hyperlink{Zivot_8h_source}{Zivot.\+h}.
+
+\index{Ice\+Age\+::\+Zivot@{Ice\+Age\+::\+Zivot}!m\+\_\+zivot\+Maximalni@{m\+\_\+zivot\+Maximalni}}
+\index{m\+\_\+zivot\+Maximalni@{m\+\_\+zivot\+Maximalni}!Ice\+Age\+::\+Zivot@{Ice\+Age\+::\+Zivot}}
+\subsubsection[{\texorpdfstring{m\+\_\+zivot\+Maximalni}{m_zivotMaximalni}}]{\setlength{\rightskip}{0pt plus 5cm}short Ice\+Age\+::\+Zivot\+::m\+\_\+zivot\+Maximalni\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classIceAge_1_1Zivot_a256134d066a2b08095fc5a5fe50ac557}{}\label{classIceAge_1_1Zivot_a256134d066a2b08095fc5a5fe50ac557}
+
+
+Maximalni hodnota zivota. 
+
+
+
+Definice je uvedena na řádku \hyperlink{Zivot_8h_source_l00018}{18} v souboru \hyperlink{Zivot_8h_source}{Zivot.\+h}.
+
+
+
+Dokumentace pro tuto třídu byla generována z následujících souborů\+:\begin{DoxyCompactItemize}
+\item 
+hlavicky/\hyperlink{Zivot_8h}{Zivot.\+h}\item 
+cpp/\hyperlink{Zivot_8cpp}{Zivot.\+cpp}\end{DoxyCompactItemize}

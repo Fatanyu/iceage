@@ -1,0 +1,118 @@
+\hypertarget{classIceAge_1_1MemoryArbiter}{}\section{Dokumentace třídy Ice\+Age\+:\+:Memory\+Arbiter}
+\label{classIceAge_1_1MemoryArbiter}\index{Ice\+Age\+::\+Memory\+Arbiter@{Ice\+Age\+::\+Memory\+Arbiter}}
+
+
+{\ttfamily \#include $<$Memory\+Arbiter.\+h$>$}
+
+\subsection*{Statické veřejné metody}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classIceAge_1_1MemoryArbiter_a219f22e94979f934a63a0fd28ef889f7}{add} (\hyperlink{classIceAge_1_1Memory}{Ice\+Age\+::\+Memory} $\ast$target)
+\begin{DoxyCompactList}\small\item\em Staticka metoda pridavajici odkaz na tridu do memory\+Vector. \end{DoxyCompactList}\item 
+static void \hyperlink{classIceAge_1_1MemoryArbiter_a15d44df0d0b3053548af55f5568f8792}{remove} (unsigned int target\+Id)
+\begin{DoxyCompactList}\small\item\em Staticka metoda odebirajici odkaz na tridu z memory\+Vector. \end{DoxyCompactList}\item 
+static void \hyperlink{classIceAge_1_1MemoryArbiter_ae3460492678cf992629f4a70de3ef1ca}{cycle\+Delete} ()
+\begin{DoxyCompactList}\small\item\em Staticka metoda uvolnujici veskerou pamet, na kterou ma odkaz. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Privátní metody}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classIceAge_1_1MemoryArbiter_a1e6bf2eef9d3fb964f6665b94f011024}{Memory\+Arbiter} ()
+\begin{DoxyCompactList}\small\item\em Privatni Konstruktor, ktery se nikdy nezavola. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Statické privátní atributy}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::vector$<$ \hyperlink{classIceAge_1_1Memory}{Ice\+Age\+::\+Memory} $\ast$ $>$ \hyperlink{classIceAge_1_1MemoryArbiter_a23e5c384f4c4526d7caf0954668d6543}{s\+\_\+memory\+Vector}
+\begin{DoxyCompactList}\small\item\em Staticky vektor udrzujici odkazy na jednotlive tridy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailní popis}
+Staticka Trida, obsluhujici pamet. Vsechny dulezite tridy (zabirajici vice mista nebo obsahujici vice jinych trid v ramci agregace/kompozice) zde na sebe ukladaji odkaz. Pokud ma tato trida fungovat, musi si hlidana trida podedit abstraktni tridu \hyperlink{classIceAge_1_1Memory}{Memory}. V pripade, ze nedojde k smazani dane tridy v programu, \hyperlink{classIceAge_1_1MemoryArbiter}{Memory\+Arbiter} muze sam uvolnit jeji pamet. Problem muze nastat v pripade dosazeni maximalniho poctu prvku v memory\+Vector. Trida je implementovana jako Monostate. 
+
+Definice je uvedena na řádku \hyperlink{MemoryArbiter_8h_source_l00022}{22} v souboru \hyperlink{MemoryArbiter_8h_source}{Memory\+Arbiter.\+h}.
+
+
+
+\subsection{Dokumentace konstruktoru a destruktoru}
+\index{Ice\+Age\+::\+Memory\+Arbiter@{Ice\+Age\+::\+Memory\+Arbiter}!Memory\+Arbiter@{Memory\+Arbiter}}
+\index{Memory\+Arbiter@{Memory\+Arbiter}!Ice\+Age\+::\+Memory\+Arbiter@{Ice\+Age\+::\+Memory\+Arbiter}}
+\subsubsection[{\texorpdfstring{Memory\+Arbiter()}{MemoryArbiter()}}]{\setlength{\rightskip}{0pt plus 5cm}Ice\+Age\+::\+Memory\+Arbiter\+::\+Memory\+Arbiter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classIceAge_1_1MemoryArbiter_a1e6bf2eef9d3fb964f6665b94f011024}{}\label{classIceAge_1_1MemoryArbiter_a1e6bf2eef9d3fb964f6665b94f011024}
+
+
+Privatni Konstruktor, ktery se nikdy nezavola. 
+
+Konstruktor, ktery se nikdy nebude volat. 
+
+Definice je uvedena na řádku \hyperlink{MemoryArbiter_8cpp_source_l00012}{12} v souboru \hyperlink{MemoryArbiter_8cpp_source}{Memory\+Arbiter.\+cpp}.
+
+
+
+\subsection{Dokumentace k metodám}
+\index{Ice\+Age\+::\+Memory\+Arbiter@{Ice\+Age\+::\+Memory\+Arbiter}!add@{add}}
+\index{add@{add}!Ice\+Age\+::\+Memory\+Arbiter@{Ice\+Age\+::\+Memory\+Arbiter}}
+\subsubsection[{\texorpdfstring{add(\+Ice\+Age\+::\+Memory $\ast$target)}{add(IceAge::Memory *target)}}]{\setlength{\rightskip}{0pt plus 5cm}void Ice\+Age\+::\+Memory\+Arbiter\+::add (
+\begin{DoxyParamCaption}
+\item[{{\bf Ice\+Age\+::\+Memory} $\ast$}]{target}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classIceAge_1_1MemoryArbiter_a219f22e94979f934a63a0fd28ef889f7}{}\label{classIceAge_1_1MemoryArbiter_a219f22e94979f934a63a0fd28ef889f7}
+
+
+Staticka metoda pridavajici odkaz na tridu do memory\+Vector. 
+
+Staticka metoda pridavajici instanci nejake tridy do vectoru memory\+Vector. Nasledne zavola metodu set\+Id() z prave pridane tridy a tim ji ulozi jeji ID v seznamu. 
+
+Definice je uvedena na řádku \hyperlink{MemoryArbiter_8cpp_source_l00018}{18} v souboru \hyperlink{MemoryArbiter_8cpp_source}{Memory\+Arbiter.\+cpp}.
+
+\index{Ice\+Age\+::\+Memory\+Arbiter@{Ice\+Age\+::\+Memory\+Arbiter}!cycle\+Delete@{cycle\+Delete}}
+\index{cycle\+Delete@{cycle\+Delete}!Ice\+Age\+::\+Memory\+Arbiter@{Ice\+Age\+::\+Memory\+Arbiter}}
+\subsubsection[{\texorpdfstring{cycle\+Delete()}{cycleDelete()}}]{\setlength{\rightskip}{0pt plus 5cm}void Ice\+Age\+::\+Memory\+Arbiter\+::cycle\+Delete (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classIceAge_1_1MemoryArbiter_ae3460492678cf992629f4a70de3ef1ca}{}\label{classIceAge_1_1MemoryArbiter_ae3460492678cf992629f4a70de3ef1ca}
+
+
+Staticka metoda uvolnujici veskerou pamet, na kterou ma odkaz. 
+
+Staticka metoda, ktera smaze kompletni seznam uchovavane pameti v memory\+Vector. $<$Musi se kontrolovat, zda se tam nenechazi nullptr. Nektere instance mohou v destruktorech smazat jine instance. 
+
+Definice je uvedena na řádku \hyperlink{MemoryArbiter_8cpp_source_l00035}{35} v souboru \hyperlink{MemoryArbiter_8cpp_source}{Memory\+Arbiter.\+cpp}.
+
+\index{Ice\+Age\+::\+Memory\+Arbiter@{Ice\+Age\+::\+Memory\+Arbiter}!remove@{remove}}
+\index{remove@{remove}!Ice\+Age\+::\+Memory\+Arbiter@{Ice\+Age\+::\+Memory\+Arbiter}}
+\subsubsection[{\texorpdfstring{remove(unsigned int target\+Id)}{remove(unsigned int targetId)}}]{\setlength{\rightskip}{0pt plus 5cm}void Ice\+Age\+::\+Memory\+Arbiter\+::remove (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{target\+Id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classIceAge_1_1MemoryArbiter_a15d44df0d0b3053548af55f5568f8792}{}\label{classIceAge_1_1MemoryArbiter_a15d44df0d0b3053548af55f5568f8792}
+
+
+Staticka metoda odebirajici odkaz na tridu z memory\+Vector. 
+
+Staticka metoda odebirajici mazanou instanci tridy ze seznamu. Provadi to ve vlastnim destrutkoru =$>$ neni potreba tu uchovavat odkaz a zabirat misto. $<$Nejprve se vynuluje odkaz mazane instance. 
+
+Definice je uvedena na řádku \hyperlink{MemoryArbiter_8cpp_source_l00026}{26} v souboru \hyperlink{MemoryArbiter_8cpp_source}{Memory\+Arbiter.\+cpp}.
+
+
+
+\subsection{Dokumentace k datovým členům}
+\index{Ice\+Age\+::\+Memory\+Arbiter@{Ice\+Age\+::\+Memory\+Arbiter}!s\+\_\+memory\+Vector@{s\+\_\+memory\+Vector}}
+\index{s\+\_\+memory\+Vector@{s\+\_\+memory\+Vector}!Ice\+Age\+::\+Memory\+Arbiter@{Ice\+Age\+::\+Memory\+Arbiter}}
+\subsubsection[{\texorpdfstring{s\+\_\+memory\+Vector}{s_memoryVector}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf Ice\+Age\+::\+Memory} $\ast$ $>$ Ice\+Age\+::\+Memory\+Arbiter\+::s\+\_\+memory\+Vector\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\hypertarget{classIceAge_1_1MemoryArbiter_a23e5c384f4c4526d7caf0954668d6543}{}\label{classIceAge_1_1MemoryArbiter_a23e5c384f4c4526d7caf0954668d6543}
+
+
+Staticky vektor udrzujici odkazy na jednotlive tridy. 
+
+Oznamuje, ze se bude tento vector v programu vyskytovat. Musi byt v C\+PP souboru, v hlavickem to haze errory. 
+
+Definice je uvedena na řádku \hyperlink{MemoryArbiter_8h_source_l00025}{25} v souboru \hyperlink{MemoryArbiter_8h_source}{Memory\+Arbiter.\+h}.
+
+
+
+Dokumentace pro tuto třídu byla generována z následujících souborů\+:\begin{DoxyCompactItemize}
+\item 
+hlavicky/\hyperlink{MemoryArbiter_8h}{Memory\+Arbiter.\+h}\item 
+cpp/\hyperlink{MemoryArbiter_8cpp}{Memory\+Arbiter.\+cpp}\end{DoxyCompactItemize}

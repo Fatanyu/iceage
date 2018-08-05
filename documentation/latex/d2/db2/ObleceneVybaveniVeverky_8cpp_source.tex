@@ -1,0 +1,49 @@
+\hypertarget{ObleceneVybaveniVeverky_8cpp_source}{}\section{Oblecene\+Vybaveni\+Veverky.\+cpp}
+\label{ObleceneVybaveniVeverky_8cpp_source}\index{cpp/\+Oblecene\+Vybaveni\+Veverky.\+cpp@{cpp/\+Oblecene\+Vybaveni\+Veverky.\+cpp}}
+
+\begin{DoxyCode}
+00001 
+00004 \textcolor{preprocessor}{#include "../hlavicky/ObleceneVybaveniVeverky.h"}
+00005 
+\hypertarget{ObleceneVybaveniVeverky_8cpp_source.tex_l00009}{}\hyperlink{classIceAge_1_1ObleceneVybaveniVeverky_adf269e5fce3b68334fb50fbeb6992b18}{00009} \hyperlink{classIceAge_1_1Predmet}{IceAge::Predmet}* \hyperlink{classIceAge_1_1ObleceneVybaveniVeverky_adf269e5fce3b68334fb50fbeb6992b18}{IceAge::ObleceneVybaveniVeverky::getLevaRuka}
+      () \{
+00010     \textcolor{keywordflow}{return} this->\hyperlink{classIceAge_1_1ObleceneVybaveniVeverky_ad4e876f5b31bad5594470ee0c3588194}{m\_levaRuka};
+00011 \}
+00012 
+\hypertarget{ObleceneVybaveniVeverky_8cpp_source.tex_l00016}{}\hyperlink{classIceAge_1_1ObleceneVybaveniVeverky_a2e4266a7941707c95f8ec2c41a7b97bb}{00016} \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1ObleceneVybaveniVeverky_a2e4266a7941707c95f8ec2c41a7b97bb}{IceAge::ObleceneVybaveniVeverky::setLevaRuka}(
+      \hyperlink{classIceAge_1_1Predmet}{IceAge::Predmet}* novaLevaRuka) \{
+00017     this->\hyperlink{classIceAge_1_1ObleceneVybaveniVeverky_ad4e876f5b31bad5594470ee0c3588194}{m\_levaRuka}=novaLevaRuka;
+00018 \}
+00019 
+\hypertarget{ObleceneVybaveniVeverky_8cpp_source.tex_l00023}{}\hyperlink{classIceAge_1_1ObleceneVybaveniVeverky_a0ca3d404578b0099b97fc7910d5e718a}{00023} \hyperlink{classIceAge_1_1Predmet}{IceAge::Predmet}* \hyperlink{classIceAge_1_1ObleceneVybaveniVeverky_a0ca3d404578b0099b97fc7910d5e718a}{IceAge::ObleceneVybaveniVeverky::getPravaRuka}
+      () \{
+00024     \textcolor{keywordflow}{return} this->\hyperlink{classIceAge_1_1ObleceneVybaveniVeverky_a5cbec76ba9606fa634019e10f33f605c}{m\_pravaRuka};
+00025 \}
+00026 
+\hypertarget{ObleceneVybaveniVeverky_8cpp_source.tex_l00030}{}\hyperlink{classIceAge_1_1ObleceneVybaveniVeverky_a81c50b90cae451476735b88f3cdecb07}{00030} \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1ObleceneVybaveniVeverky_a81c50b90cae451476735b88f3cdecb07}{IceAge::ObleceneVybaveniVeverky::setPravaRuka}(
+      \hyperlink{classIceAge_1_1Predmet}{IceAge::Predmet}* novaPravaRuka) \{
+00031     this->\hyperlink{classIceAge_1_1ObleceneVybaveniVeverky_a5cbec76ba9606fa634019e10f33f605c}{m\_pravaRuka}=novaPravaRuka;
+00032 \}
+00033 
+\hypertarget{ObleceneVybaveniVeverky_8cpp_source.tex_l00037}{}\hyperlink{classIceAge_1_1ObleceneVybaveniVeverky_a54867f1ea6c86eb1cbbba398cd1d240c}{00037} \hyperlink{classIceAge_1_1ObleceneVybaveniVeverky_a54867f1ea6c86eb1cbbba398cd1d240c}{IceAge::ObleceneVybaveniVeverky::ObleceneVybaveniVeverky}
+      (\hyperlink{classIceAge_1_1Predmet}{IceAge::Predmet}* novaLevaRuka, \hyperlink{classIceAge_1_1Predmet}{IceAge::Predmet}* novaPravaRuka) \{
+00038     this->\hyperlink{classIceAge_1_1ObleceneVybaveniVeverky_a2e4266a7941707c95f8ec2c41a7b97bb}{setLevaRuka}(novaLevaRuka);
+00039     this->\hyperlink{classIceAge_1_1ObleceneVybaveniVeverky_a81c50b90cae451476735b88f3cdecb07}{setPravaRuka}(novaPravaRuka);
+00040 \}
+00041 
+\hypertarget{ObleceneVybaveniVeverky_8cpp_source.tex_l00045}{}\hyperlink{classIceAge_1_1ObleceneVybaveniVeverky_abbae9463d9fa2fa3205dfbedcd92153c}{00045} \hyperlink{classIceAge_1_1ObleceneVybaveniVeverky_abbae9463d9fa2fa3205dfbedcd92153c}{IceAge::ObleceneVybaveniVeverky::~ObleceneVybaveniVeverky}
+      ()\{
+00046     \textcolor{keywordflow}{if}(this->\hyperlink{classIceAge_1_1ObleceneVybaveniVeverky_ad4e876f5b31bad5594470ee0c3588194}{m\_levaRuka} != \textcolor{keyword}{nullptr}) \textcolor{keyword}{delete} this->\hyperlink{classIceAge_1_1ObleceneVybaveniVeverky_ad4e876f5b31bad5594470ee0c3588194}{m\_levaRuka};
+00047     \textcolor{keywordflow}{if}(this->\hyperlink{classIceAge_1_1ObleceneVybaveniVeverky_a5cbec76ba9606fa634019e10f33f605c}{m\_pravaRuka} != \textcolor{keyword}{nullptr}) \textcolor{keyword}{delete} this->\hyperlink{classIceAge_1_1ObleceneVybaveniVeverky_a5cbec76ba9606fa634019e10f33f605c}{m\_pravaRuka};
+00048 \}
+00049 
+\hypertarget{ObleceneVybaveniVeverky_8cpp_source.tex_l00053}{}\hyperlink{classIceAge_1_1ObleceneVybaveniVeverky_ab02450c60394e0c21e08beff15971c60}{00053} \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1ObleceneVybaveniVeverky_ab02450c60394e0c21e08beff15971c60}{IceAge::ObleceneVybaveniVeverky::zahodLevaRuka}()\{
+00054     \textcolor{keywordflow}{if}(this->\hyperlink{classIceAge_1_1ObleceneVybaveniVeverky_ad4e876f5b31bad5594470ee0c3588194}{m\_levaRuka} != \textcolor{keyword}{nullptr}) \textcolor{keyword}{delete} this->\hyperlink{classIceAge_1_1ObleceneVybaveniVeverky_ad4e876f5b31bad5594470ee0c3588194}{m\_levaRuka};
+00055     this->\hyperlink{classIceAge_1_1ObleceneVybaveniVeverky_ad4e876f5b31bad5594470ee0c3588194}{m\_levaRuka}=\textcolor{keyword}{nullptr};
+00056 \}
+00057 
+\hypertarget{ObleceneVybaveniVeverky_8cpp_source.tex_l00061}{}\hyperlink{classIceAge_1_1ObleceneVybaveniVeverky_ac24580a8bfcf97220c1967f58111c8f1}{00061} \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1ObleceneVybaveniVeverky_ac24580a8bfcf97220c1967f58111c8f1}{IceAge::ObleceneVybaveniVeverky::zahodPravaRuka}()\{
+00062     \textcolor{keywordflow}{if}(this->\hyperlink{classIceAge_1_1ObleceneVybaveniVeverky_a5cbec76ba9606fa634019e10f33f605c}{m\_pravaRuka} != \textcolor{keyword}{nullptr}) \textcolor{keyword}{delete} this->\hyperlink{classIceAge_1_1ObleceneVybaveniVeverky_a5cbec76ba9606fa634019e10f33f605c}{m\_pravaRuka};
+00063     this->\hyperlink{classIceAge_1_1ObleceneVybaveniVeverky_a5cbec76ba9606fa634019e10f33f605c}{m\_pravaRuka}=\textcolor{keyword}{nullptr};
+00064 \}
+\end{DoxyCode}

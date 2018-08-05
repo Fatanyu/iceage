@@ -1,0 +1,29 @@
+\hypertarget{VolneFunkce_8cpp_source}{}\section{Volne\+Funkce.\+cpp}
+\label{VolneFunkce_8cpp_source}\index{cpp/\+Volne\+Funkce.\+cpp@{cpp/\+Volne\+Funkce.\+cpp}}
+
+\begin{DoxyCode}
+00001 
+00004 \textcolor{preprocessor}{#include "../hlavicky/VolneFunkce.h"}
+00005 
+\hypertarget{VolneFunkce_8cpp_source.tex_l00012}{}\hyperlink{namespaceIceAge_a2c6b97286bcd54e3ecf2fdc335460e90}{00012} \textcolor{keywordtype}{void} \hyperlink{namespaceIceAge_a2c6b97286bcd54e3ecf2fdc335460e90}{IceAge::boj}(\hyperlink{classIceAge_1_1Zivot}{IceAge::Zivot}* utocnik, \hyperlink{classIceAge_1_1Zivot}{IceAge::Zivot}* obrance) \{
+00013     std::cout << std::endl;
+00014     \textcolor{keywordflow}{if}(utocnik->\hyperlink{classIceAge_1_1Zivot_a8cb36d6191c9e77a97d90833b6f0824d}{utok}() > obrance->\hyperlink{classIceAge_1_1Zivot_a7d712f401ea189ed382f5cf05869a37a}{obrana}())\{
+00015         std::cout << \textcolor{stringliteral}{"Obrance ztraci "}<< utocnik->\hyperlink{classIceAge_1_1Zivot_a8cb36d6191c9e77a97d90833b6f0824d}{utok}() - obrance->\hyperlink{classIceAge_1_1Zivot_a7d712f401ea189ed382f5cf05869a37a}{obrana}() << \textcolor{stringliteral}{" zivotu"} << 
+      std::endl;
+00016         obrance->\hyperlink{classIceAge_1_1Zivot_a980dc5a5af6d14c23ecca025e3ec7485}{changeZivotAktualni}(obrance->\hyperlink{classIceAge_1_1Zivot_a7d712f401ea189ed382f5cf05869a37a}{obrana}() - utocnik->
+      \hyperlink{classIceAge_1_1Zivot_a8cb36d6191c9e77a97d90833b6f0824d}{utok}());
+00017     \}
+00018     \textcolor{keywordflow}{if}(obrance->\hyperlink{classIceAge_1_1Zivot_a8cb36d6191c9e77a97d90833b6f0824d}{utok}() > utocnik->\hyperlink{classIceAge_1_1Zivot_a7d712f401ea189ed382f5cf05869a37a}{obrana}())\{
+00019         std::cout << \textcolor{stringliteral}{"Utocnik ztraci "}<< obrance->\hyperlink{classIceAge_1_1Zivot_a8cb36d6191c9e77a97d90833b6f0824d}{utok}() - utocnik->\hyperlink{classIceAge_1_1Zivot_a7d712f401ea189ed382f5cf05869a37a}{obrana}() << \textcolor{stringliteral}{" zivotu"} << 
+      std::endl;
+00020         utocnik->\hyperlink{classIceAge_1_1Zivot_a980dc5a5af6d14c23ecca025e3ec7485}{changeZivotAktualni}(utocnik->\hyperlink{classIceAge_1_1Zivot_a7d712f401ea189ed382f5cf05869a37a}{obrana}() - obrance->
+      \hyperlink{classIceAge_1_1Zivot_a8cb36d6191c9e77a97d90833b6f0824d}{utok}());
+00021     \}
+00022     std::cout << \textcolor{stringliteral}{"Stav zivotu:"} << std::endl;
+00023     std::cout << \textcolor{stringliteral}{"************"} << std::endl;
+00024     std::cout << \textcolor{stringliteral}{"Utocnik: "} << utocnik->\hyperlink{classIceAge_1_1Zivot_ae4e3a167722a80ccace3985f183ddd8d}{getZivotAktualni}() << \textcolor{stringliteral}{"/"} << utocnik->
+      \hyperlink{classIceAge_1_1Zivot_a75a65879dd6ddc0bc3e402ac6f613813}{getZivotMaximalni}() << std::endl;
+00025     std::cout << \textcolor{stringliteral}{"Obrance: "} << obrance->\hyperlink{classIceAge_1_1Zivot_ae4e3a167722a80ccace3985f183ddd8d}{getZivotAktualni}() << \textcolor{stringliteral}{"/"} << obrance->
+      \hyperlink{classIceAge_1_1Zivot_a75a65879dd6ddc0bc3e402ac6f613813}{getZivotMaximalni}() << std::endl;
+00026 \}
+\end{DoxyCode}

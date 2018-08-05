@@ -1,0 +1,52 @@
+\hypertarget{Zivot_8cpp_source}{}\section{Zivot.\+cpp}
+\label{Zivot_8cpp_source}\index{cpp/\+Zivot.\+cpp@{cpp/\+Zivot.\+cpp}}
+
+\begin{DoxyCode}
+00001 
+00004 \textcolor{preprocessor}{#include "../hlavicky/Zivot.h"}
+00005 
+\hypertarget{Zivot_8cpp_source.tex_l00010}{}\hyperlink{classIceAge_1_1Zivot_a980dc5a5af6d14c23ecca025e3ec7485}{00010} \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1Zivot_a980dc5a5af6d14c23ecca025e3ec7485}{IceAge::Zivot::changeZivotAktualni}(\textcolor{keywordtype}{short} hodnotaZmeny) \{
+00011     this->\hyperlink{classIceAge_1_1Zivot_a50f8dfc33d5affeb16709ee8e5b1e445}{m\_zivotAktualni}+=hodnotaZmeny;
+00012     \textcolor{keywordflow}{if}(this->\hyperlink{classIceAge_1_1Zivot_a50f8dfc33d5affeb16709ee8e5b1e445}{m\_zivotAktualni}>this->\hyperlink{classIceAge_1_1Zivot_a256134d066a2b08095fc5a5fe50ac557}{m\_zivotMaximalni}) this->
+      \hyperlink{classIceAge_1_1Zivot_a50f8dfc33d5affeb16709ee8e5b1e445}{m\_zivotAktualni}=this->\hyperlink{classIceAge_1_1Zivot_a256134d066a2b08095fc5a5fe50ac557}{m\_zivotMaximalni};
+00016     \textcolor{keywordflow}{if}(this->\hyperlink{classIceAge_1_1Zivot_a50f8dfc33d5affeb16709ee8e5b1e445}{m\_zivotAktualni} <= 0)\{
+00017         std::cout << \textcolor{stringliteral}{"Tohle ma byt mirumilovna hra! Nepovedlo se ti ziskat orisek! Game Over!"} << std::endl
+      ;
+00018 
+00019         \hyperlink{classIceAge_1_1MemoryArbiter_ae3460492678cf992629f4a70de3ef1ca}{IceAge::MemoryArbiter::cycleDelete}();
+00020         exit(0);
+00021     \}
+00022 \}
+00023 
+\hypertarget{Zivot_8cpp_source.tex_l00027}{}\hyperlink{classIceAge_1_1Zivot_ae4e3a167722a80ccace3985f183ddd8d}{00027} \textcolor{keywordtype}{short} \hyperlink{classIceAge_1_1Zivot_ae4e3a167722a80ccace3985f183ddd8d}{IceAge::Zivot::getZivotAktualni}() \{
+00028     \textcolor{keywordflow}{return} this->\hyperlink{classIceAge_1_1Zivot_a50f8dfc33d5affeb16709ee8e5b1e445}{m\_zivotAktualni};
+00029 \}
+00030 
+\hypertarget{Zivot_8cpp_source.tex_l00034}{}\hyperlink{classIceAge_1_1Zivot_a75a65879dd6ddc0bc3e402ac6f613813}{00034} \textcolor{keywordtype}{short} \hyperlink{classIceAge_1_1Zivot_a75a65879dd6ddc0bc3e402ac6f613813}{IceAge::Zivot::getZivotMaximalni}() \{
+00035     \textcolor{keywordflow}{return} this->\hyperlink{classIceAge_1_1Zivot_a256134d066a2b08095fc5a5fe50ac557}{m\_zivotMaximalni};
+00036 \}
+00037 
+\hypertarget{Zivot_8cpp_source.tex_l00042}{}\hyperlink{classIceAge_1_1Zivot_ac09b749a9007fb4a02ea9d7f5000627c}{00042} \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1Zivot_ac09b749a9007fb4a02ea9d7f5000627c}{IceAge::Zivot::setZivotAktualni}(\textcolor{keywordtype}{short} novyZivotAktualni) \{
+00043     \textcolor{keywordflow}{if}(novyZivotAktualni>=0)
+00044     \{
+00045         \textcolor{keywordflow}{if}(novyZivotAktualni<this->\hyperlink{classIceAge_1_1Zivot_a256134d066a2b08095fc5a5fe50ac557}{m\_zivotMaximalni}) this->
+      \hyperlink{classIceAge_1_1Zivot_a50f8dfc33d5affeb16709ee8e5b1e445}{m\_zivotAktualni}=novyZivotAktualni;
+00046         \textcolor{keywordflow}{else} this->\hyperlink{classIceAge_1_1Zivot_a50f8dfc33d5affeb16709ee8e5b1e445}{m\_zivotAktualni}=this->\hyperlink{classIceAge_1_1Zivot_a256134d066a2b08095fc5a5fe50ac557}{m\_zivotMaximalni};
+00047     \}
+00048     \textcolor{keywordflow}{else} this->\hyperlink{classIceAge_1_1Zivot_a50f8dfc33d5affeb16709ee8e5b1e445}{m\_zivotAktualni}=1;
+00049 \}
+00050 
+\hypertarget{Zivot_8cpp_source.tex_l00054}{}\hyperlink{classIceAge_1_1Zivot_a39f5216f0b6a6dcae8a41543ca41c3bb}{00054} \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1Zivot_a39f5216f0b6a6dcae8a41543ca41c3bb}{IceAge::Zivot::setZivotMaximalni}(\textcolor{keywordtype}{short} novyZivotMaximalni) \{
+00055     \textcolor{keywordflow}{if}(novyZivotMaximalni>0) this->\hyperlink{classIceAge_1_1Zivot_a256134d066a2b08095fc5a5fe50ac557}{m\_zivotMaximalni}=novyZivotMaximalni;
+00056     \textcolor{keywordflow}{else} this->\hyperlink{classIceAge_1_1Zivot_a256134d066a2b08095fc5a5fe50ac557}{m\_zivotMaximalni}=5;
+00057 \}
+00058 
+\hypertarget{Zivot_8cpp_source.tex_l00062}{}\hyperlink{classIceAge_1_1Zivot_a97d6d435c5f046fdf0cf295fad6db7c6}{00062} \hyperlink{classIceAge_1_1Zivot_a97d6d435c5f046fdf0cf295fad6db7c6}{IceAge::Zivot::Zivot}(\textcolor{keywordtype}{short} novyZivot, \textcolor{keywordtype}{short} novyMaximalniZivot) \{
+00063 \textcolor{comment}{//nejdriv udelat maximalku, potom aktualni}
+00064     this->\hyperlink{classIceAge_1_1Zivot_a39f5216f0b6a6dcae8a41543ca41c3bb}{setZivotMaximalni}(novyMaximalniZivot);
+00065     this->\hyperlink{classIceAge_1_1Zivot_ac09b749a9007fb4a02ea9d7f5000627c}{setZivotAktualni}(novyZivot);
+00066 \}
+00067 
+\hypertarget{Zivot_8cpp_source.tex_l00071}{}\hyperlink{classIceAge_1_1Zivot_a998f76a4813dfecc610acbabdb037bae}{00071} \hyperlink{classIceAge_1_1Zivot_a998f76a4813dfecc610acbabdb037bae}{IceAge::Zivot::~Zivot}()\{
+00072 \}
+\end{DoxyCode}

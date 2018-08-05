@@ -1,0 +1,33 @@
+\hypertarget{ObleceneVybaveniHumanoid_8h_source}{}\section{Oblecene\+Vybaveni\+Humanoid.\+h}
+\label{ObleceneVybaveniHumanoid_8h_source}\index{hlavicky/\+Oblecene\+Vybaveni\+Humanoid.\+h@{hlavicky/\+Oblecene\+Vybaveni\+Humanoid.\+h}}
+
+\begin{DoxyCode}
+00001 
+00004 \textcolor{preprocessor}{#ifndef OBLECENEVYBAVENIHUMANOID\_H}
+00005 \textcolor{preprocessor}{#define OBLECENEVYBAVENIHUMANOID\_H}
+00006 
+00007 \textcolor{preprocessor}{#include"\hyperlink{IObleceneVybaveni_8h}{IObleceneVybaveni.h}"}
+00008 
+00009 
+00010 \textcolor{keyword}{namespace }\hyperlink{namespaceIceAge}{IceAge} \{
+\hypertarget{ObleceneVybaveniHumanoid_8h_source.tex_l00014}{}\hyperlink{classIceAge_1_1ObleceneVybaveniHumanoid}{00014}     \textcolor{keyword}{class }\hyperlink{classIceAge_1_1ObleceneVybaveniHumanoid}{ObleceneVybaveniHumanoid} : \textcolor{keyword}{public} 
+      \hyperlink{classIceAge_1_1IObleceneVybaveni}{IceAge::IObleceneVybaveni} \{
+00015 
+00016     \textcolor{keyword}{protected}:
+\hypertarget{ObleceneVybaveniHumanoid_8h_source.tex_l00017}{}\hyperlink{classIceAge_1_1ObleceneVybaveniHumanoid_aab35aa50c2707e31f7f86509d75aed32}{00017}         \hyperlink{classIceAge_1_1Predmet}{IceAge::Predmet}* \hyperlink{classIceAge_1_1ObleceneVybaveniHumanoid_aab35aa50c2707e31f7f86509d75aed32}{m\_levaRuka};
+\hypertarget{ObleceneVybaveniHumanoid_8h_source.tex_l00018}{}\hyperlink{classIceAge_1_1ObleceneVybaveniHumanoid_aff9f64fece90fb80a02896126120c933}{00018}         \hyperlink{classIceAge_1_1Predmet}{IceAge::Predmet}* \hyperlink{classIceAge_1_1ObleceneVybaveniHumanoid_aff9f64fece90fb80a02896126120c933}{m\_pravaRuka};
+\hypertarget{ObleceneVybaveniHumanoid_8h_source.tex_l00019}{}\hyperlink{classIceAge_1_1ObleceneVybaveniHumanoid_a1dc766d8630d59c3690be0ea73848554}{00019}         \hyperlink{classIceAge_1_1Predmet}{IceAge::Predmet}* \hyperlink{classIceAge_1_1ObleceneVybaveniHumanoid_a1dc766d8630d59c3690be0ea73848554}{m\_zada};
+00021         \hyperlink{classIceAge_1_1Predmet}{IceAge::Predmet}* \hyperlink{classIceAge_1_1ObleceneVybaveniHumanoid_ad18de8b1113a4f9ad05395a001f36789}{getLevaRuka}();
+00022         \hyperlink{classIceAge_1_1Predmet}{IceAge::Predmet}* \hyperlink{classIceAge_1_1ObleceneVybaveniHumanoid_ad02565a4aa9699e4f348c82138549d8a}{getPravaRuka}();
+00023         \hyperlink{classIceAge_1_1Predmet}{IceAge::Predmet}* \hyperlink{classIceAge_1_1ObleceneVybaveniHumanoid_a09bc35539f98568a5fe37be79abebd3e}{getZada}();
+00025     \textcolor{keyword}{public}:
+00026         \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1ObleceneVybaveniHumanoid_ae81463b9f6e6bd01a8c367883b50e450}{setZada}(\hyperlink{classIceAge_1_1Predmet}{IceAge::Predmet}* novaZada);
+00027         \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1ObleceneVybaveniHumanoid_a2e6b26315e6bab11d63e3386c8eb3242}{setPravaRuka}(\hyperlink{classIceAge_1_1Predmet}{IceAge::Predmet}* novaPravaRuka);
+00028         \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1ObleceneVybaveniHumanoid_a3f7f628310db32976843e34a32300bea}{setLevaRuka}(\hyperlink{classIceAge_1_1Predmet}{IceAge::Predmet}* novaLevaRuka);
+00029         \hyperlink{classIceAge_1_1ObleceneVybaveniHumanoid_aba55421b187ea1b6f4b6100208868c04}{ObleceneVybaveniHumanoid}(\hyperlink{classIceAge_1_1Predmet}{IceAge::Predmet}* levaRuka, 
+      \hyperlink{classIceAge_1_1Predmet}{IceAge::Predmet}* pravaRuka, \hyperlink{classIceAge_1_1Predmet}{IceAge::Predmet}* zada);
+00030         \hyperlink{classIceAge_1_1ObleceneVybaveniHumanoid_ab018a5ab8e4c1570420db1ac2f3e6eaf}{~ObleceneVybaveniHumanoid}();
+00031     \};
+00032 \}
+00033 \textcolor{preprocessor}{#endif}
+\end{DoxyCode}

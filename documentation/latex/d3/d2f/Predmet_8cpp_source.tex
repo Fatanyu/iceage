@@ -1,0 +1,21 @@
+\hypertarget{Predmet_8cpp_source}{}\section{Predmet.\+cpp}
+\label{Predmet_8cpp_source}\index{cpp/\+Predmet.\+cpp@{cpp/\+Predmet.\+cpp}}
+
+\begin{DoxyCode}
+00001 
+00004 \textcolor{preprocessor}{#include "../hlavicky/Predmet.h"}
+\hypertarget{Predmet_8cpp_source.tex_l00008}{}\hyperlink{classIceAge_1_1Predmet_a90491592ba559e5b276b672633795e29}{00008} \textcolor{keywordtype}{char} \hyperlink{classIceAge_1_1Predmet_a90491592ba559e5b276b672633795e29}{IceAge::Predmet::getTyp}() \{
+00009     \textcolor{keywordflow}{return} this->\hyperlink{classIceAge_1_1Predmet_a3fe2c66d9696c90e46885f41a19fd9af}{m\_typ};
+00010 \}
+00011 
+\hypertarget{Predmet_8cpp_source.tex_l00015}{}\hyperlink{classIceAge_1_1Predmet_af69bf7c4e8cb75493c90deeaa2afd03c}{00015} \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1Predmet_af69bf7c4e8cb75493c90deeaa2afd03c}{IceAge::Predmet::setTyp}(\textcolor{keywordtype}{char} novyTyp) \{
+00016     \textcolor{keywordflow}{if}(\textcolor{comment}{/*novyTyp == 'c' || */}novyTyp == \textcolor{charliteral}{'w'} || novyTyp == \textcolor{charliteral}{'n'}) this->\hyperlink{classIceAge_1_1Predmet_a3fe2c66d9696c90e46885f41a19fd9af}{m\_typ}=novyTyp;
+00017     \textcolor{keywordflow}{else} this->\hyperlink{classIceAge_1_1Predmet_a3fe2c66d9696c90e46885f41a19fd9af}{m\_typ}=\textcolor{charliteral}{'u'}; \textcolor{comment}{//unknown}
+00018 \}
+00019 
+\hypertarget{Predmet_8cpp_source.tex_l00023}{}\hyperlink{classIceAge_1_1Predmet_a9926e099eb9fa9e7b0e6dbc57c70da8c}{00023} \hyperlink{classIceAge_1_1Predmet_a9926e099eb9fa9e7b0e6dbc57c70da8c}{IceAge::Predmet::Predmet}(std::string novyNazev):\hyperlink{classIceAge_1_1Nazev}{Nazev}(novyNazev) \{
+00024 \}
+00025 
+\hypertarget{Predmet_8cpp_source.tex_l00029}{}\hyperlink{classIceAge_1_1Predmet_a5d1df42cff0edd79e2a3990535ae86da}{00029} \hyperlink{classIceAge_1_1Predmet_a5d1df42cff0edd79e2a3990535ae86da}{IceAge::Predmet::~Predmet}()\{
+00030 \}
+\end{DoxyCode}

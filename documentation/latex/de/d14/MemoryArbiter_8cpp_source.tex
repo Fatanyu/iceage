@@ -1,0 +1,32 @@
+\hypertarget{MemoryArbiter_8cpp_source}{}\section{Memory\+Arbiter.\+cpp}
+\label{MemoryArbiter_8cpp_source}\index{cpp/\+Memory\+Arbiter.\+cpp@{cpp/\+Memory\+Arbiter.\+cpp}}
+
+\begin{DoxyCode}
+00001 
+00004 \textcolor{preprocessor}{#include "../hlavicky/MemoryArbiter.h"}
+00005 
+00006 
+00007 std::vector<IceAge::Memory*> \hyperlink{classIceAge_1_1MemoryArbiter_a23e5c384f4c4526d7caf0954668d6543}{IceAge::MemoryArbiter::s\_memoryVector};
+\hypertarget{MemoryArbiter_8cpp_source.tex_l00012}{}\hyperlink{classIceAge_1_1MemoryArbiter_a1e6bf2eef9d3fb964f6665b94f011024}{00012} \hyperlink{classIceAge_1_1MemoryArbiter_a1e6bf2eef9d3fb964f6665b94f011024}{IceAge::MemoryArbiter::MemoryArbiter}() \{
+00013 \}
+00014 
+\hypertarget{MemoryArbiter_8cpp_source.tex_l00018}{}\hyperlink{classIceAge_1_1MemoryArbiter_a219f22e94979f934a63a0fd28ef889f7}{00018} \textcolor{comment}{/*static*/} \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1MemoryArbiter_a219f22e94979f934a63a0fd28ef889f7}{IceAge::MemoryArbiter::add}(
+      \hyperlink{classIceAge_1_1Memory}{IceAge::Memory}* target) \{
+00019     \hyperlink{classIceAge_1_1MemoryArbiter_a23e5c384f4c4526d7caf0954668d6543}{s\_memoryVector}.push\_back(target);
+00020     \hyperlink{classIceAge_1_1MemoryArbiter_a23e5c384f4c4526d7caf0954668d6543}{s\_memoryVector}.at(\hyperlink{classIceAge_1_1MemoryArbiter_a23e5c384f4c4526d7caf0954668d6543}{s\_memoryVector}.size()-1)->setId(
+      \hyperlink{classIceAge_1_1MemoryArbiter_a23e5c384f4c4526d7caf0954668d6543}{s\_memoryVector}.size()-1);
+00021 \}
+00022 
+\hypertarget{MemoryArbiter_8cpp_source.tex_l00026}{}\hyperlink{classIceAge_1_1MemoryArbiter_a15d44df0d0b3053548af55f5568f8792}{00026} \textcolor{comment}{/*static*/} \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1MemoryArbiter_a15d44df0d0b3053548af55f5568f8792}{IceAge::MemoryArbiter::remove}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} targetId) \{
+00027 
+00028     \hyperlink{classIceAge_1_1MemoryArbiter_a23e5c384f4c4526d7caf0954668d6543}{s\_memoryVector}.at(targetId)=\textcolor{keyword}{nullptr}; 
+00029     \hyperlink{classIceAge_1_1MemoryArbiter_a23e5c384f4c4526d7caf0954668d6543}{s\_memoryVector}.erase(\hyperlink{classIceAge_1_1MemoryArbiter_a23e5c384f4c4526d7caf0954668d6543}{s\_memoryVector}.begin()+targetId, 
+      \hyperlink{classIceAge_1_1MemoryArbiter_a23e5c384f4c4526d7caf0954668d6543}{s\_memoryVector}.begin()+targetId);
+00030 \}
+00031 
+\hypertarget{MemoryArbiter_8cpp_source.tex_l00035}{}\hyperlink{classIceAge_1_1MemoryArbiter_ae3460492678cf992629f4a70de3ef1ca}{00035} \textcolor{comment}{/*static*/} \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1MemoryArbiter_ae3460492678cf992629f4a70de3ef1ca}{IceAge::MemoryArbiter::cycleDelete}() \{
+00036     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} i=0; i<\hyperlink{classIceAge_1_1MemoryArbiter_a23e5c384f4c4526d7caf0954668d6543}{s\_memoryVector}.size();i++)\{
+00037         \textcolor{keywordflow}{if}(\hyperlink{classIceAge_1_1MemoryArbiter_a23e5c384f4c4526d7caf0954668d6543}{s\_memoryVector}.at(i) != \textcolor{keyword}{nullptr}) \textcolor{keyword}{delete} \hyperlink{classIceAge_1_1MemoryArbiter_a23e5c384f4c4526d7caf0954668d6543}{s\_memoryVector}.at(i); 
+00038     \}
+00039 \}
+\end{DoxyCode}

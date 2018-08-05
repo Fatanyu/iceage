@@ -1,0 +1,48 @@
+\hypertarget{VychodniPlanina_8cpp_source}{}\section{Vychodni\+Planina.\+cpp}
+\label{VychodniPlanina_8cpp_source}\index{cpp/\+Vychodni\+Planina.\+cpp@{cpp/\+Vychodni\+Planina.\+cpp}}
+
+\begin{DoxyCode}
+00001 
+00004 \textcolor{preprocessor}{#include "../hlavicky/VychodniPlanina.h"}
+00005 
+\hypertarget{VychodniPlanina_8cpp_source.tex_l00009}{}\hyperlink{classIceAge_1_1VychodniPlanina_a679da22865d75e93d1631106f5985b54}{00009} \hyperlink{classIceAge_1_1VychodniPlanina_a679da22865d75e93d1631106f5985b54}{IceAge::VychodniPlanina::VychodniPlanina}(std::string novyNazev):
+      \hyperlink{classIceAge_1_1Command}{Command}(novyNazev) \{
+00010 \}
+00011 
+\hypertarget{VychodniPlanina_8cpp_source.tex_l00015}{}\hyperlink{classIceAge_1_1VychodniPlanina_ab5893e0634c3c34aaf979c0b4df583f7}{00015} \hyperlink{classIceAge_1_1VychodniPlanina_ab5893e0634c3c34aaf979c0b4df583f7}{IceAge::VychodniPlanina::~VychodniPlanina}() \{
+00016 \}
+00017 
+\hypertarget{VychodniPlanina_8cpp_source.tex_l00021}{}\hyperlink{classIceAge_1_1VychodniPlanina_af101def5e75ce2eb54c221063ee6ffca}{00021} \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1VychodniPlanina_af101def5e75ce2eb54c221063ee6ffca}{IceAge::VychodniPlanina::prozkoumat}(
+      \hyperlink{classIceAge_1_1Veverka}{IceAge::Veverka}* scrat, std::vector<IceAge::Beast*> vektorBeast, 
+      std::vector<IceAge::Humanoid*> vektorHumanoid, \hyperlink{classIceAge_1_1Reka}{IceAge::Reka}* reka) \{
+00022     std::cout << std::endl;
+00023     std::cout << \textcolor{stringliteral}{"Jen slysis \(\backslash\)"Hele maso!\(\backslash\)" a uz vis, ze je zle"} << std::endl;
+00024 
+00025     \textcolor{keywordtype}{bool} cyklus2=\textcolor{keyword}{true};
+00026     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} index=0;
+00027     \textcolor{keywordtype}{char} volba=\textcolor{charliteral}{'a'};
+00029     \textcolor{keywordflow}{while}(cyklus2)
+00030     \{
+00031             std::cout << std::endl;
+00032             std::cout << \textcolor{stringliteral}{"["} << index << \textcolor{stringliteral}{"] Zdrhej"} <<std::endl; index=0;
+00033 
+00034             std::cout << \textcolor{stringliteral}{"Vyber akci:"};
+00035             std::cin >> volba;std::cin.ignore();
+00036             \textcolor{keywordflow}{switch}(volba)
+00037             \{
+00038                 \textcolor{keywordflow}{case} \textcolor{charliteral}{'0'}:
+00039                     \textcolor{keywordflow}{if}(scrat->\hyperlink{classIceAge_1_1ObleceneVybaveniVeverky_a0ca3d404578b0099b97fc7910d5e718a}{getPravaRuka}() != \textcolor{keyword}{nullptr})\{
+00040                         std::cout << \textcolor{stringliteral}{"Zahazujes lodku a utikas"} << std::endl;
+00041                         scrat->\hyperlink{classIceAge_1_1ObleceneVybaveniVeverky_ac24580a8bfcf97220c1967f58111c8f1}{zahodPravaRuka}();
+00042                     \}
+00043                     std::cout << \textcolor{stringliteral}{"Uspesne si utekl "} << vektorHumanoid.at(0)->getPopis() << std::endl;
+00044                     std::cout << std::endl;
+00045                     \textcolor{keywordflow}{return};
+00046                     \textcolor{keywordflow}{break};
+00047                 \textcolor{keywordflow}{default}:
+00048                     \textcolor{keywordflow}{break};
+00049 
+00050             \}
+00051         \}
+00052 \}
+\end{DoxyCode}

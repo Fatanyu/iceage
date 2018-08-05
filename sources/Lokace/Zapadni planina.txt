@@ -1,0 +1,55 @@
+Zapadni planina
+0
+Po sesuvu ledu tu neni zadna zver, polovina udoli je zapadla ve snehu a ledu
+***
+2
+Velky ruzovy
+10
+5
+60
+Klacek
+3
+0
+0
+0
+0
+Velky ruzovy
+10
+5
+60
+Sutr
+2
+Sutr
+2
+0
+0
+***
+4
+Savlozuby tygr
+Clen smecky
+10
+15
+11
+100
+Savlozuby tygr
+Clen smecky, zastupce sefa
+8
+15
+11
+110
+Savlozuby tygr
+Clen smecky, velky Kapo
+11
+15
+12
+105
+Supomut
+Zlodej orisku
+12
+12
+12
+120
+***
+Ledovec
+Zapadni breh reky
+Jizni les

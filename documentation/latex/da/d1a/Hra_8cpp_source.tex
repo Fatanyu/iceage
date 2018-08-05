@@ -1,0 +1,361 @@
+\hypertarget{Hra_8cpp_source}{}\section{Hra.\+cpp}
+\label{Hra_8cpp_source}\index{cpp/\+Hra.\+cpp@{cpp/\+Hra.\+cpp}}
+
+\begin{DoxyCode}
+00001 
+00004 \textcolor{preprocessor}{#include "../hlavicky/Hra.h"}
+00005 
+\hypertarget{Hra_8cpp_source.tex_l00009}{}\hyperlink{classIceAge_1_1Hra_ae4538962681c44e099fac261639e4063}{00009} \hyperlink{classIceAge_1_1Hra_ae4538962681c44e099fac261639e4063}{IceAge::Hra::Hra}(\hyperlink{classIceAge_1_1Lokace}{IceAge::Lokace}* novaAktualniLokace) \{
+00010     this->\hyperlink{classIceAge_1_1Hra_a1fad6152ce71d1e2912e538f3c330d29}{setAktualniLokace}(novaAktualniLokace);
+00011     this->\hyperlink{classIceAge_1_1Hra_aca22307d63587a6fc2f835fdf8b28a21}{m\_obrazek}=0;
+00012 \}
+00013 
+\hypertarget{Hra_8cpp_source.tex_l00017}{}\hyperlink{classIceAge_1_1Hra_a9429d4476f187d8a80dde5944704fab7}{00017} \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1Hra_a9429d4476f187d8a80dde5944704fab7}{IceAge::Hra::zmenLokaci}(\hyperlink{classIceAge_1_1Veverka}{IceAge::Veverka}* scrat) \{
+00018     \textcolor{keywordtype}{char} volba= \textcolor{charliteral}{'a'};
+00019     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} volbaCislo=0;
+00020     std::cout << std::endl;
+00021     this->\hyperlink{classIceAge_1_1Hra_a2d006812c29f093c47054be30c8b7591}{m\_aktualniLokace}->\hyperlink{classIceAge_1_1Lokace_af4a779823955954dd2c68331a57193c9}{vypisLokace}();
+00022 \textcolor{comment}{//    std::cout << std::endl;}
+00023 
+00024     \textcolor{keywordflow}{while}(\textcolor{keyword}{true})\{
+00025         std::cout << \textcolor{stringliteral}{"Vyber akci:"};
+00026         std::cin >> volba;std::cin.ignore(); volbaCislo=volba - \textcolor{charliteral}{'0'};
+00027         std::cout << std::endl;
+00028         \textcolor{keywordflow}{if}(volbaCislo < (this->\hyperlink{classIceAge_1_1Hra_a2d006812c29f093c47054be30c8b7591}{m\_aktualniLokace}->
+      \hyperlink{classIceAge_1_1Lokace_ad2c476dac4ae7832795995ed90fcc591}{getVelikostVektoruLokaci}()))\{
+00029             this->\hyperlink{classIceAge_1_1Hra_a9429d4476f187d8a80dde5944704fab7}{zmenLokaci}(volbaCislo, scrat);
+00030             \textcolor{keywordflow}{break};
+00031         \}
+00032     \}
+00033 
+00034 \textcolor{comment}{//    std::cout << "[" << index << "] " <<std::endl; index++;}
+00035 \}
+00036 
+\hypertarget{Hra_8cpp_source.tex_l00040}{}\hyperlink{classIceAge_1_1Hra_ab22ae41ab25a957787cc5f11569e20f7}{00040} \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1Hra_a9429d4476f187d8a80dde5944704fab7}{IceAge::Hra::zmenLokaci}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} index, 
+      \hyperlink{classIceAge_1_1Veverka}{IceAge::Veverka}* scrat) \{
+00041     \textcolor{keywordflow}{if}((this->\hyperlink{classIceAge_1_1Hra_a2d006812c29f093c47054be30c8b7591}{m\_aktualniLokace}->\hyperlink{classIceAge_1_1Lokace_aff2c363fd3d4b7727aff3a5c80980710}{getLokace}(index)->
+      \hyperlink{classIceAge_1_1Lokace_aa7add7f42af4af1a13ca246f8d5081c6}{getNazevLokace}() == \textcolor{stringliteral}{"Severni les"}) and (this->\hyperlink{classIceAge_1_1Hra_a2d006812c29f093c47054be30c8b7591}{m\_aktualniLokace}->
+      \hyperlink{classIceAge_1_1Lokace_aa7add7f42af4af1a13ca246f8d5081c6}{getNazevLokace}() == \textcolor{stringliteral}{"Jizni les"}))\{ 
+00043         \textcolor{keywordflow}{if}(scrat->\hyperlink{classIceAge_1_1ObleceneVybaveniVeverky_a0ca3d404578b0099b97fc7910d5e718a}{getPravaRuka}() == \textcolor{keyword}{nullptr} || scrat->\hyperlink{classIceAge_1_1ObleceneVybaveniVeverky_adf269e5fce3b68334fb50fbeb6992b18}{getLevaRuka}()== \textcolor{keyword}{nullptr})\{ 
+00044             std::cout << \textcolor{stringliteral}{"Nemas se jak dostat pres reku."} << std::endl;
+00045         \}
+00046         \textcolor{keywordflow}{else}\{
+00047             std::cout << \textcolor{stringliteral}{"Pouzivas svoji zbran jako padlo a plujes po lodce na druhou stranu"} << std::endl;
+00048             this->\hyperlink{classIceAge_1_1Hra_a1fad6152ce71d1e2912e538f3c330d29}{setAktualniLokace}(this->\hyperlink{classIceAge_1_1Hra_a2d006812c29f093c47054be30c8b7591}{m\_aktualniLokace}->
+      \hyperlink{classIceAge_1_1Lokace_aff2c363fd3d4b7727aff3a5c80980710}{getLokace}(index));
+00049         \}
+00050     \}
+00051     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}((this->\hyperlink{classIceAge_1_1Hra_a2d006812c29f093c47054be30c8b7591}{m\_aktualniLokace}->\hyperlink{classIceAge_1_1Lokace_aff2c363fd3d4b7727aff3a5c80980710}{getLokace}(index)->
+      \hyperlink{classIceAge_1_1Lokace_aa7add7f42af4af1a13ca246f8d5081c6}{getNazevLokace}() == \textcolor{stringliteral}{"Jizni les"}) and (this->\hyperlink{classIceAge_1_1Hra_a2d006812c29f093c47054be30c8b7591}{m\_aktualniLokace}->
+      \hyperlink{classIceAge_1_1Lokace_aa7add7f42af4af1a13ca246f8d5081c6}{getNazevLokace}() == \textcolor{stringliteral}{"Severni les"}))\{ 
+00052         \textcolor{keywordflow}{if}(scrat->\hyperlink{classIceAge_1_1ObleceneVybaveniVeverky_a0ca3d404578b0099b97fc7910d5e718a}{getPravaRuka}() == \textcolor{keyword}{nullptr} || scrat->\hyperlink{classIceAge_1_1ObleceneVybaveniVeverky_adf269e5fce3b68334fb50fbeb6992b18}{getLevaRuka}()== \textcolor{keyword}{nullptr})\{
+00053             std::cout << \textcolor{stringliteral}{"Nemas se jak dostat pres reku."} << std::endl;
+00054         \}
+00055         \textcolor{keywordflow}{else}\{
+00056             std::cout << \textcolor{stringliteral}{"Pouzivas svoji zbran jako padlo a plujes po lodce na druhou stranu"} << std::endl;
+00057             this->\hyperlink{classIceAge_1_1Hra_a1fad6152ce71d1e2912e538f3c330d29}{setAktualniLokace}(this->\hyperlink{classIceAge_1_1Hra_a2d006812c29f093c47054be30c8b7591}{m\_aktualniLokace}->
+      \hyperlink{classIceAge_1_1Lokace_aff2c363fd3d4b7727aff3a5c80980710}{getLokace}(index));
+00058         \}
+00059     \}
+00060     \textcolor{keywordflow}{else} this->\hyperlink{classIceAge_1_1Hra_a1fad6152ce71d1e2912e538f3c330d29}{setAktualniLokace}(this->\hyperlink{classIceAge_1_1Hra_a2d006812c29f093c47054be30c8b7591}{m\_aktualniLokace}->
+      \hyperlink{classIceAge_1_1Lokace_aff2c363fd3d4b7727aff3a5c80980710}{getLokace}(index));
+00061 \}
+00062 
+\hypertarget{Hra_8cpp_source.tex_l00066}{}\hyperlink{classIceAge_1_1Hra_a1fad6152ce71d1e2912e538f3c330d29}{00066} \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1Hra_a1fad6152ce71d1e2912e538f3c330d29}{IceAge::Hra::setAktualniLokace}(\hyperlink{classIceAge_1_1Lokace}{IceAge::Lokace}* 
+      novaAktualniLokace)\{
+00067     this->\hyperlink{classIceAge_1_1Hra_a2d006812c29f093c47054be30c8b7591}{m\_aktualniLokace}=novaAktualniLokace;
+00068 \}
+00069 
+\hypertarget{Hra_8cpp_source.tex_l00073}{}\hyperlink{classIceAge_1_1Hra_af0fafa4884c5107939edc907cc7de1a9}{00073} \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1Hra_af0fafa4884c5107939edc907cc7de1a9}{IceAge::Hra::vypisAktualniLokaci}()\{
+00074     std::cout << std::endl;
+00075     std::cout << \textcolor{stringliteral}{"Nazev mista: "} << this->\hyperlink{classIceAge_1_1Hra_a2d006812c29f093c47054be30c8b7591}{m\_aktualniLokace}->
+      \hyperlink{classIceAge_1_1Lokace_aa7add7f42af4af1a13ca246f8d5081c6}{getNazevLokace}() << std::endl;
+00076     std::cout << \textcolor{stringliteral}{"Popis: "} << this->\hyperlink{classIceAge_1_1Hra_a2d006812c29f093c47054be30c8b7591}{m\_aktualniLokace}->
+      \hyperlink{classIceAge_1_1Lokace_adf9674c5770d15fb41bd54207169e464}{getPopisLokace}() << std::endl;
+00077     std::cout << std::endl;
+00078 \}
+00079 
+\hypertarget{Hra_8cpp_source.tex_l00083}{}\hyperlink{classIceAge_1_1Hra_a28f302456724c7a0901e16a940ea6c67}{00083} \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1Hra_a28f302456724c7a0901e16a940ea6c67}{IceAge::Hra::vypisAsciObrazek}()\{
+00084         this->\hyperlink{classIceAge_1_1Hra_aca22307d63587a6fc2f835fdf8b28a21}{m\_obrazek}++;
+00085         \textcolor{keywordflow}{switch} (this->\hyperlink{classIceAge_1_1Hra_aca22307d63587a6fc2f835fdf8b28a21}{m\_obrazek})\{
+00086         \textcolor{keywordflow}{case} 1:
+00087 std::cout<<\textcolor{stringliteral}{"  \_,                          \_"}                << std::endl;
+00088 std::cout<<\textcolor{stringliteral}{".'  `.                  \_\_\_.>\(\backslash\)"''-..-."}         << std::endl;
+00089 std::cout<<\textcolor{stringliteral}{"`-.   ;           .--\(\backslash\)"\(\backslash\)"\(\backslash\)"        .-.\_@;"}      << std::endl;
+00090 std::cout<<\textcolor{stringliteral}{"   ;  !\_.--...\_ .'      /     .[\_@'`'."}         << std::endl;
+00091 std::cout<<\textcolor{stringliteral}{"  ;            /       : .'  ; :\_..\_  `."}       << std::endl;
+00092 std::cout<<\textcolor{stringliteral}{"  :           ;        ;[   \_T-\(\backslash\)"  `.'-. `-."}   << std::endl;
+00093 std::cout<<\textcolor{stringliteral}{"   \(\backslash\)\(\backslash\)        .-:      ; `.`-=\_,88p.   \_.\}.-\(\backslash\)""}  << std::endl;
+00094 std::cout<<\textcolor{stringliteral}{"    `-.\_\_.-'   \(\backslash\)\(\backslash\)    /L.\_ Y\(\backslash\)",P$T888;  \(\backslash\)"\(\backslash\)""}    << std::endl;
+00095 std::cout<<\textcolor{stringliteral}{"             .-'\_.-'  / ;$$$$$$]8P;"}            << std::endl;
+00096 std::cout<<\textcolor{stringliteral}{"             \(\backslash\)\(\backslash\) /     / / \(\backslash\)"Y$$P\(\backslash\)" ^\(\backslash\)""}         << std::endl;
+00097 std::cout<<\textcolor{stringliteral}{"              ;\(\backslash\)\(\backslash\)\_    `.\(\backslash\)\(\backslash\)\_.\_"}                  << std::endl;
+00098 std::cout<<\textcolor{stringliteral}{"              ]\_\_\(\backslash\)\(\backslash\)     \(\backslash\)\(\backslash\)\_\_\_;"}                 << std::endl;
+00099 
+00100 std::cin.ignore();
+00101 std::cout<<std::endl;
+00102 std::cout<<std::endl;
+00103 std::cout<<std::endl;
+00104 
+00105 
+00106 
+00107             \textcolor{keywordflow}{break};
+00108         \textcolor{keywordflow}{case} 2:
+00109 std::cout<<\textcolor{stringliteral}{"              \_\_\_"}         << std::endl;
+00110 std::cout<<\textcolor{stringliteral}{"        .-\(\backslash\)"\(\backslash\)"\(\backslash\)"\(\backslash\)"   \(\backslash\)"."}         << std::endl;
+00111 std::cout<<\textcolor{stringliteral}{"       /         \_\_'-."}         << std::endl;
+00112 std::cout<<\textcolor{stringliteral}{"      ;      ..sssSSSS;"}         << std::endl;
+00113 std::cout<<\textcolor{stringliteral}{"      ;   ;           ;"}         << std::endl;
+00114 std::cout<<\textcolor{stringliteral}{"       '.'  ..sssSSSSSS;"}         << std::endl;
+00115 std::cout<<\textcolor{stringliteral}{"       ;        \(\backslash\)"\(\backslash\)"\(\backslash\)"\(\backslash\)"\(\backslash\)"\(\backslash\)"\(\backslash\)";"}         << std::endl;
+00116 std::cout<<\textcolor{stringliteral}{"      ;    ...ssssSSSSS;"}         << std::endl;
+00117 std::cout<<\textcolor{stringliteral}{"      ;          \(\backslash\)"\(\backslash\)"\(\backslash\)"\(\backslash\)"\(\backslash\)"\(\backslash\)";"}         << std::endl;
+00118 std::cout<<\textcolor{stringliteral}{"      ;               ;"}         << std::endl;
+00119 std::cout<<\textcolor{stringliteral}{"      ;     ....sssSS/"}         << std::endl;
+00120 std::cout<<\textcolor{stringliteral}{"      ;          \(\backslash\)"\(\backslash\)"\(\backslash\)"/"}         << std::endl;
+00121 std::cout<<\textcolor{stringliteral}{"       ;          .'"}         << std::endl;
+00122 std::cout<<\textcolor{stringliteral}{"       ;    .-\(\backslash\)"\(\backslash\)"\(\backslash\)"\(\backslash\)"-."}         << std::endl;
+00123 std::cout<<\textcolor{stringliteral}{"        '-.'  \_..ssS,"}         << std::endl;
+00124 std::cout<<\textcolor{stringliteral}{"        .'  \(\backslash\)"\(\backslash\)"  \_..sSs"}         << std::endl;
+00125 std::cout<<\textcolor{stringliteral}{"       /\_\_    \(\backslash\)"\(\backslash\)"  \_.sSS."}         << std::endl;
+00126 std::cout<<\textcolor{stringliteral}{"     .-\(\backslash\)"\(\backslash\)" `-.   \_\_\_     ; \_"}         << std::endl;
+00127 std::cout<<\textcolor{stringliteral}{"    /\_..gg$$$pp'\_\_\_`.   .' `>."}         << std::endl;
+00128 std::cout<<\textcolor{stringliteral}{"  ,s$$$$$$$$$B;\(\backslash\)"   `;\(\backslash\)"\(\backslash\)";  .' ;"}         << std::endl;
+00129 std::cout<<\textcolor{stringliteral}{" :$$$$$$$$$$P\(\backslash\)"`.\_():   `-`\_O.'"}         << std::endl;
+00130 std::cout<<\textcolor{stringliteral}{":$$$$$$$$$P              '   `-."}         << std::endl;
+00131 std::cout<<\textcolor{stringliteral}{"$$$$$$$$$\(\backslash\)"    \_,,-.       :     ;"}         << std::endl;
+00132 std::cout<<\textcolor{stringliteral}{"$$$$$$$$!b..\_g$$$$$$-.     ;    `."}         << std::endl;
+00133 std::cout<<\textcolor{stringliteral}{":$$$$$$$$$$$$$$$$$$P j\(\backslash\)\(\backslash\)    :\_..\_/"}         << std::endl;
+00134 std::cout<<\textcolor{stringliteral}{" T$$$$$$$$$$$$$$$$P  | :    ;"}         << std::endl;
+00135 std::cout<<\textcolor{stringliteral}{"  \(\backslash\)"T$$$$$$$$$$$$P\(\backslash\)";  ;\_;    :"}         << std::endl;
+00136 std::cout<<\textcolor{stringliteral}{"    \(\backslash\)"^T$$$$$$P^\(\backslash\)"; : //:   \_\_!"}         << std::endl;
+00137 std::cout<<\textcolor{stringliteral}{"        | |     : ; `.: .mMMM:"}         << std::endl;
+00138 std::cout<<\textcolor{stringliteral}{"        ) :\_    ) '-.   'MMMP'"}         << std::endl;
+00139 std::cout<<\textcolor{stringliteral}{"       `.i\_;I  '-.\_i.'"}         << std::endl;
+00140 
+00141 std::cin.ignore();
+00142 std::cout<<std::endl;
+00143 std::cout<<std::endl;
+00144 std::cout<<std::endl;
+00145             \textcolor{keywordflow}{break};
+00146         \textcolor{keywordflow}{case} 3:
+00147 std::cout<<\textcolor{stringliteral}{"                               ,"}         << std::endl;
+00148 std::cout<<\textcolor{stringliteral}{"         ,::.::::.            / `."}         << std::endl;
+00149 std::cout<<\textcolor{stringliteral}{"       ;::        `.         (  ,--."}         << std::endl;
+00150 std::cout<<\textcolor{stringliteral}{"       ,;           :   \_,--'\(\backslash\)"\(\backslash\)\(\backslash\)/\(\backslash\)"\(\backslash\)"-.\(\backslash\)\(\backslash\)\_"}         << std::endl;
+00151 std::cout<<\textcolor{stringliteral}{"      ,:             `./ ,---./( O )) `;"}         << std::endl;
+00152 std::cout<<\textcolor{stringliteral}{"      ;  `.           \_,'    (  `-' ) /\_."}         << std::endl;
+00153 std::cout<<\textcolor{stringliteral}{"      ;   :         ,'        \(\backslash\)\(\backslash\)    , (o\(\backslash\)\(\backslash\)\(\backslash\)\(\backslash\)"}         << std::endl;
+00154 std::cout<<\textcolor{stringliteral}{"       ;  :         \(\backslash\)\(\backslash\)  \(\backslash\)\(\backslash\)-.  -.\_\_--'   \(\backslash\)\(\backslash\)' )"}         << std::endl;
+00155 std::cout<<\textcolor{stringliteral}{"       ;  ;         /\(\backslash\)\(\backslash\) (    `-.\_`-.\_   \(\backslash\)\(\backslash\)/"}         << std::endl;
+00156 std::cout<<\textcolor{stringliteral}{"        ';,        ; : |      -.`.\_'\(\backslash\)\(\backslash\)   `."}         << std::endl;
+00157 std::cout<<\textcolor{stringliteral}{"          ;       ;  : `-.,-..  )  \(\backslash\)\(\backslash\)'\(\backslash\)\(\backslash\)   ^."}         << std::endl;
+00158 std::cout<<\textcolor{stringliteral}{"           ;     ;   `.\_\_   )))\(\backslash\)\(\backslash\) ) (`.\(\backslash\)\(\backslash\)    \(\backslash\)\(\backslash\)"}         << std::endl;
+00159 std::cout<<\textcolor{stringliteral}{"            ;   ;        `-`///(, \(\backslash\)\(\backslash\) \(\backslash\)\(\backslash\) \(\backslash\)\(\backslash\))  ,ooo."}         << std::endl;
+00160 std::cout<<\textcolor{stringliteral}{"             ;,;      ;     ``  ))))\_;'(  88888p"}         << std::endl;
+00161 std::cout<<\textcolor{stringliteral}{"              ;      ;         ((-='--',-,Y8888'"}         << std::endl;
+00162 std::cout<<\textcolor{stringliteral}{"              ;     :         ;     ,:'-'  `\(\backslash\)"'"}         << std::endl;
+00163 std::cout<<\textcolor{stringliteral}{"               ;     `        ;      |"}         << std::endl;
+00164 std::cout<<\textcolor{stringliteral}{"                ;      (\_   \_\_   \_,-'"}         << std::endl;
+00165 std::cout<<\textcolor{stringliteral}{"                 `---.   ;\(\backslash\)"(,-' /                              \_\_\_\_"}         << std::endl;
+00166 std::cout<<\textcolor{stringliteral}{"                      \(\backslash\)\(\backslash\) (\_\_/\(\backslash\)\(\backslash\)\(\backslash\)\(\backslash\)\_`-.-.                     \_\_\_\_\_/"}         << std::endl;
+00167 std::cout<<\textcolor{stringliteral}{"                    ,(( '/\(\backslash\)\(\backslash\)/\(\backslash\)\(\backslash\)/\(\backslash\)\(\backslash\)`-;;))             \_\_\_\_\_\_//"}         << std::endl;
+00168 std::cout<<\textcolor{stringliteral}{"                   ((\(\backslash\)\(\backslash\)''/\(\backslash\)\(\backslash\)/\(\backslash\)\(\backslash\)/\(\backslash\)\(\backslash\)/\(\backslash\)\(\backslash\)/\(\backslash\)\(\backslash\)/`/\(\backslash\)\(\backslash\)      \_\_\_\_\_/  \_\_\_\_/"}         << std::endl;
+00169 std::cout<<\textcolor{stringliteral}{"                   /'/\(\backslash\)\(\backslash\)/\(\backslash\)\(\backslash\)/\(\backslash\)\(\backslash\)/\(\backslash\)\(\backslash\)/\(\backslash\)\(\backslash\)/\(\backslash\)\(\backslash\)/\(\backslash\)\(\backslash\)/\(\backslash\)\(\backslash\)/)  \_\_/  \_\_\_\_\_/"}         << std::endl;
+00170 std::cout<<\textcolor{stringliteral}{"                  (\(\backslash\)\(\backslash\)/\(\backslash\)\(\backslash\)/\(\backslash\)\(\backslash\)/\(\backslash\)\(\backslash\)/\(\backslash\)\(\backslash\)/\(\backslash\)\(\backslash\)/\(\backslash\)\(\backslash\)/\(\backslash\)\(\backslash\)/\(\backslash\)\(\backslash\)\_/ \_/ \_\_\_/"}         << std::endl;
+00171 std::cout<<\textcolor{stringliteral}{"                   `-|\(\backslash\)"\(\backslash\)"--\(\backslash\)"-.\_\_\_,--'|-'\_\_/"}         << std::endl;
+00172 std::cout<<\textcolor{stringliteral}{"                     |              | /"}         << std::endl;
+00173 std::cout<<\textcolor{stringliteral}{"                     |         \_\_,--'"}         << std::endl;
+00174 std::cout<<\textcolor{stringliteral}{"                     \_\(\backslash\)\(\backslash\),----\(\backslash\)"\(\backslash\)"'"}         << std::endl;
+00175 
+00176 std::cin.ignore();
+00177 std::cout<<std::endl;
+00178 std::cout<<std::endl;
+00179 std::cout<<std::endl;
+00180              \textcolor{keywordflow}{break};
+00181         \textcolor{keywordflow}{case} 4:
+00182              \textcolor{keywordflow}{break};
+00183         \textcolor{keywordflow}{case} 5:
+00184              \textcolor{keywordflow}{break};
+00185         \textcolor{keywordflow}{case} 6:
+00186              \textcolor{keywordflow}{break};
+00187         \textcolor{keywordflow}{case} 7:
+00188             \textcolor{keywordflow}{break};
+00189         \textcolor{keywordflow}{default}:
+00190             \textcolor{keywordflow}{break};
+00191         \}
+00192 \}
+00193 
+\hypertarget{Hra_8cpp_source.tex_l00194}{}\hyperlink{classIceAge_1_1Hra_acca9aa3823d78712b66e371fabbaf351}{00194} \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1Hra_acca9aa3823d78712b66e371fabbaf351}{IceAge::Hra::intro}(\hyperlink{classIceAge_1_1Veverka}{IceAge::Veverka} *scrat)\{
+00195     \textcolor{keywordtype}{char} volba=\textcolor{charliteral}{'a'};
+00196     \textcolor{keywordtype}{bool} cyklus=\textcolor{keyword}{true},cyklus2=\textcolor{keyword}{true}; 
+00197     \textcolor{keywordtype}{short} index=0;
+00199     std::cout << \textcolor{stringliteral}{"Bylo nebylo.."} << std::endl;
+00200     std::cout << \textcolor{stringliteral}{"Za davnych casu zila jedna veverka."} << std::endl;
+00201     this->\hyperlink{classIceAge_1_1Hra_a28f302456724c7a0901e16a940ea6c67}{vypisAsciObrazek}();
+00203     std::cout << \textcolor{stringliteral}{"Hledala misto, kam by si schovala svuj orisek."} << std::endl;
+00204     this->\hyperlink{classIceAge_1_1Hra_a28f302456724c7a0901e16a940ea6c67}{vypisAsciObrazek}();
+00206     std::cout << \textcolor{stringliteral}{"[0] Hledej dal"} <<std::endl;
+00207     std::cout << \textcolor{stringliteral}{"Vyber akci:"};
+00208     std::cin >> volba;std::cin.ignore();
+00209     \textcolor{keywordflow}{while}(cyklus)
+00210     \{
+00211         \textcolor{keywordflow}{switch}(volba)
+00212         \{
+00213             \textcolor{keywordflow}{case} \textcolor{charliteral}{'0'}:
+00214                 cyklus=\textcolor{keyword}{false};
+00215                 \textcolor{keywordflow}{break};
+00216             \textcolor{keywordflow}{default}:
+00217                 std::cout << \textcolor{stringliteral}{"Vyber akci:"};
+00218                 std::cin >> volba;std::cin.ignore();
+00219                 \textcolor{keywordflow}{break};
+00220         \}
+00221     \}
+00222     cyklus=\textcolor{keyword}{true};
+00223     \textcolor{keywordflow}{while}(cyklus)
+00224     \{
+00225         cyklus2=\textcolor{keyword}{true};
+00226         std::cout << std::endl << \textcolor{stringliteral}{"Nasel si ho!"} << std::endl; std::cin.ignore();
+00227         \textcolor{keywordflow}{while}(cyklus2)
+00228         \{
+00229             std::cout << \textcolor{stringliteral}{"["} << index << \textcolor{stringliteral}{"] Hledej dal"} <<std::endl; index++;
+00230             std::cout << \textcolor{stringliteral}{"["} << index << \textcolor{stringliteral}{"] Vloz orisek"} <<std::endl; index++;
+00231             std::cout << \textcolor{stringliteral}{"["} << index << \textcolor{stringliteral}{"] Kde ze jsem?"} <<std::endl; index=0;
+00232             std::cout << \textcolor{stringliteral}{"Vyber akci:"};
+00233             std::cin >> volba;std::cin.ignore();
+00234             std::cout << std::endl;
+00235             \textcolor{keywordflow}{switch}(volba)
+00236             \{
+00237                 \textcolor{keywordflow}{case} \textcolor{charliteral}{'0'}:
+00238                     cyklus2=\textcolor{keyword}{false};
+00239                     \textcolor{keywordflow}{continue};
+00240                     \textcolor{keywordflow}{break};
+00241                 \textcolor{keywordflow}{case} \textcolor{charliteral}{'1'}:
+00242                     cyklus=\textcolor{keyword}{false}; cyklus2=\textcolor{keyword}{false};
+00243                     \textcolor{keywordflow}{break};
+00244                 \textcolor{keywordflow}{case} \textcolor{charliteral}{'2'}:
+00245                     this->\hyperlink{classIceAge_1_1Hra_af0fafa4884c5107939edc907cc7de1a9}{vypisAktualniLokaci}();
+00246                     \textcolor{keywordflow}{continue};
+00247                     \textcolor{keywordflow}{break};
+00248                 \textcolor{keywordflow}{default}:
+00249                     \textcolor{keywordflow}{break};
+00250             \}
+00251         \}
+00252     \}
+00253     cyklus=\textcolor{keyword}{true}; cyklus2=\textcolor{keyword}{true}; 
+00255     this->\hyperlink{classIceAge_1_1Hra_a28f302456724c7a0901e16a940ea6c67}{vypisAsciObrazek}(); 
+00256     std::cout << \textcolor{stringliteral}{"Povedlo se ti rozbit ledovec na kterem jsi byl!!"} << std::endl;
+00257     std::cout << \textcolor{stringliteral}{"Ledovec se rozpada a sjizdis na lavine do udoli"} << std::endl;
+00258     std::cout << std::endl;
+00259 
+00260     this->\hyperlink{classIceAge_1_1Hra_a9429d4476f187d8a80dde5944704fab7}{zmenLokaci}(0,scrat); 
+00262     std::cout << \textcolor{stringliteral}{"["} << index << \textcolor{stringliteral}{"] Kde ze jsem?"} <<std::endl; index=0;
+00263     \textcolor{keywordflow}{while}(cyklus2)
+00264     \{
+00265             std::cout << \textcolor{stringliteral}{"Vyber akci:"};
+00266             std::cin >> volba;std::cin.ignore();
+00267             \textcolor{keywordflow}{switch}(volba)
+00268             \{
+00269                 \textcolor{keywordflow}{case} \textcolor{charliteral}{'0'}:
+00270                     this->\hyperlink{classIceAge_1_1Hra_af0fafa4884c5107939edc907cc7de1a9}{vypisAktualniLokaci}();
+00271                     cyklus2=\textcolor{keyword}{false};
+00272                     \textcolor{keywordflow}{break};
+00273                 \textcolor{keywordflow}{default}:
+00274                     \textcolor{keywordflow}{break};
+00275             \}
+00276     \}
+00277     cyklus2=\textcolor{keyword}{true};
+00278     scrat->\hyperlink{classIceAge_1_1ObleceneVybaveniVeverky_ac24580a8bfcf97220c1967f58111c8f1}{zahodPravaRuka}();
+00279 
+00280     std::cout << \textcolor{stringliteral}{"Opatrne se zvedas na nohy. Chybi ti orisek!!"} << std::endl;
+00281     std::cout << \textcolor{stringliteral}{"Vidis velkeho Supomuta, jak ti s nim chce odletet!"} << std::endl;
+00282 
+00284     std::cout << std::endl;
+00285     std::cout << \textcolor{stringliteral}{"["} << index << \textcolor{stringliteral}{"] Zautocit"} <<std::endl; index++;
+00286     std::cout << \textcolor{stringliteral}{"["} << index << \textcolor{stringliteral}{"] Utect"} <<std::endl; index++;
+00287     std::cout << \textcolor{stringliteral}{"["} << index << \textcolor{stringliteral}{"] Schovat se"} <<std::endl; index=0;
+00288     \textcolor{keywordflow}{while}(cyklus2)
+00289     \{
+00290             std::cout << \textcolor{stringliteral}{"Vyber akci:"};
+00291             std::cin >> volba;std::cin.ignore();
+00292             \textcolor{keywordflow}{switch}(volba)
+00293             \{
+00294                 \textcolor{keywordflow}{case} \textcolor{charliteral}{'0'}:
+00295                     \hyperlink{namespaceIceAge_a2c6b97286bcd54e3ecf2fdc335460e90}{boj}(scrat, this->\hyperlink{classIceAge_1_1Hra_a2d006812c29f093c47054be30c8b7591}{m\_aktualniLokace}->
+      \hyperlink{classIceAge_1_1Lokace_a8aa0d127082ec0f09968909bb51341fd}{getBeast}(3));
+00296                     std::cout << \textcolor{stringliteral}{"Dostal si ranu paratem. Supomut ti odlita pred nosem."} << std::endl;
+00297                     cyklus2=\textcolor{keyword}{false};
+00298                     \textcolor{keywordflow}{break};
+00299                 \textcolor{keywordflow}{case} \textcolor{charliteral}{'1'}:
+00300                     std::cout << \textcolor{stringliteral}{"Supomut odleta pryc i s tvym oriskem"} << std::endl;
+00301                     cyklus2=\textcolor{keyword}{false};
+00302                     \textcolor{keywordflow}{break};
+00303                 \textcolor{keywordflow}{case} \textcolor{charliteral}{'2'}:
+00304                     std::cout << \textcolor{stringliteral}{"Schovavas se za kousek ledu. Supomut si te nevsima a odleta s tvym
+       oriskem"} << std::endl;
+00305                     cyklus2=\textcolor{keyword}{false};
+00306                     \textcolor{keywordflow}{break};
+00307                 \textcolor{keywordflow}{default}:
+00308                     \textcolor{keywordflow}{break};
+00309             \}
+00310     \}
+00311     cyklus2=\textcolor{keyword}{true};
+00313     std::cout << std::endl;
+00314     std::cout << \textcolor{stringliteral}{"["} << index << \textcolor{stringliteral}{"] Pronasleduj Supomuta"} <<std::endl; index=0;
+00315     \textcolor{keywordflow}{while}(cyklus2) 
+00316     \{
+00317             std::cout << \textcolor{stringliteral}{"Vyber akci:"};
+00318             std::cin >> volba;std::cin.ignore();
+00319             \textcolor{keywordflow}{switch}(volba)
+00320             \{
+00321                 \textcolor{keywordflow}{case} \textcolor{charliteral}{'0'}:
+00322                     std::cout << \textcolor{stringliteral}{"Bezis jak nejrychleji muzes, ale cestu ti prekrizila reka."} << std::endl;
+00323                     std::cout << \textcolor{stringliteral}{"Vidis jak se ti Supomut vzdaluje na obzoru."} << std::endl;
+00324                     this->\hyperlink{classIceAge_1_1Hra_a9429d4476f187d8a80dde5944704fab7}{zmenLokaci}(1, scrat); 
+00325                     cyklus2=\textcolor{keyword}{false};
+00326                     \textcolor{keywordflow}{break};
+00327                 \textcolor{keywordflow}{default}:
+00328                     \textcolor{keywordflow}{break};
+00329             \}
+00330     \}
+00331 \}
+00332 
+\hypertarget{Hra_8cpp_source.tex_l00336}{}\hyperlink{classIceAge_1_1Hra_a60ee65556b0198201f3e5fd8d2cd97e0}{00336} \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1Hra_a60ee65556b0198201f3e5fd8d2cd97e0}{IceAge::Hra::zacniHrat}(\hyperlink{classIceAge_1_1Veverka}{IceAge::Veverka} *scrat)\{
+00337     \textcolor{keywordtype}{char} volba=\textcolor{charliteral}{'a'};
+00338     \textcolor{keywordtype}{bool} cyklus=\textcolor{keyword}{true},cyklus2=\textcolor{keyword}{true}; 
+00339     \textcolor{keywordtype}{short} index=0;
+00341     this->\hyperlink{classIceAge_1_1Hra_acca9aa3823d78712b66e371fabbaf351}{intro}(scrat); 
+00343     \textcolor{keywordflow}{while}(cyklus)
+00344     \{
+00345         cyklus2=\textcolor{keyword}{true};
+00346 
+00347         this->\hyperlink{classIceAge_1_1Hra_af0fafa4884c5107939edc907cc7de1a9}{vypisAktualniLokaci}();
+00348 
+00349         \textcolor{keywordflow}{while}(cyklus2) 
+00350         \{
+00351             std::cout << \textcolor{stringliteral}{"["} << index << \textcolor{stringliteral}{"] Jit jinam "} <<std::endl; index++;
+00352             std::cout << \textcolor{stringliteral}{"["} << index << \textcolor{stringliteral}{"] Kde ze jsem?"} <<std::endl;index++;
+00353             std::cout << \textcolor{stringliteral}{"["} << index << \textcolor{stringliteral}{"] Prozkoumat to tu"} <<std::endl; index=0;
+00354             std::cout << \textcolor{stringliteral}{"Vyber akci:"};
+00355             std::cin >> volba;std::cin.ignore();
+00356             \textcolor{keywordflow}{switch}(volba)
+00357             \{
+00358                 \textcolor{keywordflow}{case} \textcolor{charliteral}{'0'}:
+00359                     this->\hyperlink{classIceAge_1_1Hra_a9429d4476f187d8a80dde5944704fab7}{zmenLokaci}(scrat);
+00360                     cyklus2=\textcolor{keyword}{false};
+00361                     \textcolor{keywordflow}{continue};
+00362                     \textcolor{keywordflow}{break};
+00363                 \textcolor{keywordflow}{case} \textcolor{charliteral}{'1'}:
+00364                     this->\hyperlink{classIceAge_1_1Hra_af0fafa4884c5107939edc907cc7de1a9}{vypisAktualniLokaci}();
+00365                     \textcolor{keywordflow}{continue};
+00366                     \textcolor{keywordflow}{break};
+00367                 \textcolor{keywordflow}{case} \textcolor{charliteral}{'2'}:
+00368                     this->\hyperlink{classIceAge_1_1Hra_a2d006812c29f093c47054be30c8b7591}{m\_aktualniLokace}->\hyperlink{classIceAge_1_1Lokace_a901ef2b29b32b8698115e8a2fe65df02}{prozkoumatLokaci}(scrat);
+00369                     \textcolor{keywordflow}{break};
+00370                 \textcolor{keywordflow}{default}:
+00371                     \textcolor{keywordflow}{break};
+00372             \}
+00373         \}
+00374     \}
+00375 \}
+\end{DoxyCode}

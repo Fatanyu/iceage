@@ -1,0 +1,144 @@
+Jizni les
+1
+Vonavy kus prirody, raj na zemi
+***
+5
+Velky ruzovy
+10
+10
+60
+0
+0
+0
+0
+0
+0
+Velky ruzovy
+10
+10
+60
+0
+0
+0
+0
+0
+0
+Velky ruzovy
+10
+10
+60
+0
+0
+0
+0
+0
+0
+Velky ruzovy
+10
+10
+60
+0
+0
+0
+0
+0
+0
+Velky ruzovy
+10
+10
+60
+0
+0
+0
+0
+0
+0
+***
+14
+Jezomut
+Maly pichlavec nesouci jablko na zadech
+2
+7
+13
+75
+Vlkomut
+Chytac lysek a veverek
+12
+10
+14
+135
+Prasomut
+Tluste, plne masa, pomale a seredne
+1
+7
+6
+75
+Vranomut
+Krakajici letajici blbost
+25
+3
+2
+42
+Zizalomut
+Lenoch obecny, neustale se nekde vali
+0
+0
+0
+1
+Opicomut
+Kricici blbost
+10
+10
+10
+100
+Hrochomut
+Mimoradny plavec
+8
+17
+25
+280
+Tucnak
+Elitni karate master
+4
+15
+7
+42
+Tucnak
+Elitni karatista
+4
+15
+7
+42
+Tucnak
+Elitni buhvi co
+4
+15
+7
+42
+Medvedomut
+Velky a pachnouci, ale dobrosrdecny
+7
+25
+15
+250
+Medvedomut
+Pojidac medu
+7
+24
+16
+240
+Opicomut
+Kricici blbost
+10
+10
+10
+100
+Opicomut
+Kricici blbost
+10
+10
+10
+100
+***
+Zapadni planina
+Severni les

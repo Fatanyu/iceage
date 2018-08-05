@@ -1,0 +1,29 @@
+\hypertarget{Zbran_8cpp_source}{}\section{Zbran.\+cpp}
+\label{Zbran_8cpp_source}\index{cpp/\+Zbran.\+cpp@{cpp/\+Zbran.\+cpp}}
+
+\begin{DoxyCode}
+00001 
+00004 \textcolor{preprocessor}{#include "../hlavicky/Zbran.h"}
+00005 
+\hypertarget{Zbran_8cpp_source.tex_l00009}{}\hyperlink{classIceAge_1_1Zbran_ad12a2508c6983fad25c307a8b0b7d467}{00009} \textcolor{keywordtype}{short} \hyperlink{classIceAge_1_1Zbran_ad12a2508c6983fad25c307a8b0b7d467}{IceAge::Zbran::getPoskozeni}() \{
+00010     \textcolor{keywordflow}{return} this->\hyperlink{classIceAge_1_1Zbran_a7a671b3caa7e80a70b5fce3d5b123418}{m\_poskozeni};
+00011 \}
+00012 
+\hypertarget{Zbran_8cpp_source.tex_l00016}{}\hyperlink{classIceAge_1_1Zbran_a1203c7042bea60e97f2032e922bba8f5}{00016} \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1Zbran_a1203c7042bea60e97f2032e922bba8f5}{IceAge::Zbran::setPoskozeni}(\textcolor{keywordtype}{short} novePoskozeni) \{
+00017     \textcolor{keywordflow}{if}(novePoskozeni>0) this->\hyperlink{classIceAge_1_1Zbran_a7a671b3caa7e80a70b5fce3d5b123418}{m\_poskozeni}=novePoskozeni;
+00018     \textcolor{keywordflow}{else} this->\hyperlink{classIceAge_1_1Zbran_a7a671b3caa7e80a70b5fce3d5b123418}{m\_poskozeni}=0;
+00019 \}
+00020 
+\hypertarget{Zbran_8cpp_source.tex_l00024}{}\hyperlink{classIceAge_1_1Zbran_a075c0a805d1fa11a79c795dcb65720d5}{00024} \hyperlink{classIceAge_1_1Zbran_a075c0a805d1fa11a79c795dcb65720d5}{IceAge::Zbran::Zbran}(std::string novyNazev, \textcolor{keywordtype}{short} novePoskozeni):
+      \hyperlink{classIceAge_1_1Predmet}{Predmet}(novyNazev) \{
+00025     this->\hyperlink{classIceAge_1_1Zbran_a1203c7042bea60e97f2032e922bba8f5}{setPoskozeni}(novePoskozeni);
+00026     this->\hyperlink{classIceAge_1_1Predmet_af69bf7c4e8cb75493c90deeaa2afd03c}{setTyp}(\textcolor{charliteral}{'w'});
+00027 \}
+00028 
+\hypertarget{Zbran_8cpp_source.tex_l00032}{}\hyperlink{classIceAge_1_1Zbran_abd3e919129605818d5aca1cc4e3c12c7}{00032} \hyperlink{classIceAge_1_1Zbran_abd3e919129605818d5aca1cc4e3c12c7}{IceAge::Zbran::~Zbran}()\{
+00033 \}
+00034 
+\hypertarget{Zbran_8cpp_source.tex_l00038}{}\hyperlink{classIceAge_1_1Zbran_ae5be95775a3d4d3ac85b6a731dc35413}{00038} \textcolor{keywordtype}{short} \hyperlink{classIceAge_1_1Zbran_ae5be95775a3d4d3ac85b6a731dc35413}{IceAge::Zbran::getAtribut}()\{
+00039      \textcolor{keywordflow}{return} this->\hyperlink{classIceAge_1_1Zbran_ad12a2508c6983fad25c307a8b0b7d467}{getPoskozeni}();
+00040 \}
+\end{DoxyCode}

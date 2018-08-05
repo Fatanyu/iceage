@@ -1,0 +1,234 @@
+\hypertarget{classIceAge_1_1Inventar}{}\section{Dokumentace třídy Ice\+Age\+:\+:Inventar}
+\label{classIceAge_1_1Inventar}\index{Ice\+Age\+::\+Inventar@{Ice\+Age\+::\+Inventar}}
+
+
+{\ttfamily \#include $<$Inventar.\+h$>$}
+
+Diagram dědičnosti pro třídu Ice\+Age\+:\+:Inventar\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{d9/d41/classIceAge_1_1Inventar}
+\end{center}
+\end{figure}
+\subsection*{Veřejné metody}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classIceAge_1_1Predmet}{Ice\+Age\+::\+Predmet} $\ast$ \hyperlink{classIceAge_1_1Inventar_a3762d1e00c50d07ee89aaa97f7e37ffe}{odeber\+Predmet} ()
+\begin{DoxyCompactList}\small\item\em Metoda vyndavajici nejaky predmet z inventare. \end{DoxyCompactList}\item 
+void \hyperlink{classIceAge_1_1Inventar_a09802bba103ef43221b08f24f651b0c9}{pridej\+Predmet} (\hyperlink{classIceAge_1_1Predmet}{Ice\+Age\+::\+Predmet} $\ast$novy\+Predmet)
+\begin{DoxyCompactList}\small\item\em Metoda pridavajici novy predmet do inventare. \end{DoxyCompactList}\item 
+void \hyperlink{classIceAge_1_1Inventar_ade200c2239bc59e7da16e83c9461ff52}{znic\+Predmet} ()
+\begin{DoxyCompactList}\small\item\em Metoda nicici predmet v inventari. \end{DoxyCompactList}\item 
+void \hyperlink{classIceAge_1_1Inventar_a6706fcc99f644cea6c38a7e3126a6892}{vypis\+Obsah} ()
+\begin{DoxyCompactList}\small\item\em Metoda vypisujici predmety v inventari. \end{DoxyCompactList}\item 
+\hyperlink{classIceAge_1_1Inventar_aea775a478164c9be1855c22fc07934ea}{Inventar} (unsigned short nova\+Velikost)
+\item 
+\hyperlink{classIceAge_1_1Inventar_a2975c73519bf07dac86f20a6483d1f19}{$\sim$\+Inventar} ()
+\end{DoxyCompactItemize}
+\subsection*{Chráněné metody}
+\begin{DoxyCompactItemize}
+\item 
+unsigned short \hyperlink{classIceAge_1_1Inventar_a8a8f2cf0fd978a5828b640c24db95e34}{get\+Maximalni\+Velikost} ()
+\begin{DoxyCompactList}\small\item\em Metoda vracejici hodnotu maximalni povolene velikosti inventare. \end{DoxyCompactList}\item 
+void \hyperlink{classIceAge_1_1Inventar_afb8e76dad857120f3eb3ae5a35650b02}{set\+Maximalni\+Velikost} (unsigned short nova\+Maximalni\+Velikost)
+\begin{DoxyCompactList}\small\item\em Metoda nastavujici maximalni velikost inventare. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{classIceAge_1_1Inventar_a2598e120dd0cba29a7d9e70dc29495e8}{volba} ()
+\begin{DoxyCompactList}\small\item\em Pomocna metoda k rozhodovani. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Chráněné atributy}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{classIceAge_1_1Predmet}{Ice\+Age\+::\+Predmet} $\ast$ $>$ \hyperlink{classIceAge_1_1Inventar_a0cceae841e70c3db31b3331d4eb075ba}{m\+\_\+vektor\+Predmetu}
+\begin{DoxyCompactList}\small\item\em Vektor predmetu fungujici jako inventar. \end{DoxyCompactList}\item 
+unsigned short \hyperlink{classIceAge_1_1Inventar_ad45fb3c8b53eb431f3e212e5951b4623}{m\+\_\+maximalni\+Velikost}
+\begin{DoxyCompactList}\small\item\em Atribut udavajici maximalni velikost inventare. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailní popis}
+Abstraktni trida, ktera implementuje rozhrani vsech dedenych trid, tykajicich se Inventare a jeho obsluhy. 
+
+Definice je uvedena na řádku \hyperlink{Inventar_8h_source_l00014}{14} v souboru \hyperlink{Inventar_8h_source}{Inventar.\+h}.
+
+
+
+\subsection{Dokumentace konstruktoru a destruktoru}
+\index{Ice\+Age\+::\+Inventar@{Ice\+Age\+::\+Inventar}!Inventar@{Inventar}}
+\index{Inventar@{Inventar}!Ice\+Age\+::\+Inventar@{Ice\+Age\+::\+Inventar}}
+\subsubsection[{\texorpdfstring{Inventar(unsigned short nova\+Velikost)}{Inventar(unsigned short novaVelikost)}}]{\setlength{\rightskip}{0pt plus 5cm}Ice\+Age\+::\+Inventar\+::\+Inventar (
+\begin{DoxyParamCaption}
+\item[{unsigned short}]{nova\+Velikost}
+\end{DoxyParamCaption}
+)}\hypertarget{classIceAge_1_1Inventar_aea775a478164c9be1855c22fc07934ea}{}\label{classIceAge_1_1Inventar_aea775a478164c9be1855c22fc07934ea}
+Konstruktor, ve kterem se nastavuje maximalni velikost inventare. 
+
+Definice je uvedena na řádku \hyperlink{Inventar_8cpp_source_l00066}{66} v souboru \hyperlink{Inventar_8cpp_source}{Inventar.\+cpp}.
+
+\index{Ice\+Age\+::\+Inventar@{Ice\+Age\+::\+Inventar}!````~Inventar@{$\sim$\+Inventar}}
+\index{````~Inventar@{$\sim$\+Inventar}!Ice\+Age\+::\+Inventar@{Ice\+Age\+::\+Inventar}}
+\subsubsection[{\texorpdfstring{$\sim$\+Inventar()}{~Inventar()}}]{\setlength{\rightskip}{0pt plus 5cm}Ice\+Age\+::\+Inventar\+::$\sim$\+Inventar (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classIceAge_1_1Inventar_a2975c73519bf07dac86f20a6483d1f19}{}\label{classIceAge_1_1Inventar_a2975c73519bf07dac86f20a6483d1f19}
+Destruktor, ve kterem se mazou vsechny predmety v inventari. Probiha kontrola, zda tam neni nullptr. 
+
+Definice je uvedena na řádku \hyperlink{Inventar_8cpp_source_l00073}{73} v souboru \hyperlink{Inventar_8cpp_source}{Inventar.\+cpp}.
+
+
+
+\subsection{Dokumentace k metodám}
+\index{Ice\+Age\+::\+Inventar@{Ice\+Age\+::\+Inventar}!get\+Maximalni\+Velikost@{get\+Maximalni\+Velikost}}
+\index{get\+Maximalni\+Velikost@{get\+Maximalni\+Velikost}!Ice\+Age\+::\+Inventar@{Ice\+Age\+::\+Inventar}}
+\subsubsection[{\texorpdfstring{get\+Maximalni\+Velikost()}{getMaximalniVelikost()}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned short Ice\+Age\+::\+Inventar\+::get\+Maximalni\+Velikost (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classIceAge_1_1Inventar_a8a8f2cf0fd978a5828b640c24db95e34}{}\label{classIceAge_1_1Inventar_a8a8f2cf0fd978a5828b640c24db95e34}
+
+
+Metoda vracejici hodnotu maximalni povolene velikosti inventare. 
+
+Metoda vracejici hodnotu maximalni povolene velikosti inventare. 
+
+Implementuje \hyperlink{classIceAge_1_1IInventar_a46150dc7d84c63e2db811b5fc243b199}{Ice\+Age\+::\+I\+Inventar}.
+
+
+
+Definice je uvedena na řádku \hyperlink{Inventar_8cpp_source_l00010}{10} v souboru \hyperlink{Inventar_8cpp_source}{Inventar.\+cpp}.
+
+\index{Ice\+Age\+::\+Inventar@{Ice\+Age\+::\+Inventar}!odeber\+Predmet@{odeber\+Predmet}}
+\index{odeber\+Predmet@{odeber\+Predmet}!Ice\+Age\+::\+Inventar@{Ice\+Age\+::\+Inventar}}
+\subsubsection[{\texorpdfstring{odeber\+Predmet()}{odeberPredmet()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ice\+Age\+::\+Predmet} $\ast$ Ice\+Age\+::\+Inventar\+::odeber\+Predmet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classIceAge_1_1Inventar_a3762d1e00c50d07ee89aaa97f7e37ffe}{}\label{classIceAge_1_1Inventar_a3762d1e00c50d07ee89aaa97f7e37ffe}
+
+
+Metoda vyndavajici nejaky predmet z inventare. 
+
+Metoda vyndavajici nejaky predmet z inventare. \hyperlink{classIceAge_1_1Predmet}{Predmet} se vybira na zaklade vypisu a volani pomocne metody \hyperlink{classIceAge_1_1Inventar_a2598e120dd0cba29a7d9e70dc29495e8}{volba()}. V ramci usetreni rychlost se zde meni odebirany prvek s poslednim. Jinak by se shiftovalo.
+
+Implementuje \hyperlink{classIceAge_1_1IInventar_ab1da82e4f21c19afbdb86017ed784d84}{Ice\+Age\+::\+I\+Inventar}.
+
+
+
+Definice je uvedena na řádku \hyperlink{Inventar_8cpp_source_l00017}{17} v souboru \hyperlink{Inventar_8cpp_source}{Inventar.\+cpp}.
+
+\index{Ice\+Age\+::\+Inventar@{Ice\+Age\+::\+Inventar}!pridej\+Predmet@{pridej\+Predmet}}
+\index{pridej\+Predmet@{pridej\+Predmet}!Ice\+Age\+::\+Inventar@{Ice\+Age\+::\+Inventar}}
+\subsubsection[{\texorpdfstring{pridej\+Predmet(\+Ice\+Age\+::\+Predmet $\ast$novy\+Predmet)}{pridejPredmet(IceAge::Predmet *novyPredmet)}}]{\setlength{\rightskip}{0pt plus 5cm}void Ice\+Age\+::\+Inventar\+::pridej\+Predmet (
+\begin{DoxyParamCaption}
+\item[{{\bf Ice\+Age\+::\+Predmet} $\ast$}]{novy\+Predmet}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classIceAge_1_1Inventar_a09802bba103ef43221b08f24f651b0c9}{}\label{classIceAge_1_1Inventar_a09802bba103ef43221b08f24f651b0c9}
+
+
+Metoda pridavajici novy predmet do inventare. 
+
+Metoda pridavajici novy predmet do inventare. Kontroluje se zde maximalni velikost Inventare a pripadne se to zahlasi uzivateli. 
+
+Implementuje \hyperlink{classIceAge_1_1IInventar_a248376e6235356142020eed0373caf45}{Ice\+Age\+::\+I\+Inventar}.
+
+
+
+Definice je uvedena na řádku \hyperlink{Inventar_8cpp_source_l00034}{34} v souboru \hyperlink{Inventar_8cpp_source}{Inventar.\+cpp}.
+
+\index{Ice\+Age\+::\+Inventar@{Ice\+Age\+::\+Inventar}!set\+Maximalni\+Velikost@{set\+Maximalni\+Velikost}}
+\index{set\+Maximalni\+Velikost@{set\+Maximalni\+Velikost}!Ice\+Age\+::\+Inventar@{Ice\+Age\+::\+Inventar}}
+\subsubsection[{\texorpdfstring{set\+Maximalni\+Velikost(unsigned short nova\+Maximalni\+Velikost)}{setMaximalniVelikost(unsigned short novaMaximalniVelikost)}}]{\setlength{\rightskip}{0pt plus 5cm}void Ice\+Age\+::\+Inventar\+::set\+Maximalni\+Velikost (
+\begin{DoxyParamCaption}
+\item[{unsigned short}]{nova\+Maximalni\+Velikost}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classIceAge_1_1Inventar_afb8e76dad857120f3eb3ae5a35650b02}{}\label{classIceAge_1_1Inventar_afb8e76dad857120f3eb3ae5a35650b02}
+
+
+Metoda nastavujici maximalni velikost inventare. 
+
+Metoda nastavujici maximalni velikost inventare. Dane cislo musi byt kladne. Pokud neni, je nastaven inventar na 1. 
+
+Implementuje \hyperlink{classIceAge_1_1IInventar_a66f08152e516cf3c7278b400a1c71962}{Ice\+Age\+::\+I\+Inventar}.
+
+
+
+Definice je uvedena na řádku \hyperlink{Inventar_8cpp_source_l00042}{42} v souboru \hyperlink{Inventar_8cpp_source}{Inventar.\+cpp}.
+
+\index{Ice\+Age\+::\+Inventar@{Ice\+Age\+::\+Inventar}!volba@{volba}}
+\index{volba@{volba}!Ice\+Age\+::\+Inventar@{Ice\+Age\+::\+Inventar}}
+\subsubsection[{\texorpdfstring{volba()}{volba()}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Ice\+Age\+::\+Inventar\+::volba (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classIceAge_1_1Inventar_a2598e120dd0cba29a7d9e70dc29495e8}{}\label{classIceAge_1_1Inventar_a2598e120dd0cba29a7d9e70dc29495e8}
+
+
+Pomocna metoda k rozhodovani. 
+
+Pomocna metoda k rozhodovani. Nacita od uzivatele a bude cyklit, dokud to nenacte cislo a zaroven nebude mensi, jak aktualni velikost inventare. 
+
+Definice je uvedena na řádku \hyperlink{Inventar_8cpp_source_l00091}{91} v souboru \hyperlink{Inventar_8cpp_source}{Inventar.\+cpp}.
+
+\index{Ice\+Age\+::\+Inventar@{Ice\+Age\+::\+Inventar}!vypis\+Obsah@{vypis\+Obsah}}
+\index{vypis\+Obsah@{vypis\+Obsah}!Ice\+Age\+::\+Inventar@{Ice\+Age\+::\+Inventar}}
+\subsubsection[{\texorpdfstring{vypis\+Obsah()}{vypisObsah()}}]{\setlength{\rightskip}{0pt plus 5cm}void Ice\+Age\+::\+Inventar\+::vypis\+Obsah (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classIceAge_1_1Inventar_a6706fcc99f644cea6c38a7e3126a6892}{}\label{classIceAge_1_1Inventar_a6706fcc99f644cea6c38a7e3126a6892}
+
+
+Metoda vypisujici predmety v inventari. 
+
+Metoda vypisujici predmety v inventari. 
+
+Definice je uvedena na řádku \hyperlink{Inventar_8cpp_source_l00081}{81} v souboru \hyperlink{Inventar_8cpp_source}{Inventar.\+cpp}.
+
+\index{Ice\+Age\+::\+Inventar@{Ice\+Age\+::\+Inventar}!znic\+Predmet@{znic\+Predmet}}
+\index{znic\+Predmet@{znic\+Predmet}!Ice\+Age\+::\+Inventar@{Ice\+Age\+::\+Inventar}}
+\subsubsection[{\texorpdfstring{znic\+Predmet()}{znicPredmet()}}]{\setlength{\rightskip}{0pt plus 5cm}void Ice\+Age\+::\+Inventar\+::znic\+Predmet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classIceAge_1_1Inventar_ade200c2239bc59e7da16e83c9461ff52}{}\label{classIceAge_1_1Inventar_ade200c2239bc59e7da16e83c9461ff52}
+
+
+Metoda nicici predmet v inventari. 
+
+Metoda nicici predmet v inventari. Probiha to na zaklade vypisu a volby. V ramci rychlosti se mazany predmet uklada na konec. Zamezi se tim shiftovani. 
+
+Implementuje \hyperlink{classIceAge_1_1IInventar_a9ce63c75e643d7cbb6ab2e50a171a747}{Ice\+Age\+::\+I\+Inventar}.
+
+
+
+Definice je uvedena na řádku \hyperlink{Inventar_8cpp_source_l00051}{51} v souboru \hyperlink{Inventar_8cpp_source}{Inventar.\+cpp}.
+
+
+
+\subsection{Dokumentace k datovým členům}
+\index{Ice\+Age\+::\+Inventar@{Ice\+Age\+::\+Inventar}!m\+\_\+maximalni\+Velikost@{m\+\_\+maximalni\+Velikost}}
+\index{m\+\_\+maximalni\+Velikost@{m\+\_\+maximalni\+Velikost}!Ice\+Age\+::\+Inventar@{Ice\+Age\+::\+Inventar}}
+\subsubsection[{\texorpdfstring{m\+\_\+maximalni\+Velikost}{m_maximalniVelikost}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned short Ice\+Age\+::\+Inventar\+::m\+\_\+maximalni\+Velikost\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classIceAge_1_1Inventar_ad45fb3c8b53eb431f3e212e5951b4623}{}\label{classIceAge_1_1Inventar_ad45fb3c8b53eb431f3e212e5951b4623}
+
+
+Atribut udavajici maximalni velikost inventare. 
+
+
+
+Definice je uvedena na řádku \hyperlink{Inventar_8h_source_l00018}{18} v souboru \hyperlink{Inventar_8h_source}{Inventar.\+h}.
+
+\index{Ice\+Age\+::\+Inventar@{Ice\+Age\+::\+Inventar}!m\+\_\+vektor\+Predmetu@{m\+\_\+vektor\+Predmetu}}
+\index{m\+\_\+vektor\+Predmetu@{m\+\_\+vektor\+Predmetu}!Ice\+Age\+::\+Inventar@{Ice\+Age\+::\+Inventar}}
+\subsubsection[{\texorpdfstring{m\+\_\+vektor\+Predmetu}{m_vektorPredmetu}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Ice\+Age\+::\+Predmet}$\ast$$>$ Ice\+Age\+::\+Inventar\+::m\+\_\+vektor\+Predmetu\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classIceAge_1_1Inventar_a0cceae841e70c3db31b3331d4eb075ba}{}\label{classIceAge_1_1Inventar_a0cceae841e70c3db31b3331d4eb075ba}
+
+
+Vektor predmetu fungujici jako inventar. 
+
+
+
+Definice je uvedena na řádku \hyperlink{Inventar_8h_source_l00017}{17} v souboru \hyperlink{Inventar_8h_source}{Inventar.\+h}.
+
+
+
+Dokumentace pro tuto třídu byla generována z následujících souborů\+:\begin{DoxyCompactItemize}
+\item 
+hlavicky/\hyperlink{Inventar_8h}{Inventar.\+h}\item 
+cpp/\hyperlink{Inventar_8cpp}{Inventar.\+cpp}\end{DoxyCompactItemize}

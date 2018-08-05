@@ -1,0 +1,58 @@
+\hypertarget{Veverka_8cpp_source}{}\section{Veverka.\+cpp}
+\label{Veverka_8cpp_source}\index{cpp/\+Veverka.\+cpp@{cpp/\+Veverka.\+cpp}}
+
+\begin{DoxyCode}
+00001 
+00004 \textcolor{preprocessor}{#include "../hlavicky/Veverka.h"}
+00005 
+00006 \hyperlink{classIceAge_1_1Veverka}{IceAge::Veverka}* \hyperlink{classIceAge_1_1Veverka_acfa9aa07c2cfa881fbcc6feeb717c287}{IceAge::Veverka::s\_vlastniInstance} = \textcolor{keyword}{
+      nullptr}; 
+\hypertarget{Veverka_8cpp_source.tex_l00011}{}\hyperlink{classIceAge_1_1Veverka_a527c1eeb2f4a165f65ade3852719ef68}{00011} \hyperlink{classIceAge_1_1Veverka_a527c1eeb2f4a165f65ade3852719ef68}{IceAge::Veverka::Veverka}(\textcolor{keywordtype}{short} novyZivot, \textcolor{keywordtype}{short} novaSila, \textcolor{keywordtype}{short} novaOdolnost):
+      \hyperlink{classIceAge_1_1ObleceneVybaveniVeverky}{ObleceneVybaveniVeverky}(nullptr, nullptr),
+00012                                                 \hyperlink{classIceAge_1_1Staty}{Staty}(novaSila,novaOdolnost),
+00013                                                 \hyperlink{classIceAge_1_1Zivot}{Zivot}(novyZivot, novyZivot) \{
+00014     this->\hyperlink{classIceAge_1_1ObleceneVybaveniVeverky_a81c50b90cae451476735b88f3cdecb07}{setPravaRuka}(\textcolor{keyword}{new} \hyperlink{classIceAge_1_1Orisek}{IceAge::Orisek}(\textcolor{stringliteral}{"Orisek"}));
+00015 \}
+\hypertarget{Veverka_8cpp_source.tex_l00019}{}\hyperlink{classIceAge_1_1Veverka_a12909a7053332344e9b8c71845bb8e1f}{00019} \textcolor{comment}{/*static*/} \hyperlink{classIceAge_1_1Veverka}{IceAge::Veverka}* \hyperlink{classIceAge_1_1Veverka_a12909a7053332344e9b8c71845bb8e1f}{IceAge::Veverka::getInstance}() \{
+00020     \textcolor{keywordflow}{if}(\hyperlink{classIceAge_1_1Veverka_acfa9aa07c2cfa881fbcc6feeb717c287}{s\_vlastniInstance} == \textcolor{keyword}{nullptr}) \hyperlink{classIceAge_1_1Veverka_acfa9aa07c2cfa881fbcc6feeb717c287}{s\_vlastniInstance} = \textcolor{keyword}{new} 
+      \hyperlink{classIceAge_1_1Veverka}{IceAge::Veverka}(\hyperlink{Veverka_8h_a155cb6634ee33182e81d097c8795d031}{SCRAT\_HP},\hyperlink{Veverka_8h_a7e89f9c1f8405d36a24e427614e25e74}{SCRAT\_SILA},
+      \hyperlink{Veverka_8h_a752d429f0ea780b8e512e8b5e5776c1b}{SCRAT\_ODOLNOST});
+00021     \textcolor{keywordflow}{return} \hyperlink{classIceAge_1_1Veverka_acfa9aa07c2cfa881fbcc6feeb717c287}{s\_vlastniInstance};
+00022 \}
+00023 
+\hypertarget{Veverka_8cpp_source.tex_l00027}{}\hyperlink{classIceAge_1_1Veverka_af5b4c4f1efe81d428564352c3257eff4}{00027} \textcolor{keywordtype}{short} \hyperlink{classIceAge_1_1Veverka_af5b4c4f1efe81d428564352c3257eff4}{IceAge::Veverka::utok}()\{
+00028     \textcolor{keywordtype}{short} utokCelkem=0;
+00029     \textcolor{keywordflow}{if}(this->\hyperlink{classIceAge_1_1ObleceneVybaveniVeverky_ad4e876f5b31bad5594470ee0c3588194}{m\_levaRuka} != \textcolor{keyword}{nullptr})     \textcolor{keywordflow}{if}(this->\hyperlink{classIceAge_1_1ObleceneVybaveniVeverky_ad4e876f5b31bad5594470ee0c3588194}{m\_levaRuka}->
+      \hyperlink{classIceAge_1_1Predmet_a90491592ba559e5b276b672633795e29}{getTyp}() == \textcolor{charliteral}{'w'}) utokCelkem+=this->\hyperlink{classIceAge_1_1ObleceneVybaveniVeverky_ad4e876f5b31bad5594470ee0c3588194}{m\_levaRuka}->\hyperlink{classIceAge_1_1Predmet_a43f6c212f4c86e970c3b44eee829a1e1}{getAtribut}();
+00030     \textcolor{keywordflow}{if}(this->\hyperlink{classIceAge_1_1ObleceneVybaveniVeverky_a5cbec76ba9606fa634019e10f33f605c}{m\_pravaRuka} != \textcolor{keyword}{nullptr})    \textcolor{keywordflow}{if}(this->\hyperlink{classIceAge_1_1ObleceneVybaveniVeverky_a5cbec76ba9606fa634019e10f33f605c}{m\_pravaRuka}->
+      \hyperlink{classIceAge_1_1Predmet_a90491592ba559e5b276b672633795e29}{getTyp}() == \textcolor{charliteral}{'w'}) utokCelkem+=this->\hyperlink{classIceAge_1_1ObleceneVybaveniVeverky_a5cbec76ba9606fa634019e10f33f605c}{m\_pravaRuka}->\hyperlink{classIceAge_1_1Predmet_a43f6c212f4c86e970c3b44eee829a1e1}{getAtribut}();
+00031 \textcolor{comment}{//    std::cout << this->getSila() << " " << utokCelkem << std::endl;}
+00032     \textcolor{keywordflow}{return} this->\hyperlink{classIceAge_1_1Staty_a2c8b38d3cfa305f5b5fab199894dd922}{getSila}() + utokCelkem;
+00033 \}
+00034 
+\hypertarget{Veverka_8cpp_source.tex_l00038}{}\hyperlink{classIceAge_1_1Veverka_a0de0d0e1bdd72451abe0b6b7eaa74bee}{00038} \textcolor{keywordtype}{short} \hyperlink{classIceAge_1_1Veverka_a0de0d0e1bdd72451abe0b6b7eaa74bee}{IceAge::Veverka::obrana}()\{
+00039 \textcolor{comment}{//    short obranaCelkem=0;}
+00040 \textcolor{comment}{/*}
+00041 \textcolor{comment}{    if(this->m\_levaRuka != nullptr)     if(this->m\_levaRuka->getTyp() == 'c')
+       obranaCelkem+=this->m\_levaRuka->getAtribut();}
+00042 \textcolor{comment}{    if(this->m\_pravaRuka != nullptr)    if(this->m\_pravaRuka->getTyp() == 'c')
+       obranaCelkem+=this->m\_pravaRuka->getAtribut();}
+00043 \textcolor{comment}{*/}
+00044     \textcolor{keywordflow}{return} this->\hyperlink{classIceAge_1_1Staty_a142a0ec049584c8ea716b96d2b742b08}{getOdolnost}()\textcolor{comment}{/* + obranaCelkem*/};
+00045 \}
+00046 
+\hypertarget{Veverka_8cpp_source.tex_l00050}{}\hyperlink{classIceAge_1_1Veverka_ad58ee98ef7bafb1adf634ba2936f9a6b}{00050} \hyperlink{classIceAge_1_1Veverka_ad58ee98ef7bafb1adf634ba2936f9a6b}{IceAge::Veverka::~Veverka}()\{
+00051 \}
+00052 
+\hypertarget{Veverka_8cpp_source.tex_l00056}{}\hyperlink{classIceAge_1_1Veverka_a3b917725872714ac866bc2028bf7d7d9}{00056} \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1Veverka_a3b917725872714ac866bc2028bf7d7d9}{IceAge::Veverka::enrageZapnout}()\{
+00057     this->\hyperlink{classIceAge_1_1Staty_a769be7c06fd2ab2bc7057f2689e6864c}{setSila}(40);
+00058     this->\hyperlink{classIceAge_1_1Staty_a14cd86c6d0d4ed7585ff5383aea5e6ef}{setOdolnost}(40);
+00059     std::cout << \textcolor{stringliteral}{"***ENRAGE***"} << std::endl;
+00060 \}
+00061 
+\hypertarget{Veverka_8cpp_source.tex_l00065}{}\hyperlink{classIceAge_1_1Veverka_a1899ce1f8542829ec12e9087df188be8}{00065} \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1Veverka_a1899ce1f8542829ec12e9087df188be8}{IceAge::Veverka::enrageVypnout}()\{
+00066     this->\hyperlink{classIceAge_1_1Staty_a769be7c06fd2ab2bc7057f2689e6864c}{setSila}(\hyperlink{Veverka_8h_a7e89f9c1f8405d36a24e427614e25e74}{SCRAT\_SILA});
+00067     this->\hyperlink{classIceAge_1_1Staty_a14cd86c6d0d4ed7585ff5383aea5e6ef}{setOdolnost}(\hyperlink{Veverka_8h_a752d429f0ea780b8e512e8b5e5776c1b}{SCRAT\_ODOLNOST});
+00068     std::cout << \textcolor{stringliteral}{"Uz si to rozdychal."} << std::endl;
+00069 \}
+\end{DoxyCode}

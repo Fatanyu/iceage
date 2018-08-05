@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="IceAge" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/IceAge" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-std=c++11" />
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/IceAge" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-std=c++11" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="cpp/Beast.cpp" />
+		<Unit filename="cpp/BuilderBytost.cpp" />
+		<Unit filename="cpp/BuilderLokace.cpp" />
+		<Unit filename="cpp/BuilderPredmet.cpp" />
+		<Unit filename="cpp/Command.cpp" />
+		<Unit filename="cpp/EngineIceAge.cpp" />
+		<Unit filename="cpp/Hra.cpp" />
+		<Unit filename="cpp/Humanoid.cpp" />
+		<Unit filename="cpp/Inventar.cpp" />
+		<Unit filename="cpp/Jezero.cpp" />
+		<Unit filename="cpp/JizniLes.cpp" />
+		<Unit filename="cpp/Ledovec.cpp" />
+		<Unit filename="cpp/LocationDirector.cpp" />
+		<Unit filename="cpp/Lokace.cpp" />
+		<Unit filename="cpp/Memory.cpp" />
+		<Unit filename="cpp/MemoryArbiter.cpp" />
+		<Unit filename="cpp/Nazev.cpp" />
+		<Unit filename="cpp/ObleceneVybaveniHumanoid.cpp" />
+		<Unit filename="cpp/ObleceneVybaveniVeverky.cpp" />
+		<Unit filename="cpp/Orisek.cpp" />
+		<Unit filename="cpp/Popis.cpp" />
+		<Unit filename="cpp/Predmet.cpp" />
+		<Unit filename="cpp/Reka.cpp" />
+		<Unit filename="cpp/SeverniLes.cpp" />
+		<Unit filename="cpp/Staty.cpp" />
+		<Unit filename="cpp/Veverka.cpp" />
+		<Unit filename="cpp/VolneFunkce.cpp" />
+		<Unit filename="cpp/VychodniBrehReky.cpp" />
+		<Unit filename="cpp/VychodniPlanina.cpp" />
+		<Unit filename="cpp/ZapadniBrehReky.cpp" />
+		<Unit filename="cpp/ZapadniPlanina.cpp" />
+		<Unit filename="cpp/Zbran.cpp" />
+		<Unit filename="cpp/Zivot.cpp" />
+		<Unit filename="hlavicky/Beast.h" />
+		<Unit filename="hlavicky/BuilderBytost.h" />
+		<Unit filename="hlavicky/BuilderLokace.h" />
+		<Unit filename="hlavicky/BuilderPredmet.h" />
+		<Unit filename="hlavicky/Command.h" />
+		<Unit filename="hlavicky/EngineIceAge.h" />
+		<Unit filename="hlavicky/Hra.h" />
+		<Unit filename="hlavicky/Humanoid.h" />
+		<Unit filename="hlavicky/IInventar.h" />
+		<Unit filename="hlavicky/IMemory.h" />
+		<Unit filename="hlavicky/INazev.h" />
+		<Unit filename="hlavicky/IObleceneVybaveni.h" />
+		<Unit filename="hlavicky/IPopis.h" />
+		<Unit filename="hlavicky/IStaty.h" />
+		<Unit filename="hlavicky/IZivot.h" />
+		<Unit filename="hlavicky/Inventar.h" />
+		<Unit filename="hlavicky/Jezero.h" />
+		<Unit filename="hlavicky/JizniLes.h" />
+		<Unit filename="hlavicky/Ledovec.h" />
+		<Unit filename="hlavicky/LocationDirector.h" />
+		<Unit filename="hlavicky/Lokace.h" />
+		<Unit filename="hlavicky/Memory.h" />
+		<Unit filename="hlavicky/MemoryArbiter.h" />
+		<Unit filename="hlavicky/Nazev.h" />
+		<Unit filename="hlavicky/ObleceneVybaveniHumanoid.h" />
+		<Unit filename="hlavicky/ObleceneVybaveniVeverky.h" />
+		<Unit filename="hlavicky/Orisek.h" />
+		<Unit filename="hlavicky/Popis.h" />
+		<Unit filename="hlavicky/Predmet.h" />
+		<Unit filename="hlavicky/Reka.h" />
+		<Unit filename="hlavicky/SeverniLes.h" />
+		<Unit filename="hlavicky/Staty.h" />
+		<Unit filename="hlavicky/Veverka.h" />
+		<Unit filename="hlavicky/VolneFunkce.h" />
+		<Unit filename="hlavicky/VychodniBrehReky.h" />
+		<Unit filename="hlavicky/VychodniPlanina.h" />
+		<Unit filename="hlavicky/ZapadniBrehReky.h" />
+		<Unit filename="hlavicky/ZapadniPlanina.h" />
+		<Unit filename="hlavicky/Zbran.h" />
+		<Unit filename="hlavicky/Zivot.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

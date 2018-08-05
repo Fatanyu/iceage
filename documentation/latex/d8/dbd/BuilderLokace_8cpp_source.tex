@@ -1,0 +1,199 @@
+\hypertarget{BuilderLokace_8cpp_source}{}\section{Builder\+Lokace.\+cpp}
+\label{BuilderLokace_8cpp_source}\index{cpp/\+Builder\+Lokace.\+cpp@{cpp/\+Builder\+Lokace.\+cpp}}
+
+\begin{DoxyCode}
+00001 
+00004 \textcolor{preprocessor}{#include "../hlavicky/BuilderLokace.h"}
+00005 
+\hypertarget{BuilderLokace_8cpp_source.tex_l00009}{}\hyperlink{classIceAge_1_1BuilderLokace_ad8fabba0bddf2d2569c36fa115f40673}{00009} \hyperlink{classIceAge_1_1BuilderLokace_ad8fabba0bddf2d2569c36fa115f40673}{IceAge::BuilderLokace::BuilderLokace}(
+      \hyperlink{classIceAge_1_1BuilderBytost}{IceAge::BuilderBytost}* novyBuilder) \{
+00010     this->\hyperlink{classIceAge_1_1BuilderLokace_acce53b24cfb8ab5227520e943e6b843b}{setBuilder}(novyBuilder);
+00011     this->\hyperlink{classIceAge_1_1BuilderLokace_aad0fb17bf38c03cd767e100758348f24}{m\_lokace}=\textcolor{keyword}{nullptr};
+00012 \}
+00013 
+\hypertarget{BuilderLokace_8cpp_source.tex_l00017}{}\hyperlink{classIceAge_1_1BuilderLokace_acce53b24cfb8ab5227520e943e6b843b}{00017} \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1BuilderLokace_acce53b24cfb8ab5227520e943e6b843b}{IceAge::BuilderLokace::setBuilder}(
+      \hyperlink{classIceAge_1_1BuilderBytost}{IceAge::BuilderBytost}* novyBuilder) \{
+00018     this->\hyperlink{classIceAge_1_1BuilderLokace_ac6981c43c22713d56e7ccbefa8b5c8b4}{m\_builderBytost}=novyBuilder;
+00019 \}
+00020 
+\hypertarget{BuilderLokace_8cpp_source.tex_l00024}{}\hyperlink{classIceAge_1_1BuilderLokace_ada96fb10689d0b6f2ed2f7cdc31a171e}{00024} \hyperlink{classIceAge_1_1Lokace}{IceAge::Lokace}* \hyperlink{classIceAge_1_1BuilderLokace_ada96fb10689d0b6f2ed2f7cdc31a171e}{IceAge::BuilderLokace::getLokace}() \{
+00025     \textcolor{keywordflow}{return} this->\hyperlink{classIceAge_1_1BuilderLokace_aad0fb17bf38c03cd767e100758348f24}{m\_lokace};
+00026 \}
+00027 
+\hypertarget{BuilderLokace_8cpp_source.tex_l00031}{}\hyperlink{classIceAge_1_1BuilderLokace_abff6ab9c1d0218adfe423f45c8186090}{00031} \hyperlink{classIceAge_1_1Humanoid}{IceAge::Humanoid}* \hyperlink{classIceAge_1_1BuilderLokace_abff6ab9c1d0218adfe423f45c8186090}{IceAge::BuilderLokace::createHumanoid}
+      (\textcolor{keywordtype}{short} novyZivot, std::string novyPopis, \textcolor{keywordtype}{short} novaSila, \textcolor{keywordtype}{short} novaOdolnost,
+00032                                                      std::string novyNazevPredmetu1, std::string 
+      novyNazevPredmetu2, std::string novyNazevPredmetu3,
+00033                                                      \textcolor{keywordtype}{short} novaHodnotaPredmetu1, \textcolor{keywordtype}{short} novaHodnotaPredmetu2
+      , \textcolor{keywordtype}{short} novaHodnotaPredmetu3) \{
+00034     this->\hyperlink{classIceAge_1_1BuilderLokace_ac6981c43c22713d56e7ccbefa8b5c8b4}{m\_builderBytost}->\hyperlink{classIceAge_1_1BuilderBytost_ad0ec5281ef8ba796b945845913802b32}{createHumanoid}(novyZivot, novyPopis, novaSila, 
+      novaOdolnost, novyNazevPredmetu1, novyNazevPredmetu2, novyNazevPredmetu3,
+00035                                              novaHodnotaPredmetu1, novaHodnotaPredmetu2, 
+      novaHodnotaPredmetu3);
+00036     \textcolor{keywordflow}{return} this->\hyperlink{classIceAge_1_1BuilderLokace_ac6981c43c22713d56e7ccbefa8b5c8b4}{m\_builderBytost}->\hyperlink{classIceAge_1_1BuilderBytost_a41d069e42ccad24d1af34e3e30945e25}{getHumanoid}();
+00037 \}
+00038 
+\hypertarget{BuilderLokace_8cpp_source.tex_l00042}{}\hyperlink{classIceAge_1_1BuilderLokace_a6ce9f158876a0601a3bac0cc26ed2d46}{00042} \hyperlink{classIceAge_1_1Beast}{IceAge::Beast}* \hyperlink{classIceAge_1_1BuilderLokace_a6ce9f158876a0601a3bac0cc26ed2d46}{IceAge::BuilderLokace::createBeast}(\textcolor{keywordtype}{short} 
+      novaZurivost, std::string novyNazev, \textcolor{keywordtype}{short} novaSila, std::string novyPopis, \textcolor{keywordtype}{short} novaOdolnost, \textcolor{keywordtype}{short} novyZivot)
+       \{
+00043     this->\hyperlink{classIceAge_1_1BuilderLokace_ac6981c43c22713d56e7ccbefa8b5c8b4}{m\_builderBytost}->\hyperlink{classIceAge_1_1BuilderBytost_a090e775261513f873b1aa85dcaca5efb}{createBeast}( novaZurivost, novyNazev, novaSila, 
+      novyPopis, novaOdolnost, novyZivot);
+00044     \textcolor{keywordflow}{return} this->\hyperlink{classIceAge_1_1BuilderLokace_ac6981c43c22713d56e7ccbefa8b5c8b4}{m\_builderBytost}->\hyperlink{classIceAge_1_1BuilderBytost_a0a5a5246a7b192effd4993bfcf4b23f3}{getBeast}();
+00045 \}
+00046 
+\hypertarget{BuilderLokace_8cpp_source.tex_l00050}{}\hyperlink{classIceAge_1_1BuilderLokace_ac46d7d1ff685c51dbd382f65b29a6546}{00050} \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1BuilderLokace_ac46d7d1ff685c51dbd382f65b29a6546}{IceAge::BuilderLokace::createLokace}() \{
+00051 
+00052     std::ifstream seznam, popisLokace;
+00053     seznam.open(\textcolor{stringliteral}{"Lokace/.seznam"});
+00054     \textcolor{keywordflow}{if}(!seznam.is\_open())
+00055     \{
+00056         std::cerr << \textcolor{stringliteral}{"Chyby seznam lokaci. Program ukoncen."};
+00057         \hyperlink{classIceAge_1_1MemoryArbiter_ae3460492678cf992629f4a70de3ef1ca}{IceAge::MemoryArbiter::cycleDelete}();
+00058         exit(-1);
+00059     \}
+00060 \textcolor{comment}{//    std::cout << "Soubor s lokacemi otevren" << std::endl;}
+00061 
+00062     std::string radek, nazevL, popisL, popisLCast, rekaL; 
+00064 \textcolor{comment}{//    IceAge::Lokace *pridavanaLokace;}
+00065 
+00066     \textcolor{keywordflow}{while}(getline(seznam, radek)) 
+00067     \{
+00068 \textcolor{comment}{//        std::cout << "Otevira se " << radek << std::endl;}
+00069         popisLokace.open(radek); 
+00070         \textcolor{keywordflow}{if}(!popisLokace.is\_open())
+00071         \{
+00072             std::cerr << \textcolor{stringliteral}{"Chybi soubor: "} << radek << std::endl;
+00073             \hyperlink{classIceAge_1_1MemoryArbiter_ae3460492678cf992629f4a70de3ef1ca}{IceAge::MemoryArbiter::cycleDelete}(); 
+00074             exit(-1);
+00075         \}
+00077         getline(popisLokace, nazevL);           \textcolor{comment}{//************************}
+00078         getline(popisLokace, rekaL);            \textcolor{comment}{//                      **}
+00079         popisL=\textcolor{stringliteral}{""}; popisLCast=\textcolor{stringliteral}{""};               \textcolor{comment}{//nacitani popisu       **}
+00080         \textcolor{keywordflow}{do}                                      \textcolor{comment}{//                      **}
+00081         \{                                       \textcolor{comment}{//                      **}
+00082             popisL+= popisLCast;                \textcolor{comment}{//                      **}
+00083             getline(popisLokace, popisLCast);   \textcolor{comment}{//                      **}
+00084         \}\textcolor{keywordflow}{while}(popisLCast != \textcolor{stringliteral}{"***"});            \textcolor{comment}{//************************}
+00085 
+00086 
+00087         this->\hyperlink{classIceAge_1_1BuilderLokace_aad0fb17bf38c03cd767e100758348f24}{m\_lokace}=\textcolor{keyword}{new} \hyperlink{classIceAge_1_1Lokace}{IceAge::Lokace}(nazevL, popisL);
+00089         \textcolor{keywordflow}{if}(rekaL == \textcolor{stringliteral}{"1"}) this->\hyperlink{classIceAge_1_1BuilderLokace_aad0fb17bf38c03cd767e100758348f24}{m\_lokace}->\hyperlink{classIceAge_1_1Lokace_a5b8cba97ec44efafc0b105a3b487284c}{pridejReku}(); 
+00091 \textcolor{comment}{//nacteni poctu Humanoidu}
+00092         this->\hyperlink{classIceAge_1_1BuilderLokace_a98fae825f3de1d12408a85f03d98f2fd}{nactiHumanoidy}(popisLokace); 
+00093         this->\hyperlink{classIceAge_1_1BuilderLokace_a8424c61902a53f9304460055f478601b}{nactiBeasty}(popisLokace); 
+00095         \textcolor{keywordflow}{while}(!popisLokace.fail()) 
+00096         \{
+00097             \textcolor{comment}{//std::cout << "jsem tu" << std::endl;}
+00098             getline(popisLokace, radek);
+00099                                 \textcolor{comment}{//std::cout << "Nacetl jsem " << radek << std::endl;}
+00100             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} i=0; i<this->\hyperlink{classIceAge_1_1BuilderLokace_a110ada142d159f68fb82382a47d088f4}{m\_vektorLokaci}.size(); i++)
+00101             \{
+00102                 \textcolor{comment}{//std::cout << radek;}
+00103                 \textcolor{keywordflow}{if}(radek == (this->\hyperlink{classIceAge_1_1BuilderLokace_a110ada142d159f68fb82382a47d088f4}{m\_vektorLokaci}.at(i)->getNazevLokace()))
+00104                 \{
+00105                                 \textcolor{comment}{//std::cout << radek + " " + this->m\_vektorLokaci.at(i)->getNazevLokace()
+       << std::endl;}
+00106                     this->\hyperlink{classIceAge_1_1BuilderLokace_aad0fb17bf38c03cd767e100758348f24}{m\_lokace}->\hyperlink{classIceAge_1_1Lokace_a0d506324f571f77f0daf14de00c548b6}{pridejLokaci}(this->
+      \hyperlink{classIceAge_1_1BuilderLokace_a110ada142d159f68fb82382a47d088f4}{m\_vektorLokaci}.at(i));
+00107                                 \textcolor{comment}{// std::cout << this->m\_lokace->getNazevLokace() << " dostava " <<
+       this->m\_vektorLokaci.at(i)->getNazevLokace() << std::endl;}
+00108                     this->\hyperlink{classIceAge_1_1BuilderLokace_a110ada142d159f68fb82382a47d088f4}{m\_vektorLokaci}.at(i)->pridejLokaci(this->
+      \hyperlink{classIceAge_1_1BuilderLokace_aad0fb17bf38c03cd767e100758348f24}{m\_lokace});
+00109                                 \textcolor{comment}{//std::cout << this->m\_vektorLokaci.at(i)->getNazevLokace() << " dostava "
+       << this->m\_lokace->getNazevLokace() << std::endl;}
+00110                 \}
+00111             \}
+00112         \}
+00113 
+00114 \textcolor{comment}{//        this->m\_vektorLokaci.push\_back(pridavanaLokace);}
+00115         this->\hyperlink{classIceAge_1_1BuilderLokace_aad0fb17bf38c03cd767e100758348f24}{m\_lokace}->\hyperlink{classIceAge_1_1Lokace_a27bac7797acadfebe3aaf61a69fdda2d}{setPrikaz}();    
+00116         this->\hyperlink{classIceAge_1_1BuilderLokace_a110ada142d159f68fb82382a47d088f4}{m\_vektorLokaci}.push\_back(this->\hyperlink{classIceAge_1_1BuilderLokace_aad0fb17bf38c03cd767e100758348f24}{m\_lokace}); 
+00117         this->\hyperlink{classIceAge_1_1BuilderLokace_aad0fb17bf38c03cd767e100758348f24}{m\_lokace}=\textcolor{keyword}{nullptr};
+00118         popisLokace.close(); 
+00119     \}
+00120 
+00121 
+00122     seznam.close(); 
+00124     this->\hyperlink{classIceAge_1_1BuilderLokace_aad0fb17bf38c03cd767e100758348f24}{m\_lokace}=this->\hyperlink{classIceAge_1_1BuilderLokace_a110ada142d159f68fb82382a47d088f4}{m\_vektorLokaci}.at(0); 
+00126     this->\hyperlink{classIceAge_1_1BuilderLokace_a110ada142d159f68fb82382a47d088f4}{m\_vektorLokaci}.clear();
+00127 \}
+00128 
+\hypertarget{BuilderLokace_8cpp_source.tex_l00132}{}\hyperlink{classIceAge_1_1BuilderLokace_a98fae825f3de1d12408a85f03d98f2fd}{00132} \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1BuilderLokace_a98fae825f3de1d12408a85f03d98f2fd}{IceAge::BuilderLokace::nactiHumanoidy}(std::ifstream &popisLokace)
+      \{
+00133     \textcolor{keywordtype}{short} pocet=0; 
+00134     std::string radek=\textcolor{stringliteral}{""};
+00135     popisLokace >> pocet;           popisLokace.ignore(); 
+00137 \textcolor{comment}{//    std::cout << pocet << std::endl;}
+00138     \textcolor{keywordflow}{if}(pocet <=0) 
+00139     \{
+00140 \textcolor{comment}{//        std::cout << "Nejsou tu lidi" << std::endl;}
+00141         getline(popisLokace,radek);
+00142         \textcolor{keywordflow}{return};
+00143     \}
+00144     std::string popis, nazevPredmetu1, nazevPredmetu2, nazevPredmetu3; 
+00145     \textcolor{keywordtype}{short} zivot, sila, odolnost, hodnotaPredmetu1, hodnotaPredmetu2, hodnotaPredmetu3;
+00146 
+00147     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{short} i=0; i<pocet; i++) 
+00148     \{
+00149         getline(popisLokace,popis);
+00150         popisLokace >> sila;                        popisLokace.ignore();
+00151         popisLokace >> odolnost;                    popisLokace.ignore();
+00152         popisLokace >> zivot;                       popisLokace.ignore();
+00153         getline(popisLokace,nazevPredmetu1);
+00154         popisLokace >> hodnotaPredmetu1;            popisLokace.ignore();
+00155         getline(popisLokace,nazevPredmetu2);
+00156         popisLokace >> hodnotaPredmetu2;            popisLokace.ignore();
+00157         getline(popisLokace,nazevPredmetu3);
+00158         popisLokace >> hodnotaPredmetu3;            popisLokace.ignore();
+00159 
+00160         this->\hyperlink{classIceAge_1_1BuilderLokace_aad0fb17bf38c03cd767e100758348f24}{m\_lokace}->\hyperlink{classIceAge_1_1Lokace_ab8da7a4fa629d827d0b633c67d65da4e}{pridejHumanoid}(this->
+      \hyperlink{classIceAge_1_1BuilderLokace_abff6ab9c1d0218adfe423f45c8186090}{createHumanoid}(zivot,popis,sila,odolnost,
+00161                                                     nazevPredmetu1,nazevPredmetu2,nazevPredmetu3,
+00162                                                     hodnotaPredmetu1, hodnotaPredmetu2, hodnotaPredmetu3));
+00163 
+00164     \}
+00165 
+00166     getline(popisLokace,radek); 
+00168 \}
+00169 
+\hypertarget{BuilderLokace_8cpp_source.tex_l00173}{}\hyperlink{classIceAge_1_1BuilderLokace_a8424c61902a53f9304460055f478601b}{00173} \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1BuilderLokace_a8424c61902a53f9304460055f478601b}{IceAge::BuilderLokace::nactiBeasty}(std::ifstream &popisLokace)\{
+00174     \textcolor{keywordtype}{short} pocet=0;
+00175     std::string radek=\textcolor{stringliteral}{""};
+00176     popisLokace >> pocet; popisLokace.ignore();
+00178     \textcolor{keywordflow}{if}(pocet <=0)
+00179     \{
+00180         getline(popisLokace,radek);
+00181         \textcolor{keywordflow}{return};
+00182     \}
+00183 \textcolor{comment}{//    std::cout << "jsem tady" << std::endl;}
+00184     std::string popis, nazev;
+00185     \textcolor{keywordtype}{short} zurivost, zivot, sila, odolnost;
+00186 
+00187     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{short} i=0; i<pocet; i++)
+00188     \{
+00189         getline(popisLokace,nazev);
+00190         getline(popisLokace,popis);
+00191         popisLokace >> zurivost;            popisLokace.ignore();
+00192         popisLokace >> sila;                popisLokace.ignore();
+00193         popisLokace >> odolnost;            popisLokace.ignore();
+00194         popisLokace >> zivot;               popisLokace.ignore();
+00195 
+00196         this->\hyperlink{classIceAge_1_1BuilderLokace_aad0fb17bf38c03cd767e100758348f24}{m\_lokace}->\hyperlink{classIceAge_1_1Lokace_ae77a73c9d4ca11a4ccbd056e80e68318}{pridejBeast}(this->\hyperlink{classIceAge_1_1BuilderLokace_a6ce9f158876a0601a3bac0cc26ed2d46}{createBeast}(zurivost,nazev,sila,
+      popis,odolnost,zivot));
+00197 
+00198     \}
+00199 
+00200     getline(popisLokace,radek);
+00201 \textcolor{comment}{//    std::cout << radek;}
+00202 \}
+00203 
+\hypertarget{BuilderLokace_8cpp_source.tex_l00207}{}\hyperlink{classIceAge_1_1BuilderLokace_ae90ede622f89433692f5d4c17fd35ffb}{00207} \hyperlink{classIceAge_1_1BuilderLokace_ae90ede622f89433692f5d4c17fd35ffb}{IceAge::BuilderLokace::~BuilderLokace}()\{
+00208     \textcolor{keywordflow}{if}(this->\hyperlink{classIceAge_1_1BuilderLokace_ac6981c43c22713d56e7ccbefa8b5c8b4}{m\_builderBytost} != \textcolor{keyword}{nullptr}) \textcolor{keyword}{delete} this->
+      \hyperlink{classIceAge_1_1BuilderLokace_ac6981c43c22713d56e7ccbefa8b5c8b4}{m\_builderBytost};
+00209     \textcolor{keywordflow}{if}(this->\hyperlink{classIceAge_1_1BuilderLokace_aad0fb17bf38c03cd767e100758348f24}{m\_lokace} != \textcolor{keyword}{nullptr}) \textcolor{keyword}{delete} this->\hyperlink{classIceAge_1_1BuilderLokace_aad0fb17bf38c03cd767e100758348f24}{m\_lokace};
+00210 
+00211     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} i=0; i<\hyperlink{classIceAge_1_1BuilderLokace_a110ada142d159f68fb82382a47d088f4}{m\_vektorLokaci}.size(); i++)
+00212         \textcolor{keywordflow}{if}(this->\hyperlink{classIceAge_1_1BuilderLokace_a110ada142d159f68fb82382a47d088f4}{m\_vektorLokaci}.at(i) != \textcolor{keyword}{nullptr}) \textcolor{keyword}{delete} this->
+      \hyperlink{classIceAge_1_1BuilderLokace_a110ada142d159f68fb82382a47d088f4}{m\_vektorLokaci}.at(i);
+00213 \}
+\end{DoxyCode}

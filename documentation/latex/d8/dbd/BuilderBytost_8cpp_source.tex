@@ -1,0 +1,67 @@
+\hypertarget{BuilderBytost_8cpp_source}{}\section{Builder\+Bytost.\+cpp}
+\label{BuilderBytost_8cpp_source}\index{cpp/\+Builder\+Bytost.\+cpp@{cpp/\+Builder\+Bytost.\+cpp}}
+
+\begin{DoxyCode}
+00001 
+00004 \textcolor{preprocessor}{#include "../hlavicky/BuilderBytost.h"}
+00005 
+\hypertarget{BuilderBytost_8cpp_source.tex_l00009}{}\hyperlink{classIceAge_1_1BuilderBytost_a4f7fcb1e80137c5555a0eb004fca5c19}{00009} \hyperlink{classIceAge_1_1BuilderBytost_a4f7fcb1e80137c5555a0eb004fca5c19}{IceAge::BuilderBytost::BuilderBytost}(
+      \hyperlink{classIceAge_1_1BuilderPredmet}{IceAge::BuilderPredmet}* novyBuilder) \{
+00010     this->\hyperlink{classIceAge_1_1BuilderBytost_a4fcc673dabd0c27c892698e4956d86ca}{setBuilder}(novyBuilder);
+00011     this->\hyperlink{classIceAge_1_1BuilderBytost_a220df66c99fac9d382f5d1825f5295de}{m\_beast}=\textcolor{keyword}{nullptr};
+00012     this->\hyperlink{classIceAge_1_1BuilderBytost_a3f4076d50f5bf435c3a90fc123d807a2}{m\_humanoid}=\textcolor{keyword}{nullptr};
+00013 \}
+00014 
+00015 
+\hypertarget{BuilderBytost_8cpp_source.tex_l00019}{}\hyperlink{classIceAge_1_1BuilderBytost_a4fcc673dabd0c27c892698e4956d86ca}{00019} \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1BuilderBytost_a4fcc673dabd0c27c892698e4956d86ca}{IceAge::BuilderBytost::setBuilder}(
+      \hyperlink{classIceAge_1_1BuilderPredmet}{IceAge::BuilderPredmet}* novyBuilder) \{
+00020     this->\hyperlink{classIceAge_1_1BuilderBytost_a39f10b26bcda8142ce353e6ca761cabb}{m\_builder}=novyBuilder;
+00021 \}
+00022 
+\hypertarget{BuilderBytost_8cpp_source.tex_l00026}{}\hyperlink{classIceAge_1_1BuilderBytost_a3b86534905ea6bb1702a6e8d6d3729c7}{00026} \hyperlink{classIceAge_1_1Predmet}{IceAge::Predmet}* \hyperlink{classIceAge_1_1BuilderBytost_a3b86534905ea6bb1702a6e8d6d3729c7}{IceAge::BuilderBytost::createPredmet}(
+      std::string novyNazev, \textcolor{keywordtype}{short} novaHodnota) \{
+00027     this->\hyperlink{classIceAge_1_1BuilderBytost_a39f10b26bcda8142ce353e6ca761cabb}{m\_builder}->\hyperlink{classIceAge_1_1BuilderPredmet_a4fcdb35cc3edcec69386f4a68ff95d28}{createPredmet}(novyNazev, novaHodnota);
+00028     \textcolor{keywordflow}{return} this->\hyperlink{classIceAge_1_1BuilderBytost_a39f10b26bcda8142ce353e6ca761cabb}{m\_builder}->\hyperlink{classIceAge_1_1BuilderPredmet_ab84508589d73e202dd4002d6b23ad22e}{getPredmet}();
+00029 \}
+00030 
+\hypertarget{BuilderBytost_8cpp_source.tex_l00034}{}\hyperlink{classIceAge_1_1BuilderBytost_a0a5a5246a7b192effd4993bfcf4b23f3}{00034} \hyperlink{classIceAge_1_1Beast}{IceAge::Beast}* \hyperlink{classIceAge_1_1BuilderBytost_a0a5a5246a7b192effd4993bfcf4b23f3}{IceAge::BuilderBytost::getBeast}() \{
+00035     \hyperlink{classIceAge_1_1Beast}{IceAge::Beast}*third=this->\hyperlink{classIceAge_1_1BuilderBytost_a220df66c99fac9d382f5d1825f5295de}{m\_beast};
+00036     this->\hyperlink{classIceAge_1_1BuilderBytost_a220df66c99fac9d382f5d1825f5295de}{m\_beast}=\textcolor{keyword}{nullptr};
+00037     \textcolor{keywordflow}{return} third;
+00038 \}
+00039 
+\hypertarget{BuilderBytost_8cpp_source.tex_l00043}{}\hyperlink{classIceAge_1_1BuilderBytost_a41d069e42ccad24d1af34e3e30945e25}{00043} \hyperlink{classIceAge_1_1Humanoid}{IceAge::Humanoid}* \hyperlink{classIceAge_1_1BuilderBytost_a41d069e42ccad24d1af34e3e30945e25}{IceAge::BuilderBytost::getHumanoid}() \{
+00044     \hyperlink{classIceAge_1_1Humanoid}{IceAge::Humanoid}*third=this->\hyperlink{classIceAge_1_1BuilderBytost_a3f4076d50f5bf435c3a90fc123d807a2}{m\_humanoid};
+00045     this->\hyperlink{classIceAge_1_1BuilderBytost_a3f4076d50f5bf435c3a90fc123d807a2}{m\_humanoid}=\textcolor{keyword}{nullptr};
+00046     \textcolor{keywordflow}{return} third;
+00047 \}
+00048 
+\hypertarget{BuilderBytost_8cpp_source.tex_l00052}{}\hyperlink{classIceAge_1_1BuilderBytost_a090e775261513f873b1aa85dcaca5efb}{00052} \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1BuilderBytost_a090e775261513f873b1aa85dcaca5efb}{IceAge::BuilderBytost::createBeast}(\textcolor{keywordtype}{short} novaZurivost, std::string 
+      novyNazev, \textcolor{keywordtype}{short} novaSila, std::string novyPopis, \textcolor{keywordtype}{short} novaOdolnost, \textcolor{keywordtype}{short} novyZivot) \{
+00053     this->\hyperlink{classIceAge_1_1BuilderBytost_a220df66c99fac9d382f5d1825f5295de}{m\_beast}=\textcolor{keyword}{new} \hyperlink{classIceAge_1_1Beast}{IceAge::Beast}(novaZurivost, novyNazev, novaSila, novyPopis, 
+      novaOdolnost, novyZivot);
+00054 \}
+00055 
+\hypertarget{BuilderBytost_8cpp_source.tex_l00056}{}\hyperlink{classIceAge_1_1BuilderBytost_ad0ec5281ef8ba796b945845913802b32}{00056} \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1BuilderBytost_ad0ec5281ef8ba796b945845913802b32}{IceAge::BuilderBytost::createHumanoid}(\textcolor{keywordtype}{short} novyZivot, 
+      std::string novyPopis, \textcolor{keywordtype}{short} novaSila, \textcolor{keywordtype}{short} novaOdolnost,
+00057                                             std::string novyNazevPredmetu1, std::string novyNazevPredmetu2,
+       std::string novyNazevPredmetu3,
+00058                                             \textcolor{keywordtype}{short} novaHodnotaPredmetu1, \textcolor{keywordtype}{short} novaHodnotaPredmetu2, \textcolor{keywordtype}{short} 
+      novaHodnotaPredmetu3) \{
+00059 
+00060     this->\hyperlink{classIceAge_1_1BuilderBytost_a3f4076d50f5bf435c3a90fc123d807a2}{m\_humanoid}=\textcolor{keyword}{new} \hyperlink{classIceAge_1_1Humanoid}{IceAge::Humanoid}(novyZivot, \textcolor{stringliteral}{"Ruzovy dvounozec"}, 
+      novyPopis, novaSila, novaOdolnost,
+00061                                         this->\hyperlink{classIceAge_1_1BuilderBytost_a3b86534905ea6bb1702a6e8d6d3729c7}{createPredmet}(novyNazevPredmetu1, 
+      novaHodnotaPredmetu1),
+00062                                         this->\hyperlink{classIceAge_1_1BuilderBytost_a3b86534905ea6bb1702a6e8d6d3729c7}{createPredmet}(novyNazevPredmetu2, 
+      novaHodnotaPredmetu2),
+00063                                         this->\hyperlink{classIceAge_1_1BuilderBytost_a3b86534905ea6bb1702a6e8d6d3729c7}{createPredmet}(novyNazevPredmetu3, 
+      novaHodnotaPredmetu3));
+00064 \}
+00065 
+\hypertarget{BuilderBytost_8cpp_source.tex_l00069}{}\hyperlink{classIceAge_1_1BuilderBytost_ac090a25d213bcbe4ca3a9d7a21db1d36}{00069} \hyperlink{classIceAge_1_1BuilderBytost_ac090a25d213bcbe4ca3a9d7a21db1d36}{IceAge::BuilderBytost::~BuilderBytost}()\{
+00070     \textcolor{keywordflow}{if}(this->\hyperlink{classIceAge_1_1BuilderBytost_a220df66c99fac9d382f5d1825f5295de}{m\_beast} != \textcolor{keyword}{nullptr}) \textcolor{keyword}{delete} this->\hyperlink{classIceAge_1_1BuilderBytost_a220df66c99fac9d382f5d1825f5295de}{m\_beast};
+00071     \textcolor{keywordflow}{if}(this->\hyperlink{classIceAge_1_1BuilderBytost_a3f4076d50f5bf435c3a90fc123d807a2}{m\_humanoid} != \textcolor{keyword}{nullptr}) \textcolor{keyword}{delete} this->\hyperlink{classIceAge_1_1BuilderBytost_a3f4076d50f5bf435c3a90fc123d807a2}{m\_humanoid};
+00072     \textcolor{keywordflow}{if}(this->\hyperlink{classIceAge_1_1BuilderBytost_a39f10b26bcda8142ce353e6ca761cabb}{m\_builder} != \textcolor{keyword}{nullptr}) \textcolor{keyword}{delete} this->\hyperlink{classIceAge_1_1BuilderBytost_a39f10b26bcda8142ce353e6ca761cabb}{m\_builder};
+00073 \}
+\end{DoxyCode}

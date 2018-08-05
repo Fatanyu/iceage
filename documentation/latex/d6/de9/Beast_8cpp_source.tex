@@ -1,0 +1,33 @@
+\hypertarget{Beast_8cpp_source}{}\section{Beast.\+cpp}
+\label{Beast_8cpp_source}\index{cpp/\+Beast.\+cpp@{cpp/\+Beast.\+cpp}}
+
+\begin{DoxyCode}
+00001 
+00004 \textcolor{preprocessor}{#include "../hlavicky/Beast.h"}
+00005 
+\hypertarget{Beast_8cpp_source.tex_l00009}{}\hyperlink{classIceAge_1_1Beast_a5c79a63fbc0a1bb4bcbb9a8dc3f53a6e}{00009} \textcolor{keywordtype}{short} \hyperlink{classIceAge_1_1Beast_a5c79a63fbc0a1bb4bcbb9a8dc3f53a6e}{IceAge::Beast::getZurivost}() \{
+00010     \textcolor{keywordflow}{return} this->\hyperlink{classIceAge_1_1Beast_a4ab89bf8c404db2afa13f83dd893098b}{m\_zurivost};
+00011 \}
+00012 
+\hypertarget{Beast_8cpp_source.tex_l00016}{}\hyperlink{classIceAge_1_1Beast_a3be2043a37d885dc4a9ecb0e12674f15}{00016} \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1Beast_a3be2043a37d885dc4a9ecb0e12674f15}{IceAge::Beast::setZurivost}(\textcolor{keywordtype}{short} novaZurivost) \{
+00017     this->\hyperlink{classIceAge_1_1Beast_a4ab89bf8c404db2afa13f83dd893098b}{m\_zurivost}=novaZurivost;
+00018 \}
+00019 
+\hypertarget{Beast_8cpp_source.tex_l00023}{}\hyperlink{classIceAge_1_1Beast_aa51303b6d8ff02435b44f566f49c7443}{00023} \textcolor{keywordtype}{short} \hyperlink{classIceAge_1_1Beast_aa51303b6d8ff02435b44f566f49c7443}{IceAge::Beast::utok}() \{
+00024     \textcolor{keywordflow}{return} this->\hyperlink{classIceAge_1_1Staty_a2c8b38d3cfa305f5b5fab199894dd922}{getSila}() + this->\hyperlink{classIceAge_1_1Beast_a5c79a63fbc0a1bb4bcbb9a8dc3f53a6e}{getZurivost}();
+00025 \}
+00026 
+\hypertarget{Beast_8cpp_source.tex_l00030}{}\hyperlink{classIceAge_1_1Beast_a5968dfee492be5e23cf241306d3dea75}{00030} \textcolor{keywordtype}{short} \hyperlink{classIceAge_1_1Beast_a5968dfee492be5e23cf241306d3dea75}{IceAge::Beast::obrana}() \{
+00031     \textcolor{keywordflow}{return} this->\hyperlink{classIceAge_1_1Staty_a142a0ec049584c8ea716b96d2b742b08}{getOdolnost}();
+00032 \}
+00033 
+\hypertarget{Beast_8cpp_source.tex_l00037}{}\hyperlink{classIceAge_1_1Beast_ac5cd6bdf15572c9844562995758f0c01}{00037} \hyperlink{classIceAge_1_1Beast_ac5cd6bdf15572c9844562995758f0c01}{IceAge::Beast::Beast}(\textcolor{keywordtype}{short} novaZurivost, std::string novyNazev, \textcolor{keywordtype}{short} novaSila, 
+      std::string novyPopis, \textcolor{keywordtype}{short} novaOdolnost, \textcolor{keywordtype}{short} novyZivot)
+00038                                     :\hyperlink{classIceAge_1_1Memory}{Memory}(), \hyperlink{classIceAge_1_1Zivot}{Zivot}(novyZivot,novyZivot), 
+      \hyperlink{classIceAge_1_1Nazev}{Nazev}(novyNazev), \hyperlink{classIceAge_1_1Popis}{Popis}(novyPopis), \hyperlink{classIceAge_1_1Staty}{Staty}(novaSila,novaOdolnost)\{
+00039     this->\hyperlink{classIceAge_1_1Beast_a3be2043a37d885dc4a9ecb0e12674f15}{setZurivost}(novaZurivost);
+00040 \}
+00041 
+\hypertarget{Beast_8cpp_source.tex_l00045}{}\hyperlink{classIceAge_1_1Beast_a8bf5311c895c575026e812e4b30b6f07}{00045} \hyperlink{classIceAge_1_1Beast_a8bf5311c895c575026e812e4b30b6f07}{IceAge::Beast::~Beast}()\{
+00046 \}
+\end{DoxyCode}

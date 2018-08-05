@@ -1,0 +1,45 @@
+Vychodni breh reky
+1
+Krasna plaz obsazena malou rodinkou
+***
+0
+***
+6
+Mamut
+Velky, hodny, chytry, zamilovany
+30
+40
+20
+320
+Mamutice
+Velka, hodna, blba, zamilovana
+20
+35
+18
+300
+Lenochod
+Nicitel orisku
+-3
+3
+3
+60
+Savlozuby tygr
+Strejda Diego
+30
+15
+13
+100
+Fretka
+Malej hajzl cislo 1
+30
+5
+2
+30
+Fretka
+Malej hajzl cislo 2
+30
+5
+2
+30
+***
+Vychodni planina

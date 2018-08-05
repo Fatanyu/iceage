@@ -1,0 +1,275 @@
+\hypertarget{classIceAge_1_1Hra}{}\section{Dokumentace třídy Ice\+Age\+:\+:Hra}
+\label{classIceAge_1_1Hra}\index{Ice\+Age\+::\+Hra@{Ice\+Age\+::\+Hra}}
+
+
+{\ttfamily \#include $<$Hra.\+h$>$}
+
+Diagram dědičnosti pro třídu Ice\+Age\+:\+:Hra\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{d3/dc5/classIceAge_1_1Hra}
+\end{center}
+\end{figure}
+\subsection*{Veřejné metody}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classIceAge_1_1Hra_ae4538962681c44e099fac261639e4063}{Hra} (\hyperlink{classIceAge_1_1Lokace}{Ice\+Age\+::\+Lokace} $\ast$nova\+Aktualni\+Lokace)
+\begin{DoxyCompactList}\small\item\em Konstruktor. \end{DoxyCompactList}\item 
+void \hyperlink{classIceAge_1_1Hra_a60ee65556b0198201f3e5fd8d2cd97e0}{zacni\+Hrat} (\hyperlink{classIceAge_1_1Veverka}{Ice\+Age\+::\+Veverka} $\ast$scrat)
+\begin{DoxyCompactList}\small\item\em Metoda ktera spusti pribeh. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Privátní metody}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classIceAge_1_1Hra_a9429d4476f187d8a80dde5944704fab7}{zmen\+Lokaci} (\hyperlink{classIceAge_1_1Veverka}{Ice\+Age\+::\+Veverka} $\ast$scrat)
+\begin{DoxyCompactList}\small\item\em Metoda ktera zmeni aktualni lokaci. \end{DoxyCompactList}\item 
+void \hyperlink{classIceAge_1_1Hra_ab22ae41ab25a957787cc5f11569e20f7}{zmen\+Lokaci} (unsigned int index, \hyperlink{classIceAge_1_1Veverka}{Ice\+Age\+::\+Veverka} $\ast$scrat)
+\begin{DoxyCompactList}\small\item\em Metoda ktera zmeni aktualni lokaci. \end{DoxyCompactList}\item 
+void \hyperlink{classIceAge_1_1Hra_a1fad6152ce71d1e2912e538f3c330d29}{set\+Aktualni\+Lokace} (\hyperlink{classIceAge_1_1Lokace}{Ice\+Age\+::\+Lokace} $\ast$nova\+Aktualni\+Lokace)
+\begin{DoxyCompactList}\small\item\em Metoda ktera nastavi aktualni lokaci. \end{DoxyCompactList}\item 
+void \hyperlink{classIceAge_1_1Hra_af0fafa4884c5107939edc907cc7de1a9}{vypis\+Aktualni\+Lokaci} ()
+\begin{DoxyCompactList}\small\item\em Metoda ktera vypise aktualni lokaci. \end{DoxyCompactList}\item 
+void \hyperlink{classIceAge_1_1Hra_a28f302456724c7a0901e16a940ea6c67}{vypis\+Asci\+Obrazek} ()
+\begin{DoxyCompactList}\small\item\em Metoda ktera vypise aktualni obrazek. \end{DoxyCompactList}\item 
+void \hyperlink{classIceAge_1_1Hra_acca9aa3823d78712b66e371fabbaf351}{intro} (\hyperlink{classIceAge_1_1Veverka}{Ice\+Age\+::\+Veverka} $\ast$scrat)
+\begin{DoxyCompactList}\small\item\em Metoda ktera je uvodnim algoritmem(dejem) ve hre. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Privátní atributy}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classIceAge_1_1Lokace}{Ice\+Age\+::\+Lokace} $\ast$ \hyperlink{classIceAge_1_1Hra_a2d006812c29f093c47054be30c8b7591}{m\+\_\+aktualni\+Lokace}
+\begin{DoxyCompactList}\small\item\em Atribut udrzujici odkaz na aktualni lokaci. \end{DoxyCompactList}\item 
+short \hyperlink{classIceAge_1_1Hra_aca22307d63587a6fc2f835fdf8b28a21}{m\+\_\+obrazek}
+\begin{DoxyCompactList}\small\item\em Atribut ktery je pocitadlo aktualniho obrazku. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Další zděděné členy}
+
+
+\subsection{Detailní popis}
+Trida zajistujici samotny prubeh hry. 
+
+Definice je uvedena na řádku \hyperlink{Hra_8h_source_l00015}{15} v souboru \hyperlink{Hra_8h_source}{Hra.\+h}.
+
+
+
+\subsection{Dokumentace konstruktoru a destruktoru}
+\index{Ice\+Age\+::\+Hra@{Ice\+Age\+::\+Hra}!Hra@{Hra}}
+\index{Hra@{Hra}!Ice\+Age\+::\+Hra@{Ice\+Age\+::\+Hra}}
+\subsubsection[{\texorpdfstring{Hra(\+Ice\+Age\+::\+Lokace $\ast$nova\+Aktualni\+Lokace)}{Hra(IceAge::Lokace *novaAktualniLokace)}}]{\setlength{\rightskip}{0pt plus 5cm}Ice\+Age\+::\+Hra\+::\+Hra (
+\begin{DoxyParamCaption}
+\item[{{\bf Ice\+Age\+::\+Lokace} $\ast$}]{nova\+Aktualni\+Lokace}
+\end{DoxyParamCaption}
+)}\hypertarget{classIceAge_1_1Hra_ae4538962681c44e099fac261639e4063}{}\label{classIceAge_1_1Hra_ae4538962681c44e099fac261639e4063}
+
+
+Konstruktor. 
+
+Konstruktor ktery nastavi aktualni lokaci a aktualni obrazek na 0; 
+
+Definice je uvedena na řádku \hyperlink{Hra_8cpp_source_l00009}{9} v souboru \hyperlink{Hra_8cpp_source}{Hra.\+cpp}.
+
+
+
+\subsection{Dokumentace k metodám}
+\index{Ice\+Age\+::\+Hra@{Ice\+Age\+::\+Hra}!intro@{intro}}
+\index{intro@{intro}!Ice\+Age\+::\+Hra@{Ice\+Age\+::\+Hra}}
+\subsubsection[{\texorpdfstring{intro(\+Ice\+Age\+::\+Veverka $\ast$scrat)}{intro(IceAge::Veverka *scrat)}}]{\setlength{\rightskip}{0pt plus 5cm}void Ice\+Age\+::\+Hra\+::intro (
+\begin{DoxyParamCaption}
+\item[{{\bf Ice\+Age\+::\+Veverka} $\ast$}]{scrat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classIceAge_1_1Hra_acca9aa3823d78712b66e371fabbaf351}{}\label{classIceAge_1_1Hra_acca9aa3823d78712b66e371fabbaf351}
+
+
+Metoda ktera je uvodnim algoritmem(dejem) ve hre. 
+
+$<$Lokalni promenna pozivana pro nacitani odpovedi od uzivatele.
+
+$<$Lokalni promenne pouzivane pro cykleni.
+
+$<$Lokalni promenna pouzivana pro cislovani moznosti, ktere se zobrazi uzivateli.
+
+$<$Vypise obrazek na obrazovku.
+
+$<$Vypise obrazek na obrazovku.
+
+$<$Cykleni pri cekani na spravne hodnoty od hrace.
+
+$<$Reset lokalni promenne.
+
+$<$Cykleni vypisu s moznostmi akci.
+
+$<$Cykleni pri cekani na spravne hodnoty od hrace.
+
+$<$Moznost Hledej dal
+
+$<$Moznost Vloz orisek
+
+$<$Moznost Kde ze jsem?
+
+$<$Reset lokalnich promennych
+
+$<$Vypis obrazek
+
+$<$Zmena lokace
+
+$<$Cykleni pri cekani na spravne hodnoty od hrace. Spravna je pouze jedna hodnota.
+
+$<$Reset lokalni promenne
+
+Interakce se Supomutem.
+
+$<$Cykleni pri cekani na spravnou hodnotu od hrace
+
+$<$Moznost Zautocit
+
+$<$Moznost Utect
+
+$<$Moznost Schovat se
+
+$<$Reset lokalni promenne
+
+$<$Cykleni pri cekani na spravnou jednu hodnotu
+
+$<$Zmena lokace na finalni v intru 
+
+Definice je uvedena na řádku \hyperlink{Hra_8cpp_source_l00194}{194} v souboru \hyperlink{Hra_8cpp_source}{Hra.\+cpp}.
+
+\index{Ice\+Age\+::\+Hra@{Ice\+Age\+::\+Hra}!set\+Aktualni\+Lokace@{set\+Aktualni\+Lokace}}
+\index{set\+Aktualni\+Lokace@{set\+Aktualni\+Lokace}!Ice\+Age\+::\+Hra@{Ice\+Age\+::\+Hra}}
+\subsubsection[{\texorpdfstring{set\+Aktualni\+Lokace(\+Ice\+Age\+::\+Lokace $\ast$nova\+Aktualni\+Lokace)}{setAktualniLokace(IceAge::Lokace *novaAktualniLokace)}}]{\setlength{\rightskip}{0pt plus 5cm}void Ice\+Age\+::\+Hra\+::set\+Aktualni\+Lokace (
+\begin{DoxyParamCaption}
+\item[{{\bf Ice\+Age\+::\+Lokace} $\ast$}]{nova\+Aktualni\+Lokace}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classIceAge_1_1Hra_a1fad6152ce71d1e2912e538f3c330d29}{}\label{classIceAge_1_1Hra_a1fad6152ce71d1e2912e538f3c330d29}
+
+
+Metoda ktera nastavi aktualni lokaci. 
+
+Metoda ktera nastavi aktualni lokaci. 
+
+Definice je uvedena na řádku \hyperlink{Hra_8cpp_source_l00066}{66} v souboru \hyperlink{Hra_8cpp_source}{Hra.\+cpp}.
+
+\index{Ice\+Age\+::\+Hra@{Ice\+Age\+::\+Hra}!vypis\+Aktualni\+Lokaci@{vypis\+Aktualni\+Lokaci}}
+\index{vypis\+Aktualni\+Lokaci@{vypis\+Aktualni\+Lokaci}!Ice\+Age\+::\+Hra@{Ice\+Age\+::\+Hra}}
+\subsubsection[{\texorpdfstring{vypis\+Aktualni\+Lokaci()}{vypisAktualniLokaci()}}]{\setlength{\rightskip}{0pt plus 5cm}void Ice\+Age\+::\+Hra\+::vypis\+Aktualni\+Lokaci (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classIceAge_1_1Hra_af0fafa4884c5107939edc907cc7de1a9}{}\label{classIceAge_1_1Hra_af0fafa4884c5107939edc907cc7de1a9}
+
+
+Metoda ktera vypise aktualni lokaci. 
+
+Metoda ktera vypise aktualni lokaci, tj jeho nazev a popis. 
+
+Definice je uvedena na řádku \hyperlink{Hra_8cpp_source_l00073}{73} v souboru \hyperlink{Hra_8cpp_source}{Hra.\+cpp}.
+
+\index{Ice\+Age\+::\+Hra@{Ice\+Age\+::\+Hra}!vypis\+Asci\+Obrazek@{vypis\+Asci\+Obrazek}}
+\index{vypis\+Asci\+Obrazek@{vypis\+Asci\+Obrazek}!Ice\+Age\+::\+Hra@{Ice\+Age\+::\+Hra}}
+\subsubsection[{\texorpdfstring{vypis\+Asci\+Obrazek()}{vypisAsciObrazek()}}]{\setlength{\rightskip}{0pt plus 5cm}void Ice\+Age\+::\+Hra\+::vypis\+Asci\+Obrazek (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classIceAge_1_1Hra_a28f302456724c7a0901e16a940ea6c67}{}\label{classIceAge_1_1Hra_a28f302456724c7a0901e16a940ea6c67}
+
+
+Metoda ktera vypise aktualni obrazek. 
+
+Metoda ktera vypise aktualni obrazek. Rozhoduje se na zaklade atributu obrazek. 
+
+Definice je uvedena na řádku \hyperlink{Hra_8cpp_source_l00083}{83} v souboru \hyperlink{Hra_8cpp_source}{Hra.\+cpp}.
+
+\index{Ice\+Age\+::\+Hra@{Ice\+Age\+::\+Hra}!zacni\+Hrat@{zacni\+Hrat}}
+\index{zacni\+Hrat@{zacni\+Hrat}!Ice\+Age\+::\+Hra@{Ice\+Age\+::\+Hra}}
+\subsubsection[{\texorpdfstring{zacni\+Hrat(\+Ice\+Age\+::\+Veverka $\ast$scrat)}{zacniHrat(IceAge::Veverka *scrat)}}]{\setlength{\rightskip}{0pt plus 5cm}void Ice\+Age\+::\+Hra\+::zacni\+Hrat (
+\begin{DoxyParamCaption}
+\item[{{\bf Ice\+Age\+::\+Veverka} $\ast$}]{scrat}
+\end{DoxyParamCaption}
+)}\hypertarget{classIceAge_1_1Hra_a60ee65556b0198201f3e5fd8d2cd97e0}{}\label{classIceAge_1_1Hra_a60ee65556b0198201f3e5fd8d2cd97e0}
+
+
+Metoda ktera spusti pribeh. 
+
+Metoda ktera spusti pribeh. $<$Lokalni promenna pozivana pro nacitani odpovedi od uzivatele.
+
+$<$Lokalni promenne pouzite pro cykly.
+
+$<$Lokalni promenna pouzivana pro cislovani moznosti, ktere se zobrazi uzivateli.
+
+$<$Spust uvodni dej.
+
+$<$Cykleni v lokacich
+
+$<$Cykleni v ziskavani odpovedi od hrace
+
+$<$Moznost Jit jinam
+
+$<$Moznost Kde ze jsem?
+
+$<$Prozkoumat to tu 
+
+Definice je uvedena na řádku \hyperlink{Hra_8cpp_source_l00336}{336} v souboru \hyperlink{Hra_8cpp_source}{Hra.\+cpp}.
+
+\index{Ice\+Age\+::\+Hra@{Ice\+Age\+::\+Hra}!zmen\+Lokaci@{zmen\+Lokaci}}
+\index{zmen\+Lokaci@{zmen\+Lokaci}!Ice\+Age\+::\+Hra@{Ice\+Age\+::\+Hra}}
+\subsubsection[{\texorpdfstring{zmen\+Lokaci(\+Ice\+Age\+::\+Veverka $\ast$scrat)}{zmenLokaci(IceAge::Veverka *scrat)}}]{\setlength{\rightskip}{0pt plus 5cm}void Ice\+Age\+::\+Hra\+::zmen\+Lokaci (
+\begin{DoxyParamCaption}
+\item[{{\bf Ice\+Age\+::\+Veverka} $\ast$}]{scrat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classIceAge_1_1Hra_a9429d4476f187d8a80dde5944704fab7}{}\label{classIceAge_1_1Hra_a9429d4476f187d8a80dde5944704fab7}
+
+
+Metoda ktera zmeni aktualni lokaci. 
+
+Metoda ktera zmeni lokaci na zaklade hracova vyberu. 
+
+Definice je uvedena na řádku \hyperlink{Hra_8cpp_source_l00017}{17} v souboru \hyperlink{Hra_8cpp_source}{Hra.\+cpp}.
+
+\index{Ice\+Age\+::\+Hra@{Ice\+Age\+::\+Hra}!zmen\+Lokaci@{zmen\+Lokaci}}
+\index{zmen\+Lokaci@{zmen\+Lokaci}!Ice\+Age\+::\+Hra@{Ice\+Age\+::\+Hra}}
+\subsubsection[{\texorpdfstring{zmen\+Lokaci(unsigned int index, Ice\+Age\+::\+Veverka $\ast$scrat)}{zmenLokaci(unsigned int index, IceAge::Veverka *scrat)}}]{\setlength{\rightskip}{0pt plus 5cm}void Ice\+Age\+::\+Hra\+::zmen\+Lokaci (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{index, }
+\item[{{\bf Ice\+Age\+::\+Veverka} $\ast$}]{scrat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classIceAge_1_1Hra_ab22ae41ab25a957787cc5f11569e20f7}{}\label{classIceAge_1_1Hra_ab22ae41ab25a957787cc5f11569e20f7}
+
+
+Metoda ktera zmeni aktualni lokaci. 
+
+Metoda ktera zmeni lokaci na zaklade hodnoty indexu a pripadnemu vybaveni hrace. $<$Pokud se cestuje z lesa do lesa.
+
+$<$Pokud nevlastnis lod a klacek
+
+$<$Pokud se cestuje z lesa do lesa. 
+
+Definice je uvedena na řádku \hyperlink{Hra_8cpp_source_l00040}{40} v souboru \hyperlink{Hra_8cpp_source}{Hra.\+cpp}.
+
+
+
+\subsection{Dokumentace k datovým členům}
+\index{Ice\+Age\+::\+Hra@{Ice\+Age\+::\+Hra}!m\+\_\+aktualni\+Lokace@{m\+\_\+aktualni\+Lokace}}
+\index{m\+\_\+aktualni\+Lokace@{m\+\_\+aktualni\+Lokace}!Ice\+Age\+::\+Hra@{Ice\+Age\+::\+Hra}}
+\subsubsection[{\texorpdfstring{m\+\_\+aktualni\+Lokace}{m_aktualniLokace}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ice\+Age\+::\+Lokace}$\ast$ Ice\+Age\+::\+Hra\+::m\+\_\+aktualni\+Lokace\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classIceAge_1_1Hra_a2d006812c29f093c47054be30c8b7591}{}\label{classIceAge_1_1Hra_a2d006812c29f093c47054be30c8b7591}
+
+
+Atribut udrzujici odkaz na aktualni lokaci. 
+
+
+
+Definice je uvedena na řádku \hyperlink{Hra_8h_source_l00018}{18} v souboru \hyperlink{Hra_8h_source}{Hra.\+h}.
+
+\index{Ice\+Age\+::\+Hra@{Ice\+Age\+::\+Hra}!m\+\_\+obrazek@{m\+\_\+obrazek}}
+\index{m\+\_\+obrazek@{m\+\_\+obrazek}!Ice\+Age\+::\+Hra@{Ice\+Age\+::\+Hra}}
+\subsubsection[{\texorpdfstring{m\+\_\+obrazek}{m_obrazek}}]{\setlength{\rightskip}{0pt plus 5cm}short Ice\+Age\+::\+Hra\+::m\+\_\+obrazek\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classIceAge_1_1Hra_aca22307d63587a6fc2f835fdf8b28a21}{}\label{classIceAge_1_1Hra_aca22307d63587a6fc2f835fdf8b28a21}
+
+
+Atribut ktery je pocitadlo aktualniho obrazku. 
+
+
+
+Definice je uvedena na řádku \hyperlink{Hra_8h_source_l00019}{19} v souboru \hyperlink{Hra_8h_source}{Hra.\+h}.
+
+
+
+Dokumentace pro tuto třídu byla generována z následujících souborů\+:\begin{DoxyCompactItemize}
+\item 
+hlavicky/\hyperlink{Hra_8h}{Hra.\+h}\item 
+cpp/\hyperlink{Hra_8cpp}{Hra.\+cpp}\end{DoxyCompactItemize}

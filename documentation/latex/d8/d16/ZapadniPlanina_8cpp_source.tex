@@ -1,0 +1,29 @@
+\hypertarget{ZapadniPlanina_8cpp_source}{}\section{Zapadni\+Planina.\+cpp}
+\label{ZapadniPlanina_8cpp_source}\index{cpp/\+Zapadni\+Planina.\+cpp@{cpp/\+Zapadni\+Planina.\+cpp}}
+
+\begin{DoxyCode}
+00001 
+00004 \textcolor{preprocessor}{#include "../hlavicky/ZapadniPlanina.h"}
+00005 
+\hypertarget{ZapadniPlanina_8cpp_source.tex_l00009}{}\hyperlink{classIceAge_1_1ZapadniPlanina_a00bed05e6c94978be3a6ab06097fb7f5}{00009} \hyperlink{classIceAge_1_1ZapadniPlanina_a00bed05e6c94978be3a6ab06097fb7f5}{IceAge::ZapadniPlanina::ZapadniPlanina}(std::string novyNazev):
+      \hyperlink{classIceAge_1_1Command}{Command}(novyNazev) \{
+00010 \}
+00011 
+\hypertarget{ZapadniPlanina_8cpp_source.tex_l00015}{}\hyperlink{classIceAge_1_1ZapadniPlanina_a232195b066da4fa8eaa4e6524de6954d}{00015} \hyperlink{classIceAge_1_1ZapadniPlanina_a232195b066da4fa8eaa4e6524de6954d}{IceAge::ZapadniPlanina::~ZapadniPlanina}() \{
+00016 \}
+00017 
+\hypertarget{ZapadniPlanina_8cpp_source.tex_l00021}{}\hyperlink{classIceAge_1_1ZapadniPlanina_a328d18a38647899a301125ac42ac9fd3}{00021} \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1ZapadniPlanina_a328d18a38647899a301125ac42ac9fd3}{IceAge::ZapadniPlanina::prozkoumat}(
+      \hyperlink{classIceAge_1_1Veverka}{IceAge::Veverka}* scrat, std::vector<IceAge::Beast*> vektorBeast, 
+      std::vector<IceAge::Humanoid*> vektorHumanoid, \hyperlink{classIceAge_1_1Reka}{IceAge::Reka}* reka) \{
+00022 
+00023     std::cout << \textcolor{stringliteral}{"Vidis mensi melu. Je tu vymena nazoru mezi ["};
+00024     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} i=0;i<(vektorBeast.size()-1);i++) std::cout << vektorBeast.at(i)->getNazev() << \textcolor{stringliteral}{" "};
+00025     std::cout << \textcolor{stringliteral}{"] a ["};
+00026     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} i=0;i<vektorHumanoid.size();i++) std::cout << vektorHumanoid.at(i)->getNazev() << \textcolor{stringliteral}{" "};
+00027     std::cout << \textcolor{stringliteral}{" ]"};
+00028     std::cout << std::endl;
+00029     std::cout << \textcolor{stringliteral}{"Radeji se drzis stranou."} <<std::endl;
+00030     std::cout << std::endl;
+00031 
+00032 \}
+\end{DoxyCode}

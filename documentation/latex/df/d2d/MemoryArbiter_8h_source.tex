@@ -1,0 +1,30 @@
+\hypertarget{MemoryArbiter_8h_source}{}\section{Memory\+Arbiter.\+h}
+\label{MemoryArbiter_8h_source}\index{hlavicky/\+Memory\+Arbiter.\+h@{hlavicky/\+Memory\+Arbiter.\+h}}
+
+\begin{DoxyCode}
+00001 
+00004 \textcolor{preprocessor}{#ifndef MEMORYARBITER\_H}
+00005 \textcolor{preprocessor}{#define MEMORYARBITER\_H}
+00006 
+00007 \textcolor{keyword}{namespace }\hyperlink{namespaceIceAge}{IceAge}\{
+00008     \textcolor{keyword}{class }Memory;
+00009 \}
+00010 \textcolor{preprocessor}{#include "\hyperlink{Memory_8h}{Memory.h}"}
+00011 \textcolor{preprocessor}{#include <vector>}
+00012 \textcolor{preprocessor}{#include <iostream>}
+00013 
+00014 
+00015 \textcolor{keyword}{namespace }\hyperlink{namespaceIceAge}{IceAge} \{
+\hypertarget{MemoryArbiter_8h_source.tex_l00022}{}\hyperlink{classIceAge_1_1MemoryArbiter}{00022}     \textcolor{keyword}{class }\hyperlink{classIceAge_1_1MemoryArbiter}{MemoryArbiter} \{
+00023 
+00024     \textcolor{keyword}{private}:
+\hypertarget{MemoryArbiter_8h_source.tex_l00025}{}\hyperlink{classIceAge_1_1MemoryArbiter_a23e5c384f4c4526d7caf0954668d6543}{00025}         \textcolor{keyword}{static} std::vector<IceAge::Memory*> \hyperlink{classIceAge_1_1MemoryArbiter_a23e5c384f4c4526d7caf0954668d6543}{s\_memoryVector};
+00027         \hyperlink{classIceAge_1_1MemoryArbiter_a1e6bf2eef9d3fb964f6665b94f011024}{MemoryArbiter}();
+00029     \textcolor{keyword}{public}:
+00030         \textcolor{keyword}{static} \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1MemoryArbiter_a219f22e94979f934a63a0fd28ef889f7}{add}(\hyperlink{classIceAge_1_1Memory}{IceAge::Memory}* target);
+00032         \textcolor{keyword}{static} \textcolor{keywordtype}{void} \textcolor{keyword}{remove}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} targetId);
+00034         \textcolor{keyword}{static} \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1MemoryArbiter_ae3460492678cf992629f4a70de3ef1ca}{cycleDelete}();
+00035     \};
+00036 \}
+00037 \textcolor{preprocessor}{#endif}
+\end{DoxyCode}

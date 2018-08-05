@@ -1,0 +1,353 @@
+\documentclass[twoside]{book}
+
+% Packages required by doxygen
+\usepackage{fixltx2e}
+\usepackage{calc}
+\usepackage{doxygen}
+\usepackage[export]{adjustbox} % also loads graphicx
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{makeidx}
+\usepackage{multicol}
+\usepackage{multirow}
+\PassOptionsToPackage{warn}{textcomp}
+\usepackage{textcomp}
+\usepackage[nointegrals]{wasysym}
+\usepackage[table]{xcolor}
+
+% NLS support packages
+\usepackage[T2A]{fontenc}
+\usepackage[czech]{babel}
+
+% Font selection
+\usepackage[T1]{fontenc}
+\usepackage[scaled=.90]{helvet}
+\usepackage{courier}
+\usepackage{amssymb}
+\usepackage{sectsty}
+\renewcommand{\familydefault}{\sfdefault}
+\allsectionsfont{%
+  \fontseries{bc}\selectfont%
+  \color{darkgray}%
+}
+\renewcommand{\DoxyLabelFont}{%
+  \fontseries{bc}\selectfont%
+  \color{darkgray}%
+}
+\newcommand{\+}{\discretionary{\mbox{\scriptsize$\hookleftarrow$}}{}{}}
+
+% Page & text layout
+\usepackage{geometry}
+\geometry{%
+  a4paper,%
+  top=2.5cm,%
+  bottom=2.5cm,%
+  left=2.5cm,%
+  right=2.5cm%
+}
+\tolerance=750
+\hfuzz=15pt
+\hbadness=750
+\setlength{\emergencystretch}{15pt}
+\setlength{\parindent}{0cm}
+\setlength{\parskip}{3ex plus 2ex minus 2ex}
+\makeatletter
+\renewcommand{\paragraph}{%
+  \@startsection{paragraph}{4}{0ex}{-1.0ex}{1.0ex}{%
+    \normalfont\normalsize\bfseries\SS@parafont%
+  }%
+}
+\renewcommand{\subparagraph}{%
+  \@startsection{subparagraph}{5}{0ex}{-1.0ex}{1.0ex}{%
+    \normalfont\normalsize\bfseries\SS@subparafont%
+  }%
+}
+\makeatother
+
+% Headers & footers
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\fancyhead[LE]{\fancyplain{}{\bfseries\thepage}}
+\fancyhead[CE]{\fancyplain{}{}}
+\fancyhead[RE]{\fancyplain{}{\bfseries\leftmark}}
+\fancyhead[LO]{\fancyplain{}{\bfseries\rightmark}}
+\fancyhead[CO]{\fancyplain{}{}}
+\fancyhead[RO]{\fancyplain{}{\bfseries\thepage}}
+\fancyfoot[LE]{\fancyplain{}{}}
+\fancyfoot[CE]{\fancyplain{}{}}
+\fancyfoot[RE]{\fancyplain{}{\bfseries\scriptsize Generováno programem Doxygen }}
+\fancyfoot[LO]{\fancyplain{}{\bfseries\scriptsize Generováno programem Doxygen }}
+\fancyfoot[CO]{\fancyplain{}{}}
+\fancyfoot[RO]{\fancyplain{}{}}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\chaptermark}[1]{%
+  \markboth{#1}{}%
+}
+\renewcommand{\sectionmark}[1]{%
+  \markright{\thesection\ #1}%
+}
+
+% Indices & bibliography
+\usepackage{natbib}
+\usepackage[titles]{tocloft}
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{5}
+\makeindex
+
+% Hyperlinks (required, but should be loaded last)
+\usepackage{ifpdf}
+\ifpdf
+  \usepackage[pdftex,pagebackref=true]{hyperref}
+\else
+  \usepackage[ps2pdf,pagebackref=true]{hyperref}
+\fi
+\hypersetup{%
+  colorlinks=true,%
+  linkcolor=blue,%
+  citecolor=blue,%
+  unicode%
+}
+
+% Custom commands
+\newcommand{\clearemptydoublepage}{%
+  \newpage{\pagestyle{empty}\cleardoublepage}%
+}
+
+\usepackage{caption}
+\captionsetup{labelsep=space,justification=centering,font={bf},singlelinecheck=off,skip=4pt,position=top}
+
+%===== C O N T E N T S =====
+
+\begin{document}
+
+% Titlepage & ToC
+\hypersetup{pageanchor=false,
+             bookmarksnumbered=true,
+             pdfencoding=unicode
+            }
+\pagenumbering{roman}
+\begin{titlepage}
+\vspace*{7cm}
+\begin{center}%
+{\Large Ice\+Age \\[1ex]\large 1.\+0 }\\
+\vspace*{1cm}
+{\large Generováno programem Doxygen 1.8.11}\\
+\end{center}
+\end{titlepage}
+\clearemptydoublepage
+\tableofcontents
+\clearemptydoublepage
+\pagenumbering{arabic}
+\hypersetup{pageanchor=true}
+
+%--- Begin generated contents ---
+\chapter{Rejstřík prostorů jmen}
+\input{namespaces}
+\chapter{Rejstřík hierarchie tříd}
+\input{hierarchy}
+\chapter{Rejstřík tříd}
+\input{annotated}
+\chapter{Rejstřík souborů}
+\input{files}
+\chapter{Dokumentace prostorů jmen}
+\input{dd/d33/namespaceIceAge}
+\chapter{Dokumentace tříd}
+\input{d3/d45/classIceAge_1_1Beast}
+\input{d5/d91/classIceAge_1_1BuilderBytost}
+\input{db/ddf/classIceAge_1_1BuilderLokace}
+\input{d2/d78/classIceAge_1_1BuilderPredmet}
+\input{d6/d36/classIceAge_1_1Command}
+\input{d5/d14/classIceAge_1_1EngineIceAge}
+\input{d3/dc5/classIceAge_1_1Hra}
+\input{d5/d0d/classIceAge_1_1Humanoid}
+\input{d2/dde/classIceAge_1_1IInventar}
+\input{d5/dfe/classIceAge_1_1IMemory}
+\input{d1/d39/classIceAge_1_1INazev}
+\input{d9/d41/classIceAge_1_1Inventar}
+\input{d6/d4b/classIceAge_1_1IObleceneVybaveni}
+\input{d5/dca/classIceAge_1_1IPopis}
+\input{d7/ddc/classIceAge_1_1IStaty}
+\input{df/d67/classIceAge_1_1IZivot}
+\input{d4/d46/classIceAge_1_1Jezero}
+\input{d6/df5/classIceAge_1_1JizniLes}
+\input{db/d1e/classIceAge_1_1Ledovec}
+\input{d7/d9b/classIceAge_1_1LocationDirector}
+\input{da/d5b/classIceAge_1_1Lokace}
+\input{d0/d1c/classIceAge_1_1Memory}
+\input{df/dd3/classIceAge_1_1MemoryArbiter}
+\input{d4/d9d/classIceAge_1_1Nazev}
+\input{d7/d1d/classIceAge_1_1ObleceneVybaveniHumanoid}
+\input{d4/d90/classIceAge_1_1ObleceneVybaveniVeverky}
+\input{d7/d11/classIceAge_1_1Orisek}
+\input{d8/d11/classIceAge_1_1Popis}
+\input{db/db8/classIceAge_1_1Predmet}
+\input{d0/dc8/classIceAge_1_1Reka}
+\input{dd/d57/classIceAge_1_1SeverniLes}
+\input{d2/d04/classIceAge_1_1Staty}
+\input{d5/d89/classIceAge_1_1Veverka}
+\input{db/d84/classIceAge_1_1VychodniBrehReky}
+\input{dd/da7/classIceAge_1_1VychodniPlanina}
+\input{d0/da1/classIceAge_1_1ZapadniBrehReky}
+\input{db/d02/classIceAge_1_1ZapadniPlanina}
+\input{d1/d47/classIceAge_1_1Zbran}
+\input{d5/de8/classIceAge_1_1Zivot}
+\chapter{Dokumentace souborů}
+\input{d6/de9/Beast_8cpp}
+\input{d6/de9/Beast_8cpp_source}
+\input{d8/dbd/BuilderBytost_8cpp}
+\input{d8/dbd/BuilderBytost_8cpp_source}
+\input{d8/dbd/BuilderLokace_8cpp}
+\input{d8/dbd/BuilderLokace_8cpp_source}
+\input{df/d40/BuilderPredmet_8cpp}
+\input{df/d40/BuilderPredmet_8cpp_source}
+\input{d5/df8/Command_8cpp}
+\input{d5/df8/Command_8cpp_source}
+\input{da/d82/EngineIceAge_8cpp}
+\input{da/d82/EngineIceAge_8cpp_source}
+\input{da/d1a/Hra_8cpp}
+\input{da/d1a/Hra_8cpp_source}
+\input{d2/d85/Humanoid_8cpp}
+\input{d2/d85/Humanoid_8cpp_source}
+\input{d2/db3/Inventar_8cpp}
+\input{d2/db3/Inventar_8cpp_source}
+\input{de/d56/Jezero_8cpp}
+\input{de/d56/Jezero_8cpp_source}
+\input{da/d30/JizniLes_8cpp}
+\input{da/d30/JizniLes_8cpp_source}
+\input{dc/d3d/Ledovec_8cpp}
+\input{dc/d3d/Ledovec_8cpp_source}
+\input{d6/d6c/LocationDirector_8cpp}
+\input{d6/d6c/LocationDirector_8cpp_source}
+\input{d5/d6c/Lokace_8cpp}
+\input{d5/d6c/Lokace_8cpp_source}
+\input{d8/dcc/Memory_8cpp}
+\input{d8/dcc/Memory_8cpp_source}
+\input{de/d14/MemoryArbiter_8cpp}
+\input{de/d14/MemoryArbiter_8cpp_source}
+\input{d7/da8/Nazev_8cpp}
+\input{d7/da8/Nazev_8cpp_source}
+\input{db/d0d/ObleceneVybaveniHumanoid_8cpp}
+\input{db/d0d/ObleceneVybaveniHumanoid_8cpp_source}
+\input{d2/db2/ObleceneVybaveniVeverky_8cpp}
+\input{d2/db2/ObleceneVybaveniVeverky_8cpp_source}
+\input{d6/da3/Orisek_8cpp}
+\input{d6/da3/Orisek_8cpp_source}
+\input{d4/d69/Popis_8cpp}
+\input{d4/d69/Popis_8cpp_source}
+\input{d3/d2f/Predmet_8cpp}
+\input{d3/d2f/Predmet_8cpp_source}
+\input{df/da6/Reka_8cpp}
+\input{df/da6/Reka_8cpp_source}
+\input{d7/d18/SeverniLes_8cpp}
+\input{d7/d18/SeverniLes_8cpp_source}
+\input{d8/d07/Staty_8cpp}
+\input{d8/d07/Staty_8cpp_source}
+\input{df/d3a/Veverka_8cpp}
+\input{df/d3a/Veverka_8cpp_source}
+\input{dd/d2f/VolneFunkce_8cpp}
+\input{dd/d2f/VolneFunkce_8cpp_source}
+\input{d7/d69/VychodniBrehReky_8cpp}
+\input{d7/d69/VychodniBrehReky_8cpp_source}
+\input{de/db9/VychodniPlanina_8cpp}
+\input{de/db9/VychodniPlanina_8cpp_source}
+\input{df/d48/ZapadniBrehReky_8cpp}
+\input{df/d48/ZapadniBrehReky_8cpp_source}
+\input{d8/d16/ZapadniPlanina_8cpp}
+\input{d8/d16/ZapadniPlanina_8cpp_source}
+\input{de/ddb/Zbran_8cpp}
+\input{de/ddb/Zbran_8cpp_source}
+\input{d5/d2c/Zivot_8cpp}
+\input{d5/d2c/Zivot_8cpp_source}
+\input{d4/d09/Beast_8h}
+\input{d4/d09/Beast_8h_source}
+\input{de/deb/BuilderBytost_8h}
+\input{de/deb/BuilderBytost_8h_source}
+\input{dd/d4c/BuilderLokace_8h}
+\input{dd/d4c/BuilderLokace_8h_source}
+\input{de/ddd/BuilderPredmet_8h}
+\input{de/ddd/BuilderPredmet_8h_source}
+\input{d1/d55/Command_8h}
+\input{d1/d55/Command_8h_source}
+\input{da/d52/EngineIceAge_8h}
+\input{da/d52/EngineIceAge_8h_source}
+\input{d8/d46/Hra_8h}
+\input{d8/d46/Hra_8h_source}
+\input{d4/d46/Humanoid_8h}
+\input{d4/d46/Humanoid_8h_source}
+\input{de/d11/IInventar_8h}
+\input{de/d11/IInventar_8h_source}
+\input{d6/d42/IMemory_8h}
+\input{d6/d42/IMemory_8h_source}
+\input{d0/da2/INazev_8h}
+\input{d0/da2/INazev_8h_source}
+\input{da/d6b/Inventar_8h}
+\input{da/d6b/Inventar_8h_source}
+\input{da/d52/IObleceneVybaveni_8h}
+\input{da/d52/IObleceneVybaveni_8h_source}
+\input{d3/d1b/IPopis_8h}
+\input{d3/d1b/IPopis_8h_source}
+\input{dc/d4e/IStaty_8h}
+\input{dc/d4e/IStaty_8h_source}
+\input{db/db0/IZivot_8h}
+\input{db/db0/IZivot_8h_source}
+\input{d9/d0c/Jezero_8h}
+\input{d9/d0c/Jezero_8h_source}
+\input{de/d71/JizniLes_8h}
+\input{de/d71/JizniLes_8h_source}
+\input{d5/d82/Ledovec_8h}
+\input{d5/d82/Ledovec_8h_source}
+\input{d9/d7e/LocationDirector_8h}
+\input{d9/d7e/LocationDirector_8h_source}
+\input{d8/d62/Lokace_8h}
+\input{d8/d62/Lokace_8h_source}
+\input{de/d5c/Memory_8h}
+\input{de/d5c/Memory_8h_source}
+\input{df/d2d/MemoryArbiter_8h}
+\input{df/d2d/MemoryArbiter_8h_source}
+\input{d2/df6/Nazev_8h}
+\input{d2/df6/Nazev_8h_source}
+\input{d5/dc2/ObleceneVybaveniHumanoid_8h}
+\input{d5/dc2/ObleceneVybaveniHumanoid_8h_source}
+\input{dc/da2/ObleceneVybaveniVeverky_8h}
+\input{dc/da2/ObleceneVybaveniVeverky_8h_source}
+\input{da/d9c/Orisek_8h}
+\input{da/d9c/Orisek_8h_source}
+\input{d6/d85/Popis_8h}
+\input{d6/d85/Popis_8h_source}
+\input{da/d3e/Predmet_8h}
+\input{da/d3e/Predmet_8h_source}
+\input{de/d0c/Reka_8h}
+\input{de/d0c/Reka_8h_source}
+\input{d8/deb/SeverniLes_8h}
+\input{d8/deb/SeverniLes_8h_source}
+\input{db/d3b/Staty_8h}
+\input{db/d3b/Staty_8h_source}
+\input{de/dd6/Veverka_8h}
+\input{de/dd6/Veverka_8h_source}
+\input{d6/dee/VolneFunkce_8h}
+\input{d6/dee/VolneFunkce_8h_source}
+\input{d0/d37/VychodniBrehReky_8h}
+\input{d0/d37/VychodniBrehReky_8h_source}
+\input{d1/d3d/VychodniPlanina_8h}
+\input{d1/d3d/VychodniPlanina_8h_source}
+\input{d7/d52/ZapadniBrehReky_8h}
+\input{d7/d52/ZapadniBrehReky_8h_source}
+\input{d8/d6c/ZapadniPlanina_8h}
+\input{d8/d6c/ZapadniPlanina_8h_source}
+\input{d3/d34/Zbran_8h}
+\input{d3/d34/Zbran_8h_source}
+\input{d1/d20/Zivot_8h}
+\input{d1/d20/Zivot_8h_source}
+\input{df/d0a/main_8cpp}
+\input{df/d0a/main_8cpp_source}
+%--- End generated contents ---
+
+% Index
+\backmatter
+\newpage
+\phantomsection
+\clearemptydoublepage
+\addcontentsline{toc}{chapter}{Rejstřík}
+\printindex
+
+\end{document}

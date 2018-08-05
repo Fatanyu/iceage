@@ -1,0 +1,292 @@
+\hypertarget{classIceAge_1_1BuilderLokace}{}\section{Dokumentace třídy Ice\+Age\+:\+:Builder\+Lokace}
+\label{classIceAge_1_1BuilderLokace}\index{Ice\+Age\+::\+Builder\+Lokace@{Ice\+Age\+::\+Builder\+Lokace}}
+
+
+{\ttfamily \#include $<$Builder\+Lokace.\+h$>$}
+
+\subsection*{Veřejné metody}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classIceAge_1_1BuilderLokace_ad8fabba0bddf2d2569c36fa115f40673}{Builder\+Lokace} (\hyperlink{classIceAge_1_1BuilderBytost}{Ice\+Age\+::\+Builder\+Bytost} $\ast$novy\+Builder)
+\begin{DoxyCompactList}\small\item\em Konstruktor. \end{DoxyCompactList}\item 
+\hyperlink{classIceAge_1_1BuilderLokace_ae90ede622f89433692f5d4c17fd35ffb}{$\sim$\+Builder\+Lokace} ()
+\begin{DoxyCompactList}\small\item\em Destruktor. \end{DoxyCompactList}\item 
+void \hyperlink{classIceAge_1_1BuilderLokace_acce53b24cfb8ab5227520e943e6b843b}{set\+Builder} (\hyperlink{classIceAge_1_1BuilderBytost}{Ice\+Age\+::\+Builder\+Bytost} $\ast$novy\+Builder)
+\begin{DoxyCompactList}\small\item\em Metoda ktera nastavuje \hyperlink{classIceAge_1_1BuilderBytost}{Builder\+Bytost}. \end{DoxyCompactList}\item 
+void \hyperlink{classIceAge_1_1BuilderLokace_ac46d7d1ff685c51dbd382f65b29a6546}{create\+Lokace} ()
+\begin{DoxyCompactList}\small\item\em Metoda vytvarejici Lokaci. \end{DoxyCompactList}\item 
+\hyperlink{classIceAge_1_1Lokace}{Ice\+Age\+::\+Lokace} $\ast$ \hyperlink{classIceAge_1_1BuilderLokace_ada96fb10689d0b6f2ed2f7cdc31a171e}{get\+Lokace} ()
+\begin{DoxyCompactList}\small\item\em Metoda vracejici Lokaci. \end{DoxyCompactList}\item 
+\hyperlink{classIceAge_1_1Humanoid}{Ice\+Age\+::\+Humanoid} $\ast$ \hyperlink{classIceAge_1_1BuilderLokace_abff6ab9c1d0218adfe423f45c8186090}{create\+Humanoid} (short novy\+Zivot, std\+::string novy\+Popis, short nova\+Sila, short nova\+Odolnost, std\+::string novy\+Nazev\+Predmetu1, std\+::string novy\+Nazev\+Predmetu2, std\+::string novy\+Nazev\+Predmetu3, short nova\+Hodnota\+Predmetu1, short nova\+Hodnota\+Predmetu2, short nova\+Hodnota\+Predmetu3)
+\begin{DoxyCompactList}\small\item\em Metoda vytvarejici humanoida. \end{DoxyCompactList}\item 
+\hyperlink{classIceAge_1_1Beast}{Ice\+Age\+::\+Beast} $\ast$ \hyperlink{classIceAge_1_1BuilderLokace_a6ce9f158876a0601a3bac0cc26ed2d46}{create\+Beast} (short nova\+Zurivost, std\+::string novy\+Nazev, short nova\+Sila, std\+::string novy\+Popis, short nova\+Odolnost, short novy\+Zivot)
+\begin{DoxyCompactList}\small\item\em Metoda vytvarejici beast. \end{DoxyCompactList}\item 
+void \hyperlink{classIceAge_1_1BuilderLokace_a8424c61902a53f9304460055f478601b}{nacti\+Beasty} (std\+::ifstream \&popis\+Lokace)
+\begin{DoxyCompactList}\small\item\em Metoda ktera nacte beasty ze souboru a ulozi je do lokace. \end{DoxyCompactList}\item 
+void \hyperlink{classIceAge_1_1BuilderLokace_a98fae825f3de1d12408a85f03d98f2fd}{nacti\+Humanoidy} (std\+::ifstream \&popis\+Lokace)
+\begin{DoxyCompactList}\small\item\em Metoda ktera nacte humanoidy ze souboru a ulozi je do lokace. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Privátní atributy}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classIceAge_1_1BuilderBytost}{Ice\+Age\+::\+Builder\+Bytost} $\ast$ \hyperlink{classIceAge_1_1BuilderLokace_ac6981c43c22713d56e7ccbefa8b5c8b4}{m\+\_\+builder\+Bytost}
+\begin{DoxyCompactList}\small\item\em Atribut obsahujici odkaz na \hyperlink{classIceAge_1_1BuilderBytost}{Builder\+Bytost}. \end{DoxyCompactList}\item 
+\hyperlink{classIceAge_1_1Lokace}{Ice\+Age\+::\+Lokace} $\ast$ \hyperlink{classIceAge_1_1BuilderLokace_aad0fb17bf38c03cd767e100758348f24}{m\+\_\+lokace}
+\begin{DoxyCompactList}\small\item\em Atribut obsahujici odkaz na prave vytvarenou Lokaci. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classIceAge_1_1Lokace}{Ice\+Age\+::\+Lokace} $\ast$ $>$ \hyperlink{classIceAge_1_1BuilderLokace_a110ada142d159f68fb82382a47d088f4}{m\+\_\+vektor\+Lokaci}
+\begin{DoxyCompactList}\small\item\em Vector jiz hotovych lokaci, ktere se nasledne spoji do jedne \char`\"{}mapy\char`\"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailní popis}
+Trida, ktera bude stavet \hyperlink{classIceAge_1_1Lokace}{Lokace} (ktera obsahuje beasty/humanoidy). Podle navrhoveho vzoru Builder. 
+
+Definice je uvedena na řádku \hyperlink{BuilderLokace_8h_source_l00018}{18} v souboru \hyperlink{BuilderLokace_8h_source}{Builder\+Lokace.\+h}.
+
+
+
+\subsection{Dokumentace konstruktoru a destruktoru}
+\index{Ice\+Age\+::\+Builder\+Lokace@{Ice\+Age\+::\+Builder\+Lokace}!Builder\+Lokace@{Builder\+Lokace}}
+\index{Builder\+Lokace@{Builder\+Lokace}!Ice\+Age\+::\+Builder\+Lokace@{Ice\+Age\+::\+Builder\+Lokace}}
+\subsubsection[{\texorpdfstring{Builder\+Lokace(\+Ice\+Age\+::\+Builder\+Bytost $\ast$novy\+Builder)}{BuilderLokace(IceAge::BuilderBytost *novyBuilder)}}]{\setlength{\rightskip}{0pt plus 5cm}Ice\+Age\+::\+Builder\+Lokace\+::\+Builder\+Lokace (
+\begin{DoxyParamCaption}
+\item[{{\bf Ice\+Age\+::\+Builder\+Bytost} $\ast$}]{novy\+Builder}
+\end{DoxyParamCaption}
+)}\hypertarget{classIceAge_1_1BuilderLokace_ad8fabba0bddf2d2569c36fa115f40673}{}\label{classIceAge_1_1BuilderLokace_ad8fabba0bddf2d2569c36fa115f40673}
+
+
+Konstruktor. 
+
+Konstruktor ve kterem se nastavuje \hyperlink{classIceAge_1_1BuilderBytost}{Builder\+Bytost} a do lokace se uklada nullptr. 
+
+Definice je uvedena na řádku \hyperlink{BuilderLokace_8cpp_source_l00009}{9} v souboru \hyperlink{BuilderLokace_8cpp_source}{Builder\+Lokace.\+cpp}.
+
+\index{Ice\+Age\+::\+Builder\+Lokace@{Ice\+Age\+::\+Builder\+Lokace}!````~Builder\+Lokace@{$\sim$\+Builder\+Lokace}}
+\index{````~Builder\+Lokace@{$\sim$\+Builder\+Lokace}!Ice\+Age\+::\+Builder\+Lokace@{Ice\+Age\+::\+Builder\+Lokace}}
+\subsubsection[{\texorpdfstring{$\sim$\+Builder\+Lokace()}{~BuilderLokace()}}]{\setlength{\rightskip}{0pt plus 5cm}Ice\+Age\+::\+Builder\+Lokace\+::$\sim$\+Builder\+Lokace (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classIceAge_1_1BuilderLokace_ae90ede622f89433692f5d4c17fd35ffb}{}\label{classIceAge_1_1BuilderLokace_ae90ede622f89433692f5d4c17fd35ffb}
+
+
+Destruktor. 
+
+Destruktor ve kterem se maze builder a pripadne vytvarena lokace. 
+
+Definice je uvedena na řádku \hyperlink{BuilderLokace_8cpp_source_l00207}{207} v souboru \hyperlink{BuilderLokace_8cpp_source}{Builder\+Lokace.\+cpp}.
+
+
+
+\subsection{Dokumentace k metodám}
+\index{Ice\+Age\+::\+Builder\+Lokace@{Ice\+Age\+::\+Builder\+Lokace}!create\+Beast@{create\+Beast}}
+\index{create\+Beast@{create\+Beast}!Ice\+Age\+::\+Builder\+Lokace@{Ice\+Age\+::\+Builder\+Lokace}}
+\subsubsection[{\texorpdfstring{create\+Beast(short nova\+Zurivost, std\+::string novy\+Nazev, short nova\+Sila, std\+::string novy\+Popis, short nova\+Odolnost, short novy\+Zivot)}{createBeast(short novaZurivost, std::string novyNazev, short novaSila, std::string novyPopis, short novaOdolnost, short novyZivot)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ice\+Age\+::\+Beast} $\ast$ Ice\+Age\+::\+Builder\+Lokace\+::create\+Beast (
+\begin{DoxyParamCaption}
+\item[{short}]{nova\+Zurivost, }
+\item[{std\+::string}]{novy\+Nazev, }
+\item[{short}]{nova\+Sila, }
+\item[{std\+::string}]{novy\+Popis, }
+\item[{short}]{nova\+Odolnost, }
+\item[{short}]{novy\+Zivot}
+\end{DoxyParamCaption}
+)}\hypertarget{classIceAge_1_1BuilderLokace_a6ce9f158876a0601a3bac0cc26ed2d46}{}\label{classIceAge_1_1BuilderLokace_a6ce9f158876a0601a3bac0cc26ed2d46}
+
+
+Metoda vytvarejici beast. 
+
+Metoda vytvarejici beasta. Provola metody ostatnich builderu a vrati vytvoreneho beasta. 
+
+Definice je uvedena na řádku \hyperlink{BuilderLokace_8cpp_source_l00042}{42} v souboru \hyperlink{BuilderLokace_8cpp_source}{Builder\+Lokace.\+cpp}.
+
+\index{Ice\+Age\+::\+Builder\+Lokace@{Ice\+Age\+::\+Builder\+Lokace}!create\+Humanoid@{create\+Humanoid}}
+\index{create\+Humanoid@{create\+Humanoid}!Ice\+Age\+::\+Builder\+Lokace@{Ice\+Age\+::\+Builder\+Lokace}}
+\subsubsection[{\texorpdfstring{create\+Humanoid(short novy\+Zivot, std\+::string novy\+Popis, short nova\+Sila, short nova\+Odolnost, std\+::string novy\+Nazev\+Predmetu1, std\+::string novy\+Nazev\+Predmetu2, std\+::string novy\+Nazev\+Predmetu3, short nova\+Hodnota\+Predmetu1, short nova\+Hodnota\+Predmetu2, short nova\+Hodnota\+Predmetu3)}{createHumanoid(short novyZivot, std::string novyPopis, short novaSila, short novaOdolnost, std::string novyNazevPredmetu1, std::string novyNazevPredmetu2, std::string novyNazevPredmetu3, short novaHodnotaPredmetu1, short novaHodnotaPredmetu2, short novaHodnotaPredmetu3)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ice\+Age\+::\+Humanoid} $\ast$ Ice\+Age\+::\+Builder\+Lokace\+::create\+Humanoid (
+\begin{DoxyParamCaption}
+\item[{short}]{novy\+Zivot, }
+\item[{std\+::string}]{novy\+Popis, }
+\item[{short}]{nova\+Sila, }
+\item[{short}]{nova\+Odolnost, }
+\item[{std\+::string}]{novy\+Nazev\+Predmetu1, }
+\item[{std\+::string}]{novy\+Nazev\+Predmetu2, }
+\item[{std\+::string}]{novy\+Nazev\+Predmetu3, }
+\item[{short}]{nova\+Hodnota\+Predmetu1, }
+\item[{short}]{nova\+Hodnota\+Predmetu2, }
+\item[{short}]{nova\+Hodnota\+Predmetu3}
+\end{DoxyParamCaption}
+)}\hypertarget{classIceAge_1_1BuilderLokace_abff6ab9c1d0218adfe423f45c8186090}{}\label{classIceAge_1_1BuilderLokace_abff6ab9c1d0218adfe423f45c8186090}
+
+
+Metoda vytvarejici humanoida. 
+
+Metoda vytvarejici humanoida. Provola metody ostatnich builderu a vrati vytvoreneho Humanoida. 
+
+Definice je uvedena na řádku \hyperlink{BuilderLokace_8cpp_source_l00031}{31} v souboru \hyperlink{BuilderLokace_8cpp_source}{Builder\+Lokace.\+cpp}.
+
+\index{Ice\+Age\+::\+Builder\+Lokace@{Ice\+Age\+::\+Builder\+Lokace}!create\+Lokace@{create\+Lokace}}
+\index{create\+Lokace@{create\+Lokace}!Ice\+Age\+::\+Builder\+Lokace@{Ice\+Age\+::\+Builder\+Lokace}}
+\subsubsection[{\texorpdfstring{create\+Lokace()}{createLokace()}}]{\setlength{\rightskip}{0pt plus 5cm}void Ice\+Age\+::\+Builder\+Lokace\+::create\+Lokace (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classIceAge_1_1BuilderLokace_ac46d7d1ff685c51dbd382f65b29a6546}{}\label{classIceAge_1_1BuilderLokace_ac46d7d1ff685c51dbd382f65b29a6546}
+
+
+Metoda vytvarejici Lokaci. 
+
+Metoda vytvarejici Lokaci. $<$Otevreni seznamu lokaci.
+
+$<$V pripade chyby uvolni pamet a skonci.
+
+$<$Lokalni promenne, do kterych se bude nacitat ze souboru.
+
+$<$Nacitani nazvu souboru ze souboru \char`\"{}.\+seznam\char`\"{}
+
+$<$Otevirani souboru s popisem aktualne vytvarene lokace.
+
+$<$V pripade chyby uvolni pamet a skonci.
+
+Nastavovani zakladnich atributu lokace.
+
+$<$Vytvoreni hole kostry lokace.
+
+$<$Rozhodnuti, zda se vytvari reka
+
+$<$Nacteni humanoidu ze souboru.
+
+$<$Nacterni beastu ze souboru.
+
+$<$Cyklus ve kterem se usporadaji odkazy mezi jednotlivymi lokacemi.
+
+$<$Do lokace se vlozi odpovidajici trida s metodou pruzkumu.
+
+$<$Ulozeni lokace do vectoru.
+
+$<$Uzavreni souboru s popisem aktualni lokace.
+
+$<$Uzavreni souboru se seznamem souboru vsech lokaci.
+
+$<$Nastaveni prvni lokace jako hlavni (aktualni). 
+
+Definice je uvedena na řádku \hyperlink{BuilderLokace_8cpp_source_l00050}{50} v souboru \hyperlink{BuilderLokace_8cpp_source}{Builder\+Lokace.\+cpp}.
+
+\index{Ice\+Age\+::\+Builder\+Lokace@{Ice\+Age\+::\+Builder\+Lokace}!get\+Lokace@{get\+Lokace}}
+\index{get\+Lokace@{get\+Lokace}!Ice\+Age\+::\+Builder\+Lokace@{Ice\+Age\+::\+Builder\+Lokace}}
+\subsubsection[{\texorpdfstring{get\+Lokace()}{getLokace()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ice\+Age\+::\+Lokace} $\ast$ Ice\+Age\+::\+Builder\+Lokace\+::get\+Lokace (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classIceAge_1_1BuilderLokace_ada96fb10689d0b6f2ed2f7cdc31a171e}{}\label{classIceAge_1_1BuilderLokace_ada96fb10689d0b6f2ed2f7cdc31a171e}
+
+
+Metoda vracejici Lokaci. 
+
+Metoda vracejici Lokaci. 
+
+Definice je uvedena na řádku \hyperlink{BuilderLokace_8cpp_source_l00024}{24} v souboru \hyperlink{BuilderLokace_8cpp_source}{Builder\+Lokace.\+cpp}.
+
+\index{Ice\+Age\+::\+Builder\+Lokace@{Ice\+Age\+::\+Builder\+Lokace}!nacti\+Beasty@{nacti\+Beasty}}
+\index{nacti\+Beasty@{nacti\+Beasty}!Ice\+Age\+::\+Builder\+Lokace@{Ice\+Age\+::\+Builder\+Lokace}}
+\subsubsection[{\texorpdfstring{nacti\+Beasty(std\+::ifstream \&popis\+Lokace)}{nactiBeasty(std::ifstream &popisLokace)}}]{\setlength{\rightskip}{0pt plus 5cm}void Ice\+Age\+::\+Builder\+Lokace\+::nacti\+Beasty (
+\begin{DoxyParamCaption}
+\item[{std\+::ifstream \&}]{popis\+Lokace}
+\end{DoxyParamCaption}
+)}\hypertarget{classIceAge_1_1BuilderLokace_a8424c61902a53f9304460055f478601b}{}\label{classIceAge_1_1BuilderLokace_a8424c61902a53f9304460055f478601b}
+
+
+Metoda ktera nacte beasty ze souboru a ulozi je do lokace. 
+
+Metoda vytvarejici Beasty na zaklade popisu v souboru. Pokud jsou spatne popsane lokace v souborech, nactou se spatne a muze dojit ke spatnemu pristupu do pameti. $<$Lokalni promena znacici pocet Beastu v lokaci.
+
+$<$Nacteni poctu Beastu + ignorace konce radku.
+
+$<$Pokud beasty v lokaci nejsou, nacte znacku a ukonci metodu.
+
+$<$Lokalni promenne potrebne k vytvoreni beasta.
+
+$<$Cyklus ve kterem se nactou hodnoty potrebne pro vytvoreni beasta a nasledne jeho vytvoreni a pridani do vectoru.
+
+$<$Odebrani znacky. 
+
+Definice je uvedena na řádku \hyperlink{BuilderLokace_8cpp_source_l00173}{173} v souboru \hyperlink{BuilderLokace_8cpp_source}{Builder\+Lokace.\+cpp}.
+
+\index{Ice\+Age\+::\+Builder\+Lokace@{Ice\+Age\+::\+Builder\+Lokace}!nacti\+Humanoidy@{nacti\+Humanoidy}}
+\index{nacti\+Humanoidy@{nacti\+Humanoidy}!Ice\+Age\+::\+Builder\+Lokace@{Ice\+Age\+::\+Builder\+Lokace}}
+\subsubsection[{\texorpdfstring{nacti\+Humanoidy(std\+::ifstream \&popis\+Lokace)}{nactiHumanoidy(std::ifstream &popisLokace)}}]{\setlength{\rightskip}{0pt plus 5cm}void Ice\+Age\+::\+Builder\+Lokace\+::nacti\+Humanoidy (
+\begin{DoxyParamCaption}
+\item[{std\+::ifstream \&}]{popis\+Lokace}
+\end{DoxyParamCaption}
+)}\hypertarget{classIceAge_1_1BuilderLokace_a98fae825f3de1d12408a85f03d98f2fd}{}\label{classIceAge_1_1BuilderLokace_a98fae825f3de1d12408a85f03d98f2fd}
+
+
+Metoda ktera nacte humanoidy ze souboru a ulozi je do lokace. 
+
+Metoda vytvarejici Humanoidy na zaklade popisu v souboru. Pokud jsou spatne popsane lokace v souborech, nactou se spatne a muze dojit ke spatnemu pristupu do pameti. $<$Lokalni promena znacici pocet Humanoidu v lokaci.
+
+$<$Nacteni poctu Humanoidu + ignorace konce radku.
+
+$<$Pokud humanoidi v lokaci nejsou, nacte znacku a ukonci metodu.
+
+$<$Lokalni promenne potrebne k vytvoreni humanoida.
+
+$<$Cyklus ve kterem se nactou hodnoty potrebne pro vytvoreni humanoida a nasledne jeho vytvoreni a pridani do vectoru.
+
+$<$Odebrani znacky. 
+
+Definice je uvedena na řádku \hyperlink{BuilderLokace_8cpp_source_l00132}{132} v souboru \hyperlink{BuilderLokace_8cpp_source}{Builder\+Lokace.\+cpp}.
+
+\index{Ice\+Age\+::\+Builder\+Lokace@{Ice\+Age\+::\+Builder\+Lokace}!set\+Builder@{set\+Builder}}
+\index{set\+Builder@{set\+Builder}!Ice\+Age\+::\+Builder\+Lokace@{Ice\+Age\+::\+Builder\+Lokace}}
+\subsubsection[{\texorpdfstring{set\+Builder(\+Ice\+Age\+::\+Builder\+Bytost $\ast$novy\+Builder)}{setBuilder(IceAge::BuilderBytost *novyBuilder)}}]{\setlength{\rightskip}{0pt plus 5cm}void Ice\+Age\+::\+Builder\+Lokace\+::set\+Builder (
+\begin{DoxyParamCaption}
+\item[{{\bf Ice\+Age\+::\+Builder\+Bytost} $\ast$}]{novy\+Builder}
+\end{DoxyParamCaption}
+)}\hypertarget{classIceAge_1_1BuilderLokace_acce53b24cfb8ab5227520e943e6b843b}{}\label{classIceAge_1_1BuilderLokace_acce53b24cfb8ab5227520e943e6b843b}
+
+
+Metoda ktera nastavuje \hyperlink{classIceAge_1_1BuilderBytost}{Builder\+Bytost}. 
+
+Metoda ktera nastavuje \hyperlink{classIceAge_1_1BuilderBytost}{Builder\+Bytost}. 
+
+Definice je uvedena na řádku \hyperlink{BuilderLokace_8cpp_source_l00017}{17} v souboru \hyperlink{BuilderLokace_8cpp_source}{Builder\+Lokace.\+cpp}.
+
+
+
+\subsection{Dokumentace k datovým členům}
+\index{Ice\+Age\+::\+Builder\+Lokace@{Ice\+Age\+::\+Builder\+Lokace}!m\+\_\+builder\+Bytost@{m\+\_\+builder\+Bytost}}
+\index{m\+\_\+builder\+Bytost@{m\+\_\+builder\+Bytost}!Ice\+Age\+::\+Builder\+Lokace@{Ice\+Age\+::\+Builder\+Lokace}}
+\subsubsection[{\texorpdfstring{m\+\_\+builder\+Bytost}{m_builderBytost}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ice\+Age\+::\+Builder\+Bytost}$\ast$ Ice\+Age\+::\+Builder\+Lokace\+::m\+\_\+builder\+Bytost\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classIceAge_1_1BuilderLokace_ac6981c43c22713d56e7ccbefa8b5c8b4}{}\label{classIceAge_1_1BuilderLokace_ac6981c43c22713d56e7ccbefa8b5c8b4}
+
+
+Atribut obsahujici odkaz na \hyperlink{classIceAge_1_1BuilderBytost}{Builder\+Bytost}. 
+
+
+
+Definice je uvedena na řádku \hyperlink{BuilderLokace_8h_source_l00021}{21} v souboru \hyperlink{BuilderLokace_8h_source}{Builder\+Lokace.\+h}.
+
+\index{Ice\+Age\+::\+Builder\+Lokace@{Ice\+Age\+::\+Builder\+Lokace}!m\+\_\+lokace@{m\+\_\+lokace}}
+\index{m\+\_\+lokace@{m\+\_\+lokace}!Ice\+Age\+::\+Builder\+Lokace@{Ice\+Age\+::\+Builder\+Lokace}}
+\subsubsection[{\texorpdfstring{m\+\_\+lokace}{m_lokace}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ice\+Age\+::\+Lokace}$\ast$ Ice\+Age\+::\+Builder\+Lokace\+::m\+\_\+lokace\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classIceAge_1_1BuilderLokace_aad0fb17bf38c03cd767e100758348f24}{}\label{classIceAge_1_1BuilderLokace_aad0fb17bf38c03cd767e100758348f24}
+
+
+Atribut obsahujici odkaz na prave vytvarenou Lokaci. 
+
+
+
+Definice je uvedena na řádku \hyperlink{BuilderLokace_8h_source_l00022}{22} v souboru \hyperlink{BuilderLokace_8h_source}{Builder\+Lokace.\+h}.
+
+\index{Ice\+Age\+::\+Builder\+Lokace@{Ice\+Age\+::\+Builder\+Lokace}!m\+\_\+vektor\+Lokaci@{m\+\_\+vektor\+Lokaci}}
+\index{m\+\_\+vektor\+Lokaci@{m\+\_\+vektor\+Lokaci}!Ice\+Age\+::\+Builder\+Lokace@{Ice\+Age\+::\+Builder\+Lokace}}
+\subsubsection[{\texorpdfstring{m\+\_\+vektor\+Lokaci}{m_vektorLokaci}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Ice\+Age\+::\+Lokace}$\ast$$>$ Ice\+Age\+::\+Builder\+Lokace\+::m\+\_\+vektor\+Lokaci\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classIceAge_1_1BuilderLokace_a110ada142d159f68fb82382a47d088f4}{}\label{classIceAge_1_1BuilderLokace_a110ada142d159f68fb82382a47d088f4}
+
+
+Vector jiz hotovych lokaci, ktere se nasledne spoji do jedne \char`\"{}mapy\char`\"{}. 
+
+
+
+Definice je uvedena na řádku \hyperlink{BuilderLokace_8h_source_l00023}{23} v souboru \hyperlink{BuilderLokace_8h_source}{Builder\+Lokace.\+h}.
+
+
+
+Dokumentace pro tuto třídu byla generována z následujících souborů\+:\begin{DoxyCompactItemize}
+\item 
+hlavicky/\hyperlink{BuilderLokace_8h}{Builder\+Lokace.\+h}\item 
+cpp/\hyperlink{BuilderLokace_8cpp}{Builder\+Lokace.\+cpp}\end{DoxyCompactItemize}

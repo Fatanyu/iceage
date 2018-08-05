@@ -1,0 +1,238 @@
+\hypertarget{classIceAge_1_1EngineIceAge}{}\section{Dokumentace třídy Ice\+Age\+:\+:Engine\+Ice\+Age}
+\label{classIceAge_1_1EngineIceAge}\index{Ice\+Age\+::\+Engine\+Ice\+Age@{Ice\+Age\+::\+Engine\+Ice\+Age}}
+
+
+{\ttfamily \#include $<$Engine\+Ice\+Age.\+h$>$}
+
+Diagram dědičnosti pro třídu Ice\+Age\+:\+:Engine\+Ice\+Age\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{d5/d14/classIceAge_1_1EngineIceAge}
+\end{center}
+\end{figure}
+\subsection*{Veřejné metody}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classIceAge_1_1EngineIceAge_a69b6bf513ebcd1f83317753a09c159e4}{start\+Hry} ()
+\begin{DoxyCompactList}\small\item\em Metoda spoustejici hru. \end{DoxyCompactList}\item 
+\hyperlink{classIceAge_1_1EngineIceAge_ac1f9527247e875dc5e2283dd463358d6}{$\sim$\+Engine\+Ice\+Age} ()
+\begin{DoxyCompactList}\small\item\em Destruktor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Statické veřejné metody}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classIceAge_1_1EngineIceAge}{Ice\+Age\+::\+Engine\+Ice\+Age} $\ast$ \hyperlink{classIceAge_1_1EngineIceAge_aa542969934711aa691e0df3da701e830}{get\+Instance} ()
+\begin{DoxyCompactList}\small\item\em Metoda vracejici instanci teto tridy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Privátní metody}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classIceAge_1_1EngineIceAge_a3d8cd1fe7b887a32a80583237352a1cc}{Engine\+Ice\+Age} (\hyperlink{classIceAge_1_1LocationDirector}{Ice\+Age\+::\+Location\+Director} $\ast$novy\+Director)
+\begin{DoxyCompactList}\small\item\em Konstruktor. \end{DoxyCompactList}\item 
+\hyperlink{classIceAge_1_1Veverka}{Ice\+Age\+::\+Veverka} $\ast$ \hyperlink{classIceAge_1_1EngineIceAge_a89b47698ead7c1c8b9c5b8bd006980f2}{get\+Veverka} ()
+\begin{DoxyCompactList}\small\item\em Metoda vracejici Veverku. \end{DoxyCompactList}\item 
+void \hyperlink{classIceAge_1_1EngineIceAge_a2766d0bc71efd5d3b6d76fc906b32952}{create\+Veverka} ()
+\begin{DoxyCompactList}\small\item\em Metoda vytvarejici Veverku. \end{DoxyCompactList}\item 
+bool \hyperlink{classIceAge_1_1EngineIceAge_a28ec183df6eabbc19b3f3950caa0f059}{inicializace\+Lokaci} ()
+\begin{DoxyCompactList}\small\item\em Metoda inicializujici \hyperlink{classIceAge_1_1Lokace}{Lokace}. \end{DoxyCompactList}\item 
+void \hyperlink{classIceAge_1_1EngineIceAge_ab3f8cd94dafb051af4e751fb34914cb2}{set\+Director} (\hyperlink{classIceAge_1_1LocationDirector}{Ice\+Age\+::\+Location\+Director} $\ast$novy\+Director)
+\begin{DoxyCompactList}\small\item\em Metoda nastavujici noveho \hyperlink{classIceAge_1_1LocationDirector}{Location\+Director}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Privátní atributy}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classIceAge_1_1Veverka}{Ice\+Age\+::\+Veverka} $\ast$ \hyperlink{classIceAge_1_1EngineIceAge_ad9440d38fc579c99a87e7fda88b3bdcd}{m\+\_\+veverka}
+\begin{DoxyCompactList}\small\item\em Atribut udrzujici odkaz na Veverku. \end{DoxyCompactList}\item 
+\hyperlink{classIceAge_1_1LocationDirector}{Ice\+Age\+::\+Location\+Director} $\ast$ \hyperlink{classIceAge_1_1EngineIceAge_a7e1281f7e78cfda1d10006323a9b0434}{m\+\_\+director\+Lokaci}
+\begin{DoxyCompactList}\small\item\em Atribut udrzujici odkaz na \hyperlink{classIceAge_1_1LocationDirector}{Location\+Director}. \end{DoxyCompactList}\item 
+\hyperlink{classIceAge_1_1Lokace}{Ice\+Age\+::\+Lokace} $\ast$ \hyperlink{classIceAge_1_1EngineIceAge_a04557f4c59d36d80e16b753cb918ea95}{m\+\_\+lokace}
+\begin{DoxyCompactList}\small\item\em Atribut udrzujici odkaz na aktualni lokaci. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Statické privátní atributy}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classIceAge_1_1EngineIceAge}{Ice\+Age\+::\+Engine\+Ice\+Age} $\ast$ \hyperlink{classIceAge_1_1EngineIceAge_a3a28dd4c3cde5578060cf2463a9802c2}{s\+\_\+vlastni\+Instance} =nullptr
+\begin{DoxyCompactList}\small\item\em Staticky atribut udrzujici odkaz sam na sebe. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Další zděděné členy}
+
+
+\subsection{Detailní popis}
+Trida ktera zastituje celou hru. Inicializuje vsechny soubory a vetsinu trid. Spousti hru. Trida je implementovana jako Singleton. 
+
+Definice je uvedena na řádku \hyperlink{EngineIceAge_8h_source_l00017}{17} v souboru \hyperlink{EngineIceAge_8h_source}{Engine\+Ice\+Age.\+h}.
+
+
+
+\subsection{Dokumentace konstruktoru a destruktoru}
+\index{Ice\+Age\+::\+Engine\+Ice\+Age@{Ice\+Age\+::\+Engine\+Ice\+Age}!Engine\+Ice\+Age@{Engine\+Ice\+Age}}
+\index{Engine\+Ice\+Age@{Engine\+Ice\+Age}!Ice\+Age\+::\+Engine\+Ice\+Age@{Ice\+Age\+::\+Engine\+Ice\+Age}}
+\subsubsection[{\texorpdfstring{Engine\+Ice\+Age(\+Ice\+Age\+::\+Location\+Director $\ast$novy\+Director)}{EngineIceAge(IceAge::LocationDirector *novyDirector)}}]{\setlength{\rightskip}{0pt plus 5cm}Ice\+Age\+::\+Engine\+Ice\+Age\+::\+Engine\+Ice\+Age (
+\begin{DoxyParamCaption}
+\item[{{\bf Ice\+Age\+::\+Location\+Director} $\ast$}]{novy\+Director}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classIceAge_1_1EngineIceAge_a3d8cd1fe7b887a32a80583237352a1cc}{}\label{classIceAge_1_1EngineIceAge_a3d8cd1fe7b887a32a80583237352a1cc}
+
+
+Konstruktor. 
+
+Konstruktor ve kterem se nastavuje \hyperlink{classIceAge_1_1LocationDirector}{Location\+Director} a zbytek atributu se nastavuje na nullptr. 
+
+Definice je uvedena na řádku \hyperlink{EngineIceAge_8cpp_source_l00022}{22} v souboru \hyperlink{EngineIceAge_8cpp_source}{Engine\+Ice\+Age.\+cpp}.
+
+\index{Ice\+Age\+::\+Engine\+Ice\+Age@{Ice\+Age\+::\+Engine\+Ice\+Age}!````~Engine\+Ice\+Age@{$\sim$\+Engine\+Ice\+Age}}
+\index{````~Engine\+Ice\+Age@{$\sim$\+Engine\+Ice\+Age}!Ice\+Age\+::\+Engine\+Ice\+Age@{Ice\+Age\+::\+Engine\+Ice\+Age}}
+\subsubsection[{\texorpdfstring{$\sim$\+Engine\+Ice\+Age()}{~EngineIceAge()}}]{\setlength{\rightskip}{0pt plus 5cm}Ice\+Age\+::\+Engine\+Ice\+Age\+::$\sim$\+Engine\+Ice\+Age (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classIceAge_1_1EngineIceAge_ac1f9527247e875dc5e2283dd463358d6}{}\label{classIceAge_1_1EngineIceAge_ac1f9527247e875dc5e2283dd463358d6}
+
+
+Destruktor. 
+
+Destruktor ve kterem se mazou odkazy z atributu. 
+
+Definice je uvedena na řádku \hyperlink{EngineIceAge_8cpp_source_l00078}{78} v souboru \hyperlink{EngineIceAge_8cpp_source}{Engine\+Ice\+Age.\+cpp}.
+
+
+
+\subsection{Dokumentace k metodám}
+\index{Ice\+Age\+::\+Engine\+Ice\+Age@{Ice\+Age\+::\+Engine\+Ice\+Age}!create\+Veverka@{create\+Veverka}}
+\index{create\+Veverka@{create\+Veverka}!Ice\+Age\+::\+Engine\+Ice\+Age@{Ice\+Age\+::\+Engine\+Ice\+Age}}
+\subsubsection[{\texorpdfstring{create\+Veverka()}{createVeverka()}}]{\setlength{\rightskip}{0pt plus 5cm}void Ice\+Age\+::\+Engine\+Ice\+Age\+::create\+Veverka (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classIceAge_1_1EngineIceAge_a2766d0bc71efd5d3b6d76fc906b32952}{}\label{classIceAge_1_1EngineIceAge_a2766d0bc71efd5d3b6d76fc906b32952}
+
+
+Metoda vytvarejici Veverku. 
+
+Metoda vytvarejici Veverku. 
+
+Definice je uvedena na řádku \hyperlink{EngineIceAge_8cpp_source_l00038}{38} v souboru \hyperlink{EngineIceAge_8cpp_source}{Engine\+Ice\+Age.\+cpp}.
+
+\index{Ice\+Age\+::\+Engine\+Ice\+Age@{Ice\+Age\+::\+Engine\+Ice\+Age}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!Ice\+Age\+::\+Engine\+Ice\+Age@{Ice\+Age\+::\+Engine\+Ice\+Age}}
+\subsubsection[{\texorpdfstring{get\+Instance()}{getInstance()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ice\+Age\+::\+Engine\+Ice\+Age} $\ast$ Ice\+Age\+::\+Engine\+Ice\+Age\+::get\+Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classIceAge_1_1EngineIceAge_aa542969934711aa691e0df3da701e830}{}\label{classIceAge_1_1EngineIceAge_aa542969934711aa691e0df3da701e830}
+
+
+Metoda vracejici instanci teto tridy. 
+
+Metoda vracejici instanci teto tridy. Pokud jiz existuje, vrati odkaz na ni. 
+
+Definice je uvedena na řádku \hyperlink{EngineIceAge_8cpp_source_l00011}{11} v souboru \hyperlink{EngineIceAge_8cpp_source}{Engine\+Ice\+Age.\+cpp}.
+
+\index{Ice\+Age\+::\+Engine\+Ice\+Age@{Ice\+Age\+::\+Engine\+Ice\+Age}!get\+Veverka@{get\+Veverka}}
+\index{get\+Veverka@{get\+Veverka}!Ice\+Age\+::\+Engine\+Ice\+Age@{Ice\+Age\+::\+Engine\+Ice\+Age}}
+\subsubsection[{\texorpdfstring{get\+Veverka()}{getVeverka()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ice\+Age\+::\+Veverka} $\ast$ Ice\+Age\+::\+Engine\+Ice\+Age\+::get\+Veverka (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classIceAge_1_1EngineIceAge_a89b47698ead7c1c8b9c5b8bd006980f2}{}\label{classIceAge_1_1EngineIceAge_a89b47698ead7c1c8b9c5b8bd006980f2}
+
+
+Metoda vracejici Veverku. 
+
+Metoda vracejici Veverku. 
+
+Definice je uvedena na řádku \hyperlink{EngineIceAge_8cpp_source_l00031}{31} v souboru \hyperlink{EngineIceAge_8cpp_source}{Engine\+Ice\+Age.\+cpp}.
+
+\index{Ice\+Age\+::\+Engine\+Ice\+Age@{Ice\+Age\+::\+Engine\+Ice\+Age}!inicializace\+Lokaci@{inicializace\+Lokaci}}
+\index{inicializace\+Lokaci@{inicializace\+Lokaci}!Ice\+Age\+::\+Engine\+Ice\+Age@{Ice\+Age\+::\+Engine\+Ice\+Age}}
+\subsubsection[{\texorpdfstring{inicializace\+Lokaci()}{inicializaceLokaci()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Ice\+Age\+::\+Engine\+Ice\+Age\+::inicializace\+Lokaci (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classIceAge_1_1EngineIceAge_a28ec183df6eabbc19b3f3950caa0f059}{}\label{classIceAge_1_1EngineIceAge_a28ec183df6eabbc19b3f3950caa0f059}
+
+
+Metoda inicializujici \hyperlink{classIceAge_1_1Lokace}{Lokace}. 
+
+Metoda inicializujici \hyperlink{classIceAge_1_1Lokace}{Lokace}. Provola se \hyperlink{classIceAge_1_1LocationDirector}{Location\+Director} a v pripade uspechu se vrati true. 
+
+Definice je uvedena na řádku \hyperlink{EngineIceAge_8cpp_source_l00062}{62} v souboru \hyperlink{EngineIceAge_8cpp_source}{Engine\+Ice\+Age.\+cpp}.
+
+\index{Ice\+Age\+::\+Engine\+Ice\+Age@{Ice\+Age\+::\+Engine\+Ice\+Age}!set\+Director@{set\+Director}}
+\index{set\+Director@{set\+Director}!Ice\+Age\+::\+Engine\+Ice\+Age@{Ice\+Age\+::\+Engine\+Ice\+Age}}
+\subsubsection[{\texorpdfstring{set\+Director(\+Ice\+Age\+::\+Location\+Director $\ast$novy\+Director)}{setDirector(IceAge::LocationDirector *novyDirector)}}]{\setlength{\rightskip}{0pt plus 5cm}void Ice\+Age\+::\+Engine\+Ice\+Age\+::set\+Director (
+\begin{DoxyParamCaption}
+\item[{{\bf Ice\+Age\+::\+Location\+Director} $\ast$}]{novy\+Director}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classIceAge_1_1EngineIceAge_ab3f8cd94dafb051af4e751fb34914cb2}{}\label{classIceAge_1_1EngineIceAge_ab3f8cd94dafb051af4e751fb34914cb2}
+
+
+Metoda nastavujici noveho \hyperlink{classIceAge_1_1LocationDirector}{Location\+Director}. 
+
+Metoda nastavujici noveho \hyperlink{classIceAge_1_1LocationDirector}{Location\+Director}. 
+
+Definice je uvedena na řádku \hyperlink{EngineIceAge_8cpp_source_l00071}{71} v souboru \hyperlink{EngineIceAge_8cpp_source}{Engine\+Ice\+Age.\+cpp}.
+
+\index{Ice\+Age\+::\+Engine\+Ice\+Age@{Ice\+Age\+::\+Engine\+Ice\+Age}!start\+Hry@{start\+Hry}}
+\index{start\+Hry@{start\+Hry}!Ice\+Age\+::\+Engine\+Ice\+Age@{Ice\+Age\+::\+Engine\+Ice\+Age}}
+\subsubsection[{\texorpdfstring{start\+Hry()}{startHry()}}]{\setlength{\rightskip}{0pt plus 5cm}void Ice\+Age\+::\+Engine\+Ice\+Age\+::start\+Hry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classIceAge_1_1EngineIceAge_a69b6bf513ebcd1f83317753a09c159e4}{}\label{classIceAge_1_1EngineIceAge_a69b6bf513ebcd1f83317753a09c159e4}
+
+
+Metoda spoustejici hru. 
+
+Metoda spoustejici hru. Pokud se provede spravne inicializace lokaci a vytvori se veverka, vytvori tridu \hyperlink{classIceAge_1_1Hra}{Ice\+Age\+::\+Hra} a spusti hru. 
+
+Definice je uvedena na řádku \hyperlink{EngineIceAge_8cpp_source_l00045}{45} v souboru \hyperlink{EngineIceAge_8cpp_source}{Engine\+Ice\+Age.\+cpp}.
+
+
+
+\subsection{Dokumentace k datovým členům}
+\index{Ice\+Age\+::\+Engine\+Ice\+Age@{Ice\+Age\+::\+Engine\+Ice\+Age}!m\+\_\+director\+Lokaci@{m\+\_\+director\+Lokaci}}
+\index{m\+\_\+director\+Lokaci@{m\+\_\+director\+Lokaci}!Ice\+Age\+::\+Engine\+Ice\+Age@{Ice\+Age\+::\+Engine\+Ice\+Age}}
+\subsubsection[{\texorpdfstring{m\+\_\+director\+Lokaci}{m_directorLokaci}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ice\+Age\+::\+Location\+Director}$\ast$ Ice\+Age\+::\+Engine\+Ice\+Age\+::m\+\_\+director\+Lokaci\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classIceAge_1_1EngineIceAge_a7e1281f7e78cfda1d10006323a9b0434}{}\label{classIceAge_1_1EngineIceAge_a7e1281f7e78cfda1d10006323a9b0434}
+
+
+Atribut udrzujici odkaz na \hyperlink{classIceAge_1_1LocationDirector}{Location\+Director}. 
+
+
+
+Definice je uvedena na řádku \hyperlink{EngineIceAge_8h_source_l00022}{22} v souboru \hyperlink{EngineIceAge_8h_source}{Engine\+Ice\+Age.\+h}.
+
+\index{Ice\+Age\+::\+Engine\+Ice\+Age@{Ice\+Age\+::\+Engine\+Ice\+Age}!m\+\_\+lokace@{m\+\_\+lokace}}
+\index{m\+\_\+lokace@{m\+\_\+lokace}!Ice\+Age\+::\+Engine\+Ice\+Age@{Ice\+Age\+::\+Engine\+Ice\+Age}}
+\subsubsection[{\texorpdfstring{m\+\_\+lokace}{m_lokace}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ice\+Age\+::\+Lokace}$\ast$ Ice\+Age\+::\+Engine\+Ice\+Age\+::m\+\_\+lokace\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classIceAge_1_1EngineIceAge_a04557f4c59d36d80e16b753cb918ea95}{}\label{classIceAge_1_1EngineIceAge_a04557f4c59d36d80e16b753cb918ea95}
+
+
+Atribut udrzujici odkaz na aktualni lokaci. 
+
+
+
+Definice je uvedena na řádku \hyperlink{EngineIceAge_8h_source_l00023}{23} v souboru \hyperlink{EngineIceAge_8h_source}{Engine\+Ice\+Age.\+h}.
+
+\index{Ice\+Age\+::\+Engine\+Ice\+Age@{Ice\+Age\+::\+Engine\+Ice\+Age}!m\+\_\+veverka@{m\+\_\+veverka}}
+\index{m\+\_\+veverka@{m\+\_\+veverka}!Ice\+Age\+::\+Engine\+Ice\+Age@{Ice\+Age\+::\+Engine\+Ice\+Age}}
+\subsubsection[{\texorpdfstring{m\+\_\+veverka}{m_veverka}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ice\+Age\+::\+Veverka}$\ast$ Ice\+Age\+::\+Engine\+Ice\+Age\+::m\+\_\+veverka\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classIceAge_1_1EngineIceAge_ad9440d38fc579c99a87e7fda88b3bdcd}{}\label{classIceAge_1_1EngineIceAge_ad9440d38fc579c99a87e7fda88b3bdcd}
+
+
+Atribut udrzujici odkaz na Veverku. 
+
+
+
+Definice je uvedena na řádku \hyperlink{EngineIceAge_8h_source_l00020}{20} v souboru \hyperlink{EngineIceAge_8h_source}{Engine\+Ice\+Age.\+h}.
+
+\index{Ice\+Age\+::\+Engine\+Ice\+Age@{Ice\+Age\+::\+Engine\+Ice\+Age}!s\+\_\+vlastni\+Instance@{s\+\_\+vlastni\+Instance}}
+\index{s\+\_\+vlastni\+Instance@{s\+\_\+vlastni\+Instance}!Ice\+Age\+::\+Engine\+Ice\+Age@{Ice\+Age\+::\+Engine\+Ice\+Age}}
+\subsubsection[{\texorpdfstring{s\+\_\+vlastni\+Instance}{s_vlastniInstance}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ice\+Age\+::\+Engine\+Ice\+Age} $\ast$ Ice\+Age\+::\+Engine\+Ice\+Age\+::s\+\_\+vlastni\+Instance =nullptr\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\hypertarget{classIceAge_1_1EngineIceAge_a3a28dd4c3cde5578060cf2463a9802c2}{}\label{classIceAge_1_1EngineIceAge_a3a28dd4c3cde5578060cf2463a9802c2}
+
+
+Staticky atribut udrzujici odkaz sam na sebe. 
+
+Inicializace statickeho atributu. 
+
+Definice je uvedena na řádku \hyperlink{EngineIceAge_8h_source_l00021}{21} v souboru \hyperlink{EngineIceAge_8h_source}{Engine\+Ice\+Age.\+h}.
+
+
+
+Dokumentace pro tuto třídu byla generována z následujících souborů\+:\begin{DoxyCompactItemize}
+\item 
+hlavicky/\hyperlink{EngineIceAge_8h}{Engine\+Ice\+Age.\+h}\item 
+cpp/\hyperlink{EngineIceAge_8cpp}{Engine\+Ice\+Age.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,69 @@
+\hypertarget{EngineIceAge_8cpp_source}{}\section{Engine\+Ice\+Age.\+cpp}
+\label{EngineIceAge_8cpp_source}\index{cpp/\+Engine\+Ice\+Age.\+cpp@{cpp/\+Engine\+Ice\+Age.\+cpp}}
+
+\begin{DoxyCode}
+00001 
+00004 \textcolor{preprocessor}{#include "../hlavicky/EngineIceAge.h"}
+00005 
+00006 \hyperlink{classIceAge_1_1EngineIceAge}{IceAge::EngineIceAge}* 
+      \hyperlink{classIceAge_1_1EngineIceAge_a3a28dd4c3cde5578060cf2463a9802c2}{IceAge::EngineIceAge::s\_vlastniInstance}=\textcolor{keyword}{nullptr}; 
+\hypertarget{EngineIceAge_8cpp_source.tex_l00011}{}\hyperlink{classIceAge_1_1EngineIceAge_aa542969934711aa691e0df3da701e830}{00011} \textcolor{comment}{/*static*/} \hyperlink{classIceAge_1_1EngineIceAge}{IceAge::EngineIceAge}* 
+      \hyperlink{classIceAge_1_1EngineIceAge_aa542969934711aa691e0df3da701e830}{IceAge::EngineIceAge::getInstance}() \{
+00012     \textcolor{keywordflow}{if}(\hyperlink{classIceAge_1_1EngineIceAge_a3a28dd4c3cde5578060cf2463a9802c2}{s\_vlastniInstance} == \textcolor{keyword}{nullptr}) \hyperlink{classIceAge_1_1EngineIceAge_a3a28dd4c3cde5578060cf2463a9802c2}{s\_vlastniInstance}=\textcolor{keyword}{new} 
+      \hyperlink{classIceAge_1_1EngineIceAge}{IceAge::EngineIceAge}(\textcolor{keyword}{new} \hyperlink{classIceAge_1_1LocationDirector}{IceAge::LocationDirector}
+00013                                                                                 (\textcolor{keyword}{new} 
+      \hyperlink{classIceAge_1_1BuilderLokace}{IceAge::BuilderLokace}
+00014                                                                                 (\textcolor{keyword}{new} 
+      \hyperlink{classIceAge_1_1BuilderBytost}{IceAge::BuilderBytost}
+00015                                                                                 (\textcolor{keyword}{new} 
+      \hyperlink{classIceAge_1_1BuilderPredmet}{IceAge::BuilderPredmet}()))));
+00016     \textcolor{keywordflow}{return} \hyperlink{classIceAge_1_1EngineIceAge_a3a28dd4c3cde5578060cf2463a9802c2}{s\_vlastniInstance};
+00017 \}
+00018 
+\hypertarget{EngineIceAge_8cpp_source.tex_l00022}{}\hyperlink{classIceAge_1_1EngineIceAge_a3d8cd1fe7b887a32a80583237352a1cc}{00022} \hyperlink{classIceAge_1_1EngineIceAge_a3d8cd1fe7b887a32a80583237352a1cc}{IceAge::EngineIceAge::EngineIceAge}(
+      \hyperlink{classIceAge_1_1LocationDirector}{IceAge::LocationDirector}* novyDirector) \{
+00023     this->\hyperlink{classIceAge_1_1EngineIceAge_ab3f8cd94dafb051af4e751fb34914cb2}{setDirector}(novyDirector);
+00024     this->\hyperlink{classIceAge_1_1EngineIceAge_a04557f4c59d36d80e16b753cb918ea95}{m\_lokace}=\textcolor{keyword}{nullptr};
+00025     this->\hyperlink{classIceAge_1_1EngineIceAge_ad9440d38fc579c99a87e7fda88b3bdcd}{m\_veverka}=\textcolor{keyword}{nullptr};
+00026 \}
+00027 
+\hypertarget{EngineIceAge_8cpp_source.tex_l00031}{}\hyperlink{classIceAge_1_1EngineIceAge_a89b47698ead7c1c8b9c5b8bd006980f2}{00031} \hyperlink{classIceAge_1_1Veverka}{IceAge::Veverka}* \hyperlink{classIceAge_1_1EngineIceAge_a89b47698ead7c1c8b9c5b8bd006980f2}{IceAge::EngineIceAge::getVeverka}() \{
+00032     \textcolor{keywordflow}{return} this->\hyperlink{classIceAge_1_1EngineIceAge_ad9440d38fc579c99a87e7fda88b3bdcd}{m\_veverka};
+00033 \}
+00034 
+\hypertarget{EngineIceAge_8cpp_source.tex_l00038}{}\hyperlink{classIceAge_1_1EngineIceAge_a2766d0bc71efd5d3b6d76fc906b32952}{00038} \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1EngineIceAge_a2766d0bc71efd5d3b6d76fc906b32952}{IceAge::EngineIceAge::createVeverka}() \{
+00039     this->\hyperlink{classIceAge_1_1EngineIceAge_ad9440d38fc579c99a87e7fda88b3bdcd}{m\_veverka}=\hyperlink{classIceAge_1_1Veverka_a12909a7053332344e9b8c71845bb8e1f}{IceAge::Veverka::getInstance}();
+00040 \}
+00041 
+\hypertarget{EngineIceAge_8cpp_source.tex_l00045}{}\hyperlink{classIceAge_1_1EngineIceAge_a69b6bf513ebcd1f83317753a09c159e4}{00045} \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1EngineIceAge_a69b6bf513ebcd1f83317753a09c159e4}{IceAge::EngineIceAge::startHry}() \{
+00046     \textcolor{keywordflow}{if}(!this->\hyperlink{classIceAge_1_1EngineIceAge_a28ec183df6eabbc19b3f3950caa0f059}{inicializaceLokaci}())
+00047     \{
+00048         \textcolor{keywordflow}{return};
+00049     \}
+00050     this->\hyperlink{classIceAge_1_1EngineIceAge_a2766d0bc71efd5d3b6d76fc906b32952}{createVeverka}();
+00051 
+00052     \hyperlink{classIceAge_1_1Hra}{IceAge::Hra} *PJ = \textcolor{keyword}{new} \hyperlink{classIceAge_1_1Hra}{IceAge::Hra}(this->\hyperlink{classIceAge_1_1EngineIceAge_a04557f4c59d36d80e16b753cb918ea95}{m\_lokace});
+00053 
+00054     PJ->\hyperlink{classIceAge_1_1Hra_a60ee65556b0198201f3e5fd8d2cd97e0}{zacniHrat}(this->\hyperlink{classIceAge_1_1EngineIceAge_ad9440d38fc579c99a87e7fda88b3bdcd}{m\_veverka});
+00055 
+00056     \textcolor{keyword}{delete} PJ;
+00057 \}
+00058 
+\hypertarget{EngineIceAge_8cpp_source.tex_l00062}{}\hyperlink{classIceAge_1_1EngineIceAge_a28ec183df6eabbc19b3f3950caa0f059}{00062} \textcolor{keywordtype}{bool} \hyperlink{classIceAge_1_1EngineIceAge_a28ec183df6eabbc19b3f3950caa0f059}{IceAge::EngineIceAge::inicializaceLokaci}() \{
+00063     this->\hyperlink{classIceAge_1_1EngineIceAge_a04557f4c59d36d80e16b753cb918ea95}{m\_lokace}=this->\hyperlink{classIceAge_1_1EngineIceAge_a7e1281f7e78cfda1d10006323a9b0434}{m\_directorLokaci}->\hyperlink{classIceAge_1_1LocationDirector_aaf149e550266d7934d8f227a0ec67953}{createLokace}();
+00064 \textcolor{comment}{//    std::cout<<"lokace ok"<<std::endl;}
+00065     \textcolor{keywordflow}{if}(this->\hyperlink{classIceAge_1_1EngineIceAge_a04557f4c59d36d80e16b753cb918ea95}{m\_lokace} != \textcolor{keyword}{nullptr}) \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00066     \textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00067 \}
+\hypertarget{EngineIceAge_8cpp_source.tex_l00071}{}\hyperlink{classIceAge_1_1EngineIceAge_ab3f8cd94dafb051af4e751fb34914cb2}{00071} \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1EngineIceAge_ab3f8cd94dafb051af4e751fb34914cb2}{IceAge::EngineIceAge::setDirector}(
+      \hyperlink{classIceAge_1_1LocationDirector}{IceAge::LocationDirector}* novyDirector)\{
+00072     this->\hyperlink{classIceAge_1_1EngineIceAge_a7e1281f7e78cfda1d10006323a9b0434}{m\_directorLokaci}=novyDirector;
+00073 \}
+00074 
+\hypertarget{EngineIceAge_8cpp_source.tex_l00078}{}\hyperlink{classIceAge_1_1EngineIceAge_ac1f9527247e875dc5e2283dd463358d6}{00078} \hyperlink{classIceAge_1_1EngineIceAge_ac1f9527247e875dc5e2283dd463358d6}{IceAge::EngineIceAge::~EngineIceAge}()\{
+00079     \textcolor{keywordflow}{if}(this->\hyperlink{classIceAge_1_1EngineIceAge_a7e1281f7e78cfda1d10006323a9b0434}{m\_directorLokaci} != \textcolor{keyword}{nullptr}) \textcolor{keyword}{delete} this->
+      \hyperlink{classIceAge_1_1EngineIceAge_a7e1281f7e78cfda1d10006323a9b0434}{m\_directorLokaci};
+00080     \textcolor{keywordflow}{if}(this->\hyperlink{classIceAge_1_1EngineIceAge_ad9440d38fc579c99a87e7fda88b3bdcd}{m\_veverka} != \textcolor{keyword}{nullptr}) \textcolor{keyword}{delete} this->\hyperlink{classIceAge_1_1EngineIceAge_ad9440d38fc579c99a87e7fda88b3bdcd}{m\_veverka};
+00081     \textcolor{keywordflow}{if}(this->\hyperlink{classIceAge_1_1EngineIceAge_a04557f4c59d36d80e16b753cb918ea95}{m\_lokace} != \textcolor{keyword}{nullptr}) \textcolor{keyword}{delete} this->\hyperlink{classIceAge_1_1EngineIceAge_a04557f4c59d36d80e16b753cb918ea95}{m\_lokace};
+00082 \}
+\end{DoxyCode}

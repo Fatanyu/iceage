@@ -1,0 +1,278 @@
+# depslib dependency file v1.0
+1453361884 source:/home/kaktus/Plocha/hra_skola/v3/IceAge/cpp/Beast.cpp
+	"../hlavicky/Beast.h"
+
+1453361698 /home/kaktus/Plocha/hra_skola/v3/IceAge/hlavicky/Beast.h
+	"Memory.h"
+	"Zivot.h"
+	"Nazev.h"
+	"Popis.h"
+	"Staty.h"
+
+1453336042 /home/kaktus/Plocha/hra_skola/v3/IceAge/hlavicky/Memory.h
+	"IMemory.h"
+	"MemoryArbiter.h"
+
+1453334006 /home/kaktus/Plocha/hra_skola/v3/IceAge/hlavicky/IMemory.h
+
+1453368172 /home/kaktus/Plocha/hra_skola/v3/IceAge/hlavicky/MemoryArbiter.h
+	"Memory.h"
+	<vector>
+	<iostream>
+
+1453340084 /home/kaktus/Plocha/hra_skola/v3/IceAge/hlavicky/Zivot.h
+	"IZivot.h"
+	"MemoryArbiter.h"
+
+1453334930 /home/kaktus/Plocha/hra_skola/v3/IceAge/hlavicky/IZivot.h
+	<iostream>
+
+1453338365 /home/kaktus/Plocha/hra_skola/v3/IceAge/hlavicky/Nazev.h
+	"INazev.h"
+
+1453334897 /home/kaktus/Plocha/hra_skola/v3/IceAge/hlavicky/INazev.h
+	<iostream>
+
+1453338688 /home/kaktus/Plocha/hra_skola/v3/IceAge/hlavicky/Popis.h
+	"IPopis.h"
+
+1453334955 /home/kaktus/Plocha/hra_skola/v3/IceAge/hlavicky/IPopis.h
+	<iostream>
+
+1453340391 /home/kaktus/Plocha/hra_skola/v3/IceAge/hlavicky/Staty.h
+	"IStaty.h"
+	<iostream>
+
+1453334948 /home/kaktus/Plocha/hra_skola/v3/IceAge/hlavicky/IStaty.h
+
+1453365549 source:/home/kaktus/Plocha/hra_skola/v3/IceAge/cpp/BuilderBytost.cpp
+	"../hlavicky/BuilderBytost.h"
+
+1453364694 /home/kaktus/Plocha/hra_skola/v3/IceAge/hlavicky/BuilderBytost.h
+	"BuilderPredmet.h"
+	"Beast.h"
+	"Humanoid.h"
+
+1453364192 /home/kaktus/Plocha/hra_skola/v3/IceAge/hlavicky/BuilderPredmet.h
+	"Zbran.h"
+
+1453356343 /home/kaktus/Plocha/hra_skola/v3/IceAge/hlavicky/Zbran.h
+	"Predmet.h"
+
+1453355771 /home/kaktus/Plocha/hra_skola/v3/IceAge/hlavicky/Predmet.h
+	"Memory.h"
+	"Nazev.h"
+
+1453362287 /home/kaktus/Plocha/hra_skola/v3/IceAge/hlavicky/Humanoid.h
+	"Inventar.h"
+	"ObleceneVybaveniHumanoid.h"
+	"Memory.h"
+	"Zivot.h"
+	"Nazev.h"
+	"Popis.h"
+	"Staty.h"
+
+1453342041 /home/kaktus/Plocha/hra_skola/v3/IceAge/hlavicky/Inventar.h
+	"IInventar.h"
+
+1453341943 /home/kaktus/Plocha/hra_skola/v3/IceAge/hlavicky/IInventar.h
+	"Predmet.h"
+
+1453341309 /home/kaktus/Plocha/hra_skola/v3/IceAge/hlavicky/ObleceneVybaveniHumanoid.h
+	"IObleceneVybaveni.h"
+
+1453340720 /home/kaktus/Plocha/hra_skola/v3/IceAge/hlavicky/IObleceneVybaveni.h
+	"Zbran.h"
+
+1453367653 source:/home/kaktus/Plocha/hra_skola/v3/IceAge/cpp/BuilderLokace.cpp
+	"../hlavicky/BuilderLokace.h"
+
+1453365943 /home/kaktus/Plocha/hra_skola/v3/IceAge/hlavicky/BuilderLokace.h
+	"BuilderBytost.h"
+	"Lokace.h"
+	<iostream>
+	<fstream>
+
+1453307396 /home/kaktus/Plocha/hra_skola/v3/IceAge/hlavicky/Lokace.h
+	"Command.h"
+	"Reka.h"
+	"Popis.h"
+	"Nazev.h"
+	"Memory.h"
+	<vector>
+	"Zivot.h"
+	"Veverka.h"
+	"Beast.h"
+	"Humanoid.h"
+	"Ledovec.h"
+	"ZapadniPlanina.h"
+	"ZapadniBrehReky.h"
+	"JizniLes.h"
+	"SeverniLes.h"
+	"VychodniPlanina.h"
+	"VychodniBrehReky.h"
+	"Jezero.h"
+
+1453354347 /home/kaktus/Plocha/hra_skola/v3/IceAge/hlavicky/Reka.h
+
+1453364422 source:/home/kaktus/Plocha/hra_skola/v3/IceAge/cpp/BuilderPredmet.cpp
+	"../hlavicky/BuilderPredmet.h"
+
+1453362642 source:/home/kaktus/Plocha/hra_skola/v3/IceAge/cpp/Humanoid.cpp
+	"../hlavicky/Humanoid.h"
+
+1453343280 source:/home/kaktus/Plocha/hra_skola/v3/IceAge/cpp/Inventar.cpp
+	"../hlavicky/Inventar.h"
+
+1453307245 source:/home/kaktus/Plocha/hra_skola/v3/IceAge/cpp/Lokace.cpp
+	"../hlavicky/Lokace.h"
+
+1453335544 source:/home/kaktus/Plocha/hra_skola/v3/IceAge/cpp/Memory.cpp
+	"../hlavicky/Memory.h"
+
+1453337586 source:/home/kaktus/Plocha/hra_skola/v3/IceAge/cpp/MemoryArbiter.cpp
+	"../hlavicky/MemoryArbiter.h"
+
+1453338472 source:/home/kaktus/Plocha/hra_skola/v3/IceAge/cpp/Nazev.cpp
+	"../hlavicky/Nazev.h"
+
+1453341466 source:/home/kaktus/Plocha/hra_skola/v3/IceAge/cpp/ObleceneVybaveniHumanoid.cpp
+	"../hlavicky/ObleceneVybaveniHumanoid.h"
+
+1453341073 source:/home/kaktus/Plocha/hra_skola/v3/IceAge/cpp/ObleceneVybaveniVeverky.cpp
+	"../hlavicky/ObleceneVybaveniVeverky.h"
+
+1453340831 /home/kaktus/Plocha/hra_skola/v3/IceAge/hlavicky/ObleceneVybaveniVeverky.h
+	"IObleceneVybaveni.h"
+	"Predmet.h"
+	"Zbran.h"
+	"Orisek.h"
+
+1453356166 source:/home/kaktus/Plocha/hra_skola/v3/IceAge/cpp/Orisek.cpp
+	"../hlavicky/Orisek.h"
+
+1453356114 /home/kaktus/Plocha/hra_skola/v3/IceAge/hlavicky/Orisek.h
+	"Predmet.h"
+
+1453338818 source:/home/kaktus/Plocha/hra_skola/v3/IceAge/cpp/Popis.cpp
+	"../hlavicky/Popis.h"
+
+1453355845 source:/home/kaktus/Plocha/hra_skola/v3/IceAge/cpp/Predmet.cpp
+	"../hlavicky/Predmet.h"
+
+1453355215 source:/home/kaktus/Plocha/hra_skola/v3/IceAge/cpp/Reka.cpp
+	"../hlavicky/Reka.h"
+
+1453340547 source:/home/kaktus/Plocha/hra_skola/v3/IceAge/cpp/Staty.cpp
+	"../hlavicky/Staty.h"
+
+1453363916 source:/home/kaktus/Plocha/hra_skola/v3/IceAge/cpp/Veverka.cpp
+	"../hlavicky/Veverka.h"
+
+1453363192 /home/kaktus/Plocha/hra_skola/v3/IceAge/hlavicky/Veverka.h
+	"ObleceneVybaveniVeverky.h"
+	"Staty.h"
+	"Memory.h"
+	"Zivot.h"
+	<cstdio>
+
+1453356489 source:/home/kaktus/Plocha/hra_skola/v3/IceAge/cpp/Zbran.cpp
+	"../hlavicky/Zbran.h"
+
+1453340071 source:/home/kaktus/Plocha/hra_skola/v3/IceAge/cpp/Zivot.cpp
+	"../hlavicky/Zivot.h"
+
+1453342448 source:/home/kaktus/Plocha/hra_skola/v3/IceAge/main.cpp
+	<iostream>
+	"hlavicky/EngineIceAge.h"
+
+1453368024 source:/home/kaktus/Plocha/hra_skola/v3/IceAge/cpp/LocationDirector.cpp
+	"../hlavicky/LocationDirector.h"
+
+1453367911 /home/kaktus/Plocha/hra_skola/v3/IceAge/hlavicky/LocationDirector.h
+	"BuilderLokace.h"
+
+1453368798 source:/home/kaktus/Plocha/hra_skola/v3/IceAge/cpp/EngineIceAge.cpp
+	"../hlavicky/EngineIceAge.h"
+
+1453368363 /home/kaktus/Plocha/hra_skola/v3/IceAge/hlavicky/EngineIceAge.h
+	"LocationDirector.h"
+	"Veverka.h"
+	"Hra.h"
+
+1453369180 /home/kaktus/Plocha/hra_skola/v3/IceAge/hlavicky/Hra.h
+	"Lokace.h"
+	"Veverka.h"
+	"VolneFunkce.h"
+
+1453370459 source:/home/kaktus/Plocha/hra_skola/v3/IceAge/cpp/Hra.cpp
+	"../hlavicky/Hra.h"
+
+1453356895 source:/home/kaktus/Plocha/hra_skola/v3/IceAge/cpp/Command.cpp
+	"../hlavicky/Command.h"
+
+1453356859 /home/kaktus/Plocha/hra_skola/v3/IceAge/hlavicky/Command.h
+	<iostream>
+	"Nazev.h"
+	"Veverka.h"
+	"Reka.h"
+	"Beast.h"
+	"Humanoid.h"
+	"VolneFunkce.h"
+
+1453358663 source:/home/kaktus/Plocha/hra_skola/v3/IceAge/cpp/Jezero.cpp
+	"../hlavicky/Jezero.h"
+
+1453357300 /home/kaktus/Plocha/hra_skola/v3/IceAge/hlavicky/Jezero.h
+	"Command.h"
+	<thread>
+	<chrono>
+
+1453359709 source:/home/kaktus/Plocha/hra_skola/v3/IceAge/cpp/JizniLes.cpp
+	"../hlavicky/JizniLes.h"
+
+1453357300 /home/kaktus/Plocha/hra_skola/v3/IceAge/hlavicky/JizniLes.h
+	"Command.h"
+
+1453359964 source:/home/kaktus/Plocha/hra_skola/v3/IceAge/cpp/Ledovec.cpp
+	"../hlavicky/Ledovec.h"
+
+1453357301 /home/kaktus/Plocha/hra_skola/v3/IceAge/hlavicky/Ledovec.h
+	"Command.h"
+
+1453360168 source:/home/kaktus/Plocha/hra_skola/v3/IceAge/cpp/SeverniLes.cpp
+	"../hlavicky/SeverniLes.h"
+
+1453357301 /home/kaktus/Plocha/hra_skola/v3/IceAge/hlavicky/SeverniLes.h
+	"Command.h"
+
+1453360684 source:/home/kaktus/Plocha/hra_skola/v3/IceAge/cpp/VychodniBrehReky.cpp
+	"../hlavicky/VychodniBrehReky.h"
+
+1453357270 /home/kaktus/Plocha/hra_skola/v3/IceAge/hlavicky/VychodniBrehReky.h
+	"Command.h"
+
+1453361023 source:/home/kaktus/Plocha/hra_skola/v3/IceAge/cpp/VychodniPlanina.cpp
+	"../hlavicky/VychodniPlanina.h"
+
+1453357264 /home/kaktus/Plocha/hra_skola/v3/IceAge/hlavicky/VychodniPlanina.h
+	"Command.h"
+
+1453360815 source:/home/kaktus/Plocha/hra_skola/v3/IceAge/cpp/ZapadniBrehReky.cpp
+	"../hlavicky/ZapadniBrehReky.h"
+
+1453357254 /home/kaktus/Plocha/hra_skola/v3/IceAge/hlavicky/ZapadniBrehReky.h
+	"Command.h"
+
+1453361158 source:/home/kaktus/Plocha/hra_skola/v3/IceAge/cpp/ZapadniPlanina.cpp
+	"../hlavicky/ZapadniPlanina.h"
+
+1453357182 /home/kaktus/Plocha/hra_skola/v3/IceAge/hlavicky/ZapadniPlanina.h
+	"Command.h"
+
+1453361374 /home/kaktus/Plocha/hra_skola/v3/IceAge/hlavicky/VolneFunkce.h
+	"Zivot.h"
+
+1453361479 source:/home/kaktus/Plocha/hra_skola/v3/IceAge/cpp/VolneFunkce.cpp
+	"../hlavicky/VolneFunkce.h"
+

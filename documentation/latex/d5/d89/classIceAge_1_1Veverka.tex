@@ -1,0 +1,189 @@
+\hypertarget{classIceAge_1_1Veverka}{}\section{Dokumentace třídy Ice\+Age\+:\+:Veverka}
+\label{classIceAge_1_1Veverka}\index{Ice\+Age\+::\+Veverka@{Ice\+Age\+::\+Veverka}}
+
+
+{\ttfamily \#include $<$Veverka.\+h$>$}
+
+Diagram dědičnosti pro třídu Ice\+Age\+:\+:Veverka\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.883408cm]{d5/d89/classIceAge_1_1Veverka}
+\end{center}
+\end{figure}
+\subsection*{Veřejné metody}
+\begin{DoxyCompactItemize}
+\item 
+short \hyperlink{classIceAge_1_1Veverka_af5b4c4f1efe81d428564352c3257eff4}{utok} ()
+\begin{DoxyCompactList}\small\item\em Konkretni implementace dedene metody vracejici hodnotu celkoveho utoku. \end{DoxyCompactList}\item 
+short \hyperlink{classIceAge_1_1Veverka_a0de0d0e1bdd72451abe0b6b7eaa74bee}{obrana} ()
+\begin{DoxyCompactList}\small\item\em Konkretni implementace dedene metody vracejici hodnotu celkove obrany. \end{DoxyCompactList}\item 
+\hyperlink{classIceAge_1_1Veverka_ad58ee98ef7bafb1adf634ba2936f9a6b}{$\sim$\+Veverka} ()
+\begin{DoxyCompactList}\small\item\em Destruktor. \end{DoxyCompactList}\item 
+void \hyperlink{classIceAge_1_1Veverka_a3b917725872714ac866bc2028bf7d7d9}{enrage\+Zapnout} ()
+\begin{DoxyCompactList}\small\item\em Okamzite zvysuje atributy na mnohem vyssi hodnoty. \end{DoxyCompactList}\item 
+void \hyperlink{classIceAge_1_1Veverka_a1899ce1f8542829ec12e9087df188be8}{enrage\+Vypnout} ()
+\begin{DoxyCompactList}\small\item\em Vraci atributy do normalnich hodnot. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Statické veřejné metody}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classIceAge_1_1Veverka}{Ice\+Age\+::\+Veverka} $\ast$ \hyperlink{classIceAge_1_1Veverka_a12909a7053332344e9b8c71845bb8e1f}{get\+Instance} ()
+\begin{DoxyCompactList}\small\item\em Staticka metoda, ktera povoli vytvorit pouze jedinou instanci teto tridy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Privátní metody}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classIceAge_1_1Veverka_a527c1eeb2f4a165f65ade3852719ef68}{Veverka} (short novy\+Zivot, short nova\+Sila, short nova\+Odolnost)
+\begin{DoxyCompactList}\small\item\em Konstruktor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Statické privátní atributy}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classIceAge_1_1Veverka}{Ice\+Age\+::\+Veverka} $\ast$ \hyperlink{classIceAge_1_1Veverka_acfa9aa07c2cfa881fbcc6feeb717c287}{s\+\_\+vlastni\+Instance} = nullptr
+\begin{DoxyCompactList}\small\item\em Staticky atribut odkaz sam na sebe. Dulezite pro Singleton. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Další zděděné členy}
+
+
+\subsection{Detailní popis}
+Trida hlavniho hrdiny. Je implementovana jako Singleton. 
+
+Definice je uvedena na řádku \hyperlink{Veverka_8h_source_l00021}{21} v souboru \hyperlink{Veverka_8h_source}{Veverka.\+h}.
+
+
+
+\subsection{Dokumentace konstruktoru a destruktoru}
+\index{Ice\+Age\+::\+Veverka@{Ice\+Age\+::\+Veverka}!Veverka@{Veverka}}
+\index{Veverka@{Veverka}!Ice\+Age\+::\+Veverka@{Ice\+Age\+::\+Veverka}}
+\subsubsection[{\texorpdfstring{Veverka(short novy\+Zivot, short nova\+Sila, short nova\+Odolnost)}{Veverka(short novyZivot, short novaSila, short novaOdolnost)}}]{\setlength{\rightskip}{0pt plus 5cm}Ice\+Age\+::\+Veverka\+::\+Veverka (
+\begin{DoxyParamCaption}
+\item[{short}]{novy\+Zivot, }
+\item[{short}]{nova\+Sila, }
+\item[{short}]{nova\+Odolnost}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classIceAge_1_1Veverka_a527c1eeb2f4a165f65ade3852719ef68}{}\label{classIceAge_1_1Veverka_a527c1eeb2f4a165f65ade3852719ef68}
+
+
+Konstruktor. 
+
+Konstruktor, ve kterem se nastavuje novy predmet \hyperlink{classIceAge_1_1Orisek}{Orisek}. Je privatni, coz zarucuje, ze pujde vytvaret instance pouze ze staticke metody. 
+
+Definice je uvedena na řádku \hyperlink{Veverka_8cpp_source_l00011}{11} v souboru \hyperlink{Veverka_8cpp_source}{Veverka.\+cpp}.
+
+\index{Ice\+Age\+::\+Veverka@{Ice\+Age\+::\+Veverka}!````~Veverka@{$\sim$\+Veverka}}
+\index{````~Veverka@{$\sim$\+Veverka}!Ice\+Age\+::\+Veverka@{Ice\+Age\+::\+Veverka}}
+\subsubsection[{\texorpdfstring{$\sim$\+Veverka()}{~Veverka()}}]{\setlength{\rightskip}{0pt plus 5cm}Ice\+Age\+::\+Veverka\+::$\sim$\+Veverka (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classIceAge_1_1Veverka_ad58ee98ef7bafb1adf634ba2936f9a6b}{}\label{classIceAge_1_1Veverka_ad58ee98ef7bafb1adf634ba2936f9a6b}
+
+
+Destruktor. 
+
+Destruktor 
+
+Definice je uvedena na řádku \hyperlink{Veverka_8cpp_source_l00050}{50} v souboru \hyperlink{Veverka_8cpp_source}{Veverka.\+cpp}.
+
+
+
+\subsection{Dokumentace k metodám}
+\index{Ice\+Age\+::\+Veverka@{Ice\+Age\+::\+Veverka}!enrage\+Vypnout@{enrage\+Vypnout}}
+\index{enrage\+Vypnout@{enrage\+Vypnout}!Ice\+Age\+::\+Veverka@{Ice\+Age\+::\+Veverka}}
+\subsubsection[{\texorpdfstring{enrage\+Vypnout()}{enrageVypnout()}}]{\setlength{\rightskip}{0pt plus 5cm}void Ice\+Age\+::\+Veverka\+::enrage\+Vypnout (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classIceAge_1_1Veverka_a1899ce1f8542829ec12e9087df188be8}{}\label{classIceAge_1_1Veverka_a1899ce1f8542829ec12e9087df188be8}
+
+
+Vraci atributy do normalnich hodnot. 
+
+Vraci atributy do normalnich hodnot. Jedna se o silu a odolnost. 
+
+Definice je uvedena na řádku \hyperlink{Veverka_8cpp_source_l00065}{65} v souboru \hyperlink{Veverka_8cpp_source}{Veverka.\+cpp}.
+
+\index{Ice\+Age\+::\+Veverka@{Ice\+Age\+::\+Veverka}!enrage\+Zapnout@{enrage\+Zapnout}}
+\index{enrage\+Zapnout@{enrage\+Zapnout}!Ice\+Age\+::\+Veverka@{Ice\+Age\+::\+Veverka}}
+\subsubsection[{\texorpdfstring{enrage\+Zapnout()}{enrageZapnout()}}]{\setlength{\rightskip}{0pt plus 5cm}void Ice\+Age\+::\+Veverka\+::enrage\+Zapnout (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classIceAge_1_1Veverka_a3b917725872714ac866bc2028bf7d7d9}{}\label{classIceAge_1_1Veverka_a3b917725872714ac866bc2028bf7d7d9}
+
+
+Okamzite zvysuje atributy na mnohem vyssi hodnoty. 
+
+Okamzite zvysuje atributy na mnohem vyssi hodnoty. Jedna se o silu a odolnost. 
+
+Definice je uvedena na řádku \hyperlink{Veverka_8cpp_source_l00056}{56} v souboru \hyperlink{Veverka_8cpp_source}{Veverka.\+cpp}.
+
+\index{Ice\+Age\+::\+Veverka@{Ice\+Age\+::\+Veverka}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!Ice\+Age\+::\+Veverka@{Ice\+Age\+::\+Veverka}}
+\subsubsection[{\texorpdfstring{get\+Instance()}{getInstance()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ice\+Age\+::\+Veverka} $\ast$ Ice\+Age\+::\+Veverka\+::get\+Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classIceAge_1_1Veverka_a12909a7053332344e9b8c71845bb8e1f}{}\label{classIceAge_1_1Veverka_a12909a7053332344e9b8c71845bb8e1f}
+
+
+Staticka metoda, ktera povoli vytvorit pouze jedinou instanci teto tridy. 
+
+Staticka metoda, ktera povoli vytvorit pouze jedinou instanci teto tridy. Pokud jiz instance existuje, vrati odkaz na ni misto vytvareni nove. 
+
+Definice je uvedena na řádku \hyperlink{Veverka_8cpp_source_l00019}{19} v souboru \hyperlink{Veverka_8cpp_source}{Veverka.\+cpp}.
+
+\index{Ice\+Age\+::\+Veverka@{Ice\+Age\+::\+Veverka}!obrana@{obrana}}
+\index{obrana@{obrana}!Ice\+Age\+::\+Veverka@{Ice\+Age\+::\+Veverka}}
+\subsubsection[{\texorpdfstring{obrana()}{obrana()}}]{\setlength{\rightskip}{0pt plus 5cm}short Ice\+Age\+::\+Veverka\+::obrana (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classIceAge_1_1Veverka_a0de0d0e1bdd72451abe0b6b7eaa74bee}{}\label{classIceAge_1_1Veverka_a0de0d0e1bdd72451abe0b6b7eaa74bee}
+
+
+Konkretni implementace dedene metody vracejici hodnotu celkove obrany. 
+
+Konkretni implementace dedene metody vracejici hodnotu celkove obrany, coz je odolnost. 
+
+Implementuje \hyperlink{classIceAge_1_1Zivot_a7d712f401ea189ed382f5cf05869a37a}{Ice\+Age\+::\+Zivot}.
+
+
+
+Definice je uvedena na řádku \hyperlink{Veverka_8cpp_source_l00038}{38} v souboru \hyperlink{Veverka_8cpp_source}{Veverka.\+cpp}.
+
+\index{Ice\+Age\+::\+Veverka@{Ice\+Age\+::\+Veverka}!utok@{utok}}
+\index{utok@{utok}!Ice\+Age\+::\+Veverka@{Ice\+Age\+::\+Veverka}}
+\subsubsection[{\texorpdfstring{utok()}{utok()}}]{\setlength{\rightskip}{0pt plus 5cm}short Ice\+Age\+::\+Veverka\+::utok (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classIceAge_1_1Veverka_af5b4c4f1efe81d428564352c3257eff4}{}\label{classIceAge_1_1Veverka_af5b4c4f1efe81d428564352c3257eff4}
+
+
+Konkretni implementace dedene metody vracejici hodnotu celkoveho utoku. 
+
+Konkretni implementace dedene metody vracejici hodnotu celkoveho utoku, coz je sila. Pokud nese veverka i zbrane, pripocita se i jejich poskozeni. 
+
+Implementuje \hyperlink{classIceAge_1_1Zivot_a8cb36d6191c9e77a97d90833b6f0824d}{Ice\+Age\+::\+Zivot}.
+
+
+
+Definice je uvedena na řádku \hyperlink{Veverka_8cpp_source_l00027}{27} v souboru \hyperlink{Veverka_8cpp_source}{Veverka.\+cpp}.
+
+
+
+\subsection{Dokumentace k datovým členům}
+\index{Ice\+Age\+::\+Veverka@{Ice\+Age\+::\+Veverka}!s\+\_\+vlastni\+Instance@{s\+\_\+vlastni\+Instance}}
+\index{s\+\_\+vlastni\+Instance@{s\+\_\+vlastni\+Instance}!Ice\+Age\+::\+Veverka@{Ice\+Age\+::\+Veverka}}
+\subsubsection[{\texorpdfstring{s\+\_\+vlastni\+Instance}{s_vlastniInstance}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ice\+Age\+::\+Veverka} $\ast$ Ice\+Age\+::\+Veverka\+::s\+\_\+vlastni\+Instance = nullptr\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\hypertarget{classIceAge_1_1Veverka_acfa9aa07c2cfa881fbcc6feeb717c287}{}\label{classIceAge_1_1Veverka_acfa9aa07c2cfa881fbcc6feeb717c287}
+
+
+Staticky atribut odkaz sam na sebe. Dulezite pro Singleton. 
+
+Inicializace statickeho atributu. 
+
+Definice je uvedena na řádku \hyperlink{Veverka_8h_source_l00024}{24} v souboru \hyperlink{Veverka_8h_source}{Veverka.\+h}.
+
+
+
+Dokumentace pro tuto třídu byla generována z následujících souborů\+:\begin{DoxyCompactItemize}
+\item 
+hlavicky/\hyperlink{Veverka_8h}{Veverka.\+h}\item 
+cpp/\hyperlink{Veverka_8cpp}{Veverka.\+cpp}\end{DoxyCompactItemize}

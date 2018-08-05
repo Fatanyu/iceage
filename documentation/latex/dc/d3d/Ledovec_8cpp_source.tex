@@ -1,0 +1,26 @@
+\hypertarget{Ledovec_8cpp_source}{}\section{Ledovec.\+cpp}
+\label{Ledovec_8cpp_source}\index{cpp/\+Ledovec.\+cpp@{cpp/\+Ledovec.\+cpp}}
+
+\begin{DoxyCode}
+00001 
+00004 \textcolor{preprocessor}{#include "../hlavicky/Ledovec.h"}
+00005 
+\hypertarget{Ledovec_8cpp_source.tex_l00009}{}\hyperlink{classIceAge_1_1Ledovec_adb1cb86de12b9d72888202bef00ae962}{00009} \hyperlink{classIceAge_1_1Ledovec_adb1cb86de12b9d72888202bef00ae962}{IceAge::Ledovec::Ledovec}(std::string novyNazev):\hyperlink{classIceAge_1_1Command}{Command}(novyNazev) \{
+00010 \}
+00011 
+\hypertarget{Ledovec_8cpp_source.tex_l00015}{}\hyperlink{classIceAge_1_1Ledovec_a7533fa470c0ab65a05c03a0de2b1ba5e}{00015} \hyperlink{classIceAge_1_1Ledovec_a7533fa470c0ab65a05c03a0de2b1ba5e}{IceAge::Ledovec::~Ledovec}() \{
+00016 \}
+00017 
+\hypertarget{Ledovec_8cpp_source.tex_l00021}{}\hyperlink{classIceAge_1_1Ledovec_a92538e91b889749c03de931e77da8753}{00021} \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1Ledovec_a92538e91b889749c03de931e77da8753}{IceAge::Ledovec::prozkoumat}(\hyperlink{classIceAge_1_1Veverka}{IceAge::Veverka}* scrat, 
+      std::vector<IceAge::Beast*> vektorBeast, std::vector<IceAge::Humanoid*> vektorHumanoid, 
+      \hyperlink{classIceAge_1_1Reka}{IceAge::Reka}* reka) \{
+00022     std::cout << std::endl;
+00023     std::cout << \textcolor{stringliteral}{"Ledovec se zhroutil, krome laviny do udoli tu neni nikdo a nic."} << std::endl;
+00024     std::cout << \textcolor{stringliteral}{"Spadl na tebe kus ledu! Ztracis 3 zivoty!"} <<std::endl;
+00025 \textcolor{comment}{//    std::cout << vektorBeast.size() << std::endl;}
+00026     scrat->\hyperlink{classIceAge_1_1Zivot_a980dc5a5af6d14c23ecca025e3ec7485}{changeZivotAktualni}(-3);
+00027     std::cout << \textcolor{stringliteral}{"Vidis "} << vektorBeast.at(0)->getNazev() << \textcolor{stringliteral}{". Udelal si z tebe cvicny terc."} << 
+      std::endl; 
+00028     std::cout << std::endl;
+00029 \}
+\end{DoxyCode}

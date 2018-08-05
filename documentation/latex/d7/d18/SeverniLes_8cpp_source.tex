@@ -1,0 +1,55 @@
+\hypertarget{SeverniLes_8cpp_source}{}\section{Severni\+Les.\+cpp}
+\label{SeverniLes_8cpp_source}\index{cpp/\+Severni\+Les.\+cpp@{cpp/\+Severni\+Les.\+cpp}}
+
+\begin{DoxyCode}
+00001 
+00004 \textcolor{preprocessor}{#include "../hlavicky/SeverniLes.h"}
+00005 
+\hypertarget{SeverniLes_8cpp_source.tex_l00009}{}\hyperlink{classIceAge_1_1SeverniLes_accad5e1d48610aabeef941f2ba182832}{00009} \hyperlink{classIceAge_1_1SeverniLes_accad5e1d48610aabeef941f2ba182832}{IceAge::SeverniLes::SeverniLes}(std::string novyNazev):
+      \hyperlink{classIceAge_1_1Command}{Command}(novyNazev) \{
+00010 \}
+00011 
+\hypertarget{SeverniLes_8cpp_source.tex_l00015}{}\hyperlink{classIceAge_1_1SeverniLes_abfc44ad357a1eeb29a0aead797dfe6b8}{00015} \hyperlink{classIceAge_1_1SeverniLes_abfc44ad357a1eeb29a0aead797dfe6b8}{IceAge::SeverniLes::~SeverniLes}() \{
+00016 \}
+00017 
+\hypertarget{SeverniLes_8cpp_source.tex_l00021}{}\hyperlink{classIceAge_1_1SeverniLes_a59fd82f865c7b89988752f16b0e10322}{00021} \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1SeverniLes_a59fd82f865c7b89988752f16b0e10322}{IceAge::SeverniLes::prozkoumat}(
+      \hyperlink{classIceAge_1_1Veverka}{IceAge::Veverka}* scrat, std::vector<IceAge::Beast*> vektorBeast, 
+      std::vector<IceAge::Humanoid*> vektorHumanoid, \hyperlink{classIceAge_1_1Reka}{IceAge::Reka}* reka) \{
+00022     std::cout << std::endl;
+00023     std::cout << \textcolor{stringliteral}{"Oproti lesu na druhe strane, tento prales je plny svinciku a to i na zvireci pomery."} << 
+      std::endl;
+00024     std::cout << \textcolor{stringliteral}{"Ocividne teto oblasti vevodi tlupa velkych dvounozcu a jejich rivalove savlozubi tygri."} 
+      <<std::endl;
+00025 
+00026     \textcolor{keywordtype}{bool} cyklus2=\textcolor{keyword}{true};
+00027     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} index=0;
+00028     \textcolor{keywordtype}{char} volba=\textcolor{charliteral}{'a'};
+00030     \textcolor{keywordflow}{while}(cyklus2)
+00031     \{
+00032         std::cout << std::endl;
+00033         std::cout << \textcolor{stringliteral}{"["} << index << \textcolor{stringliteral}{"] Nenapadne se vytratit"} <<std::endl; index++;
+00034         std::cout << \textcolor{stringliteral}{"["} << index << \textcolor{stringliteral}{"] Napit se "} <<std::endl; index=0;
+00035 
+00036         std::cout << \textcolor{stringliteral}{"Vyber akci:"};
+00037         std::cin >> volba;std::cin.ignore();
+00038 
+00039         \textcolor{keywordflow}{switch}(volba)\{
+00040             \textcolor{keywordflow}{case} \textcolor{charliteral}{'0'}:
+00041                     std::cout << \textcolor{stringliteral}{"Nepovedlo se, vsiml si te "} << vektorHumanoid.at(0)->getNazev() << 
+      std::endl;
+00042                     \hyperlink{namespaceIceAge_a2c6b97286bcd54e3ecf2fdc335460e90}{IceAge::boj}(vektorHumanoid.at(0), scrat);
+00043                     std::cout << \textcolor{stringliteral}{"Povedlo se ti dostat do bezpeci, ale ztratil si svou lodku"} << std::endl;
+00044                     scrat->\hyperlink{classIceAge_1_1ObleceneVybaveniVeverky_ac24580a8bfcf97220c1967f58111c8f1}{zahodPravaRuka}();
+00045                     cyklus2=\textcolor{keyword}{false};
+00046                 \textcolor{keywordflow}{break};
+00047             \textcolor{keywordflow}{case} \textcolor{charliteral}{'1'}:
+00048                 scrat->\hyperlink{classIceAge_1_1Zivot_a980dc5a5af6d14c23ecca025e3ec7485}{changeZivotAktualni}(reka->
+      \hyperlink{classIceAge_1_1Reka_acc4d9a4ef69da03eed8762e16a33b49f}{getHodnotaZivota}());
+00049                 std::cout << \textcolor{stringliteral}{"Aktualne mas "} << scrat->\hyperlink{classIceAge_1_1Zivot_ae4e3a167722a80ccace3985f183ddd8d}{getZivotAktualni}() << \textcolor{stringliteral}{"/"} << scrat->
+      \hyperlink{classIceAge_1_1Zivot_a75a65879dd6ddc0bc3e402ac6f613813}{getZivotMaximalni}() << std::endl;
+00050                 \textcolor{keywordflow}{continue};
+00051                 \textcolor{keywordflow}{break};
+00052         \}
+00053     \}
+00054 \}
+\end{DoxyCode}

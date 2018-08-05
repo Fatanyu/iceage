@@ -1,0 +1,70 @@
+Zapadni breh reky
+1
+Hnusna velka plaz. Srocuji se tu velke davy zvirat z blizkeho lesa.
+U koryta panuje vseobecny mir. Nikdo nikoho nelovi.
+***
+0
+***
+10
+Veverkomut
+Konkurencni samec
+1
+2
+3
+40
+Hadomut
+Sycici skrtic
+12
+3
+4
+30
+Gepardomut
+Mrstna kocicka
+14
+12
+10
+70
+Myvalomut
+Maly chlupac
+3
+5
+6
+45
+Lenochod
+Lemra lina
+-2
+3
+3
+45
+Zebramut
+Chodici prechod
+10
+9
+15
+80
+Zebromut
+Chodici prechod 2
+13
+9
+15
+80
+Zelvamut
+Zelvi ninja v mini verzi
+0
+1
+3
+20
+Mamut
+Chodici strecha
+20
+35
+20
+300
+Supomut
+Koupajici se smradoch
+14
+8
+8
+110
+***
+Zapadni planina

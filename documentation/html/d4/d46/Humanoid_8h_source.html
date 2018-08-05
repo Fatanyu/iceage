@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>IceAge: Zdrojový soubor hlavicky/Humanoid.h</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">IceAge
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generováno programem Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'Hledat');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>Hlavní&#160;stránka</span></a></li>
+      <li><a href="../../namespaces.html"><span>Prostory&#160;jmen</span></a></li>
+      <li><a href="../../annotated.html"><span>Třídy</span></a></li>
+      <li class="current"><a href="../../files.html"><span>Soubory</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Hledat" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>Seznam&#160;souborů</span></a></li>
+      <li><a href="../../globals.html"><span>Symboly&#160;v&#160;souborech</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_dfbea2c12550d9d3379e9e672dd72c92.html">hlavicky</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Humanoid.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d4/d46/Humanoid_8h.html">Zobrazit dokumentaci tohoto souboru.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#ifndef HUMANOID_H</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#define HUMANOID_H</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../da/d6b/Inventar_8h.html">Inventar.h</a>&quot;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d5/dc2/ObleceneVybaveniHumanoid_8h.html">ObleceneVybaveniHumanoid.h</a>&quot;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../de/d5c/Memory_8h.html">Memory.h</a>&quot;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d1/d20/Zivot_8h.html">Zivot.h</a>&quot;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d2/df6/Nazev_8h.html">Nazev.h</a>&quot;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d6/d85/Popis_8h.html">Popis.h</a>&quot;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../db/d3b/Staty_8h.html">Staty.h</a>&quot;</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../dd/d33/namespaceIceAge.html">IceAge</a> {</div><div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="../../d5/d0d/classIceAge_1_1Humanoid.html">   19</a></span>&#160;    <span class="keyword">class </span><a class="code" href="../../d5/d0d/classIceAge_1_1Humanoid.html">Humanoid</a> : <span class="keyword">public</span> <a class="code" href="../../d9/d41/classIceAge_1_1Inventar.html">IceAge::Inventar</a>, <span class="keyword">public</span> <a class="code" href="../../d7/d1d/classIceAge_1_1ObleceneVybaveniHumanoid.html">IceAge::ObleceneVybaveniHumanoid</a>, <span class="keyword">public</span> <a class="code" href="../../d0/d1c/classIceAge_1_1Memory.html">IceAge::Memory</a>,</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                     <span class="keyword">public</span> <a class="code" href="../../d5/de8/classIceAge_1_1Zivot.html">IceAge::Zivot</a>, <span class="keyword">public</span> <a class="code" href="../../d4/d9d/classIceAge_1_1Nazev.html">IceAge::Nazev</a>, <span class="keyword">public</span> <a class="code" href="../../d8/d11/classIceAge_1_1Popis.html">IceAge::Popis</a>, <span class="keyword">public</span> <a class="code" href="../../d2/d04/classIceAge_1_1Staty.html">IceAge::Staty</a> {</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">public</span>:</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <a class="code" href="../../d5/d0d/classIceAge_1_1Humanoid.html#aa569118f9afa5ec9ddac4a9ec813d4ba">Humanoid</a>(<span class="keywordtype">short</span> novyZivot, std::string novyNazev, std::string novyPopis, <span class="keywordtype">short</span> novaSila, <span class="keywordtype">short</span> novaOdolnost, <a class="code" href="../../db/db8/classIceAge_1_1Predmet.html">IceAge::Predmet</a>* zbran1, <a class="code" href="../../db/db8/classIceAge_1_1Predmet.html">IceAge::Predmet</a>* zbran2, <a class="code" href="../../db/db8/classIceAge_1_1Predmet.html">IceAge::Predmet</a>* zbran3);</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="code" href="../../d5/d0d/classIceAge_1_1Humanoid.html#a1d77af44d2b10d85f162ae959b05816d">~Humanoid</a>();</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordtype">short</span> <a class="code" href="../../d5/d0d/classIceAge_1_1Humanoid.html#aa8f63dfba3ef74a0666e9fb9c9e96df4">utok</a>();</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordtype">short</span> <a class="code" href="../../d5/d0d/classIceAge_1_1Humanoid.html#a76adfafa3855813fc09facab326ec87d">obrana</a>();</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    };</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="classIceAge_1_1Zivot_html"><div class="ttname"><a href="../../d5/de8/classIceAge_1_1Zivot.html">IceAge::Zivot</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d20/Zivot_8h_source.html#l00014">Zivot.h:14</a></div></div>
+<div class="ttc" id="classIceAge_1_1Memory_html"><div class="ttname"><a href="../../d0/d1c/classIceAge_1_1Memory.html">IceAge::Memory</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/d5c/Memory_8h_source.html#l00020">Memory.h:20</a></div></div>
+<div class="ttc" id="classIceAge_1_1Humanoid_html_a1d77af44d2b10d85f162ae959b05816d"><div class="ttname"><a href="../../d5/d0d/classIceAge_1_1Humanoid.html#a1d77af44d2b10d85f162ae959b05816d">IceAge::Humanoid::~Humanoid</a></div><div class="ttdeci">~Humanoid()</div><div class="ttdoc">Destruktor. </div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d85/Humanoid_8cpp_source.html#l00042">Humanoid.cpp:42</a></div></div>
+<div class="ttc" id="classIceAge_1_1Staty_html"><div class="ttname"><a href="../../d2/d04/classIceAge_1_1Staty.html">IceAge::Staty</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d3b/Staty_8h_source.html#l00014">Staty.h:14</a></div></div>
+<div class="ttc" id="Memory_8h_html"><div class="ttname"><a href="../../de/d5c/Memory_8h.html">Memory.h</a></div></div>
+<div class="ttc" id="classIceAge_1_1Humanoid_html_aa569118f9afa5ec9ddac4a9ec813d4ba"><div class="ttname"><a href="../../d5/d0d/classIceAge_1_1Humanoid.html#aa569118f9afa5ec9ddac4a9ec813d4ba">IceAge::Humanoid::Humanoid</a></div><div class="ttdeci">Humanoid(short novyZivot, std::string novyNazev, std::string novyPopis, short novaSila, short novaOdolnost, IceAge::Predmet *zbran1, IceAge::Predmet *zbran2, IceAge::Predmet *zbran3)</div><div class="ttdoc">Konstruktor. </div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d85/Humanoid_8cpp_source.html#l00009">Humanoid.cpp:9</a></div></div>
+<div class="ttc" id="Zivot_8h_html"><div class="ttname"><a href="../../d1/d20/Zivot_8h.html">Zivot.h</a></div></div>
+<div class="ttc" id="Staty_8h_html"><div class="ttname"><a href="../../db/d3b/Staty_8h.html">Staty.h</a></div></div>
+<div class="ttc" id="classIceAge_1_1Inventar_html"><div class="ttname"><a href="../../d9/d41/classIceAge_1_1Inventar.html">IceAge::Inventar</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/d6b/Inventar_8h_source.html#l00014">Inventar.h:14</a></div></div>
+<div class="ttc" id="classIceAge_1_1Humanoid_html_a76adfafa3855813fc09facab326ec87d"><div class="ttname"><a href="../../d5/d0d/classIceAge_1_1Humanoid.html#a76adfafa3855813fc09facab326ec87d">IceAge::Humanoid::obrana</a></div><div class="ttdeci">short obrana()</div><div class="ttdoc">Podedena metoda vracejici hodnotu celkove obrany. </div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d85/Humanoid_8cpp_source.html#l00030">Humanoid.cpp:30</a></div></div>
+<div class="ttc" id="Nazev_8h_html"><div class="ttname"><a href="../../d2/df6/Nazev_8h.html">Nazev.h</a></div></div>
+<div class="ttc" id="classIceAge_1_1Predmet_html"><div class="ttname"><a href="../../db/db8/classIceAge_1_1Predmet.html">IceAge::Predmet</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/d3e/Predmet_8h_source.html#l00015">Predmet.h:15</a></div></div>
+<div class="ttc" id="namespaceIceAge_html"><div class="ttname"><a href="../../dd/d33/namespaceIceAge.html">IceAge</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d09/Beast_8h_source.html#l00013">Beast.h:13</a></div></div>
+<div class="ttc" id="Popis_8h_html"><div class="ttname"><a href="../../d6/d85/Popis_8h.html">Popis.h</a></div></div>
+<div class="ttc" id="classIceAge_1_1ObleceneVybaveniHumanoid_html"><div class="ttname"><a href="../../d7/d1d/classIceAge_1_1ObleceneVybaveniHumanoid.html">IceAge::ObleceneVybaveniHumanoid</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dc2/ObleceneVybaveniHumanoid_8h_source.html#l00014">ObleceneVybaveniHumanoid.h:14</a></div></div>
+<div class="ttc" id="ObleceneVybaveniHumanoid_8h_html"><div class="ttname"><a href="../../d5/dc2/ObleceneVybaveniHumanoid_8h.html">ObleceneVybaveniHumanoid.h</a></div></div>
+<div class="ttc" id="Inventar_8h_html"><div class="ttname"><a href="../../da/d6b/Inventar_8h.html">Inventar.h</a></div></div>
+<div class="ttc" id="classIceAge_1_1Nazev_html"><div class="ttname"><a href="../../d4/d9d/classIceAge_1_1Nazev.html">IceAge::Nazev</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/df6/Nazev_8h_source.html#l00014">Nazev.h:14</a></div></div>
+<div class="ttc" id="classIceAge_1_1Popis_html"><div class="ttname"><a href="../../d8/d11/classIceAge_1_1Popis.html">IceAge::Popis</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d85/Popis_8h_source.html#l00013">Popis.h:13</a></div></div>
+<div class="ttc" id="classIceAge_1_1Humanoid_html_aa8f63dfba3ef74a0666e9fb9c9e96df4"><div class="ttname"><a href="../../d5/d0d/classIceAge_1_1Humanoid.html#aa8f63dfba3ef74a0666e9fb9c9e96df4">IceAge::Humanoid::utok</a></div><div class="ttdeci">short utok()</div><div class="ttdoc">Podedena metoda vracejici hodnotu celkoveho utoku. </div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d85/Humanoid_8cpp_source.html#l00018">Humanoid.cpp:18</a></div></div>
+<div class="ttc" id="classIceAge_1_1Humanoid_html"><div class="ttname"><a href="../../d5/d0d/classIceAge_1_1Humanoid.html">IceAge::Humanoid</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d46/Humanoid_8h_source.html#l00019">Humanoid.h:19</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generováno programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

@@ -1,0 +1,132 @@
+\hypertarget{classIceAge_1_1Memory}{}\section{Dokumentace třídy Ice\+Age\+:\+:Memory}
+\label{classIceAge_1_1Memory}\index{Ice\+Age\+::\+Memory@{Ice\+Age\+::\+Memory}}
+
+
+{\ttfamily \#include $<$Memory.\+h$>$}
+
+Diagram dědičnosti pro třídu Ice\+Age\+:\+:Memory\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.206897cm]{d0/d1c/classIceAge_1_1Memory}
+\end{center}
+\end{figure}
+\subsection*{Veřejné metody}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classIceAge_1_1Memory_aeea129a4caa3506bbfa5287a4f61fc90}{set\+Id} (unsigned int nove\+Id)
+\begin{DoxyCompactList}\small\item\em Nastavuje hodnotu ID. \end{DoxyCompactList}\item 
+\hyperlink{classIceAge_1_1Memory_ae81d5a52a6b6d8f25e36689126b0d0c9}{Memory} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor. \end{DoxyCompactList}\item 
+virtual \hyperlink{classIceAge_1_1Memory_ae2163982f0e32013f5b992c47752b5fd}{$\sim$\+Memory} ()
+\begin{DoxyCompactList}\small\item\em Destruktor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Chráněné metody}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \hyperlink{classIceAge_1_1Memory_ac8f0e51954a707e4653b7f8a1af5fac1}{get\+Id} ()
+\begin{DoxyCompactList}\small\item\em Vraci hodnotu ID. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Chráněné atributy}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \hyperlink{classIceAge_1_1Memory_a50782825cb2229e1a3dad9fbc7b0d0d8}{m\+\_\+id}
+\begin{DoxyCompactList}\small\item\em ID (index), na kterem se v \hyperlink{classIceAge_1_1MemoryArbiter}{Memory\+Arbiter} nachazi dedena trida. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailní popis}
+Abstratkni trida, ktera implementuje rozhrani vsech dedenych trid, tykajicich se spravy pameti. Musi se z ni dedit, pokud ma byt jina trida ulozena v \hyperlink{classIceAge_1_1MemoryArbiter}{Memory\+Arbiter}. 
+
+Definice je uvedena na řádku \hyperlink{Memory_8h_source_l00020}{20} v souboru \hyperlink{Memory_8h_source}{Memory.\+h}.
+
+
+
+\subsection{Dokumentace konstruktoru a destruktoru}
+\index{Ice\+Age\+::\+Memory@{Ice\+Age\+::\+Memory}!Memory@{Memory}}
+\index{Memory@{Memory}!Ice\+Age\+::\+Memory@{Ice\+Age\+::\+Memory}}
+\subsubsection[{\texorpdfstring{Memory()}{Memory()}}]{\setlength{\rightskip}{0pt plus 5cm}Ice\+Age\+::\+Memory\+::\+Memory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classIceAge_1_1Memory_ae81d5a52a6b6d8f25e36689126b0d0c9}{}\label{classIceAge_1_1Memory_ae81d5a52a6b6d8f25e36689126b0d0c9}
+
+
+Konstruktor. 
+
+Konstruktor, ve kterem se vola metoda Memory\+Arbitera, pridavajici sam sebe do jeho seznamu. 
+
+Definice je uvedena na řádku \hyperlink{Memory_8cpp_source_l00023}{23} v souboru \hyperlink{Memory_8cpp_source}{Memory.\+cpp}.
+
+\index{Ice\+Age\+::\+Memory@{Ice\+Age\+::\+Memory}!````~Memory@{$\sim$\+Memory}}
+\index{````~Memory@{$\sim$\+Memory}!Ice\+Age\+::\+Memory@{Ice\+Age\+::\+Memory}}
+\subsubsection[{\texorpdfstring{$\sim$\+Memory()}{~Memory()}}]{\setlength{\rightskip}{0pt plus 5cm}Ice\+Age\+::\+Memory\+::$\sim$\+Memory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classIceAge_1_1Memory_ae2163982f0e32013f5b992c47752b5fd}{}\label{classIceAge_1_1Memory_ae2163982f0e32013f5b992c47752b5fd}
+
+
+Destruktor. 
+
+Destruktor, ve kterem se vola metoda Memory\+Arbitera, odebirajici sam sebe z jeho seznamu. 
+
+Definice je uvedena na řádku \hyperlink{Memory_8cpp_source_l00030}{30} v souboru \hyperlink{Memory_8cpp_source}{Memory.\+cpp}.
+
+
+
+\subsection{Dokumentace k metodám}
+\index{Ice\+Age\+::\+Memory@{Ice\+Age\+::\+Memory}!get\+Id@{get\+Id}}
+\index{get\+Id@{get\+Id}!Ice\+Age\+::\+Memory@{Ice\+Age\+::\+Memory}}
+\subsubsection[{\texorpdfstring{get\+Id()}{getId()}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Ice\+Age\+::\+Memory\+::get\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classIceAge_1_1Memory_ac8f0e51954a707e4653b7f8a1af5fac1}{}\label{classIceAge_1_1Memory_ac8f0e51954a707e4653b7f8a1af5fac1}
+
+
+Vraci hodnotu ID. 
+
+Vraci hodnotu ID. 
+
+Implementuje \hyperlink{classIceAge_1_1IMemory_a6daed1a6ad4faf52393d6437866bf330}{Ice\+Age\+::\+I\+Memory}.
+
+
+
+Definice je uvedena na řádku \hyperlink{Memory_8cpp_source_l00009}{9} v souboru \hyperlink{Memory_8cpp_source}{Memory.\+cpp}.
+
+\index{Ice\+Age\+::\+Memory@{Ice\+Age\+::\+Memory}!set\+Id@{set\+Id}}
+\index{set\+Id@{set\+Id}!Ice\+Age\+::\+Memory@{Ice\+Age\+::\+Memory}}
+\subsubsection[{\texorpdfstring{set\+Id(unsigned int nove\+Id)}{setId(unsigned int noveId)}}]{\setlength{\rightskip}{0pt plus 5cm}void Ice\+Age\+::\+Memory\+::set\+Id (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{nove\+Id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classIceAge_1_1Memory_aeea129a4caa3506bbfa5287a4f61fc90}{}\label{classIceAge_1_1Memory_aeea129a4caa3506bbfa5287a4f61fc90}
+
+
+Nastavuje hodnotu ID. 
+
+Nastavuje hodnotu ID. Hodnota, ktera se sem vklada, bude vzdy kladna (jedna se o index vectoru). 
+
+Implementuje \hyperlink{classIceAge_1_1IMemory_ab1e3adeca064926cd54773d50e5b508f}{Ice\+Age\+::\+I\+Memory}.
+
+
+
+Definice je uvedena na řádku \hyperlink{Memory_8cpp_source_l00016}{16} v souboru \hyperlink{Memory_8cpp_source}{Memory.\+cpp}.
+
+
+
+\subsection{Dokumentace k datovým členům}
+\index{Ice\+Age\+::\+Memory@{Ice\+Age\+::\+Memory}!m\+\_\+id@{m\+\_\+id}}
+\index{m\+\_\+id@{m\+\_\+id}!Ice\+Age\+::\+Memory@{Ice\+Age\+::\+Memory}}
+\subsubsection[{\texorpdfstring{m\+\_\+id}{m_id}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Ice\+Age\+::\+Memory\+::m\+\_\+id\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classIceAge_1_1Memory_a50782825cb2229e1a3dad9fbc7b0d0d8}{}\label{classIceAge_1_1Memory_a50782825cb2229e1a3dad9fbc7b0d0d8}
+
+
+ID (index), na kterem se v \hyperlink{classIceAge_1_1MemoryArbiter}{Memory\+Arbiter} nachazi dedena trida. 
+
+
+
+Definice je uvedena na řádku \hyperlink{Memory_8h_source_l00023}{23} v souboru \hyperlink{Memory_8h_source}{Memory.\+h}.
+
+
+
+Dokumentace pro tuto třídu byla generována z následujících souborů\+:\begin{DoxyCompactItemize}
+\item 
+hlavicky/\hyperlink{Memory_8h}{Memory.\+h}\item 
+cpp/\hyperlink{Memory_8cpp}{Memory.\+cpp}\end{DoxyCompactItemize}

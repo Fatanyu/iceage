@@ -1,0 +1,224 @@
+\hypertarget{classIceAge_1_1BuilderBytost}{}\section{Dokumentace třídy Ice\+Age\+:\+:Builder\+Bytost}
+\label{classIceAge_1_1BuilderBytost}\index{Ice\+Age\+::\+Builder\+Bytost@{Ice\+Age\+::\+Builder\+Bytost}}
+
+
+{\ttfamily \#include $<$Builder\+Bytost.\+h$>$}
+
+\subsection*{Veřejné metody}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classIceAge_1_1BuilderBytost_a4f7fcb1e80137c5555a0eb004fca5c19}{Builder\+Bytost} (\hyperlink{classIceAge_1_1BuilderPredmet}{Ice\+Age\+::\+Builder\+Predmet} $\ast$novy\+Builder)
+\begin{DoxyCompactList}\small\item\em Konstruktor. \end{DoxyCompactList}\item 
+\hyperlink{classIceAge_1_1BuilderBytost_ac090a25d213bcbe4ca3a9d7a21db1d36}{$\sim$\+Builder\+Bytost} ()
+\begin{DoxyCompactList}\small\item\em Destruktor. \end{DoxyCompactList}\item 
+void \hyperlink{classIceAge_1_1BuilderBytost_a4fcc673dabd0c27c892698e4956d86ca}{set\+Builder} (\hyperlink{classIceAge_1_1BuilderPredmet}{Ice\+Age\+::\+Builder\+Predmet} $\ast$novy\+Builder)
+\begin{DoxyCompactList}\small\item\em Metoda ktera nastavuje \hyperlink{classIceAge_1_1BuilderPredmet}{Builder\+Predmet}. \end{DoxyCompactList}\item 
+\hyperlink{classIceAge_1_1Predmet}{Ice\+Age\+::\+Predmet} $\ast$ \hyperlink{classIceAge_1_1BuilderBytost_a3b86534905ea6bb1702a6e8d6d3729c7}{create\+Predmet} (std\+::string novy\+Nazev, short nova\+Hodnota)
+\begin{DoxyCompactList}\small\item\em Metoda vytvarejici predmet. \end{DoxyCompactList}\item 
+\hyperlink{classIceAge_1_1Beast}{Ice\+Age\+::\+Beast} $\ast$ \hyperlink{classIceAge_1_1BuilderBytost_a0a5a5246a7b192effd4993bfcf4b23f3}{get\+Beast} ()
+\begin{DoxyCompactList}\small\item\em Metoda vracejici \hyperlink{classIceAge_1_1Beast}{Beast}. \end{DoxyCompactList}\item 
+\hyperlink{classIceAge_1_1Humanoid}{Ice\+Age\+::\+Humanoid} $\ast$ \hyperlink{classIceAge_1_1BuilderBytost_a41d069e42ccad24d1af34e3e30945e25}{get\+Humanoid} ()
+\begin{DoxyCompactList}\small\item\em Metoda vracejici Humanoida. \end{DoxyCompactList}\item 
+void \hyperlink{classIceAge_1_1BuilderBytost_a090e775261513f873b1aa85dcaca5efb}{create\+Beast} (short nova\+Zurivost, std\+::string novy\+Nazev, short nova\+Sila, std\+::string novy\+Popis, short nova\+Odolnost, short novy\+Zivot)
+\begin{DoxyCompactList}\small\item\em Metoda vytvarejici \hyperlink{classIceAge_1_1Beast}{Beast}. \end{DoxyCompactList}\item 
+void \hyperlink{classIceAge_1_1BuilderBytost_ad0ec5281ef8ba796b945845913802b32}{create\+Humanoid} (short novy\+Zivot, std\+::string novy\+Popis, short nova\+Sila, short nova\+Odolnost, std\+::string novy\+Nazev\+Predmetu1, std\+::string novy\+Nazev\+Predmetu2, std\+::string novy\+Nazev\+Predmetu3, short nova\+Hodnota\+Predmetu1, short nova\+Hodnota\+Predmetu2, short nova\+Hodnota\+Predmetu3)
+\begin{DoxyCompactList}\small\item\em Metoda vytvarejici Humanoida. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Privátní atributy}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classIceAge_1_1Beast}{Ice\+Age\+::\+Beast} $\ast$ \hyperlink{classIceAge_1_1BuilderBytost_a220df66c99fac9d382f5d1825f5295de}{m\+\_\+beast}
+\begin{DoxyCompactList}\small\item\em Atribut do ktereho se uklada odkaz vytvareneho beastu. \end{DoxyCompactList}\item 
+\hyperlink{classIceAge_1_1Humanoid}{Ice\+Age\+::\+Humanoid} $\ast$ \hyperlink{classIceAge_1_1BuilderBytost_a3f4076d50f5bf435c3a90fc123d807a2}{m\+\_\+humanoid}
+\begin{DoxyCompactList}\small\item\em Atribut do ktereho se uklada odkaz vytvareneho humanoida. \end{DoxyCompactList}\item 
+\hyperlink{classIceAge_1_1BuilderPredmet}{Ice\+Age\+::\+Builder\+Predmet} $\ast$ \hyperlink{classIceAge_1_1BuilderBytost_a39f10b26bcda8142ce353e6ca761cabb}{m\+\_\+builder}
+\begin{DoxyCompactList}\small\item\em Atribut do ktereho se uklada odkaz na \hyperlink{classIceAge_1_1BuilderPredmet}{Builder\+Predmet}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailní popis}
+Trida, ktera bude stavet bytosti(Humanoidy s predmety/\+Beasty). Podle navrhoveho vzoru Builder. 
+
+Definice je uvedena na řádku \hyperlink{BuilderBytost_8h_source_l00016}{16} v souboru \hyperlink{BuilderBytost_8h_source}{Builder\+Bytost.\+h}.
+
+
+
+\subsection{Dokumentace konstruktoru a destruktoru}
+\index{Ice\+Age\+::\+Builder\+Bytost@{Ice\+Age\+::\+Builder\+Bytost}!Builder\+Bytost@{Builder\+Bytost}}
+\index{Builder\+Bytost@{Builder\+Bytost}!Ice\+Age\+::\+Builder\+Bytost@{Ice\+Age\+::\+Builder\+Bytost}}
+\subsubsection[{\texorpdfstring{Builder\+Bytost(\+Ice\+Age\+::\+Builder\+Predmet $\ast$novy\+Builder)}{BuilderBytost(IceAge::BuilderPredmet *novyBuilder)}}]{\setlength{\rightskip}{0pt plus 5cm}Ice\+Age\+::\+Builder\+Bytost\+::\+Builder\+Bytost (
+\begin{DoxyParamCaption}
+\item[{{\bf Ice\+Age\+::\+Builder\+Predmet} $\ast$}]{novy\+Builder}
+\end{DoxyParamCaption}
+)}\hypertarget{classIceAge_1_1BuilderBytost_a4f7fcb1e80137c5555a0eb004fca5c19}{}\label{classIceAge_1_1BuilderBytost_a4f7fcb1e80137c5555a0eb004fca5c19}
+
+
+Konstruktor. 
+
+Konstruktor ve kterem se nastavuje novy \hyperlink{classIceAge_1_1BuilderPredmet}{Builder\+Predmet} a do ostatnich atributu se uklada nullptr. 
+
+Definice je uvedena na řádku \hyperlink{BuilderBytost_8cpp_source_l00009}{9} v souboru \hyperlink{BuilderBytost_8cpp_source}{Builder\+Bytost.\+cpp}.
+
+\index{Ice\+Age\+::\+Builder\+Bytost@{Ice\+Age\+::\+Builder\+Bytost}!````~Builder\+Bytost@{$\sim$\+Builder\+Bytost}}
+\index{````~Builder\+Bytost@{$\sim$\+Builder\+Bytost}!Ice\+Age\+::\+Builder\+Bytost@{Ice\+Age\+::\+Builder\+Bytost}}
+\subsubsection[{\texorpdfstring{$\sim$\+Builder\+Bytost()}{~BuilderBytost()}}]{\setlength{\rightskip}{0pt plus 5cm}Ice\+Age\+::\+Builder\+Bytost\+::$\sim$\+Builder\+Bytost (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classIceAge_1_1BuilderBytost_ac090a25d213bcbe4ca3a9d7a21db1d36}{}\label{classIceAge_1_1BuilderBytost_ac090a25d213bcbe4ca3a9d7a21db1d36}
+
+
+Destruktor. 
+
+Metoda vytvarejici Humanoida. 
+
+Definice je uvedena na řádku \hyperlink{BuilderBytost_8cpp_source_l00069}{69} v souboru \hyperlink{BuilderBytost_8cpp_source}{Builder\+Bytost.\+cpp}.
+
+
+
+\subsection{Dokumentace k metodám}
+\index{Ice\+Age\+::\+Builder\+Bytost@{Ice\+Age\+::\+Builder\+Bytost}!create\+Beast@{create\+Beast}}
+\index{create\+Beast@{create\+Beast}!Ice\+Age\+::\+Builder\+Bytost@{Ice\+Age\+::\+Builder\+Bytost}}
+\subsubsection[{\texorpdfstring{create\+Beast(short nova\+Zurivost, std\+::string novy\+Nazev, short nova\+Sila, std\+::string novy\+Popis, short nova\+Odolnost, short novy\+Zivot)}{createBeast(short novaZurivost, std::string novyNazev, short novaSila, std::string novyPopis, short novaOdolnost, short novyZivot)}}]{\setlength{\rightskip}{0pt plus 5cm}void Ice\+Age\+::\+Builder\+Bytost\+::create\+Beast (
+\begin{DoxyParamCaption}
+\item[{short}]{nova\+Zurivost, }
+\item[{std\+::string}]{novy\+Nazev, }
+\item[{short}]{nova\+Sila, }
+\item[{std\+::string}]{novy\+Popis, }
+\item[{short}]{nova\+Odolnost, }
+\item[{short}]{novy\+Zivot}
+\end{DoxyParamCaption}
+)}\hypertarget{classIceAge_1_1BuilderBytost_a090e775261513f873b1aa85dcaca5efb}{}\label{classIceAge_1_1BuilderBytost_a090e775261513f873b1aa85dcaca5efb}
+
+
+Metoda vytvarejici \hyperlink{classIceAge_1_1Beast}{Beast}. 
+
+Metoda vytvarejici \hyperlink{classIceAge_1_1Beast}{Beast}. 
+
+Definice je uvedena na řádku \hyperlink{BuilderBytost_8cpp_source_l00052}{52} v souboru \hyperlink{BuilderBytost_8cpp_source}{Builder\+Bytost.\+cpp}.
+
+\index{Ice\+Age\+::\+Builder\+Bytost@{Ice\+Age\+::\+Builder\+Bytost}!create\+Humanoid@{create\+Humanoid}}
+\index{create\+Humanoid@{create\+Humanoid}!Ice\+Age\+::\+Builder\+Bytost@{Ice\+Age\+::\+Builder\+Bytost}}
+\subsubsection[{\texorpdfstring{create\+Humanoid(short novy\+Zivot, std\+::string novy\+Popis, short nova\+Sila, short nova\+Odolnost, std\+::string novy\+Nazev\+Predmetu1, std\+::string novy\+Nazev\+Predmetu2, std\+::string novy\+Nazev\+Predmetu3, short nova\+Hodnota\+Predmetu1, short nova\+Hodnota\+Predmetu2, short nova\+Hodnota\+Predmetu3)}{createHumanoid(short novyZivot, std::string novyPopis, short novaSila, short novaOdolnost, std::string novyNazevPredmetu1, std::string novyNazevPredmetu2, std::string novyNazevPredmetu3, short novaHodnotaPredmetu1, short novaHodnotaPredmetu2, short novaHodnotaPredmetu3)}}]{\setlength{\rightskip}{0pt plus 5cm}void Ice\+Age\+::\+Builder\+Bytost\+::create\+Humanoid (
+\begin{DoxyParamCaption}
+\item[{short}]{novy\+Zivot, }
+\item[{std\+::string}]{novy\+Popis, }
+\item[{short}]{nova\+Sila, }
+\item[{short}]{nova\+Odolnost, }
+\item[{std\+::string}]{novy\+Nazev\+Predmetu1, }
+\item[{std\+::string}]{novy\+Nazev\+Predmetu2, }
+\item[{std\+::string}]{novy\+Nazev\+Predmetu3, }
+\item[{short}]{nova\+Hodnota\+Predmetu1, }
+\item[{short}]{nova\+Hodnota\+Predmetu2, }
+\item[{short}]{nova\+Hodnota\+Predmetu3}
+\end{DoxyParamCaption}
+)}\hypertarget{classIceAge_1_1BuilderBytost_ad0ec5281ef8ba796b945845913802b32}{}\label{classIceAge_1_1BuilderBytost_ad0ec5281ef8ba796b945845913802b32}
+
+
+Metoda vytvarejici Humanoida. 
+
+
+
+Definice je uvedena na řádku \hyperlink{BuilderBytost_8cpp_source_l00056}{56} v souboru \hyperlink{BuilderBytost_8cpp_source}{Builder\+Bytost.\+cpp}.
+
+\index{Ice\+Age\+::\+Builder\+Bytost@{Ice\+Age\+::\+Builder\+Bytost}!create\+Predmet@{create\+Predmet}}
+\index{create\+Predmet@{create\+Predmet}!Ice\+Age\+::\+Builder\+Bytost@{Ice\+Age\+::\+Builder\+Bytost}}
+\subsubsection[{\texorpdfstring{create\+Predmet(std\+::string novy\+Nazev, short nova\+Hodnota)}{createPredmet(std::string novyNazev, short novaHodnota)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ice\+Age\+::\+Predmet} $\ast$ Ice\+Age\+::\+Builder\+Bytost\+::create\+Predmet (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{novy\+Nazev, }
+\item[{short}]{nova\+Hodnota}
+\end{DoxyParamCaption}
+)}\hypertarget{classIceAge_1_1BuilderBytost_a3b86534905ea6bb1702a6e8d6d3729c7}{}\label{classIceAge_1_1BuilderBytost_a3b86534905ea6bb1702a6e8d6d3729c7}
+
+
+Metoda vytvarejici predmet. 
+
+Metoda vytvarejici predmet. Nejdrive zavola metodu pro vytvoreni buildera, nasledne zavola getter. 
+
+Definice je uvedena na řádku \hyperlink{BuilderBytost_8cpp_source_l00026}{26} v souboru \hyperlink{BuilderBytost_8cpp_source}{Builder\+Bytost.\+cpp}.
+
+\index{Ice\+Age\+::\+Builder\+Bytost@{Ice\+Age\+::\+Builder\+Bytost}!get\+Beast@{get\+Beast}}
+\index{get\+Beast@{get\+Beast}!Ice\+Age\+::\+Builder\+Bytost@{Ice\+Age\+::\+Builder\+Bytost}}
+\subsubsection[{\texorpdfstring{get\+Beast()}{getBeast()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ice\+Age\+::\+Beast} $\ast$ Ice\+Age\+::\+Builder\+Bytost\+::get\+Beast (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classIceAge_1_1BuilderBytost_a0a5a5246a7b192effd4993bfcf4b23f3}{}\label{classIceAge_1_1BuilderBytost_a0a5a5246a7b192effd4993bfcf4b23f3}
+
+
+Metoda vracejici \hyperlink{classIceAge_1_1Beast}{Beast}. 
+
+Metoda vracejici \hyperlink{classIceAge_1_1Beast}{Beast}. Nastavuje atribut beast na nullptr. 
+
+Definice je uvedena na řádku \hyperlink{BuilderBytost_8cpp_source_l00034}{34} v souboru \hyperlink{BuilderBytost_8cpp_source}{Builder\+Bytost.\+cpp}.
+
+\index{Ice\+Age\+::\+Builder\+Bytost@{Ice\+Age\+::\+Builder\+Bytost}!get\+Humanoid@{get\+Humanoid}}
+\index{get\+Humanoid@{get\+Humanoid}!Ice\+Age\+::\+Builder\+Bytost@{Ice\+Age\+::\+Builder\+Bytost}}
+\subsubsection[{\texorpdfstring{get\+Humanoid()}{getHumanoid()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ice\+Age\+::\+Humanoid} $\ast$ Ice\+Age\+::\+Builder\+Bytost\+::get\+Humanoid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classIceAge_1_1BuilderBytost_a41d069e42ccad24d1af34e3e30945e25}{}\label{classIceAge_1_1BuilderBytost_a41d069e42ccad24d1af34e3e30945e25}
+
+
+Metoda vracejici Humanoida. 
+
+Metoda vracejici Humanoida. Nastavuje atribut humanoid na nullptr. 
+
+Definice je uvedena na řádku \hyperlink{BuilderBytost_8cpp_source_l00043}{43} v souboru \hyperlink{BuilderBytost_8cpp_source}{Builder\+Bytost.\+cpp}.
+
+\index{Ice\+Age\+::\+Builder\+Bytost@{Ice\+Age\+::\+Builder\+Bytost}!set\+Builder@{set\+Builder}}
+\index{set\+Builder@{set\+Builder}!Ice\+Age\+::\+Builder\+Bytost@{Ice\+Age\+::\+Builder\+Bytost}}
+\subsubsection[{\texorpdfstring{set\+Builder(\+Ice\+Age\+::\+Builder\+Predmet $\ast$novy\+Builder)}{setBuilder(IceAge::BuilderPredmet *novyBuilder)}}]{\setlength{\rightskip}{0pt plus 5cm}void Ice\+Age\+::\+Builder\+Bytost\+::set\+Builder (
+\begin{DoxyParamCaption}
+\item[{{\bf Ice\+Age\+::\+Builder\+Predmet} $\ast$}]{novy\+Builder}
+\end{DoxyParamCaption}
+)}\hypertarget{classIceAge_1_1BuilderBytost_a4fcc673dabd0c27c892698e4956d86ca}{}\label{classIceAge_1_1BuilderBytost_a4fcc673dabd0c27c892698e4956d86ca}
+
+
+Metoda ktera nastavuje \hyperlink{classIceAge_1_1BuilderPredmet}{Builder\+Predmet}. 
+
+Metoda ktera nastavuje \hyperlink{classIceAge_1_1BuilderPredmet}{Builder\+Predmet}. 
+
+Definice je uvedena na řádku \hyperlink{BuilderBytost_8cpp_source_l00019}{19} v souboru \hyperlink{BuilderBytost_8cpp_source}{Builder\+Bytost.\+cpp}.
+
+
+
+\subsection{Dokumentace k datovým členům}
+\index{Ice\+Age\+::\+Builder\+Bytost@{Ice\+Age\+::\+Builder\+Bytost}!m\+\_\+beast@{m\+\_\+beast}}
+\index{m\+\_\+beast@{m\+\_\+beast}!Ice\+Age\+::\+Builder\+Bytost@{Ice\+Age\+::\+Builder\+Bytost}}
+\subsubsection[{\texorpdfstring{m\+\_\+beast}{m_beast}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ice\+Age\+::\+Beast}$\ast$ Ice\+Age\+::\+Builder\+Bytost\+::m\+\_\+beast\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classIceAge_1_1BuilderBytost_a220df66c99fac9d382f5d1825f5295de}{}\label{classIceAge_1_1BuilderBytost_a220df66c99fac9d382f5d1825f5295de}
+
+
+Atribut do ktereho se uklada odkaz vytvareneho beastu. 
+
+
+
+Definice je uvedena na řádku \hyperlink{BuilderBytost_8h_source_l00019}{19} v souboru \hyperlink{BuilderBytost_8h_source}{Builder\+Bytost.\+h}.
+
+\index{Ice\+Age\+::\+Builder\+Bytost@{Ice\+Age\+::\+Builder\+Bytost}!m\+\_\+builder@{m\+\_\+builder}}
+\index{m\+\_\+builder@{m\+\_\+builder}!Ice\+Age\+::\+Builder\+Bytost@{Ice\+Age\+::\+Builder\+Bytost}}
+\subsubsection[{\texorpdfstring{m\+\_\+builder}{m_builder}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ice\+Age\+::\+Builder\+Predmet}$\ast$ Ice\+Age\+::\+Builder\+Bytost\+::m\+\_\+builder\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classIceAge_1_1BuilderBytost_a39f10b26bcda8142ce353e6ca761cabb}{}\label{classIceAge_1_1BuilderBytost_a39f10b26bcda8142ce353e6ca761cabb}
+
+
+Atribut do ktereho se uklada odkaz na \hyperlink{classIceAge_1_1BuilderPredmet}{Builder\+Predmet}. 
+
+
+
+Definice je uvedena na řádku \hyperlink{BuilderBytost_8h_source_l00021}{21} v souboru \hyperlink{BuilderBytost_8h_source}{Builder\+Bytost.\+h}.
+
+\index{Ice\+Age\+::\+Builder\+Bytost@{Ice\+Age\+::\+Builder\+Bytost}!m\+\_\+humanoid@{m\+\_\+humanoid}}
+\index{m\+\_\+humanoid@{m\+\_\+humanoid}!Ice\+Age\+::\+Builder\+Bytost@{Ice\+Age\+::\+Builder\+Bytost}}
+\subsubsection[{\texorpdfstring{m\+\_\+humanoid}{m_humanoid}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ice\+Age\+::\+Humanoid}$\ast$ Ice\+Age\+::\+Builder\+Bytost\+::m\+\_\+humanoid\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classIceAge_1_1BuilderBytost_a3f4076d50f5bf435c3a90fc123d807a2}{}\label{classIceAge_1_1BuilderBytost_a3f4076d50f5bf435c3a90fc123d807a2}
+
+
+Atribut do ktereho se uklada odkaz vytvareneho humanoida. 
+
+
+
+Definice je uvedena na řádku \hyperlink{BuilderBytost_8h_source_l00020}{20} v souboru \hyperlink{BuilderBytost_8h_source}{Builder\+Bytost.\+h}.
+
+
+
+Dokumentace pro tuto třídu byla generována z následujících souborů\+:\begin{DoxyCompactItemize}
+\item 
+hlavicky/\hyperlink{BuilderBytost_8h}{Builder\+Bytost.\+h}\item 
+cpp/\hyperlink{BuilderBytost_8cpp}{Builder\+Bytost.\+cpp}\end{DoxyCompactItemize}

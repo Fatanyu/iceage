@@ -1,0 +1,386 @@
+\hypertarget{classIceAge_1_1Lokace}{}\section{Dokumentace třídy Ice\+Age\+:\+:Lokace}
+\label{classIceAge_1_1Lokace}\index{Ice\+Age\+::\+Lokace@{Ice\+Age\+::\+Lokace}}
+
+
+{\ttfamily \#include $<$Lokace.\+h$>$}
+
+Diagram dědičnosti pro třídu Ice\+Age\+:\+:Lokace\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{da/d5b/classIceAge_1_1Lokace}
+\end{center}
+\end{figure}
+\subsection*{Veřejné metody}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classIceAge_1_1Lokace_ac8c6fe0d55e08b16e7f220b4aa969bf9}{Lokace} (std\+::string novy\+Nazev, std\+::string novy\+Popis)
+\item 
+\hyperlink{classIceAge_1_1Lokace_ad4160c5054d271837582fe4030c40989}{$\sim$\+Lokace} ()
+\item 
+void \hyperlink{classIceAge_1_1Lokace_ae77a73c9d4ca11a4ccbd056e80e68318}{pridej\+Beast} (\hyperlink{classIceAge_1_1Beast}{Ice\+Age\+::\+Beast} $\ast$novy\+Beast)
+\item 
+void \hyperlink{classIceAge_1_1Lokace_ab8da7a4fa629d827d0b633c67d65da4e}{pridej\+Humanoid} (\hyperlink{classIceAge_1_1Humanoid}{Ice\+Age\+::\+Humanoid} $\ast$novy\+Humanoid)
+\item 
+void \hyperlink{classIceAge_1_1Lokace_a7de7eb0ffccd14cc461788a987545ba8}{smaz\+Beast} (unsigned int index)
+\item 
+void \hyperlink{classIceAge_1_1Lokace_ab81171b69a39d471ad316afac9035309}{smaz\+Humanoid} (unsigned int index)
+\item 
+void \hyperlink{classIceAge_1_1Lokace_a5b8cba97ec44efafc0b105a3b487284c}{pridej\+Reku} ()
+\item 
+void \hyperlink{classIceAge_1_1Lokace_aa7917baa3393a5d5ed806a5f23143fa7}{smaz\+Reku} ()
+\item 
+void \hyperlink{classIceAge_1_1Lokace_a0d506324f571f77f0daf14de00c548b6}{pridej\+Lokaci} (\hyperlink{classIceAge_1_1Lokace}{Ice\+Age\+::\+Lokace} $\ast$nova\+Lokace)
+\item 
+void \hyperlink{classIceAge_1_1Lokace_ad854c0c977792922f8ede422229658f9}{smaz\+Lokaci} (unsigned int index)
+\item 
+void \hyperlink{classIceAge_1_1Lokace_a1f5564ad6a602f649e9b86e0e6c77815}{odeber\+Lokaci} (unsigned int index)
+\item 
+void \hyperlink{classIceAge_1_1Lokace_af4a779823955954dd2c68331a57193c9}{vypis\+Lokace} ()
+\item 
+std\+::string \hyperlink{classIceAge_1_1Lokace_aa7add7f42af4af1a13ca246f8d5081c6}{get\+Nazev\+Lokace} ()
+\item 
+std\+::string \hyperlink{classIceAge_1_1Lokace_adf9674c5770d15fb41bd54207169e464}{get\+Popis\+Lokace} ()
+\item 
+\hyperlink{classIceAge_1_1Lokace}{Lokace} $\ast$ \hyperlink{classIceAge_1_1Lokace_aff2c363fd3d4b7727aff3a5c80980710}{get\+Lokace} (unsigned int index)
+\item 
+\hyperlink{classIceAge_1_1Beast}{Ice\+Age\+::\+Beast} $\ast$ \hyperlink{classIceAge_1_1Lokace_a8aa0d127082ec0f09968909bb51341fd}{get\+Beast} (unsigned int index)
+\item 
+\hyperlink{classIceAge_1_1Humanoid}{Ice\+Age\+::\+Humanoid} $\ast$ \hyperlink{classIceAge_1_1Lokace_a5287730cae8f7c0e885dce5e1eee082e}{get\+Humanoid} (unsigned int index)
+\item 
+unsigned int \hyperlink{classIceAge_1_1Lokace_ad2c476dac4ae7832795995ed90fcc591}{get\+Velikost\+Vektoru\+Lokaci} ()
+\item 
+std\+::vector$<$ \hyperlink{classIceAge_1_1Beast}{Ice\+Age\+::\+Beast} $\ast$ $>$ \hyperlink{classIceAge_1_1Lokace_a7787ab3225a04df0c56c75d8ad0c41a1}{get\+Vektor\+Beast} ()
+\item 
+std\+::vector$<$ \hyperlink{classIceAge_1_1Humanoid}{Ice\+Age\+::\+Humanoid} $\ast$ $>$ \hyperlink{classIceAge_1_1Lokace_a829e2883345fb567d354a420b482fcf3}{get\+Vektor\+Humanoid} ()
+\item 
+\hyperlink{classIceAge_1_1Reka}{Ice\+Age\+::\+Reka} $\ast$ \hyperlink{classIceAge_1_1Lokace_a4171b0e935cabad5af993935c5cbfd55}{get\+Reka} ()
+\item 
+void \hyperlink{classIceAge_1_1Lokace_a27bac7797acadfebe3aaf61a69fdda2d}{set\+Prikaz} ()
+\item 
+void \hyperlink{classIceAge_1_1Lokace_a901ef2b29b32b8698115e8a2fe65df02}{prozkoumat\+Lokaci} (\hyperlink{classIceAge_1_1Veverka}{Ice\+Age\+::\+Veverka} $\ast$scrat)
+\end{DoxyCompactItemize}
+\subsection*{Privátní atributy}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{classIceAge_1_1Beast}{Ice\+Age\+::\+Beast} $\ast$ $>$ \hyperlink{classIceAge_1_1Lokace_a5dcb719c38dae7d7600a868bc40a0380}{m\+\_\+vektor\+Beast}
+\item 
+std\+::vector$<$ \hyperlink{classIceAge_1_1Humanoid}{Ice\+Age\+::\+Humanoid} $\ast$ $>$ \hyperlink{classIceAge_1_1Lokace_a777a6a3ae16e84b9843b9b18912014d2}{m\+\_\+vektor\+Humanoid}
+\item 
+\hyperlink{classIceAge_1_1Reka}{Ice\+Age\+::\+Reka} $\ast$ \hyperlink{classIceAge_1_1Lokace_a7b773f479641e323d55d1c935f238af4}{m\+\_\+odkaz\+Reka}
+\item 
+std\+::vector$<$ \hyperlink{classIceAge_1_1Lokace}{Ice\+Age\+::\+Lokace} $\ast$ $>$ \hyperlink{classIceAge_1_1Lokace_aa436a7cc7b4878f7c099f17b8874c852}{m\+\_\+vektor\+Lokaci}
+\item 
+\hyperlink{classIceAge_1_1Command}{Ice\+Age\+::\+Command} $\ast$ \hyperlink{classIceAge_1_1Lokace_a834dbd24600fee5d9962aa40564a8587}{m\+\_\+prikaz}
+\end{DoxyCompactItemize}
+\subsection*{Další zděděné členy}
+
+
+\subsection{Detailní popis}
+
+
+Definice je uvedena na řádku \hyperlink{Lokace_8h_source_l00034}{34} v souboru \hyperlink{Lokace_8h_source}{Lokace.\+h}.
+
+
+
+\subsection{Dokumentace konstruktoru a destruktoru}
+\index{Ice\+Age\+::\+Lokace@{Ice\+Age\+::\+Lokace}!Lokace@{Lokace}}
+\index{Lokace@{Lokace}!Ice\+Age\+::\+Lokace@{Ice\+Age\+::\+Lokace}}
+\subsubsection[{\texorpdfstring{Lokace(std\+::string novy\+Nazev, std\+::string novy\+Popis)}{Lokace(std::string novyNazev, std::string novyPopis)}}]{\setlength{\rightskip}{0pt plus 5cm}Ice\+Age\+::\+Lokace\+::\+Lokace (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{novy\+Nazev, }
+\item[{std\+::string}]{novy\+Popis}
+\end{DoxyParamCaption}
+)}\hypertarget{classIceAge_1_1Lokace_ac8c6fe0d55e08b16e7f220b4aa969bf9}{}\label{classIceAge_1_1Lokace_ac8c6fe0d55e08b16e7f220b4aa969bf9}
+
+
+Definice je uvedena na řádku \hyperlink{Lokace_8cpp_source_l00006}{6} v souboru \hyperlink{Lokace_8cpp_source}{Lokace.\+cpp}.
+
+\index{Ice\+Age\+::\+Lokace@{Ice\+Age\+::\+Lokace}!````~Lokace@{$\sim$\+Lokace}}
+\index{````~Lokace@{$\sim$\+Lokace}!Ice\+Age\+::\+Lokace@{Ice\+Age\+::\+Lokace}}
+\subsubsection[{\texorpdfstring{$\sim$\+Lokace()}{~Lokace()}}]{\setlength{\rightskip}{0pt plus 5cm}Ice\+Age\+::\+Lokace\+::$\sim$\+Lokace (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classIceAge_1_1Lokace_ad4160c5054d271837582fe4030c40989}{}\label{classIceAge_1_1Lokace_ad4160c5054d271837582fe4030c40989}
+
+
+Definice je uvedena na řádku \hyperlink{Lokace_8cpp_source_l00101}{101} v souboru \hyperlink{Lokace_8cpp_source}{Lokace.\+cpp}.
+
+
+
+\subsection{Dokumentace k metodám}
+\index{Ice\+Age\+::\+Lokace@{Ice\+Age\+::\+Lokace}!get\+Beast@{get\+Beast}}
+\index{get\+Beast@{get\+Beast}!Ice\+Age\+::\+Lokace@{Ice\+Age\+::\+Lokace}}
+\subsubsection[{\texorpdfstring{get\+Beast(unsigned int index)}{getBeast(unsigned int index)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ice\+Age\+::\+Beast} $\ast$ Ice\+Age\+::\+Lokace\+::get\+Beast (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{index}
+\end{DoxyParamCaption}
+)}\hypertarget{classIceAge_1_1Lokace_a8aa0d127082ec0f09968909bb51341fd}{}\label{classIceAge_1_1Lokace_a8aa0d127082ec0f09968909bb51341fd}
+
+
+Definice je uvedena na řádku \hyperlink{Lokace_8cpp_source_l00079}{79} v souboru \hyperlink{Lokace_8cpp_source}{Lokace.\+cpp}.
+
+\index{Ice\+Age\+::\+Lokace@{Ice\+Age\+::\+Lokace}!get\+Humanoid@{get\+Humanoid}}
+\index{get\+Humanoid@{get\+Humanoid}!Ice\+Age\+::\+Lokace@{Ice\+Age\+::\+Lokace}}
+\subsubsection[{\texorpdfstring{get\+Humanoid(unsigned int index)}{getHumanoid(unsigned int index)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ice\+Age\+::\+Humanoid} $\ast$ Ice\+Age\+::\+Lokace\+::get\+Humanoid (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{index}
+\end{DoxyParamCaption}
+)}\hypertarget{classIceAge_1_1Lokace_a5287730cae8f7c0e885dce5e1eee082e}{}\label{classIceAge_1_1Lokace_a5287730cae8f7c0e885dce5e1eee082e}
+
+
+Definice je uvedena na řádku \hyperlink{Lokace_8cpp_source_l00084}{84} v souboru \hyperlink{Lokace_8cpp_source}{Lokace.\+cpp}.
+
+\index{Ice\+Age\+::\+Lokace@{Ice\+Age\+::\+Lokace}!get\+Lokace@{get\+Lokace}}
+\index{get\+Lokace@{get\+Lokace}!Ice\+Age\+::\+Lokace@{Ice\+Age\+::\+Lokace}}
+\subsubsection[{\texorpdfstring{get\+Lokace(unsigned int index)}{getLokace(unsigned int index)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ice\+Age\+::\+Lokace} $\ast$ Ice\+Age\+::\+Lokace\+::get\+Lokace (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{index}
+\end{DoxyParamCaption}
+)}\hypertarget{classIceAge_1_1Lokace_aff2c363fd3d4b7727aff3a5c80980710}{}\label{classIceAge_1_1Lokace_aff2c363fd3d4b7727aff3a5c80980710}
+
+
+Definice je uvedena na řádku \hyperlink{Lokace_8cpp_source_l00115}{115} v souboru \hyperlink{Lokace_8cpp_source}{Lokace.\+cpp}.
+
+\index{Ice\+Age\+::\+Lokace@{Ice\+Age\+::\+Lokace}!get\+Nazev\+Lokace@{get\+Nazev\+Lokace}}
+\index{get\+Nazev\+Lokace@{get\+Nazev\+Lokace}!Ice\+Age\+::\+Lokace@{Ice\+Age\+::\+Lokace}}
+\subsubsection[{\texorpdfstring{get\+Nazev\+Lokace()}{getNazevLokace()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Ice\+Age\+::\+Lokace\+::get\+Nazev\+Lokace (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classIceAge_1_1Lokace_aa7add7f42af4af1a13ca246f8d5081c6}{}\label{classIceAge_1_1Lokace_aa7add7f42af4af1a13ca246f8d5081c6}
+
+
+Definice je uvedena na řádku \hyperlink{Lokace_8cpp_source_l00071}{71} v souboru \hyperlink{Lokace_8cpp_source}{Lokace.\+cpp}.
+
+\index{Ice\+Age\+::\+Lokace@{Ice\+Age\+::\+Lokace}!get\+Popis\+Lokace@{get\+Popis\+Lokace}}
+\index{get\+Popis\+Lokace@{get\+Popis\+Lokace}!Ice\+Age\+::\+Lokace@{Ice\+Age\+::\+Lokace}}
+\subsubsection[{\texorpdfstring{get\+Popis\+Lokace()}{getPopisLokace()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Ice\+Age\+::\+Lokace\+::get\+Popis\+Lokace (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classIceAge_1_1Lokace_adf9674c5770d15fb41bd54207169e464}{}\label{classIceAge_1_1Lokace_adf9674c5770d15fb41bd54207169e464}
+
+
+Definice je uvedena na řádku \hyperlink{Lokace_8cpp_source_l00075}{75} v souboru \hyperlink{Lokace_8cpp_source}{Lokace.\+cpp}.
+
+\index{Ice\+Age\+::\+Lokace@{Ice\+Age\+::\+Lokace}!get\+Reka@{get\+Reka}}
+\index{get\+Reka@{get\+Reka}!Ice\+Age\+::\+Lokace@{Ice\+Age\+::\+Lokace}}
+\subsubsection[{\texorpdfstring{get\+Reka()}{getReka()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ice\+Age\+::\+Reka} $\ast$ Ice\+Age\+::\+Lokace\+::get\+Reka (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classIceAge_1_1Lokace_a4171b0e935cabad5af993935c5cbfd55}{}\label{classIceAge_1_1Lokace_a4171b0e935cabad5af993935c5cbfd55}
+
+
+Definice je uvedena na řádku \hyperlink{Lokace_8cpp_source_l00132}{132} v souboru \hyperlink{Lokace_8cpp_source}{Lokace.\+cpp}.
+
+\index{Ice\+Age\+::\+Lokace@{Ice\+Age\+::\+Lokace}!get\+Vektor\+Beast@{get\+Vektor\+Beast}}
+\index{get\+Vektor\+Beast@{get\+Vektor\+Beast}!Ice\+Age\+::\+Lokace@{Ice\+Age\+::\+Lokace}}
+\subsubsection[{\texorpdfstring{get\+Vektor\+Beast()}{getVektorBeast()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf Ice\+Age\+::\+Beast} $\ast$ $>$ Ice\+Age\+::\+Lokace\+::get\+Vektor\+Beast (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classIceAge_1_1Lokace_a7787ab3225a04df0c56c75d8ad0c41a1}{}\label{classIceAge_1_1Lokace_a7787ab3225a04df0c56c75d8ad0c41a1}
+
+
+Definice je uvedena na řádku \hyperlink{Lokace_8cpp_source_l00124}{124} v souboru \hyperlink{Lokace_8cpp_source}{Lokace.\+cpp}.
+
+\index{Ice\+Age\+::\+Lokace@{Ice\+Age\+::\+Lokace}!get\+Vektor\+Humanoid@{get\+Vektor\+Humanoid}}
+\index{get\+Vektor\+Humanoid@{get\+Vektor\+Humanoid}!Ice\+Age\+::\+Lokace@{Ice\+Age\+::\+Lokace}}
+\subsubsection[{\texorpdfstring{get\+Vektor\+Humanoid()}{getVektorHumanoid()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf Ice\+Age\+::\+Humanoid} $\ast$ $>$ Ice\+Age\+::\+Lokace\+::get\+Vektor\+Humanoid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classIceAge_1_1Lokace_a829e2883345fb567d354a420b482fcf3}{}\label{classIceAge_1_1Lokace_a829e2883345fb567d354a420b482fcf3}
+
+
+Definice je uvedena na řádku \hyperlink{Lokace_8cpp_source_l00128}{128} v souboru \hyperlink{Lokace_8cpp_source}{Lokace.\+cpp}.
+
+\index{Ice\+Age\+::\+Lokace@{Ice\+Age\+::\+Lokace}!get\+Velikost\+Vektoru\+Lokaci@{get\+Velikost\+Vektoru\+Lokaci}}
+\index{get\+Velikost\+Vektoru\+Lokaci@{get\+Velikost\+Vektoru\+Lokaci}!Ice\+Age\+::\+Lokace@{Ice\+Age\+::\+Lokace}}
+\subsubsection[{\texorpdfstring{get\+Velikost\+Vektoru\+Lokaci()}{getVelikostVektoruLokaci()}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Ice\+Age\+::\+Lokace\+::get\+Velikost\+Vektoru\+Lokaci (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classIceAge_1_1Lokace_ad2c476dac4ae7832795995ed90fcc591}{}\label{classIceAge_1_1Lokace_ad2c476dac4ae7832795995ed90fcc591}
+
+
+Definice je uvedena na řádku \hyperlink{Lokace_8cpp_source_l00067}{67} v souboru \hyperlink{Lokace_8cpp_source}{Lokace.\+cpp}.
+
+\index{Ice\+Age\+::\+Lokace@{Ice\+Age\+::\+Lokace}!odeber\+Lokaci@{odeber\+Lokaci}}
+\index{odeber\+Lokaci@{odeber\+Lokaci}!Ice\+Age\+::\+Lokace@{Ice\+Age\+::\+Lokace}}
+\subsubsection[{\texorpdfstring{odeber\+Lokaci(unsigned int index)}{odeberLokaci(unsigned int index)}}]{\setlength{\rightskip}{0pt plus 5cm}void Ice\+Age\+::\+Lokace\+::odeber\+Lokaci (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{index}
+\end{DoxyParamCaption}
+)}\hypertarget{classIceAge_1_1Lokace_a1f5564ad6a602f649e9b86e0e6c77815}{}\label{classIceAge_1_1Lokace_a1f5564ad6a602f649e9b86e0e6c77815}
+
+
+Definice je uvedena na řádku \hyperlink{Lokace_8cpp_source_l00053}{53} v souboru \hyperlink{Lokace_8cpp_source}{Lokace.\+cpp}.
+
+\index{Ice\+Age\+::\+Lokace@{Ice\+Age\+::\+Lokace}!pridej\+Beast@{pridej\+Beast}}
+\index{pridej\+Beast@{pridej\+Beast}!Ice\+Age\+::\+Lokace@{Ice\+Age\+::\+Lokace}}
+\subsubsection[{\texorpdfstring{pridej\+Beast(\+Ice\+Age\+::\+Beast $\ast$novy\+Beast)}{pridejBeast(IceAge::Beast *novyBeast)}}]{\setlength{\rightskip}{0pt plus 5cm}void Ice\+Age\+::\+Lokace\+::pridej\+Beast (
+\begin{DoxyParamCaption}
+\item[{{\bf Ice\+Age\+::\+Beast} $\ast$}]{novy\+Beast}
+\end{DoxyParamCaption}
+)}\hypertarget{classIceAge_1_1Lokace_ae77a73c9d4ca11a4ccbd056e80e68318}{}\label{classIceAge_1_1Lokace_ae77a73c9d4ca11a4ccbd056e80e68318}
+
+
+Definice je uvedena na řádku \hyperlink{Lokace_8cpp_source_l00011}{11} v souboru \hyperlink{Lokace_8cpp_source}{Lokace.\+cpp}.
+
+\index{Ice\+Age\+::\+Lokace@{Ice\+Age\+::\+Lokace}!pridej\+Humanoid@{pridej\+Humanoid}}
+\index{pridej\+Humanoid@{pridej\+Humanoid}!Ice\+Age\+::\+Lokace@{Ice\+Age\+::\+Lokace}}
+\subsubsection[{\texorpdfstring{pridej\+Humanoid(\+Ice\+Age\+::\+Humanoid $\ast$novy\+Humanoid)}{pridejHumanoid(IceAge::Humanoid *novyHumanoid)}}]{\setlength{\rightskip}{0pt plus 5cm}void Ice\+Age\+::\+Lokace\+::pridej\+Humanoid (
+\begin{DoxyParamCaption}
+\item[{{\bf Ice\+Age\+::\+Humanoid} $\ast$}]{novy\+Humanoid}
+\end{DoxyParamCaption}
+)}\hypertarget{classIceAge_1_1Lokace_ab8da7a4fa629d827d0b633c67d65da4e}{}\label{classIceAge_1_1Lokace_ab8da7a4fa629d827d0b633c67d65da4e}
+
+
+Definice je uvedena na řádku \hyperlink{Lokace_8cpp_source_l00015}{15} v souboru \hyperlink{Lokace_8cpp_source}{Lokace.\+cpp}.
+
+\index{Ice\+Age\+::\+Lokace@{Ice\+Age\+::\+Lokace}!pridej\+Lokaci@{pridej\+Lokaci}}
+\index{pridej\+Lokaci@{pridej\+Lokaci}!Ice\+Age\+::\+Lokace@{Ice\+Age\+::\+Lokace}}
+\subsubsection[{\texorpdfstring{pridej\+Lokaci(\+Ice\+Age\+::\+Lokace $\ast$nova\+Lokace)}{pridejLokaci(IceAge::Lokace *novaLokace)}}]{\setlength{\rightskip}{0pt plus 5cm}void Ice\+Age\+::\+Lokace\+::pridej\+Lokaci (
+\begin{DoxyParamCaption}
+\item[{{\bf Ice\+Age\+::\+Lokace} $\ast$}]{nova\+Lokace}
+\end{DoxyParamCaption}
+)}\hypertarget{classIceAge_1_1Lokace_a0d506324f571f77f0daf14de00c548b6}{}\label{classIceAge_1_1Lokace_a0d506324f571f77f0daf14de00c548b6}
+
+
+Definice je uvedena na řádku \hyperlink{Lokace_8cpp_source_l00041}{41} v souboru \hyperlink{Lokace_8cpp_source}{Lokace.\+cpp}.
+
+\index{Ice\+Age\+::\+Lokace@{Ice\+Age\+::\+Lokace}!pridej\+Reku@{pridej\+Reku}}
+\index{pridej\+Reku@{pridej\+Reku}!Ice\+Age\+::\+Lokace@{Ice\+Age\+::\+Lokace}}
+\subsubsection[{\texorpdfstring{pridej\+Reku()}{pridejReku()}}]{\setlength{\rightskip}{0pt plus 5cm}void Ice\+Age\+::\+Lokace\+::pridej\+Reku (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classIceAge_1_1Lokace_a5b8cba97ec44efafc0b105a3b487284c}{}\label{classIceAge_1_1Lokace_a5b8cba97ec44efafc0b105a3b487284c}
+
+
+Definice je uvedena na řádku \hyperlink{Lokace_8cpp_source_l00033}{33} v souboru \hyperlink{Lokace_8cpp_source}{Lokace.\+cpp}.
+
+\index{Ice\+Age\+::\+Lokace@{Ice\+Age\+::\+Lokace}!prozkoumat\+Lokaci@{prozkoumat\+Lokaci}}
+\index{prozkoumat\+Lokaci@{prozkoumat\+Lokaci}!Ice\+Age\+::\+Lokace@{Ice\+Age\+::\+Lokace}}
+\subsubsection[{\texorpdfstring{prozkoumat\+Lokaci(\+Ice\+Age\+::\+Veverka $\ast$scrat)}{prozkoumatLokaci(IceAge::Veverka *scrat)}}]{\setlength{\rightskip}{0pt plus 5cm}void Ice\+Age\+::\+Lokace\+::prozkoumat\+Lokaci (
+\begin{DoxyParamCaption}
+\item[{{\bf Ice\+Age\+::\+Veverka} $\ast$}]{scrat}
+\end{DoxyParamCaption}
+)}\hypertarget{classIceAge_1_1Lokace_a901ef2b29b32b8698115e8a2fe65df02}{}\label{classIceAge_1_1Lokace_a901ef2b29b32b8698115e8a2fe65df02}
+
+
+Definice je uvedena na řádku \hyperlink{Lokace_8cpp_source_l00120}{120} v souboru \hyperlink{Lokace_8cpp_source}{Lokace.\+cpp}.
+
+\index{Ice\+Age\+::\+Lokace@{Ice\+Age\+::\+Lokace}!set\+Prikaz@{set\+Prikaz}}
+\index{set\+Prikaz@{set\+Prikaz}!Ice\+Age\+::\+Lokace@{Ice\+Age\+::\+Lokace}}
+\subsubsection[{\texorpdfstring{set\+Prikaz()}{setPrikaz()}}]{\setlength{\rightskip}{0pt plus 5cm}void Ice\+Age\+::\+Lokace\+::set\+Prikaz (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classIceAge_1_1Lokace_a27bac7797acadfebe3aaf61a69fdda2d}{}\label{classIceAge_1_1Lokace_a27bac7797acadfebe3aaf61a69fdda2d}
+
+
+Definice je uvedena na řádku \hyperlink{Lokace_8cpp_source_l00089}{89} v souboru \hyperlink{Lokace_8cpp_source}{Lokace.\+cpp}.
+
+\index{Ice\+Age\+::\+Lokace@{Ice\+Age\+::\+Lokace}!smaz\+Beast@{smaz\+Beast}}
+\index{smaz\+Beast@{smaz\+Beast}!Ice\+Age\+::\+Lokace@{Ice\+Age\+::\+Lokace}}
+\subsubsection[{\texorpdfstring{smaz\+Beast(unsigned int index)}{smazBeast(unsigned int index)}}]{\setlength{\rightskip}{0pt plus 5cm}void Ice\+Age\+::\+Lokace\+::smaz\+Beast (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{index}
+\end{DoxyParamCaption}
+)}\hypertarget{classIceAge_1_1Lokace_a7de7eb0ffccd14cc461788a987545ba8}{}\label{classIceAge_1_1Lokace_a7de7eb0ffccd14cc461788a987545ba8}
+
+
+Definice je uvedena na řádku \hyperlink{Lokace_8cpp_source_l00019}{19} v souboru \hyperlink{Lokace_8cpp_source}{Lokace.\+cpp}.
+
+\index{Ice\+Age\+::\+Lokace@{Ice\+Age\+::\+Lokace}!smaz\+Humanoid@{smaz\+Humanoid}}
+\index{smaz\+Humanoid@{smaz\+Humanoid}!Ice\+Age\+::\+Lokace@{Ice\+Age\+::\+Lokace}}
+\subsubsection[{\texorpdfstring{smaz\+Humanoid(unsigned int index)}{smazHumanoid(unsigned int index)}}]{\setlength{\rightskip}{0pt plus 5cm}void Ice\+Age\+::\+Lokace\+::smaz\+Humanoid (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{index}
+\end{DoxyParamCaption}
+)}\hypertarget{classIceAge_1_1Lokace_ab81171b69a39d471ad316afac9035309}{}\label{classIceAge_1_1Lokace_ab81171b69a39d471ad316afac9035309}
+
+
+Definice je uvedena na řádku \hyperlink{Lokace_8cpp_source_l00026}{26} v souboru \hyperlink{Lokace_8cpp_source}{Lokace.\+cpp}.
+
+\index{Ice\+Age\+::\+Lokace@{Ice\+Age\+::\+Lokace}!smaz\+Lokaci@{smaz\+Lokaci}}
+\index{smaz\+Lokaci@{smaz\+Lokaci}!Ice\+Age\+::\+Lokace@{Ice\+Age\+::\+Lokace}}
+\subsubsection[{\texorpdfstring{smaz\+Lokaci(unsigned int index)}{smazLokaci(unsigned int index)}}]{\setlength{\rightskip}{0pt plus 5cm}void Ice\+Age\+::\+Lokace\+::smaz\+Lokaci (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{index}
+\end{DoxyParamCaption}
+)}\hypertarget{classIceAge_1_1Lokace_ad854c0c977792922f8ede422229658f9}{}\label{classIceAge_1_1Lokace_ad854c0c977792922f8ede422229658f9}
+
+
+Definice je uvedena na řádku \hyperlink{Lokace_8cpp_source_l00045}{45} v souboru \hyperlink{Lokace_8cpp_source}{Lokace.\+cpp}.
+
+\index{Ice\+Age\+::\+Lokace@{Ice\+Age\+::\+Lokace}!smaz\+Reku@{smaz\+Reku}}
+\index{smaz\+Reku@{smaz\+Reku}!Ice\+Age\+::\+Lokace@{Ice\+Age\+::\+Lokace}}
+\subsubsection[{\texorpdfstring{smaz\+Reku()}{smazReku()}}]{\setlength{\rightskip}{0pt plus 5cm}void Ice\+Age\+::\+Lokace\+::smaz\+Reku (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classIceAge_1_1Lokace_aa7917baa3393a5d5ed806a5f23143fa7}{}\label{classIceAge_1_1Lokace_aa7917baa3393a5d5ed806a5f23143fa7}
+
+
+Definice je uvedena na řádku \hyperlink{Lokace_8cpp_source_l00037}{37} v souboru \hyperlink{Lokace_8cpp_source}{Lokace.\+cpp}.
+
+\index{Ice\+Age\+::\+Lokace@{Ice\+Age\+::\+Lokace}!vypis\+Lokace@{vypis\+Lokace}}
+\index{vypis\+Lokace@{vypis\+Lokace}!Ice\+Age\+::\+Lokace@{Ice\+Age\+::\+Lokace}}
+\subsubsection[{\texorpdfstring{vypis\+Lokace()}{vypisLokace()}}]{\setlength{\rightskip}{0pt plus 5cm}void Ice\+Age\+::\+Lokace\+::vypis\+Lokace (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classIceAge_1_1Lokace_af4a779823955954dd2c68331a57193c9}{}\label{classIceAge_1_1Lokace_af4a779823955954dd2c68331a57193c9}
+
+
+Definice je uvedena na řádku \hyperlink{Lokace_8cpp_source_l00060}{60} v souboru \hyperlink{Lokace_8cpp_source}{Lokace.\+cpp}.
+
+
+
+\subsection{Dokumentace k datovým členům}
+\index{Ice\+Age\+::\+Lokace@{Ice\+Age\+::\+Lokace}!m\+\_\+odkaz\+Reka@{m\+\_\+odkaz\+Reka}}
+\index{m\+\_\+odkaz\+Reka@{m\+\_\+odkaz\+Reka}!Ice\+Age\+::\+Lokace@{Ice\+Age\+::\+Lokace}}
+\subsubsection[{\texorpdfstring{m\+\_\+odkaz\+Reka}{m_odkazReka}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ice\+Age\+::\+Reka}$\ast$ Ice\+Age\+::\+Lokace\+::m\+\_\+odkaz\+Reka\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classIceAge_1_1Lokace_a7b773f479641e323d55d1c935f238af4}{}\label{classIceAge_1_1Lokace_a7b773f479641e323d55d1c935f238af4}
+
+
+Definice je uvedena na řádku \hyperlink{Lokace_8h_source_l00039}{39} v souboru \hyperlink{Lokace_8h_source}{Lokace.\+h}.
+
+\index{Ice\+Age\+::\+Lokace@{Ice\+Age\+::\+Lokace}!m\+\_\+prikaz@{m\+\_\+prikaz}}
+\index{m\+\_\+prikaz@{m\+\_\+prikaz}!Ice\+Age\+::\+Lokace@{Ice\+Age\+::\+Lokace}}
+\subsubsection[{\texorpdfstring{m\+\_\+prikaz}{m_prikaz}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ice\+Age\+::\+Command}$\ast$ Ice\+Age\+::\+Lokace\+::m\+\_\+prikaz\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classIceAge_1_1Lokace_a834dbd24600fee5d9962aa40564a8587}{}\label{classIceAge_1_1Lokace_a834dbd24600fee5d9962aa40564a8587}
+
+
+Definice je uvedena na řádku \hyperlink{Lokace_8h_source_l00041}{41} v souboru \hyperlink{Lokace_8h_source}{Lokace.\+h}.
+
+\index{Ice\+Age\+::\+Lokace@{Ice\+Age\+::\+Lokace}!m\+\_\+vektor\+Beast@{m\+\_\+vektor\+Beast}}
+\index{m\+\_\+vektor\+Beast@{m\+\_\+vektor\+Beast}!Ice\+Age\+::\+Lokace@{Ice\+Age\+::\+Lokace}}
+\subsubsection[{\texorpdfstring{m\+\_\+vektor\+Beast}{m_vektorBeast}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Ice\+Age\+::\+Beast}$\ast$$>$ Ice\+Age\+::\+Lokace\+::m\+\_\+vektor\+Beast\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classIceAge_1_1Lokace_a5dcb719c38dae7d7600a868bc40a0380}{}\label{classIceAge_1_1Lokace_a5dcb719c38dae7d7600a868bc40a0380}
+
+
+Definice je uvedena na řádku \hyperlink{Lokace_8h_source_l00037}{37} v souboru \hyperlink{Lokace_8h_source}{Lokace.\+h}.
+
+\index{Ice\+Age\+::\+Lokace@{Ice\+Age\+::\+Lokace}!m\+\_\+vektor\+Humanoid@{m\+\_\+vektor\+Humanoid}}
+\index{m\+\_\+vektor\+Humanoid@{m\+\_\+vektor\+Humanoid}!Ice\+Age\+::\+Lokace@{Ice\+Age\+::\+Lokace}}
+\subsubsection[{\texorpdfstring{m\+\_\+vektor\+Humanoid}{m_vektorHumanoid}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Ice\+Age\+::\+Humanoid}$\ast$$>$ Ice\+Age\+::\+Lokace\+::m\+\_\+vektor\+Humanoid\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classIceAge_1_1Lokace_a777a6a3ae16e84b9843b9b18912014d2}{}\label{classIceAge_1_1Lokace_a777a6a3ae16e84b9843b9b18912014d2}
+
+
+Definice je uvedena na řádku \hyperlink{Lokace_8h_source_l00038}{38} v souboru \hyperlink{Lokace_8h_source}{Lokace.\+h}.
+
+\index{Ice\+Age\+::\+Lokace@{Ice\+Age\+::\+Lokace}!m\+\_\+vektor\+Lokaci@{m\+\_\+vektor\+Lokaci}}
+\index{m\+\_\+vektor\+Lokaci@{m\+\_\+vektor\+Lokaci}!Ice\+Age\+::\+Lokace@{Ice\+Age\+::\+Lokace}}
+\subsubsection[{\texorpdfstring{m\+\_\+vektor\+Lokaci}{m_vektorLokaci}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Ice\+Age\+::\+Lokace}$\ast$$>$ Ice\+Age\+::\+Lokace\+::m\+\_\+vektor\+Lokaci\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classIceAge_1_1Lokace_aa436a7cc7b4878f7c099f17b8874c852}{}\label{classIceAge_1_1Lokace_aa436a7cc7b4878f7c099f17b8874c852}
+
+
+Definice je uvedena na řádku \hyperlink{Lokace_8h_source_l00040}{40} v souboru \hyperlink{Lokace_8h_source}{Lokace.\+h}.
+
+
+
+Dokumentace pro tuto třídu byla generována z následujících souborů\+:\begin{DoxyCompactItemize}
+\item 
+hlavicky/\hyperlink{Lokace_8h}{Lokace.\+h}\item 
+cpp/\hyperlink{Lokace_8cpp}{Lokace.\+cpp}\end{DoxyCompactItemize}

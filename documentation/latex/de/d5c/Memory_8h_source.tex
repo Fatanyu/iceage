@@ -1,0 +1,31 @@
+\hypertarget{Memory_8h_source}{}\section{Memory.\+h}
+\label{Memory_8h_source}\index{hlavicky/\+Memory.\+h@{hlavicky/\+Memory.\+h}}
+
+\begin{DoxyCode}
+00001 
+00004 \textcolor{preprocessor}{#ifndef MEMORY\_H}
+00005 \textcolor{preprocessor}{#define MEMORY\_H}
+00006 
+00007 \textcolor{keyword}{namespace }\hyperlink{namespaceIceAge}{IceAge}\{
+00008     \textcolor{keyword}{class }MemoryArbiter;
+00009 \}
+00010 
+00011 \textcolor{preprocessor}{#include "\hyperlink{IMemory_8h}{IMemory.h}"}
+00012 \textcolor{preprocessor}{#include "\hyperlink{MemoryArbiter_8h}{MemoryArbiter.h}"}
+00013 
+00014 
+00015 
+00016 \textcolor{keyword}{namespace }\hyperlink{namespaceIceAge}{IceAge} \{
+\hypertarget{Memory_8h_source.tex_l00020}{}\hyperlink{classIceAge_1_1Memory}{00020}     \textcolor{keyword}{class }\hyperlink{classIceAge_1_1Memory}{Memory} : \textcolor{keyword}{public} \hyperlink{classIceAge_1_1IMemory}{IceAge::IMemory} \{
+00021 
+00022     \textcolor{keyword}{protected}:
+\hypertarget{Memory_8h_source.tex_l00023}{}\hyperlink{classIceAge_1_1Memory_a50782825cb2229e1a3dad9fbc7b0d0d8}{00023}         \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \hyperlink{classIceAge_1_1Memory_a50782825cb2229e1a3dad9fbc7b0d0d8}{m\_id};
+00025         \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \hyperlink{classIceAge_1_1Memory_ac8f0e51954a707e4653b7f8a1af5fac1}{getId}();
+00027     \textcolor{keyword}{public}:
+00028         \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1Memory_aeea129a4caa3506bbfa5287a4f61fc90}{setId}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} noveId);
+00030         \hyperlink{classIceAge_1_1Memory_ae81d5a52a6b6d8f25e36689126b0d0c9}{Memory}();
+00031         \textcolor{keyword}{virtual} \hyperlink{classIceAge_1_1Memory_ae2163982f0e32013f5b992c47752b5fd}{~Memory}();
+00032     \};
+00033 \}
+00034 \textcolor{preprocessor}{#endif}
+\end{DoxyCode}

@@ -1,0 +1,27 @@
+\hypertarget{LocationDirector_8cpp_source}{}\section{Location\+Director.\+cpp}
+\label{LocationDirector_8cpp_source}\index{cpp/\+Location\+Director.\+cpp@{cpp/\+Location\+Director.\+cpp}}
+
+\begin{DoxyCode}
+00001 
+00004 \textcolor{preprocessor}{#include "../hlavicky/LocationDirector.h"}
+00005 
+\hypertarget{LocationDirector_8cpp_source.tex_l00009}{}\hyperlink{classIceAge_1_1LocationDirector_a1b9d26b132d924914da5a760932ee64d}{00009} \hyperlink{classIceAge_1_1LocationDirector_a1b9d26b132d924914da5a760932ee64d}{IceAge::LocationDirector::LocationDirector}(
+      \hyperlink{classIceAge_1_1BuilderLokace}{IceAge::BuilderLokace}* novyBuilder) \{
+00010     this->\hyperlink{classIceAge_1_1LocationDirector_ab9e7a61fc4e2860e674c7daa60d60bb3}{setBuilder}(novyBuilder);
+00011 \}
+00012 
+\hypertarget{LocationDirector_8cpp_source.tex_l00016}{}\hyperlink{classIceAge_1_1LocationDirector_aaf149e550266d7934d8f227a0ec67953}{00016} \hyperlink{classIceAge_1_1Lokace}{IceAge::Lokace}* \hyperlink{classIceAge_1_1LocationDirector_aaf149e550266d7934d8f227a0ec67953}{IceAge::LocationDirector::createLokace}(
+      ) \{
+00017     this->\hyperlink{classIceAge_1_1LocationDirector_a304bfc5b7f4989c6ef61e5556e2e7329}{m\_builder}->\hyperlink{classIceAge_1_1BuilderLokace_ac46d7d1ff685c51dbd382f65b29a6546}{createLokace}();
+00018     \textcolor{keywordflow}{return} this->\hyperlink{classIceAge_1_1LocationDirector_a304bfc5b7f4989c6ef61e5556e2e7329}{m\_builder}->\hyperlink{classIceAge_1_1BuilderLokace_ada96fb10689d0b6f2ed2f7cdc31a171e}{getLokace}();
+00019 \}
+00020 
+\hypertarget{LocationDirector_8cpp_source.tex_l00024}{}\hyperlink{classIceAge_1_1LocationDirector_ab9e7a61fc4e2860e674c7daa60d60bb3}{00024} \textcolor{keywordtype}{void} \hyperlink{classIceAge_1_1LocationDirector_ab9e7a61fc4e2860e674c7daa60d60bb3}{IceAge::LocationDirector::setBuilder}(
+      \hyperlink{classIceAge_1_1BuilderLokace}{IceAge::BuilderLokace}* novyBuilder) \{
+00025     this->\hyperlink{classIceAge_1_1LocationDirector_a304bfc5b7f4989c6ef61e5556e2e7329}{m\_builder}=novyBuilder;
+00026 \}
+00027 
+\hypertarget{LocationDirector_8cpp_source.tex_l00031}{}\hyperlink{classIceAge_1_1LocationDirector_a86ed70087306617e26540277f692ef68}{00031} \hyperlink{classIceAge_1_1LocationDirector_a86ed70087306617e26540277f692ef68}{IceAge::LocationDirector::~LocationDirector}()\{
+00032     \textcolor{keywordflow}{if}(this->\hyperlink{classIceAge_1_1LocationDirector_a304bfc5b7f4989c6ef61e5556e2e7329}{m\_builder} != \textcolor{keyword}{nullptr}) \textcolor{keyword}{delete} this->\hyperlink{classIceAge_1_1LocationDirector_a304bfc5b7f4989c6ef61e5556e2e7329}{m\_builder};
+00033 \}
+\end{DoxyCode}

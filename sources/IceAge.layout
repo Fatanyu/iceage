@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="hlavicky/VolneFunkce.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="96" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="hlavicky/Staty.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="702" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="cpp/JizniLes.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5808" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="cpp/ZapadniBrehReky.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3309" topLine="16" />
+		</Cursor>
+	</File>
+	<File name="cpp/Jezero.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="447" topLine="16" />
+		</Cursor>
+	</File>
+	<File name="hlavicky/Zbran.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="90" topLine="9" />
+		</Cursor>
+	</File>
+	<File name="hlavicky/Beast.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="895" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="hlavicky/LocationDirector.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="469" topLine="9" />
+		</Cursor>
+	</File>
+	<File name="cpp/Predmet.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="482" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="cpp/BuilderPredmet.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="735" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="cpp/Zivot.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2088" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="hlavicky/Humanoid.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="793" topLine="15" />
+		</Cursor>
+	</File>
+	<File name="cpp/Orisek.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="157" topLine="5" />
+		</Cursor>
+	</File>
+	<File name="hlavicky/BuilderLokace.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="899" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="hlavicky/Nazev.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="542" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="hlavicky/Ledovec.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="557" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="hlavicky/Popis.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="556" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="hlavicky/Predmet.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="456" topLine="6" />
+		</Cursor>
+	</File>
+	<File name="hlavicky/IObleceneVybaveni.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="726" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="main.cpp" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="211" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="hlavicky/BuilderBytost.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="781" topLine="3" />
+		</Cursor>
+	</File>
+	<File name="hlavicky/IZivot.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="314" topLine="1" />
+		</Cursor>
+	</File>
+	<File name="hlavicky/Zivot.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="587" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="hlavicky/BuilderPredmet.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="594" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="hlavicky/ObleceneVybaveniVeverky.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1111" topLine="18" />
+		</Cursor>
+	</File>
+	<File name="hlavicky/IInventar.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="823" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="hlavicky/EngineIceAge.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="878" topLine="25" />
+		</Cursor>
+	</File>
+	<File name="hlavicky/IStaty.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="591" topLine="10" />
+		</Cursor>
+	</File>
+	<File name="hlavicky/Memory.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="332" topLine="3" />
+		</Cursor>
+	</File>
+	<File name="cpp/SeverniLes.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1948" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="cpp/EngineIceAge.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2226" topLine="66" />
+		</Cursor>
+	</File>
+	<File name="cpp/ObleceneVybaveniVeverky.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1231" topLine="39" />
+		</Cursor>
+	</File>
+	<File name="hlavicky/Reka.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="317" topLine="9" />
+		</Cursor>
+	</File>
+	<File name="cpp/Reka.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="452" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="hlavicky/VychodniPlanina.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="611" topLine="6" />
+		</Cursor>
+	</File>
+	<File name="cpp/Humanoid.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1196" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="cpp/BuilderBytost.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2341" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="cpp/Veverka.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2370" topLine="53" />
+		</Cursor>
+	</File>
+	<File name="hlavicky/MemoryArbiter.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="645" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="cpp/Hra.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="14272" topLine="168" />
+		</Cursor>
+		<Folding>
+			<Collapse line="8" />
+			<Collapse line="16" />
+			<Collapse line="39" />
+			<Collapse line="82" />
+			<Collapse line="335" />
+		</Folding>
+	</File>
+	<File name="hlavicky/INazev.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="403" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="hlavicky/Veverka.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="638" topLine="7" />
+		</Cursor>
+	</File>
+	<File name="hlavicky/ObleceneVybaveniHumanoid.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="877" topLine="8" />
+		</Cursor>
+	</File>
+	<File name="cpp/Ledovec.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="894" topLine="6" />
+		</Cursor>
+	</File>
+	<File name="cpp/Zbran.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="716" topLine="24" />
+		</Cursor>
+	</File>
+	<File name="cpp/ZapadniPlanina.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="355" topLine="9" />
+		</Cursor>
+	</File>
+	<File name="hlavicky/IMemory.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="187" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="cpp/Inventar.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2829" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="hlavicky/JizniLes.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="563" topLine="8" />
+		</Cursor>
+	</File>
+	<File name="hlavicky/VychodniBrehReky.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="618" topLine="6" />
+		</Cursor>
+	</File>
+	<File name="hlavicky/SeverniLes.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="577" topLine="6" />
+		</Cursor>
+	</File>
+	<File name="cpp/VychodniBrehReky.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1792" topLine="33" />
+		</Cursor>
+	</File>
+	<File name="cpp/LocationDirector.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="609" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="hlavicky/Lokace.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="13" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="cpp/Lokace.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3934" topLine="94" />
+		</Cursor>
+	</File>
+	<File name="hlavicky/ZapadniBrehReky.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="613" topLine="9" />
+		</Cursor>
+	</File>
+	<File name="hlavicky/Inventar.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1160" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="cpp/VolneFunkce.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="263" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="hlavicky/ZapadniPlanina.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="364" topLine="9" />
+		</Cursor>
+	</File>
+	<File name="cpp/BuilderLokace.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="9740" topLine="134" />
+		</Cursor>
+		<Folding>
+			<Collapse line="131" />
+			<Collapse line="172" />
+		</Folding>
+	</File>
+	<File name="cpp/Staty.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="709" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="hlavicky/Command.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="657" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="cpp/MemoryArbiter.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1513" topLine="9" />
+		</Cursor>
+	</File>
+	<File name="cpp/ObleceneVybaveniHumanoid.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1423" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="hlavicky/Jezero.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="280" topLine="11" />
+		</Cursor>
+	</File>
+	<File name="cpp/Command.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="62" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="hlavicky/Orisek.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="296" topLine="5" />
+		</Cursor>
+	</File>
+	<File name="cpp/VychodniPlanina.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="229" topLine="21" />
+		</Cursor>
+	</File>
+	<File name="cpp/Beast.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="294" topLine="30" />
+		</Cursor>
+	</File>
+	<File name="hlavicky/IPopis.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="187" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="cpp/Popis.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="422" topLine="1" />
+		</Cursor>
+	</File>
+	<File name="cpp/Nazev.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="344" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="hlavicky/Hra.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1037" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="cpp/Memory.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="556" topLine="0" />
+		</Cursor>
+	</File>
+</CodeBlocks_layout_file>

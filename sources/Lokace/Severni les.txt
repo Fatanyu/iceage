@@ -1,0 +1,72 @@
+Severni les
+1
+Velky smradlavy bordel
+***
+5
+Velky ruzovy
+8
+7
+60
+Klacek
+3
+0
+0
+0
+0
+Velky ruzovy
+8
+7
+60
+Velky klacek
+8
+0
+0
+0
+0
+Velky ruzovy
+8
+7
+60
+Sutr
+3
+0
+0
+0
+0
+Velky ruzovy
+8
+7
+60
+Kopi
+15
+0
+0
+0
+0
+Velky ruzovy
+8
+7
+60
+Kopi
+15
+0
+0
+0
+0
+***
+2
+Savlozuby tygr
+Rychle a ma to velke zuby
+20
+13
+8
+120
+Savlozuby tygr
+Rychle a ma to jeste vetsi zuby
+27
+15
+8
+120
+***
+Jizni les
+Vychodni planina
